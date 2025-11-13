@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Hangout - Team Standings (Oct 23, 2025)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #333;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .intro p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .sports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .sport-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .sport-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .sport-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .sport-card .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .sport-card .description {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .sports-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .sport-card {
+                padding: 25px;
+            }
+
+            .sport-card h2 {
+                font-size: 20px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .sport-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Accessibility */
+        .sport-card:focus {
+            outline: 3px solid #667eea;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>High School Hangout</h1>
+            <h2 style="color: #667eea; font-size: 28px; margin: 10px 0;">Team Standings</h2>
+            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Published: Thursday, October 23, 2025</p>
+        </header>
+
+        <div class="intro">
+            <p><strong>Welcome to the High School Hangout Standings Hub!</strong></p>
+            <p>Select a sport below to view complete team standings including division and overall records. All data is sourced from The Frederick News-Post.</p>
+        </div>
+
+        <main>
+            <div class="sports-grid">
+                <!-- Football -->
+                <a href="standings_football_2025_10_23.html" class="sport-card">
+                    <div class="icon">🏈</div>
+                    <h2>Football</h2>
+                    <p class="description">FCPS Conference standings with points for and against</p>
+                </a>
+
+                <!-- Girls Flag Football -->
+                <a href="standings_girls_flag_football_2025_10_23.html" class="sport-card">
+                    <div class="icon">🏈</div>
+                    <h2>Girls Flag Football</h2>
+                    <p class="description">FCPS Conference standings with points for and against</p>
+                </a>
+
+                <!-- Boys Soccer -->
+                <a href="standings_boys_soccer_2025_10_23.html" class="sport-card">
+                    <div class="icon">⚽</div>
+                    <h2>Boys Soccer</h2>
+                    <p class="description">CMC standings with 4 divisions plus other schools</p>
+                </a>
+
+                <!-- Girls Soccer -->
+                <a href="standings_girls_soccer_2025_10_23.html" class="sport-card">
+                    <div class="icon">⚽</div>
+                    <h2>Girls Soccer</h2>
+                    <p class="description">CMC standings with 4 divisions plus other schools</p>
+                </a>
+
+                <!-- Volleyball -->
+                <a href="standings_volleyball_2025_10_23.html" class="sport-card">
+                    <div class="icon">🏐</div>
+                    <h2>Volleyball</h2>
+                    <p class="description">CMC standings with 4 divisions plus other schools</p>
+                </a>
+
+                <!-- Field Hockey -->
+                <a href="standings_field_hockey_2025_10_23.html" class="sport-card">
+                    <div class="icon">🏑</div>
+                    <h2>Field Hockey</h2>
+                    <p class="description">CMC standings with Large School and Small School divisions</p>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong>About This Data</strong></p>
+            <p>Statistics submitted by coaches or team designated statisticians to The Frederick News-Post.</p>
+            <p>Data should be emailed to sports@newspost.com by 5 p.m. on Wednesday each week.</p>
+            <p style="margin-top: 20px;"><strong>Source:</strong> The Frederick News-Post High School Hangout | Thursday, October 23, 2025</p>
+
+            <div class="footer-links">
+                <a href="https://www.fredericknewspost.com" target="_blank" rel="noopener">Frederick News-Post</a>
+                <a href="https://github.com/NewsAppsUMD/frederick_sports" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+
+            <p style="margin-top: 20px; font-size: 12px; color: #999;">
+                Created with ❤️ for Frederick County high school sports fans
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
