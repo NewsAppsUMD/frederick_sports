@@ -1,0 +1,173 @@
+{
+  "kills": [
+    {
+      "raw": "Maliyah Coleman, MSD\t94\t512\t.314\t 5.45"
+    },
+    {
+      "raw": "Nikita Dzougoutov, MSD\t86\t 329\t .236\t 3.83"
+    },
+    {
+      "raw": "Jocelyn Miller, Middletown\t 41\t147\t .245\t 3.59"
+    },
+    {
+      "raw": "Kaniyah Ball, Frederick\t41\t 138\t.152\t 3.37"
+    },
+    {
+      "raw": "Lily King, Tuscarora\t39\t118\t .204\t 3.03"
+    },
+    {
+      "raw": "Ella Grove, SJCP\t42\t119\t.108\t 2.83"
+    },
+    {
+      "raw": "Raylin Horst, T. Johnson\t52\t 143\t .230\t 2.75"
+    },
+    {
+      "raw": "Ivory Boone, Urbana\t34\t92\t .423\t2.71"
+    },
+    {
+      "raw": "Simone Assasie, Urbana\t34\t87\t .300\t 2.56"
+    },
+    {
+      "raw": "Amy Latimer, Linganore\t51\t 130\t-\t 2.55"
+    },
+    {
+      "raw": "Skye Taylor, Oakdale\t61\t 143\t-\t 2.34"
+    },
+    {
+      "raw": "Susannah Claney, Mid.\t43\t97\t .084\t 2.26"
+    },
+    {
+      "raw": "Talia DoCarmo, Urbana\t35\t72\t .260\t 2.06"
+    },
+    {
+      "raw": "Leila Manan, Oakdale\t51\t96\t-\t 1.88"
+    },
+    {
+      "raw": "Carissa Dolney, Linganore\t51\t93\t-\t 1.82"
+    },
+    {
+      "raw": "Payten Marko, Oakdale\t56\t101\t-\t 1.80"
+    },
+    {
+      "raw": "Shannah Khavrutskii, Oak.\t 49\t87\t-\t1.78"
+    },
+    {
+      "raw": "Temi Oluboyo, T. Johnson\t52\t91\t .380\t1.75"
+    },
+    {
+      "raw": "Jayla Harris, Tuscarora\t37\t62\t.129\t 1.68"
+    },
+    {
+      "raw": "Sofie Krasta, T. Johnson\t52\t80\t.150\t 1.54"
+    },
+    {
+      "raw": "Brooke Wolbert, Mid.\t41\t56\t.101\t1.37"
+    },
+    {
+      "raw": "Charis Burge, Urbana\t36\t49\t.184\t 1.36"
+    },
+    {
+      "raw": "BreyLynn Scott, SJCP\t42\t57\t .207\t 1.36"
+    }
+  ],
+  "assists": [
+    {
+      "raw": "Emma Le, MSD\t95\t833\t8.77"
+    },
+    {
+      "raw": "Charlye Wood, Middletown\t44\t338\t7.68"
+    },
+    {
+      "raw": "Adelle Kusi, Oakdale\t52\t372\t7.15"
+    },
+    {
+      "raw": "Kendall Ortiz, Frederick\t41\t281\t6.85"
+    },
+    {
+      "raw": "Charis Burge, Urbana\t36\t193\t5.36"
+    },
+    {
+      "raw": "Lili\u2019uokalani Primacio, SJCP\t 42\t216\t5.14"
+    },
+    {
+      "raw": "Zayna Brooks, Tuscarora\t39\t179\t4.59"
+    },
+    {
+      "raw": "Julia Tomaski, Linganore\t51\t217\t4.25"
+    },
+    {
+      "raw": "Serena Treadwell, Tuscarora\t 39\t155\t3.97"
+    },
+    {
+      "raw": "Saya Chin, T. Johnson\t52\t196\t3.77"
+    },
+    {
+      "raw": "Abby Bell, Urbana\t29\t101\t3.48"
+    },
+    {
+      "raw": "Sara Burke, Linganore\t48\t138\t2.88"
+    },
+    {
+      "raw": "Xenia Quire, T. Johnson\t47\t107\t2.28"
+    }
+  ],
+  "digs": [
+    {
+      "raw": "Kaniyah Ball, Frederick\t41\t218\t5.32"
+    },
+    {
+      "raw": "Makenzie Shearer, Linganore\t 51\t225\t4.41"
+    },
+    {
+      "raw": "Lilah Colbert, Oakdale\t51\t214\t4.20"
+    },
+    {
+      "raw": "Bella Brown, T. Johnson\t39\t157\t4.03"
+    },
+    {
+      "raw": "Megan Jay, Tuscarora\t39\t149\t3.82"
+    },
+    {
+      "raw": "Talia DoCarmo, Urbana\t35\t130\t3.71"
+    },
+    {
+      "raw": "Kailyn Bryant, Frederick\t41\t146\t3.56"
+    },
+    {
+      "raw": "Lily King, Tuscarora\t39\t115\t2.95"
+    },
+    {
+      "raw": "Amy Latimer, Linganore\t51\t148\t2.90"
+    },
+    {
+      "raw": "Raylin Horst, T. Johnson\t52\t150\t2.88"
+    },
+    {
+      "raw": "Zayna Brooks, Tuscarora\t39\t105\t2.69"
+    },
+    {
+      "raw": "Adrianna Howell, Linganore\t51\t135\t2.65"
+    },
+    {
+      "raw": "Maliyah Coleman, MSD\t94\t237\t2.52"
+    },
+    {
+      "raw": "Zoe Stevenson, Oakdale\t40\t100\t2.50"
+    },
+    {
+      "raw": "Julia Tomaski, Linganore\t51\t126\t2.47"
+    },
+    {
+      "raw": "Josie Patil, SJCP\t29\t69\t2.38"
+    },
+    {
+      "raw": "Ella Grove, SJCP\t42\t96\t2.29"
+    },
+    {
+      "raw": "Kendall Ortiz, Frederick\t41\t91\t2.22"
+    },
+    {
+      "raw": "Nikita Dzougoutov, MSD\t86\t190\t2.21"
+    }
+  ]
+}
