@@ -1,0 +1,126 @@
+{
+  "scoring": [
+    {
+      "raw": "N\u2019Tony Kalala, Tuscarora\t14\t20\t11\t51"
+    },
+    {
+      "raw": "Chris Vasquez Molina, Brun.\t10\t22\t3\t47"
+    },
+    {
+      "raw": "Gabe Cabeza, Brunswick\t13\t13\t7\t33"
+    },
+    {
+      "raw": "Trey Glass, Catoctin\t12\t12\t2\t26"
+    },
+    {
+      "raw": "Gabe Paschalides, Brunswick\t 14\t4\t18\t26"
+    },
+    {
+      "raw": "Wyatt Valenzuela, Linganore\t13\t11\t3\t25"
+    },
+    {
+      "raw": "Cesar Aguilar, Middletown\t12\t10\t4\t24"
+    },
+    {
+      "raw": "Bryce Kenst, Urbana\t14\t9\t4\t22"
+    },
+    {
+      "raw": "Wilbur Ricketts, Urbana\t14\t8\t6\t22"
+    },
+    {
+      "raw": "Connor Grimm, Middletown\t12\t7\t6\t20"
+    },
+    {
+      "raw": "Malachi Dwumaah, Tuscarora\t 14\t7\t3\t17"
+    },
+    {
+      "raw": "Ben Griffin, Linganore\t13\t6\t5\t17"
+    },
+    {
+      "raw": "Zachary Kerr, Catoctin\t7\t5\t6\t16"
+    },
+    {
+      "raw": "Jacob Martins, Linganore\t13\t7\t1\t15"
+    },
+    {
+      "raw": "Eli Glickman, Walkersville\t14\t6\t3\t15"
+    },
+    {
+      "raw": "Zach Sheffield, Urbana\t14\t3\t8\t14"
+    },
+    {
+      "raw": "Charlie Glassman, Linganore\t13\t6\t1\t13"
+    },
+    {
+      "raw": "Eliel Diaz, TJ\t12\t5\t3\t13"
+    },
+    {
+      "raw": "Andrew Griffin, Linganore\t12\t3\t7\t13"
+    },
+    {
+      "raw": "Kevin Le, Frederick\t14\t5\t2\t12"
+    },
+    {
+      "raw": "Sean Bosco, Walkersville\t14\t4\t3\t11"
+    },
+    {
+      "raw": "Sebastian Achuo, TJ\t10\t5\t0\t10"
+    },
+    {
+      "raw": "Jack Knowlton, Urbana\t14\t4\t2\t10"
+    },
+    {
+      "raw": "Jose Vasquez Lopez, Frederick\t 14\t4\t2\t10"
+    },
+    {
+      "raw": "Arman Alibakhshi, Urbana\t14\t3\t4\t10"
+    },
+    {
+      "raw": "Tyler Riggs, Tuscarora\t13\t3\t3\t9"
+    },
+    {
+      "raw": "Nathan Ramsay, Walkersville\t 13\t4\t0\t8"
+    },
+    {
+      "raw": "Hugo Rivas, Frederick\t14\t4\t0\t8"
+    },
+    {
+      "raw": "Matthew Garcia, Brunswick\t14\t3\t2\t8"
+    },
+    {
+      "raw": "Shane O\u2019Malley, Urbana\t14\t3\t2\t8"
+    },
+    {
+      "raw": "Anderson Mendoza, Frederick\t 14\t2\t4\t8"
+    },
+    {
+      "raw": "Ruben Reyes, TJ\t12\t2\t4\t8"
+    }
+  ],
+  "goalkeepers": [
+    {
+      "raw": "Ben McCarron, Urbana\t7.5\t4\t 3.5\t .886\t 0.53"
+    },
+    {
+      "raw": "Andrew Barth, Oakdale\t8\t6\t0\t .790\t 0.75"
+    },
+    {
+      "raw": "Brooks Acton, Linganore\t 13\t5\t-\t-\t 0.85"
+    },
+    {
+      "raw": "TJ Spangler, Urbana\t6.5\t6\t 1.5\t .838\t 0.92"
+    },
+    {
+      "raw": "Kollin Purgason, Walk.\t14\t 14\t6\t .870\t 1.00"
+    },
+    {
+      "raw": "Owen Pamplin, Oakdale\t11\t11\t1\t .770\t 1.00"
+    },
+    {
+      "raw": "Jack Barnes, TJ\t12\t 15\t3\t .600\t 1.25"
+    },
+    {
+      "raw": "Zach Ledder, Middletown\t 12\t 19\t2\t .800\t 1.58"
+    }
+  ]
+}
