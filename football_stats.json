@@ -159,30 +159,30 @@
     },
     {
       "player": "Landon Rosenberg",
-      "school": "Tus."
-    },
-    {
-      "player": "81\t 159\t.509\t 1",
-      "school": "277",
-      "comp": "11"
+      "school": "Tus.",
+      "comp": "81",
+      "att": "159",
+      "pct": ".509",
+      "yds": "1,277",
+      "td": "11"
     },
     {
       "player": "Alex Rodriguez",
-      "school": "Oakdale"
-    },
-    {
-      "player": "64\t 114\t .561\t1",
-      "school": "049",
-      "comp": "9"
+      "school": "Oakdale",
+      "comp": "64",
+      "att": "114",
+      "pct": ".561",
+      "yds": "1,049",
+      "td": "9"
     },
     {
       "player": "David Doy",
-      "school": "Linganore"
-    },
-    {
-      "player": "61\t 84\t .730\t1",
-      "school": "020",
-      "comp": "14"
+      "school": "Linganore",
+      "comp": "61",
+      "att": "84",
+      "pct": ".730",
+      "yds": "1,020",
+      "td": "14"
     },
     {
       "player": "Owen Brooks",

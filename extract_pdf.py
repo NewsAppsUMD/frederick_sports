@@ -20,9 +20,15 @@ def extract_text_from_pdf(pdf_path: str) -> str:
     return text
 
 
-def parse_football_stats(text: str) -> Dict[str, List[Dict[str, Any]]]:
+def parse_football_stats(text: str, section_index: int = -1, sport_name: str = "Football") -> Dict[str, List[Dict[str, Any]]]:
     """
     Parse football player statistics from extracted text.
+
+    Args:
+        text: Extracted PDF text
+        section_index: Which INDIVIDUAL LEADERS section to use (0=first, -1=last)
+        sport_name: Name of sport for debug output
+
     Returns dict with keys: rushing, passing, receiving
     """
     stats = {
@@ -35,20 +41,23 @@ def parse_football_stats(text: str) -> Dict[str, List[Dict[str, Any]]]:
     lines = text.split('\n')
 
     # Find ALL occurrences of INDIVIDUAL LEADERS sections
-    # We want the LAST one (Boys Football) not the first one (Girls Flag Football)
     individual_leaders_indices = []
     for i, line in enumerate(lines):
         if line.strip() == 'INDIVIDUAL LEADERS':
             individual_leaders_indices.append(i)
 
     if not individual_leaders_indices:
-        print("DEBUG: No INDIVIDUAL LEADERS sections found")
+        print(f"DEBUG: No INDIVIDUAL LEADERS sections found")
         return stats
 
-    # Use the last INDIVIDUAL LEADERS section (Boys Football)
-    start_idx = individual_leaders_indices[-1]
-    print(f"DEBUG: Found {len(individual_leaders_indices)} INDIVIDUAL LEADERS sections")
-    print(f"DEBUG: Using last one at line {start_idx}")
+    # Use the specified INDIVIDUAL LEADERS section
+    if abs(section_index) > len(individual_leaders_indices):
+        print(f"ERROR: Section index {section_index} out of range (found {len(individual_leaders_indices)} sections)")
+        return stats
+
+    start_idx = individual_leaders_indices[section_index]
+    print(f"DEBUG [{sport_name}]: Found {len(individual_leaders_indices)} INDIVIDUAL LEADERS sections")
+    print(f"DEBUG [{sport_name}]: Using section {section_index} at line {start_idx}")
 
     current_section = None
     current_player_lines = []
@@ -68,25 +77,36 @@ def parse_football_stats(text: str) -> Dict[str, List[Dict[str, Any]]]:
         if stripped == 'RUSHING':
             save_current_player()
             current_section = 'rushing'
-            print(f"DEBUG: Found RUSHING section at line {i}")
+            print(f"DEBUG [{sport_name}]: Found RUSHING section at line {i}")
             continue
         elif stripped == 'PASSING':
             save_current_player()
             current_section = 'passing'
-            print(f"DEBUG: Found PASSING section at line {i}")
+            print(f"DEBUG [{sport_name}]: Found PASSING section at line {i}")
             continue
         elif stripped == 'RECEIVING':
             save_current_player()
             current_section = 'receiving'
-            print(f"DEBUG: Found RECEIVING section at line {i}")
+            print(f"DEBUG [{sport_name}]: Found RECEIVING section at line {i}")
             continue
 
-        # Stop at empty line followed by non-data (end of stats)
+        # Stop conditions
+        # 1. Empty line followed by non-data (end of stats)
         if current_section == 'receiving' and stripped == '':
             # Check if we've hit the end
             if i + 1 < len(lines) and lines[i+1].strip() == '':
                 save_current_player()
                 break
+
+        # 2. Stop if we hit a new sport/section indicator
+        if current_section and any(keyword in stripped for keyword in [
+            '9-hole Average',  # Golf section
+            'FCPS',  # New standings section
+            'CENTRAL MARYLAND',  # New conference section
+            'OTHER SCHOOLS',  # Separate section (might appear in some sports)
+        ]):
+            save_current_player()
+            break
 
         # Parse player data
         if current_section and stripped:
@@ -100,8 +120,22 @@ def parse_football_stats(text: str) -> Dict[str, List[Dict[str, Any]]]:
             if 'Avg.' in stripped or 'TD' in stripped:
                 continue
 
-            # Check if this is a new player entry (contains comma)
+            # Check if this is a new player entry (contains comma in "Name, School" format)
+            # Player lines have format: "Player Name, School"
+            # Stats lines might have commas in numbers like "2,150"
+            # A player line has a comma followed by a space and then a word (school name)
+            is_player_line = False
             if ',' in stripped:
+                # Check if comma is followed by a space and text (indicating "Name, School")
+                comma_idx = stripped.find(',')
+                if comma_idx > 0 and comma_idx < len(stripped) - 1:
+                    # Check what comes after the comma
+                    after_comma = stripped[comma_idx + 1:].strip()
+                    # If it starts with a letter (school name), it's a player line
+                    if after_comma and after_comma[0].isalpha():
+                        is_player_line = True
+
+            if is_player_line:
                 # Save previous player
                 save_current_player()
                 # Start new player
@@ -498,6 +532,64 @@ def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football") -> str:
     return html
 
 
+def process_sport(text: str, sport_name: str, section_index: int, file_prefix: str):
+    """Process a single sport's stats."""
+    print(f"\n{'='*60}")
+    print(f"Processing {sport_name}")
+    print(f"{'='*60}")
+
+    # Parse stats
+    print(f"\nParsing {sport_name} statistics...")
+    stats_raw = parse_football_stats(text, section_index=section_index, sport_name=sport_name)
+
+    # Save raw stats
+    raw_filename = f'{file_prefix}_stats_raw.json'
+    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+        json.dump(stats_raw, f, indent=2)
+
+    # Structure the stats
+    print(f"\nStructuring data...")
+    stats = structure_stats(stats_raw)
+
+    # Save structured stats
+    stats_filename = f'{file_prefix}_stats.json'
+    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+        json.dump(stats, f, indent=2)
+
+    print(f"\n{sport_name} stats parsed:")
+    print(f"  Rushing leaders: {len(stats['rushing'])} entries")
+    print(f"  Passing leaders: {len(stats['passing'])} entries")
+    print(f"  Receiving leaders: {len(stats['receiving'])} entries")
+
+    # Show sample data
+    if stats['rushing']:
+        print(f"\nSample rushing leader:")
+        leader = stats['rushing'][0]
+        print(f"  {leader.get('player', 'N/A')}, {leader.get('school', 'N/A')}")
+        print(f"  {leader.get('att', 'N/A')} Att, {leader.get('yds', 'N/A')} Yds, {leader.get('avg', 'N/A')} Avg, {leader.get('td', 'N/A')} TD")
+
+    print(f"\nStats saved to {stats_filename}")
+
+    # Generate HTML
+    print(f"\nGenerating HTML page...")
+    html = generate_html(stats, sport_name)
+
+    # Save HTML to both hs_hangout and docs directories
+    html_filename = f'player_stats_{file_prefix}_2025_10_23.html'
+    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
+    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+
+    with open(output_path_hs, 'w') as f:
+        f.write(html)
+    print(f"HTML saved to: {output_path_hs}")
+
+    with open(output_path_docs, 'w') as f:
+        f.write(html)
+    print(f"HTML saved to: {output_path_docs}")
+
+    print(f"\n✓ {sport_name} player stats extraction and HTML generation complete!")
+
+
 def main():
     """Main extraction function."""
     pdf_path = '/home/user/frederick_sports/hs_hangout/2025_10_23.pdf'
@@ -510,54 +602,19 @@ def main():
         f.write(text)
     print(f"Full text saved to pdf_text.txt ({len(text)} characters)")
 
-    # Parse football stats
-    print("\nParsing football statistics...")
-    football_stats_raw = parse_football_stats(text)
+    # Process multiple sports
+    # Section indices: 0=first, 1=second, -1=last, etc.
+    sports = [
+        ("Girls Flag Football", 0, "girls_flag_football"),
+        ("Football", -1, "football"),
+    ]
 
-    # Save raw stats
-    with open('/home/user/frederick_sports/football_stats_raw.json', 'w') as f:
-        json.dump(football_stats_raw, f, indent=2)
+    for sport_name, section_index, file_prefix in sports:
+        process_sport(text, sport_name, section_index, file_prefix)
 
-    # Structure the stats
-    print("\nStructuring data...")
-    football_stats = structure_stats(football_stats_raw)
-
-    # Save structured stats
-    with open('/home/user/frederick_sports/football_stats.json', 'w') as f:
-        json.dump(football_stats, f, indent=2)
-
-    print(f"\nFootball stats parsed:")
-    print(f"  Rushing leaders: {len(football_stats['rushing'])} entries")
-    print(f"  Passing leaders: {len(football_stats['passing'])} entries")
-    print(f"  Receiving leaders: {len(football_stats['receiving'])} entries")
-
-    # Show sample data
-    if football_stats['rushing']:
-        print("\nSample rushing leader:")
-        leader = football_stats['rushing'][0]
-        print(f"  {leader.get('player', 'N/A')}, {leader.get('school', 'N/A')}")
-        print(f"  {leader.get('att', 'N/A')} Att, {leader.get('yds', 'N/A')} Yds, {leader.get('avg', 'N/A')} Avg, {leader.get('td', 'N/A')} TD")
-
-    print("\nStats saved to football_stats.json")
-
-    # Generate HTML
-    print("\nGenerating HTML page...")
-    html = generate_html(football_stats, "Football")
-
-    # Save HTML to both hs_hangout and docs directories
-    html_filename = 'player_stats_football_2025_10_23.html'
-    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
-    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
-
-    with open(output_path_hs, 'w') as f:
-        f.write(html)
-    print(f"HTML saved to: {output_path_hs}")
-
-    with open(output_path_docs, 'w') as f:
-        f.write(html)
-    print(f"HTML saved to: {output_path_docs}")
-
-    print("\n✓ Football player stats extraction and HTML generation complete!")
+    print(f"\n{'='*60}")
+    print("ALL SPORTS COMPLETE!")
+    print(f"{'='*60}")
 
 
 if __name__ == '__main__':
