@@ -1,0 +1,140 @@
+{
+  "rushing": [
+    {
+      "raw": "Bradly Matthews, Linganore\t 140\t 1,256\t 8.97\t 23"
+    },
+    {
+      "raw": "Colton Amoriell, Walkersville\t 124\t 1,020\t 8.22\t 13"
+    },
+    {
+      "raw": "Mark Gwynn III, MSD\t57\t774\t 13.57\t11"
+    },
+    {
+      "raw": "Alex Rodriguez, Oakdale\t76\t 683\t 8.98\t8"
+    },
+    {
+      "raw": "Nakhi Bagwell, T. Johnson\t99\t538\t 5.43\t2"
+    },
+    {
+      "raw": "Ryan McLister, Middletown\t47\t457\t 9.72\t6"
+    },
+    {
+      "raw": "Owen Brooks, Walkersville\t49\t426\t 8.69\t7"
+    },
+    {
+      "raw": "Cayden McIver, Urbana\t52\t352\t 6.77\t1"
+    },
+    {
+      "raw": "Orllen Ocean, Tuscarora\t88\t351\t 3.99\t6"
+    },
+    {
+      "raw": "Ryder Smart, Urbana\t52\t 346\t 6.65\t2"
+    },
+    {
+      "raw": "Shemiah Hill, Oakdale\t46\t342\t 7.33\t5"
+    },
+    {
+      "raw": "Miles Robinson, Frederick\t63\t342\t5.4\t4"
+    },
+    {
+      "raw": "Ryker Pedersen, MSD\t44\t313\t7.1\t5"
+    },
+    {
+      "raw": "Barima Baffoe, Brunswick\t43\t 306\t7.1\t3"
+    },
+    {
+      "raw": "Brittin Poffenbarger, Mid.\t51\t 299\t5.9\t3"
+    },
+    {
+      "raw": "Quintin Thompson, Catoctin\t 77\t257\t 3.33\t2"
+    }
+  ],
+  "passing": [
+    {
+      "raw": "Brittin Poffenbarger, Mid.\t 105\t 145\t .724\t1,760\t 19"
+    },
+    {
+      "raw": "Randy Embrey, T. Johnson\t 102\t 182\t.560\t1,399\t 15"
+    },
+    {
+      "raw": "Miles Robinson, Frederick\t 135\t202\t.668\t1,294\t 9"
+    },
+    {
+      "raw": "Landon Rosenberg, Tus.\t81\t 159\t.509\t 1,277\t 11"
+    },
+    {
+      "raw": "Alex Rodriguez, Oakdale\t64\t 114\t .561\t1,049\t 9"
+    },
+    {
+      "raw": "David Doy, Linganore\t61\t 84\t .730\t1,020\t 14"
+    },
+    {
+      "raw": "Owen Brooks, Walkersville\t 43\t 100\t.430\t 776\t 6"
+    },
+    {
+      "raw": "Josh White, Urbana\t36\t 72\t.500\t 500\t 12"
+    },
+    {
+      "raw": "Chase Cregger, Catoctin\t41\t 87\t .471\t 474\t 2"
+    },
+    {
+      "raw": "Brady Renn, Brunswick\t25\t 53\t .471\t 416\t 6"
+    }
+  ],
+  "receiving": [
+    {
+      "raw": "Paul Huff, Frederick\t54\t637\t4"
+    },
+    {
+      "raw": "Dyvae Ambush, T. Johnson\t51\t784\t7"
+    },
+    {
+      "raw": "Naheme Johnson, Tuscarora\t32\t318\t2"
+    },
+    {
+      "raw": "Philip Bailey, Frederick\t30\t237\t1"
+    },
+    {
+      "raw": "Nathan Borawski, Middletown\t28\t359\t4"
+    },
+    {
+      "raw": "Clinton Lee, Middletown\t27\t583\t5"
+    },
+    {
+      "raw": "Charles Alt, Oakdale\t27\t486\t4"
+    },
+    {
+      "raw": "Ryan McLister, Middletown\t25\t374\t4"
+    },
+    {
+      "raw": "Joziah Cobb, Oakdale\t21\t370\t4"
+    },
+    {
+      "raw": "Chase Perry, Linganore\t20\t404\t6"
+    },
+    {
+      "raw": "Darnell Taylor, T. Johnson\t20\t327\t4"
+    },
+    {
+      "raw": "Ronte Faunteroy, Frederick\t20\t252\t1"
+    },
+    {
+      "raw": "Mickey Cammarata, Tuscarora\t 19\t337\t2"
+    },
+    {
+      "raw": "Tyler McCallion, Catoctin\t19\t173\t0"
+    },
+    {
+      "raw": "Levi Misner, Catoctin\t19\t155\t1"
+    },
+    {
+      "raw": "Masiah Martin, Walkersville\t18\t225\t0"
+    },
+    {
+      "raw": "Jayden Sharper, Urbana\t14\t375\t5"
+    },
+    {
+      "raw": "Konnor Dodson, Catoctin\t14\t165\t2"
+    }
+  ]
+}

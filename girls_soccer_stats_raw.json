@@ -1,0 +1,126 @@
+{
+  "scoring": [
+    {
+      "raw": "Brooke Clagett, Oakdale\t10\t22\t3\t47"
+    },
+    {
+      "raw": "Emily Feaster, Oakdale\t13\t13\t3\t29"
+    },
+    {
+      "raw": "Olivia Baker, Catoctin\t12\t9\t5\t23"
+    },
+    {
+      "raw": "Adalyn DeGrange, Catoctin\t12\t7\t9\t23"
+    },
+    {
+      "raw": "Laila Jackson, Brunswick\t13\t9\t4\t22"
+    },
+    {
+      "raw": "Jamisyn Kenyatta, Frederick\t11\t10\t2\t22"
+    },
+    {
+      "raw": "Fiona Collins, Oakdale\t13\t6\t8\t20"
+    },
+    {
+      "raw": "Katie Hargett, Brunswick\t13\t4\t9\t17"
+    },
+    {
+      "raw": "Emilee Schwier, Linganore\t12\t7\t3\t17"
+    },
+    {
+      "raw": "Reese Bender, Urbana\t9\t7\t1\t15"
+    },
+    {
+      "raw": "Lexi Clagett, Oakdale\t13\t5\t5\t15"
+    },
+    {
+      "raw": "Leah Smallwood, Brunswick\t 13\t5\t5\t15"
+    },
+    {
+      "raw": "Isabel Vanderau, Walkersville\t 12\t6\t3\t15"
+    },
+    {
+      "raw": "Emma Esquivel, Linganore\t12\t5\t4\t14"
+    },
+    {
+      "raw": "MacKenzie Thompson, Ling.\t 12\t5\t4\t14"
+    },
+    {
+      "raw": "Lizeth Duran, Tuscarora\t12\t4\t5\t13"
+    },
+    {
+      "raw": "Tatiana Fernandes, Walk.\t12\t6\t1\t13"
+    },
+    {
+      "raw": "Adalyn Mucker, Catoctin\t12\t5\t3\t13"
+    },
+    {
+      "raw": "Alex Bender, Tuscarora\t12\t6\t0\t12"
+    },
+    {
+      "raw": "Morgan Bilbrey, Brunswick\t13\t5\t2\t12"
+    },
+    {
+      "raw": "Katie Crummit, Middletown\t12\t5\t2\t12"
+    },
+    {
+      "raw": "Toni Daramola, Urbana\t5\t5\t1\t11"
+    },
+    {
+      "raw": "Addison Oldham, Oakdale\t13\t3\t5\t11"
+    },
+    {
+      "raw": "Tatum Smith, Brunswick\t13\t5\t1\t11"
+    },
+    {
+      "raw": "Taylor Wurm, Urbana\t9\t5\t1\t11"
+    },
+    {
+      "raw": "Sylvia Apshago, Frederick\t9\t3\t4\t10"
+    },
+    {
+      "raw": "Cece Atadika, Walkersville\t12\t2\t6\t10"
+    },
+    {
+      "raw": "Zara Borel, Tuscarora\t12\t4\t2\t10"
+    }
+  ],
+  "goalkeepers": [
+    {
+      "raw": "Brynn Clagett, Oakdale\t12\t 5\t 10\t\u2014\t 0.31"
+    },
+    {
+      "raw": "Makayla Olenchalk, Mid.\t9\t 2\t0\t .909\t 0.41"
+    },
+    {
+      "raw": "Emily Krichbaum, Mid.\t10\t 4\t2\t .902\t 0.54"
+    },
+    {
+      "raw": "Hannah Cook, Brunswick\t13\t 5\t 2.5\t .907\t 0.62"
+    },
+    {
+      "raw": "Paige Miller, Walkersville\t12\t 11\t6\t\u2014\t 1.00"
+    },
+    {
+      "raw": "Hannah Zirk, Linganore\t10\t 11\t4\t .750\t 1.00"
+    },
+    {
+      "raw": "Chandler Ways, Urbana\t10\t \u2014\t 2.5\t\u2014\t 1.17"
+    },
+    {
+      "raw": "Janelle Razunguzwa, Brun.\t 12\t 8\t 2.5\t .784\t 1.23"
+    },
+    {
+      "raw": "Sophia Perez, Catoctin\t12\t 29\t2\t .890\t 2.4"
+    },
+    {
+      "raw": "Bella Donigian, Frederick\t9\t 31\t0\t\u2014\t 3.89"
+    },
+    {
+      "raw": "Berkley Wetzel, Frederick\t11\t 9\t0\t .800\t 4.20"
+    },
+    {
+      "raw": "Genesis Ortega, Tuscarora\t10\t 16\t4\t\u2014\t\u2014"
+    }
+  ]
+}
