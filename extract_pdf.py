@@ -10,6 +10,35 @@ import json
 from typing import Dict, List, Any, Tuple
 
 
+# Team abbreviation lookup table
+TEAM_ABBREVIATIONS = {
+    'Brun.': 'Brunswick',
+    'Fred.': 'Frederick',
+    'Ling.': 'Linganore',
+    'Mid.': 'Middletown',
+    'MSD': 'Maryland School for the Deaf',
+    'Oak.': 'Oakdale',
+    'SJCP': "St. John's Catholic Prep",
+    'TJ': 'Thomas Johnson',
+    'T. Johnson': 'Thomas Johnson',
+    'Tus.': 'Tuscarora',
+    'Walk.': 'Walkersville',
+}
+
+
+def expand_team_name(team_abbr: str) -> str:
+    """
+    Expand team abbreviation to full name.
+
+    Args:
+        team_abbr: Team abbreviation (e.g., 'Brun.', 'TJ')
+
+    Returns:
+        Full team name if abbreviation found, otherwise original string
+    """
+    return TEAM_ABBREVIATIONS.get(team_abbr, team_abbr)
+
+
 def extract_text_from_pdf(pdf_path: str) -> str:
     """Extract all text from the PDF."""
     doc = fitz.open(pdf_path)
@@ -1017,7 +1046,7 @@ def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football") -> str:
         for player in stats['rushing']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('att', '')}</td>
                             <td>{player.get('yds', '')}</td>
                             <td>{player.get('avg', '')}</td>
@@ -1051,7 +1080,7 @@ def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football") -> str:
         for player in stats['passing']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('comp', '')}</td>
                             <td>{player.get('att', '')}</td>
                             <td>{player.get('pct', '')}</td>
@@ -1084,7 +1113,7 @@ def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football") -> str:
         for player in stats['receiving']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('rec', '')}</td>
                             <td>{player.get('yds', '')}</td>
                             <td>{player.get('td', '')}</td>
@@ -1313,7 +1342,7 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
         for player in stats['scoring']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('gp', '')}</td>
                             <td>{player.get('g', '')}</td>
                             <td>{player.get('a', '')}</td>
@@ -1347,7 +1376,7 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
         for player in stats['goalkeepers']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('gp', '')}</td>
                             <td>{player.get('ga', '')}</td>
                             <td>{player.get('so', '')}</td>
@@ -1578,7 +1607,7 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
         for player in stats['kills']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('sp', '')}</td>
                             <td>{player.get('kills', '')}</td>
                             <td>{player.get('hit_pct', '')}</td>
@@ -1611,7 +1640,7 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
         for player in stats['assists']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('sp', '')}</td>
                             <td>{player.get('asts', '')}</td>
                             <td>{player.get('digs', '')}</td>
@@ -1643,7 +1672,7 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
         for player in stats['digs']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('sp', '')}</td>
                             <td>{player.get('digs', '')}</td>
                             <td>{player.get('avg', '')}</td>
@@ -1872,7 +1901,7 @@ def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field
         for player in stats['scoring']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('gp', '')}</td>
                             <td>{player.get('g', '')}</td>
                             <td>{player.get('a', '')}</td>
@@ -1906,7 +1935,7 @@ def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field
         for player in stats['goalkeepers']:
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
-                            <td>{player.get('school', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
                             <td>{player.get('gp', '')}</td>
                             <td>{player.get('ga', '')}</td>
                             <td>{player.get('so', '')}</td>
