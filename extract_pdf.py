@@ -779,6 +779,207 @@ def parse_field_hockey_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
     return result
 
 
+def parse_cross_country_stats(text: str) -> Dict[str, List[Dict[str, Any]]]:
+    """
+    Parse cross country player statistics from extracted text.
+
+    Returns dict with keys: boys, girls
+    """
+    stats = {
+        'boys': [],
+        'girls': []
+    }
+
+    # Split text into lines for easier parsing
+    lines = text.split('\n')
+
+    # Find "Top 5K Times" section
+    top_5k_idx = None
+    for i, line in enumerate(lines):
+        if line.strip() == 'Top 5K Times':
+            top_5k_idx = i
+            break
+
+    if top_5k_idx is None:
+        print("DEBUG [Cross Country]: No 'Top 5K Times' section found")
+        return stats
+
+    print(f"DEBUG [Cross Country]: Found 'Top 5K Times' at line {top_5k_idx}")
+
+    # Find BOYS and GIRLS sections
+    boys_idx = None
+    girls_idx = None
+
+    for i in range(top_5k_idx, len(lines)):
+        stripped = lines[i].strip()
+        if stripped == 'BOYS':
+            boys_idx = i
+            print(f"DEBUG [Cross Country]: Found BOYS section at line {i}")
+        elif stripped == 'GIRLS':
+            girls_idx = i
+            print(f"DEBUG [Cross Country]: Found GIRLS section at line {i}")
+            break
+
+    # Parse Boys section
+    if boys_idx is not None and girls_idx is not None:
+        for i in range(boys_idx + 1, girls_idx):
+            stripped = lines[i].strip()
+            if not stripped or 'Staff photo' in stripped:
+                continue
+            # Parse line: "Name, School, Time"
+            if ',' in stripped:
+                parts = stripped.split(',')
+                if len(parts) >= 3:
+                    name = parts[0].strip()
+                    school = parts[1].strip()
+                    time = parts[2].strip()
+                    stats['boys'].append({'raw': stripped})
+
+    # Parse Girls section
+    if girls_idx is not None:
+        for i in range(girls_idx + 1, len(lines)):
+            stripped = lines[i].strip()
+            # Stop at next major section
+            if any(keyword in stripped for keyword in ['CENTRAL MARYLAND', 'FCPS', 'Staff photo']):
+                break
+            if not stripped:
+                continue
+            # Parse line: "Name, School, Time"
+            if ',' in stripped:
+                parts = stripped.split(',')
+                if len(parts) >= 3:
+                    name = parts[0].strip()
+                    school = parts[1].strip()
+                    time = parts[2].strip()
+                    stats['girls'].append({'raw': stripped})
+
+    print(f"DEBUG [Cross Country]: Parsed {len(stats['boys'])} boys and {len(stats['girls'])} girls")
+    return stats
+
+
+def parse_cross_country_player_entry(raw: str) -> Dict[str, Any]:
+    """
+    Parse a raw cross country player entry into structured data.
+
+    Args:
+        raw: Raw text like "Joshua Rothery, Urbana, 16:00.4"
+
+    Returns:
+        Dict with player name, school, and time
+    """
+    if ',' not in raw:
+        return None
+
+    parts = raw.split(',')
+    if len(parts) < 3:
+        return None
+
+    player_name = parts[0].strip()
+    school = parts[1].strip()
+    time = parts[2].strip()
+
+    return {
+        'player': player_name,
+        'school': school,
+        'time': time
+    }
+
+
+def parse_golf_stats(text: str) -> List[Dict[str, Any]]:
+    """
+    Parse golf player statistics from extracted text.
+
+    Returns list of player stats
+    """
+    stats = []
+
+    # Split text into lines for easier parsing
+    lines = text.split('\n')
+
+    # Find Golf section - look for "Player, School" followed by "9-hole Average"
+    golf_idx = None
+    for i, line in enumerate(lines):
+        if 'Player, School' in line:
+            # Check if next line has "9-hole Average"
+            if i + 1 < len(lines) and '9-hole' in lines[i + 1]:
+                golf_idx = i
+                break
+
+    if golf_idx is None:
+        print("DEBUG [Golf]: No golf section found")
+        return stats
+
+    print(f"DEBUG [Golf]: Found golf section at line {golf_idx}")
+
+    # Parse golf entries starting after the header lines
+    # Skip "Player, School" and "9-hole Average" lines
+    for i in range(golf_idx + 2, len(lines)):
+        stripped = lines[i].strip()
+
+        # Stop conditions
+        if any(keyword in stripped for keyword in ['CENTRAL MARYLAND', 'FCPS', 'Staff photo', 'SPIRES DIVISION', 'POTOMAC DIVISION']):
+            break
+
+        if not stripped:
+            continue
+
+        # Golf entries have format: "Name, School" on one line, average on next
+        # Collect player line and next line with average
+        if ',' in stripped and not any(char.isdigit() for char in stripped[-5:]):
+            # This is a player name line, get the average from next line
+            if i + 1 < len(lines):
+                next_line = lines[i + 1].strip()
+                # Check if next line is a number (the average)
+                try:
+                    float(next_line)
+                    # Combine player line with average
+                    stats.append({'raw': f"{stripped}\t{next_line}"})
+                except ValueError:
+                    # Not a number, might be combined on same line
+                    stats.append({'raw': stripped})
+
+    print(f"DEBUG [Golf]: Parsed {len(stats)} golf entries")
+    return stats
+
+
+def parse_golf_player_entry(raw: str) -> Dict[str, Any]:
+    """
+    Parse a raw golf player entry into structured data.
+
+    Args:
+        raw: Raw text like "Landon Tudor, Oakdale 35" or "Landon Tudor, Oakdale\t35"
+
+    Returns:
+        Dict with player name, school, and average
+    """
+    if ',' not in raw:
+        return None
+
+    # First split by comma to get name and rest
+    parts = raw.split(',', 1)
+    player_name = parts[0].strip()
+    rest = parts[1].strip()
+
+    # Now split rest to get school and average
+    # Try tab delimiter first, then spaces
+    tokens = re.split(r'[\t\s]+', rest)
+    tokens = [t.strip() for t in tokens if t.strip()]
+
+    if not tokens:
+        return None
+
+    # Last token should be the average (number)
+    average = tokens[-1] if tokens else ''
+    # Everything else is the school name
+    school = ' '.join(tokens[:-1]) if len(tokens) > 1 else tokens[0]
+
+    return {
+        'player': player_name,
+        'school': school,
+        'average': average
+    }
+
+
 def structure_stats(raw_stats: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
     """Convert raw stats to structured format."""
     structured = {
@@ -841,6 +1042,34 @@ def structure_field_hockey_stats(raw_stats: Dict[str, List[Dict]]) -> Dict[str, 
             parsed = parse_field_hockey_player_entry(entry['raw'], stat_type)
             if parsed:
                 structured[stat_type].append(parsed)
+
+    return structured
+
+
+def structure_cross_country_stats(raw_stats: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
+    """Convert raw cross country stats to structured format."""
+    structured = {
+        'boys': [],
+        'girls': []
+    }
+
+    for gender in ['boys', 'girls']:
+        for entry in raw_stats[gender]:
+            parsed = parse_cross_country_player_entry(entry['raw'])
+            if parsed:
+                structured[gender].append(parsed)
+
+    return structured
+
+
+def structure_golf_stats(raw_stats: List[Dict]) -> List[Dict]:
+    """Convert raw golf stats to structured format."""
+    structured = []
+
+    for entry in raw_stats:
+        parsed = parse_golf_player_entry(entry['raw'])
+        if parsed:
+            structured.append(parsed)
 
     return structured
 
@@ -1965,6 +2194,482 @@ def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field
     return html
 
 
+def generate_cross_country_html(stats: Dict[str, List[Dict]], sport: str = "Cross Country") -> str:
+    """Generate HTML page for cross country player stats."""
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{sport} Top Times - High School Hangout (Oct 23, 2025)</title>
+    <style>
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }}
+
+        .container {{
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+
+        header {{
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 20px;
+        }}
+
+        h1 {{
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }}
+
+        .subtitle {{
+            color: #666;
+            font-size: 16px;
+            margin: 5px 0;
+        }}
+
+        .sport-section {{
+            margin: 30px 0;
+        }}
+
+        .section-title {{
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #666;
+            text-transform: uppercase;
+        }}
+
+        .stats-table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }}
+
+        .stats-table th,
+        .stats-table td {{
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }}
+
+        .stats-table thead th {{
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }}
+
+        .stats-table th:first-child,
+        .stats-table th:nth-child(2) {{
+            text-align: left;
+        }}
+
+        .stats-table td {{
+            text-align: center;
+        }}
+
+        .stats-table td:first-child,
+        .stats-table td:nth-child(2) {{
+            text-align: left;
+        }}
+
+        .stats-table td:first-child {{
+            font-weight: 600;
+            color: #333;
+        }}
+
+        .stats-table tbody tr:nth-child(even) {{
+            background-color: #f9f9f9;
+        }}
+
+        .stats-table tbody tr:hover {{
+            background-color: #e8f4f8;
+            transition: background-color 0.2s ease;
+        }}
+
+        .rank {{
+            color: #666;
+            font-weight: bold;
+        }}
+
+        footer {{
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }}
+
+        footer p {{
+            margin: 5px 0;
+        }}
+
+        /* Responsive design */
+        @media (max-width: 768px) {{
+            body {{
+                padding: 10px;
+            }}
+
+            .container {{
+                padding: 20px;
+            }}
+
+            h1 {{
+                font-size: 24px;
+            }}
+
+            .section-title {{
+                font-size: 20px;
+            }}
+
+            .stats-table th,
+            .stats-table td {{
+                padding: 8px 10px;
+                font-size: 14px;
+            }}
+        }}
+
+        @media print {{
+            body {{
+                background-color: white;
+                padding: 0;
+            }}
+
+            .container {{
+                box-shadow: none;
+            }}
+
+            .stats-table tbody tr:hover {{
+                background-color: inherit;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{sport} Top 5K Times</h1>
+            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
+        </header>
+
+        <main>
+"""
+
+    # Boys Top Times
+    if stats.get('boys'):
+        html += """
+            <div class="sport-section">
+                <h2 class="section-title">Boys Top 5K Times</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Runner</th>
+                            <th>School</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+        for idx, runner in enumerate(stats['boys'], 1):
+            html += f"""                        <tr>
+                            <td class="rank">{idx}</td>
+                            <td>{runner.get('player', '')}</td>
+                            <td>{expand_team_name(runner.get('school', ''))}</td>
+                            <td>{runner.get('time', '')}</td>
+                        </tr>
+"""
+        html += """                    </tbody>
+                </table>
+            </div>
+"""
+
+    # Girls Top Times
+    if stats.get('girls'):
+        html += """
+            <div class="sport-section">
+                <h2 class="section-title">Girls Top 5K Times</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Runner</th>
+                            <th>School</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+        for idx, runner in enumerate(stats['girls'], 1):
+            html += f"""                        <tr>
+                            <td class="rank">{idx}</td>
+                            <td>{runner.get('player', '')}</td>
+                            <td>{expand_team_name(runner.get('school', ''))}</td>
+                            <td>{runner.get('time', '')}</td>
+                        </tr>
+"""
+        html += """                    </tbody>
+                </table>
+            </div>
+"""
+
+    html += """
+        </main>
+
+        <footer>
+            <p><strong>Note:</strong> Times are for 5K (5000 meter) races</p>
+            <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
+            <p>Statistics submitted by coaches and team statisticians</p>
+        </footer>
+    </div>
+</body>
+</html>
+"""
+
+    return html
+
+
+def generate_golf_html(stats: List[Dict], sport: str = "Golf") -> str:
+    """Generate HTML page for golf player stats."""
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{sport} Player Stats - High School Hangout (Oct 23, 2025)</title>
+    <style>
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }}
+
+        .container {{
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+
+        header {{
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 20px;
+        }}
+
+        h1 {{
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }}
+
+        .subtitle {{
+            color: #666;
+            font-size: 16px;
+            margin: 5px 0;
+        }}
+
+        .sport-section {{
+            margin: 30px 0;
+        }}
+
+        .section-title {{
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #666;
+            text-transform: uppercase;
+        }}
+
+        .stats-table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }}
+
+        .stats-table th,
+        .stats-table td {{
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }}
+
+        .stats-table thead th {{
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }}
+
+        .stats-table th:first-child,
+        .stats-table th:nth-child(2) {{
+            text-align: left;
+        }}
+
+        .stats-table td {{
+            text-align: center;
+        }}
+
+        .stats-table td:first-child,
+        .stats-table td:nth-child(2) {{
+            text-align: left;
+        }}
+
+        .stats-table td:first-child {{
+            font-weight: 600;
+            color: #333;
+        }}
+
+        .stats-table tbody tr:nth-child(even) {{
+            background-color: #f9f9f9;
+        }}
+
+        .stats-table tbody tr:hover {{
+            background-color: #e8f4f8;
+            transition: background-color 0.2s ease;
+        }}
+
+        footer {{
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }}
+
+        footer p {{
+            margin: 5px 0;
+        }}
+
+        /* Responsive design */
+        @media (max-width: 768px) {{
+            body {{
+                padding: 10px;
+            }}
+
+            .container {{
+                padding: 20px;
+            }}
+
+            h1 {{
+                font-size: 24px;
+            }}
+
+            .section-title {{
+                font-size: 20px;
+            }}
+
+            .stats-table th,
+            .stats-table td {{
+                padding: 8px 10px;
+                font-size: 14px;
+            }}
+        }}
+
+        @media print {{
+            body {{
+                background-color: white;
+                padding: 0;
+            }}
+
+            .container {{
+                box-shadow: none;
+            }}
+
+            .stats-table tbody tr:hover {{
+                background-color: inherit;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{sport} Player Leaders</h1>
+            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
+        </header>
+
+        <main>
+            <div class="sport-section">
+                <h2 class="section-title">9-Hole Scoring Average</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+
+    for player in stats:
+        html += f"""                        <tr>
+                            <td>{player.get('player', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
+                            <td>{player.get('average', '')}</td>
+                        </tr>
+"""
+
+    html += """                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong>Note:</strong> Average scores are for 9-hole rounds</p>
+            <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
+            <p>Statistics submitted by coaches and team statisticians</p>
+        </footer>
+    </div>
+</body>
+</html>
+"""
+
+    return html
+
+
 def process_sport(text: str, sport_name: str, section_index: int, file_prefix: str):
     """Process a single sport's stats."""
     print(f"\n{'='*60}")
@@ -2201,6 +2906,125 @@ def process_field_hockey_sport(text: str):
     print(f"\n✓ {sport_name} player stats extraction and HTML generation complete!")
 
 
+def process_cross_country_sport(text: str):
+    """Process cross country stats."""
+    sport_name = "Cross Country"
+    file_prefix = "cross_country"
+
+    print(f"\n{'='*60}")
+    print(f"Processing {sport_name}")
+    print(f"{'='*60}")
+
+    # Parse stats
+    print(f"\nParsing {sport_name} statistics...")
+    stats_raw = parse_cross_country_stats(text)
+
+    # Save raw stats
+    raw_filename = f'{file_prefix}_stats_raw.json'
+    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+        json.dump(stats_raw, f, indent=2)
+
+    # Structure the stats
+    print(f"\nStructuring data...")
+    stats = structure_cross_country_stats(stats_raw)
+
+    # Save structured stats
+    stats_filename = f'{file_prefix}_stats.json'
+    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+        json.dump(stats, f, indent=2)
+
+    print(f"\n{sport_name} stats parsed:")
+    print(f"  Boys top times: {len(stats['boys'])} entries")
+    print(f"  Girls top times: {len(stats['girls'])} entries")
+
+    # Show sample data
+    if stats['boys']:
+        print(f"\nSample boys leader:")
+        leader = stats['boys'][0]
+        print(f"  {leader.get('player', 'N/A')}, {leader.get('school', 'N/A')}")
+        print(f"  Time: {leader.get('time', 'N/A')}")
+
+    print(f"\nStats saved to {stats_filename}")
+
+    # Generate HTML
+    print(f"\nGenerating HTML page...")
+    html = generate_cross_country_html(stats, sport_name)
+
+    # Save HTML to both hs_hangout and docs directories
+    html_filename = f'{file_prefix}_2025_10_23.html'
+    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
+    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+
+    with open(output_path_hs, 'w') as f:
+        f.write(html)
+    print(f"HTML saved to: {output_path_hs}")
+
+    with open(output_path_docs, 'w') as f:
+        f.write(html)
+    print(f"HTML saved to: {output_path_docs}")
+
+    print(f"\n✓ {sport_name} stats extraction and HTML generation complete!")
+
+
+def process_golf_sport(text: str):
+    """Process golf stats."""
+    sport_name = "Golf"
+    file_prefix = "golf"
+
+    print(f"\n{'='*60}")
+    print(f"Processing {sport_name}")
+    print(f"{'='*60}")
+
+    # Parse stats
+    print(f"\nParsing {sport_name} statistics...")
+    stats_raw = parse_golf_stats(text)
+
+    # Save raw stats
+    raw_filename = f'{file_prefix}_stats_raw.json'
+    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+        json.dump(stats_raw, f, indent=2)
+
+    # Structure the stats
+    print(f"\nStructuring data...")
+    stats = structure_golf_stats(stats_raw)
+
+    # Save structured stats
+    stats_filename = f'{file_prefix}_stats.json'
+    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+        json.dump(stats, f, indent=2)
+
+    print(f"\n{sport_name} stats parsed:")
+    print(f"  Player leaders: {len(stats)} entries")
+
+    # Show sample data
+    if stats:
+        print(f"\nSample leader:")
+        leader = stats[0]
+        print(f"  {leader.get('player', 'N/A')}, {leader.get('school', 'N/A')}")
+        print(f"  Average: {leader.get('average', 'N/A')}")
+
+    print(f"\nStats saved to {stats_filename}")
+
+    # Generate HTML
+    print(f"\nGenerating HTML page...")
+    html = generate_golf_html(stats, sport_name)
+
+    # Save HTML to both hs_hangout and docs directories
+    html_filename = f'{file_prefix}_2025_10_23.html'
+    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
+    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+
+    with open(output_path_hs, 'w') as f:
+        f.write(html)
+    print(f"HTML saved to: {output_path_hs}")
+
+    with open(output_path_docs, 'w') as f:
+        f.write(html)
+    print(f"HTML saved to: {output_path_docs}")
+
+    print(f"\n✓ {sport_name} stats extraction and HTML generation complete!")
+
+
 def main():
     """Main extraction function."""
     pdf_path = '/home/user/frederick_sports/hs_hangout/2025_10_23.pdf'
@@ -2236,6 +3060,12 @@ def main():
 
     # Process field hockey
     process_field_hockey_sport(text)
+
+    # Process cross country
+    process_cross_country_sport(text)
+
+    # Process golf
+    process_golf_sport(text)
 
     print(f"\n{'='*60}")
     print("ALL SPORTS COMPLETE!")

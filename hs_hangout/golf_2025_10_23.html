@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Player Stats - High School Hangout (Oct 23, 2025)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .sport-section {
+            margin: 30px 0;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #666;
+            text-transform: uppercase;
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .stats-table th,
+        .stats-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        .stats-table thead th {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .stats-table th:first-child,
+        .stats-table th:nth-child(2) {
+            text-align: left;
+        }
+
+        .stats-table td {
+            text-align: center;
+        }
+
+        .stats-table td:first-child,
+        .stats-table td:nth-child(2) {
+            text-align: left;
+        }
+
+        .stats-table td:first-child {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .stats-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .stats-table tbody tr:hover {
+            background-color: #e8f4f8;
+            transition: background-color 0.2s ease;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .stats-table th,
+            .stats-table td {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .stats-table tbody tr:hover {
+                background-color: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Golf Player Leaders</h1>
+            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
+        </header>
+
+        <main>
+            <div class="sport-section">
+                <h2 class="section-title">9-Hole Scoring Average</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Landon Tudor</td>
+                            <td>Oakdale</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>Callen Edmonston</td>
+                            <td>Catoctin</td>
+                            <td>36.4</td>
+                        </tr>
+                        <tr>
+                            <td>Cooper Moskowitz</td>
+                            <td>Middletown</td>
+                            <td>37.1</td>
+                        </tr>
+                        <tr>
+                            <td>Claire Son</td>
+                            <td>Urbana</td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td>Zac Taylor</td>
+                            <td>Oakdale</td>
+                            <td>38.4</td>
+                        </tr>
+                        <tr>
+                            <td>Clayton Bowman</td>
+                            <td>Urbana</td>
+                            <td>38.6</td>
+                        </tr>
+                        <tr>
+                            <td>Ollie Witt</td>
+                            <td>Middletown</td>
+                            <td>38.6</td>
+                        </tr>
+                        <tr>
+                            <td>Caden Roosa</td>
+                            <td>Oakdale</td>
+                            <td>38.8</td>
+                        </tr>
+                        <tr>
+                            <td>Celine Lieu</td>
+                            <td>Walkersville</td>
+                            <td>39.2</td>
+                        </tr>
+                        <tr>
+                            <td>Aidan Nilan</td>
+                            <td>Oakdale</td>
+                            <td>39.2</td>
+                        </tr>
+                        <tr>
+                            <td>Schaffer Wisnom</td>
+                            <td>Linganore</td>
+                            <td>39.5</td>
+                        </tr>
+                        <tr>
+                            <td>Johann Aguillon</td>
+                            <td>Linganore</td>
+                            <td>39.8</td>
+                        </tr>
+                        <tr>
+                            <td>Joseph Pearson</td>
+                            <td>Linganore</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Charlie Scarzello</td>
+                            <td>Oakdale</td>
+                            <td>40.6</td>
+                        </tr>
+                        <tr>
+                            <td>Bodie Winfield</td>
+                            <td>Middletown</td>
+                            <td>40.6</td>
+                        </tr>
+                        <tr>
+                            <td>Layden Barker</td>
+                            <td>Walkersville</td>
+                            <td>40.9</td>
+                        </tr>
+                        <tr>
+                            <td>Collin Basford</td>
+                            <td>Tuscarora</td>
+                            <td>41</td>
+                        </tr>
+                        <tr>
+                            <td>Emmett Russell</td>
+                            <td>Tuscarora</td>
+                            <td>41</td>
+                        </tr>
+                        <tr>
+                            <td>Jackson Stanley</td>
+                            <td>Linganore</td>
+                            <td>41</td>
+                        </tr>
+                        <tr>
+                            <td>Camden Forsythe</td>
+                            <td>Urbana</td>
+                            <td>41.4</td>
+                        </tr>
+                        <tr>
+                            <td>Madison Boucher</td>
+                            <td>Urbana</td>
+                            <td>41.6</td>
+                        </tr>
+                        <tr>
+                            <td>Luke Del Balzo</td>
+                            <td>Brunswick</td>
+                            <td>41.6</td>
+                        </tr>
+                        <tr>
+                            <td>Heath Detterline</td>
+                            <td>Oakdale</td>
+                            <td>41.6</td>
+                        </tr>
+                        <tr>
+                            <td>Tyler Spruill</td>
+                            <td>Urbana</td>
+                            <td>42</td>
+                        </tr>
+                        <tr>
+                            <td>Colby Burke</td>
+                            <td>Linganore</td>
+                            <td>42.5</td>
+                        </tr>
+                        <tr>
+                            <td>Gavin Flyte</td>
+                            <td>Urbana</td>
+                            <td>42.5</td>
+                        </tr>
+                        <tr>
+                            <td>Grant Wenner</td>
+                            <td>Brunswick</td>
+                            <td>42.6</td>
+                        </tr>
+                        <tr>
+                            <td>Clayton Frazier</td>
+                            <td>Linganore</td>
+                            <td>42.8</td>
+                        </tr>
+                        <tr>
+                            <td>Joseph Stefula</td>
+                            <td>Linganore</td>
+                            <td>42.9</td>
+                        </tr>
+                        <tr>
+                            <td>Jared Ricketts</td>
+                            <td>Brunswick</td>
+                            <td>43.1</td>
+                        </tr>
+                        <tr>
+                            <td>Karl Meredith</td>
+                            <td>Linganore</td>
+                            <td>43.2</td>
+                        </tr>
+                        <tr>
+                            <td>Noah Powell</td>
+                            <td>Middletown</td>
+                            <td>43.3</td>
+                        </tr>
+                        <tr>
+                            <td>John Cochrane</td>
+                            <td>Urbana</td>
+                            <td>43.8</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob Moore</td>
+                            <td>Middletown</td>
+                            <td>44</td>
+                        </tr>
+                        <tr>
+                            <td>Trevor Pfeil</td>
+                            <td>Walkersville</td>
+                            <td>44.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong>Note:</strong> Average scores are for 9-hole rounds</p>
+            <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
+            <p>Statistics submitted by coaches and team statisticians</p>
+        </footer>
+    </div>
+</body>
+</html>
