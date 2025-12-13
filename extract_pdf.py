@@ -1074,7 +1074,7 @@ def structure_golf_stats(raw_stats: List[Dict]) -> List[Dict]:
     return structured
 
 
-def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football") -> str:
+def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football", defensive_stats: List[Dict[str, Any]] = None) -> str:
     """Generate HTML page for player stats."""
 
     html = f"""<!DOCTYPE html>
@@ -1353,12 +1353,43 @@ def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football") -> str:
             </div>
 """
 
+    # Defensive Leaders (if provided)
+    if defensive_stats:
+        html += """
+            <div class="sport-section">
+                <h2 class="section-title">Defensive Leaders</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>Tkl</th>
+                            <th>TFL</th>
+                            <th>Int</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+        for player in defensive_stats:
+            html += f"""                        <tr>
+                            <td>{player.get('player', '')}</td>
+                            <td>{expand_team_name(player.get('school', ''))}</td>
+                            <td>{player.get('tkl', '')}</td>
+                            <td>{player.get('tfl', '')}</td>
+                            <td>{player.get('int', '')}</td>
+                        </tr>
+"""
+        html += """                    </tbody>
+                </table>
+            </div>
+"""
+
     html += """
         </main>
 
         <footer>
             <p><strong>Column Abbreviations:</strong></p>
-            <p>Att = Attempts, Yds = Yards, Avg = Average, TD = Touchdowns, Comp = Completions, Pct = Completion Percentage, Rec = Receptions</p>
+            <p>Att = Attempts, Yds = Yards, Avg = Average, TD = Touchdowns, Comp = Completions, Pct = Completion Percentage, Rec = Receptions, Tkl = Tackles, TFL = Tackles for Loss, Int = Interceptions</p>
             <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
             <p>Statistics submitted by coaches and team statisticians</p>
         </footer>
@@ -2682,7 +2713,7 @@ def process_sport(text: str, sport_name: str, section_index: int, file_prefix: s
 
     # Save raw stats
     raw_filename = f'{file_prefix}_stats_raw.json'
-    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+    with open(f'{raw_filename}', 'w') as f:
         json.dump(stats_raw, f, indent=2)
 
     # Structure the stats
@@ -2691,7 +2722,7 @@ def process_sport(text: str, sport_name: str, section_index: int, file_prefix: s
 
     # Save structured stats
     stats_filename = f'{file_prefix}_stats.json'
-    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+    with open(f'{stats_filename}', 'w') as f:
         json.dump(stats, f, indent=2)
 
     print(f"\n{sport_name} stats parsed:")
@@ -2708,14 +2739,22 @@ def process_sport(text: str, sport_name: str, section_index: int, file_prefix: s
 
     print(f"\nStats saved to {stats_filename}")
 
+    # Load defensive stats if this is Girls Flag Football
+    defensive_stats = None
+    if sport_name == "Girls Flag Football":
+        print(f"\nLoading defensive stats...")
+        defensive_stats = parse_defensive_stats()
+        if defensive_stats:
+            print(f"  Loaded {len(defensive_stats)} defensive stat entries")
+
     # Generate HTML
     print(f"\nGenerating HTML page...")
-    html = generate_html(stats, sport_name)
+    html = generate_html(stats, sport_name, defensive_stats=defensive_stats)
 
     # Save HTML to both hs_hangout and docs directories
-    html_filename = f'player_stats_{file_prefix}_2025_10_23.html'
-    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
-    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+    html_filename = f'player_stats_{file_prefix}_2025_12_06.html'
+    output_path_hs = f'hs_hangout/{html_filename}'
+    output_path_docs = f'docs/{html_filename}'
 
     with open(output_path_hs, 'w') as f:
         f.write(html)
@@ -2740,7 +2779,7 @@ def process_soccer_sport(text: str, sport_name: str, file_prefix: str):
 
     # Save raw stats
     raw_filename = f'{file_prefix}_stats_raw.json'
-    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+    with open(f'{raw_filename}', 'w') as f:
         json.dump(stats_raw, f, indent=2)
 
     # Structure the stats
@@ -2749,7 +2788,7 @@ def process_soccer_sport(text: str, sport_name: str, file_prefix: str):
 
     # Save structured stats
     stats_filename = f'{file_prefix}_stats.json'
-    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+    with open(f'{stats_filename}', 'w') as f:
         json.dump(stats, f, indent=2)
 
     print(f"\n{sport_name} stats parsed:")
@@ -2770,9 +2809,9 @@ def process_soccer_sport(text: str, sport_name: str, file_prefix: str):
     html = generate_soccer_html(stats, sport_name)
 
     # Save HTML to both hs_hangout and docs directories
-    html_filename = f'player_stats_{file_prefix}_2025_10_23.html'
-    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
-    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+    html_filename = f'player_stats_{file_prefix}_2025_12_06.html'
+    output_path_hs = f'hs_hangout/{html_filename}'
+    output_path_docs = f'docs/{html_filename}'
 
     with open(output_path_hs, 'w') as f:
         f.write(html)
@@ -2800,7 +2839,7 @@ def process_volleyball_sport(text: str):
 
     # Save raw stats
     raw_filename = f'{file_prefix}_stats_raw.json'
-    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+    with open(f'{raw_filename}', 'w') as f:
         json.dump(stats_raw, f, indent=2)
 
     # Structure the stats
@@ -2809,7 +2848,7 @@ def process_volleyball_sport(text: str):
 
     # Save structured stats
     stats_filename = f'{file_prefix}_stats.json'
-    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+    with open(f'{stats_filename}', 'w') as f:
         json.dump(stats, f, indent=2)
 
     print(f"\n{sport_name} stats parsed:")
@@ -2831,9 +2870,9 @@ def process_volleyball_sport(text: str):
     html = generate_volleyball_html(stats, sport_name)
 
     # Save HTML to both hs_hangout and docs directories
-    html_filename = f'player_stats_{file_prefix}_2025_10_23.html'
-    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
-    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+    html_filename = f'player_stats_{file_prefix}_2025_12_06.html'
+    output_path_hs = f'hs_hangout/{html_filename}'
+    output_path_docs = f'docs/{html_filename}'
 
     with open(output_path_hs, 'w') as f:
         f.write(html)
@@ -2861,7 +2900,7 @@ def process_field_hockey_sport(text: str):
 
     # Save raw stats
     raw_filename = f'{file_prefix}_stats_raw.json'
-    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+    with open(f'{raw_filename}', 'w') as f:
         json.dump(stats_raw, f, indent=2)
 
     # Structure the stats
@@ -2870,7 +2909,7 @@ def process_field_hockey_sport(text: str):
 
     # Save structured stats
     stats_filename = f'{file_prefix}_stats.json'
-    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+    with open(f'{stats_filename}', 'w') as f:
         json.dump(stats, f, indent=2)
 
     print(f"\n{sport_name} stats parsed:")
@@ -2891,9 +2930,9 @@ def process_field_hockey_sport(text: str):
     html = generate_field_hockey_html(stats, sport_name)
 
     # Save HTML to both hs_hangout and docs directories
-    html_filename = f'player_stats_{file_prefix}_2025_10_23.html'
-    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
-    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+    html_filename = f'player_stats_{file_prefix}_2025_12_06.html'
+    output_path_hs = f'hs_hangout/{html_filename}'
+    output_path_docs = f'docs/{html_filename}'
 
     with open(output_path_hs, 'w') as f:
         f.write(html)
@@ -2921,7 +2960,7 @@ def process_cross_country_sport(text: str):
 
     # Save raw stats
     raw_filename = f'{file_prefix}_stats_raw.json'
-    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+    with open(f'{raw_filename}', 'w') as f:
         json.dump(stats_raw, f, indent=2)
 
     # Structure the stats
@@ -2930,7 +2969,7 @@ def process_cross_country_sport(text: str):
 
     # Save structured stats
     stats_filename = f'{file_prefix}_stats.json'
-    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+    with open(f'{stats_filename}', 'w') as f:
         json.dump(stats, f, indent=2)
 
     print(f"\n{sport_name} stats parsed:")
@@ -2951,9 +2990,9 @@ def process_cross_country_sport(text: str):
     html = generate_cross_country_html(stats, sport_name)
 
     # Save HTML to both hs_hangout and docs directories
-    html_filename = f'{file_prefix}_2025_10_23.html'
-    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
-    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+    html_filename = f'{file_prefix}_2025_12_06.html'
+    output_path_hs = f'hs_hangout/{html_filename}'
+    output_path_docs = f'docs/{html_filename}'
 
     with open(output_path_hs, 'w') as f:
         f.write(html)
@@ -2981,7 +3020,7 @@ def process_golf_sport(text: str):
 
     # Save raw stats
     raw_filename = f'{file_prefix}_stats_raw.json'
-    with open(f'/home/user/frederick_sports/{raw_filename}', 'w') as f:
+    with open(f'{raw_filename}', 'w') as f:
         json.dump(stats_raw, f, indent=2)
 
     # Structure the stats
@@ -2990,7 +3029,7 @@ def process_golf_sport(text: str):
 
     # Save structured stats
     stats_filename = f'{file_prefix}_stats.json'
-    with open(f'/home/user/frederick_sports/{stats_filename}', 'w') as f:
+    with open(f'{stats_filename}', 'w') as f:
         json.dump(stats, f, indent=2)
 
     print(f"\n{sport_name} stats parsed:")
@@ -3010,9 +3049,9 @@ def process_golf_sport(text: str):
     html = generate_golf_html(stats, sport_name)
 
     # Save HTML to both hs_hangout and docs directories
-    html_filename = f'{file_prefix}_2025_10_23.html'
-    output_path_hs = f'/home/user/frederick_sports/hs_hangout/{html_filename}'
-    output_path_docs = f'/home/user/frederick_sports/docs/{html_filename}'
+    html_filename = f'{file_prefix}_2025_12_06.html'
+    output_path_hs = f'hs_hangout/{html_filename}'
+    output_path_docs = f'docs/{html_filename}'
 
     with open(output_path_hs, 'w') as f:
         f.write(html)
@@ -3025,6 +3064,62 @@ def process_golf_sport(text: str):
     print(f"\n✓ {sport_name} stats extraction and HTML generation complete!")
 
 
+def parse_defensive_stats(file_path: str = 'FlagDefenseStats.txt') -> List[Dict[str, Any]]:
+    """
+    Parse defensive stats from the FlagDefenseStats.txt file.
+
+    Returns:
+        List of dicts with player defensive statistics
+    """
+    defensive_stats = []
+
+    try:
+        with open(file_path, 'r') as f:
+            lines = f.readlines()
+
+        # Skip header lines and parse data
+        for line in lines[3:]:  # Skip "Defense", blank line, and column headers
+            line = line.strip()
+            if not line:
+                continue
+
+            # Split by semicolon
+            parts = line.split(';')
+            if len(parts) != 4:
+                continue
+
+            # Parse player and school
+            player_school = parts[0].strip()
+            if ',' in player_school:
+                player, school = player_school.split(',', 1)
+                player = player.strip()
+                school = school.strip()
+            else:
+                continue
+
+            # Parse stats: Tkl, TFL, Int
+            tkl_val = parts[1].strip()
+            tfl_val = parts[2].strip()
+            int_val = parts[3].strip()
+
+            defensive_stats.append({
+                'player': player,
+                'school': school,
+                'tkl': tkl_val if tkl_val != '-' else '0',
+                'tfl': tfl_val if tfl_val != '-' else '0',
+                'int': int_val if int_val != '-' else '0'
+            })
+
+        print(f"DEBUG: Parsed {len(defensive_stats)} defensive stats entries")
+
+    except FileNotFoundError:
+        print(f"Warning: {file_path} not found, skipping defensive stats")
+    except Exception as e:
+        print(f"Error parsing defensive stats: {e}")
+
+    return defensive_stats
+
+
 def main():
     """Main extraction function."""
     pdf_path = 'hs_hangout/2025_12_06.pdf'
@@ -3033,7 +3128,7 @@ def main():
     text = extract_text_from_pdf(pdf_path)
 
     # Save full text for inspection
-    with open('/home/user/frederick_sports/pdf_text.txt', 'w') as f:
+    with open('pdf_text.txt', 'w') as f:
         f.write(text)
     print(f"Full text saved to pdf_text.txt ({len(text)} characters)")
 

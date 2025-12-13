@@ -1,132 +1,26 @@
 {
-  "scoring": [
-    {
-      "raw": "Reese Rymon, Oakdale\t14\t20\t6\t46"
-    },
-    {
-      "raw": "Mia Marquart, Walkersville\t13\t17\t11\t45"
-    },
-    {
-      "raw": "Makenzie Kilcoyne, Urbana\t14\t16\t11\t43"
-    },
-    {
-      "raw": "Josey Shaffer, Catoctin\t13\t18\t7\t43"
-    },
-    {
-      "raw": "Maddie Myers, Catoctin\t13\t18\t1\t37"
-    },
-    {
-      "raw": "Lexi Bristow, Urbana\t14\t13\t10\t36"
-    },
-    {
-      "raw": "Alaina Petruzzello, Frederick\t 14\t12\t4\t28"
-    },
-    {
-      "raw": "Amaya Perera, Urbana\t14\t9\t9\t27"
-    },
-    {
-      "raw": "Addison Ridgely, Linganore\t10\t11\t4\t26"
-    },
-    {
-      "raw": "Destiny Shoemaker, Walk.\t13\t11\t4\t26"
-    },
-    {
-      "raw": "Autumn Jordan, Linganore\t10\t9\t6\t24"
-    },
-    {
-      "raw": "Emma Duncan, Urbana\t14\t10\t3\t23"
-    },
-    {
-      "raw": "Jordan Zimmerman, Ling.\t10\t8\t5\t21"
-    },
-    {
-      "raw": "Brianna McGuirl, Linganore\t10\t9\t1\t19"
-    },
-    {
-      "raw": "Jordyn Inskeep, Walkersville\t13\t8\t3\t19"
-    },
-    {
-      "raw": "Amilia Nasto, Linganore\t10\t8\t3\t19"
-    },
-    {
-      "raw": "Morgan Boisvert, Urbana\t14\t7\t3\t17"
-    },
-    {
-      "raw": "Natalie Keiser, Walkersville\t13\t7\t3\t17"
-    },
-    {
-      "raw": "Audra Mikalauskas, Oakdale\t14\t7\t2\t16"
-    },
-    {
-      "raw": "Kaitlyn Staiger, Oakdale\t14\t4\t6\t14"
-    },
-    {
-      "raw": "Jia Dunn, Walkersville\t13\t6\t1\t13"
-    },
-    {
-      "raw": "Riley Cadden, Walkersville\t13\t5\t3\t13"
-    },
-    {
-      "raw": "Ashley Tucci, Frederick\t14\t3\t6\t12"
-    },
-    {
-      "raw": "Kaitlyn Beltran, Middletown\t4\t3\t5\t11"
-    },
-    {
-      "raw": "Alexa Ropp, Oakdale\t14\t4\t3\t11"
-    },
-    {
-      "raw": "Elly Eskay, Urbana\t9\t3\t4\t10"
-    },
-    {
-      "raw": "Nora Davis, Frederick\t14\t5\t0\t10"
-    },
-    {
-      "raw": "Kyleigh McGee, Oakdale\t14\t4\t2\t10"
-    },
-    {
-      "raw": "Paisley Vance, Walkersville\t13\t4\t2\t10"
-    },
-    {
-      "raw": "Emily Dinh, Urbana\t14\t2\t6\t10"
-    },
-    {
-      "raw": "Charlotte Thibodeau, Urbana\t 14\t3\t3\t9"
-    },
-    {
-      "raw": "Ashlyn Porter, Oakdale\t14\t2\t5\t9"
-    },
-    {
-      "raw": "Kaylyn Gilligan, Urbana\t13\t4\t1\t9"
-    },
-    {
-      "raw": "Abi Graham, Oakdale\t14\t3\t2\t8"
-    },
-    {
-      "raw": "Maeve Day, Frederick\t14\t3\t2\t8"
-    }
-  ],
+  "scoring": [],
   "goalkeepers": [
     {
-      "raw": "Katie Schmitt, Urbana\t11.75\t 5\t 6.5\t.920\t0.42"
+      "raw": "Katie Schmitt, Urbana\t14.25\t 11\t 7.5\t .770\t0.45"
     },
     {
-      "raw": "Liya Yemane, Oakdale\t5.5\t 6\t 4.5\t .760\t 1.09"
+      "raw": "Allena Jaworski, Linganore\t20\t 17\t 10\t .910\t0.89"
     },
     {
-      "raw": "Allena Jaworski, Linganore\t9\t 10\t4\t.890\t 1.11"
+      "raw": "Liya Yemane, Oakdale\t6.5\t 7\t4.5\t .770\t 1.08"
     },
     {
-      "raw": "Iris Mokashi, Oakdale\t6.5\t 9\t3\t 845\t 1.38"
+      "raw": "Iris Mokashi, Oakdale\t7.5\t 11\t 3\t 830\t 1.47"
     },
     {
-      "raw": "Alexi Jones, Walkersville\t13\t 25\t6\t .725\t2.04"
+      "raw": "Alexi Jones, Walkersville\t14\t 25\t7\t .725\t 1.96"
     },
     {
-      "raw": "Shannon McCormack, Fred.\t 14\t 38\t4\t .801\t 2.71"
+      "raw": "Charlotte Felton, Middletown\t 15\t 33\t 6\t.708\t 2.15"
     },
     {
-      "raw": "Vivian Lewis, Catoctin\t13\t 36\t2\t .769\t 2.76"
+      "raw": "Vivian Lewis, Catoctin\t15\t 38\t 2\t.768\t2.53"
     }
   ]
 }

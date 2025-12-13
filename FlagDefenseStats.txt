@@ -1,0 +1,123 @@
+Defense
+
+Player;Tkl.;TFL;Int.
+
+Brooklyn Dommel, Linganore;67;0;3
+
+Jordyn Summers, Frederick;57;5;3
+
+Melysa Morales, Tuscarora;55;7;0
+
+Lily Savoie, Oakdale;53;0;1
+
+Makenna Roberts, Linganore;52;0;13
+
+Jenell Quansah, Linganore;52;6;0
+
+Morgan Booth, Oakdale;48;19;0
+
+Zoe Lange, Linganore;48;0;1
+
+Mackenna Patterson, Urbana;47;-;7
+
+Kessy Panou-Kwadjambou, Fred.;44;28;0
+
+Cahya Jefferson, Tuscarora;44;1;8
+
+Lily Childers, Linganore;43;12;0
+
+Brooke Putnam, Walkersville;43;0;9
+
+Layla Curtis, Tuscarora;42;7;3
+
+Maya Lambert, Linganore;42;0;2
+
+Lily Brown, Middletown;38;5;2
+
+Ava Carlson, Walkersville;38;1;1
+
+Charlotte Haga, Brunswick;38;0;3
+
+Christiana Smith, Catoctin;38;0;0
+
+Nyah Brooks, TJ;37;0;2
+
+Avery Ray, Oakdale;37;0;2
+
+Katherine Christian-Rawls, Fred.;37;0;1
+
+Madelyn Hartman, Oakdale;36;21;0
+
+Avery Schneider, Middletown;36;19;0
+
+Brynn Bradshaw, Tuscarora;35;4;1
+
+Ade Adebambo, TJ;35;0;4
+
+Sienna Russo, Brunswick;34;13;1
+
+Elianna Dougan, Urbana;33;24;0
+
+Kate Virgilio, Brunswick;33;12;0
+
+Rylie Howard, Frederick;33;0;1
+
+Addison Wadding, Tuscarora;32;18;0
+
+Kaitlyn Ramos, Linganore;32;17;0
+
+Addison Queen, Urbana;32;-;2
+
+Alanah Fore, Walkersville;31;4;0
+
+Ella Sadiku, Brunswick;31;0;3
+
+Sarah Chlebda, Oakdale;31;0;0
+
+Allie Miranda, Tuscarora;30;3;1
+
+Tatiana Gonzalez, Urbana;28;-;3
+
+Bella Sindler, Brunswick;27;6;2
+
+Natasha Hall, Frederick;26;3;1
+
+Becca Burgess, Middletown;26;1;4
+
+Savannah Seir, Brunswick;26;0;2
+
+Addison Dryman, Linganore;26;0;1
+
+Lily Ault, Brunswick;25;1;6
+
+Summer Singletary, Frederick;25;0;4
+
+Ava Pauley, Linganore;24;0;0
+
+Claire Duclos, Urbana;20;16;0
+
+Dominique Williams, Oakdale;20;8;0
+
+Lily Bastian, Urbana;19;11;0
+
+Kayla Tyler, Urbana;19;-;0
+
+Emma Rosales, Tuscarora;17;15;0
+
+Ava Higgins, Brunswick;17;0;10
+
+Aliyah Mahicka, TJ;15;10;0
+
+Katelyn Waguespack, TJ;14;0;10
+
+Molly Hagan, Oakdale;14;0;4
+
+Zoe Nso, TJ;12;0;7
+
+Solana Hindman, Brunswick;12;0;2
+
+Marlene Kolonda, Frederick;11;9;0
+
+Jocelyn Hayward, Frederick;10;0;3
+
+Jayna Day, Oakdale;10;0;1

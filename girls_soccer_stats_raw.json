@@ -1,126 +1,357 @@
 {
   "scoring": [
     {
-      "raw": "Brooke Clagett, Oakdale\t10\t22\t3\t47"
+      "raw": "Brooke Clagett, Oakdale\t17\t27\t4\t58"
     },
     {
-      "raw": "Emily Feaster, Oakdale\t13\t13\t3\t29"
+      "raw": "Emily Feaster, Oakdale\t19\t14\t3\t31"
     },
     {
-      "raw": "Olivia Baker, Catoctin\t12\t9\t5\t23"
+      "raw": "Adalyn DeGrange, Catoctin\t13\t8\t10\t26"
     },
     {
-      "raw": "Adalyn DeGrange, Catoctin\t12\t7\t9\t23"
+      "raw": "Olivia Baker, Catoctin\t13\t10\t5\t25"
     },
     {
-      "raw": "Laila Jackson, Brunswick\t13\t9\t4\t22"
+      "raw": "Fiona Collins, Oakdale\t19\t7\t10\t24"
     },
     {
-      "raw": "Jamisyn Kenyatta, Frederick\t11\t10\t2\t22"
+      "raw": "Laila Jackson, Brunswick\t16\t9\t4\t22"
     },
     {
-      "raw": "Fiona Collins, Oakdale\t13\t6\t8\t20"
+      "raw": "Jamisyn Kenyatta, Frederick\t13\t10\t2\t22"
     },
     {
-      "raw": "Katie Hargett, Brunswick\t13\t4\t9\t17"
+      "raw": "Emilee Schwier, Linganore\t16\t9\t4\t22"
     },
     {
-      "raw": "Emilee Schwier, Linganore\t12\t7\t3\t17"
+      "raw": "Katie Hargett, Brunswick\t16\t5\t10\t20"
     },
     {
-      "raw": "Reese Bender, Urbana\t9\t7\t1\t15"
+      "raw": "Mackenzie Thompson, Ling.\t 16\t8\t4\t20"
     },
     {
-      "raw": "Lexi Clagett, Oakdale\t13\t5\t5\t15"
+      "raw": "Reese Bender, Urbana\t13\t8\t1\t17"
     },
     {
-      "raw": "Leah Smallwood, Brunswick\t 13\t5\t5\t15"
+      "raw": "Lexi Clagett, Oakdale\t19\t6\t5\t17"
     },
     {
-      "raw": "Isabel Vanderau, Walkersville\t 12\t6\t3\t15"
+      "raw": "Tatiana Fernandes, Walk.\t15\t8\t1\t17"
     },
     {
-      "raw": "Emma Esquivel, Linganore\t12\t5\t4\t14"
+      "raw": "Emma Esquivel, Linganore\t16\t6\t4\t16"
     },
     {
-      "raw": "MacKenzie Thompson, Ling.\t 12\t5\t4\t14"
+      "raw": "Isabel Vanderau, Walkersville\t 15\t6\t4\t16"
+    },
+    {
+      "raw": "Taylor Wurm, Urbana\t11\t7\t2\t16"
+    },
+    {
+      "raw": "Leah Smallwood, Brunswick\t 16\t5\t5\t15"
+    },
+    {
+      "raw": "Tatum Smith, Brunswick\t16\t7\t1\t15"
+    },
+    {
+      "raw": "Lexie Byrd-Figueroa, Oakdale\t \u2014\t5\t3\t13"
+    },
+    {
+      "raw": "Zoeh Byrd-Figueroa, Oakdale\t \u2014\t4\t5\t13"
+    },
+    {
+      "raw": "Katie Crummitt, Middletown\t 14\t5\t3\t13"
+    },
+    {
+      "raw": "Toni Daramola, Urbana\t9\t6\t1\t13"
     },
     {
       "raw": "Lizeth Duran, Tuscarora\t12\t4\t5\t13"
     },
     {
-      "raw": "Tatiana Fernandes, Walk.\t12\t6\t1\t13"
-    },
-    {
-      "raw": "Adalyn Mucker, Catoctin\t12\t5\t3\t13"
+      "raw": "Adalynn Mucker, Catoctin\t13\t5\t3\t13"
     },
     {
       "raw": "Alex Bender, Tuscarora\t12\t6\t0\t12"
     },
     {
-      "raw": "Morgan Bilbrey, Brunswick\t13\t5\t2\t12"
+      "raw": "Morgan Bilbrey, Brunswick\t16\t5\t2\t12"
     },
     {
-      "raw": "Katie Crummit, Middletown\t12\t5\t2\t12"
+      "raw": "Logan Vu, Urbana\t13\t4\t4\t12"
     },
     {
-      "raw": "Toni Daramola, Urbana\t5\t5\t1\t11"
+      "raw": "Jaelyn Deater, Middletown\t14\t4\t3\t11"
     },
     {
-      "raw": "Addison Oldham, Oakdale\t13\t3\t5\t11"
+      "raw": "Addison Oldham, Oakdale\t19\t3\t5\t11"
     },
     {
-      "raw": "Tatum Smith, Brunswick\t13\t5\t1\t11"
+      "raw": "Sylvia Apshago, Frederick\t11\t3\t4\t10"
     },
     {
-      "raw": "Taylor Wurm, Urbana\t9\t5\t1\t11"
-    },
-    {
-      "raw": "Sylvia Apshago, Frederick\t9\t3\t4\t10"
-    },
-    {
-      "raw": "Cece Atadika, Walkersville\t12\t2\t6\t10"
+      "raw": "Cece Atadika, Walkersville\t15\t2\t6\t10"
     },
     {
       "raw": "Zara Borel, Tuscarora\t12\t4\t2\t10"
+    },
+    {
+      "raw": "Emana Rehemtula, Urbana\t13\t3\t4\t10"
     }
   ],
   "goalkeepers": [
     {
-      "raw": "Brynn Clagett, Oakdale\t12\t 5\t 10\t\u2014\t 0.31"
+      "raw": "Ben McCarron, Urbana\t8.5\t 5\t 4.5\t .894\t 0.59"
     },
     {
-      "raw": "Makayla Olenchalk, Mid.\t9\t 2\t0\t .909\t 0.41"
+      "raw": "TJ Spangler, Urbana\t8.5\t 6\t 2.5\t .870\t 0.71"
     },
     {
-      "raw": "Emily Krichbaum, Mid.\t10\t 4\t2\t .902\t 0.54"
+      "raw": "Andrew Barth, Oakdale\t10\t 8\t0\t .790\t 0.80"
     },
     {
-      "raw": "Hannah Cook, Brunswick\t13\t 5\t 2.5\t .907\t 0.62"
+      "raw": "Brooks Acton, Linganore\t13\t 5\t-\t-\t 0.85"
     },
     {
-      "raw": "Paige Miller, Walkersville\t12\t 11\t6\t\u2014\t 1.00"
+      "raw": "Aleksander Andresen, Tus.\t18\t 17\t-\t-\t 0.94"
     },
     {
-      "raw": "Hannah Zirk, Linganore\t10\t 11\t4\t .750\t 1.00"
+      "raw": "Owen Pamplin, Oakdale\t13\t 13\t1\t .800\t 1.00"
     },
     {
-      "raw": "Chandler Ways, Urbana\t10\t \u2014\t 2.5\t\u2014\t 1.17"
+      "raw": "Kollin Purgason, Walk.\t16\t 17\t6\t .870\t 1.06"
     },
     {
-      "raw": "Janelle Razunguzwa, Brun.\t 12\t 8\t 2.5\t .784\t 1.23"
+      "raw": "Jack Barnes, T. Johnson\t12\t 15\t3\t .600\t 1.25\tKEEPING TABS n Statistics (Updated Through Dec. 6)\tVolleyball\tField Hockey\tGirls Soccer\tBoys Soccer\tFootball\t1.  Linganore\t2.  Oakdale\t3.  Middletown\t4. Urbana\tGolf\tCross Country\tRankings\tBoys C.C.\t1.  Urbana\t2.  T. Johnson\t3.  Brunswick\t4. Oakdale\tGirls C.C.\t1.  Urbana\t2.  T. Johnson\t3.  Frederick\t4.  Tuscarora\tBoys Soccer\t1. Tuscarora\t2. Urbana\t3. Linganore\t4. Brunswick\tGirls Soccer\t1.  Oakdale\t2.  Linganore\t3.  Brunswick\t4. Middletown\tGirls Flag Football\t1. Urbana\t2. Linganore\t3. Frederick\t4. T. Johnson\t9-hole Average"
     },
     {
-      "raw": "Sophia Perez, Catoctin\t12\t 29\t2\t .890\t 2.4"
+      "raw": "Landon Tudor, Oakdale\t35"
     },
     {
-      "raw": "Bella Donigian, Frederick\t9\t 31\t0\t\u2014\t 3.89"
+      "raw": "Callen Edmonston, Catoctin\t36.4"
     },
     {
-      "raw": "Berkley Wetzel, Frederick\t11\t 9\t0\t .800\t 4.20"
+      "raw": "Cooper Moskowitz, Middletown\t37.4"
     },
     {
-      "raw": "Genesis Ortega, Tuscarora\t10\t 16\t4\t\u2014\t\u2014"
+      "raw": "Claire Son, Urbana\t38"
+    },
+    {
+      "raw": "Zac Taylor, Oakdale\t38.4"
+    },
+    {
+      "raw": "Clayton Bowman, Urbana\t38.6"
+    },
+    {
+      "raw": "Caden Roosa, Oakdale\t38.8"
+    },
+    {
+      "raw": "Ollie Witt, Middletown\t39"
+    },
+    {
+      "raw": "Celine Lieu, Walkersville\t39.2"
+    },
+    {
+      "raw": "Aidan Nilan, Oakdale\t39.2"
+    },
+    {
+      "raw": "Schaffer Wisnom, Linganore\t39.5"
+    },
+    {
+      "raw": "Johann Aguillon, Linganore\t39.8"
+    },
+    {
+      "raw": "Joseph Pearson, Linganore\t40"
+    },
+    {
+      "raw": "Charlie Scarzello, Oakdale\t40.6"
+    },
+    {
+      "raw": "Layden Barker, Walkersville\t40.9"
+    },
+    {
+      "raw": "Emmett Russell, Tuscarora\t41"
+    },
+    {
+      "raw": "Jackson Stanley, Linganore\t41"
+    },
+    {
+      "raw": "Camden Forsythe, Urbana\t41.4"
+    },
+    {
+      "raw": "Bodie Winfield, Middletown\t41.4"
+    },
+    {
+      "raw": "Madison Boucher, Urbana\t41.6"
+    },
+    {
+      "raw": "Luke Del Balzo, Brunswick\t41.6"
+    },
+    {
+      "raw": "Heath Detterline, Oakdale\t41.6"
+    },
+    {
+      "raw": "Tyler Spruill, Urbana\t42"
+    },
+    {
+      "raw": "Colby Burke, Linganore\t42.5"
+    },
+    {
+      "raw": "Gavin Flyte, Urbana\t42.5\tGirls Flag Football\tTOP 5K TIMES\tBOYS"
+    },
+    {
+      "raw": "Joshua Rothery, Urbana, 15:50.6"
+    },
+    {
+      "raw": "Patrick Salter, Oakdale, 15:52.4"
+    },
+    {
+      "raw": "Riley Gallogly, Urbana, 15:56.5"
+    },
+    {
+      "raw": "Korey Kauflin, Urbana, 15:57.9"
+    },
+    {
+      "raw": "Asher Adelman, Brunswick, 16:03:2"
+    },
+    {
+      "raw": "Evan Madraymootoo, Urbana, 16:03.7"
+    },
+    {
+      "raw": "Simon McGillivray, Brunswick, 16:04.3"
+    },
+    {
+      "raw": "Cole Cline, Urbana, 16:04.4"
+    },
+    {
+      "raw": "Miles Ghim, Thomas Johnson, 16:10.4"
+    },
+    {
+      "raw": "Dashiell Wexler, Thomas Johnson, 16:10.5"
+    },
+    {
+      "raw": "Simon Lipchock, Urbana, 16:13.8"
+    },
+    {
+      "raw": "Garrett Howes, Middletown, 16:14.1"
+    },
+    {
+      "raw": "Noah Riling, Catoctin, 16:21.8"
+    },
+    {
+      "raw": "Dominic Castillo, Thomas Johnson, 16:34.9"
+    },
+    {
+      "raw": "Matthew Rodrigues, Urbana, 16:41.0"
+    },
+    {
+      "raw": "Hyatt Gordon, Urbana, 16:41.1"
+    },
+    {
+      "raw": "Griffen Adelman, Brunswick, 16:44.4"
+    },
+    {
+      "raw": "Vaughn Ditching, Thomas Johnson, 16:45.7"
+    },
+    {
+      "raw": "Kayden Harris, Linganore, 16:52.5"
+    },
+    {
+      "raw": "Erasmo Sanchez, Thomas Johnson, 16.52.8"
+    },
+    {
+      "raw": "Luke Collins, Linganore, 16:58.5"
+    },
+    {
+      "raw": "Luke Osher, Urbana, 16:58.9"
+    },
+    {
+      "raw": "Koen Edwards, Urbana, 16:59.9"
+    },
+    {
+      "raw": "Scott Rudy, Thomas Johnson, 17:03.8"
+    },
+    {
+      "raw": "Merrick Collins, Oakdale, 17:06.5\tGIRLS"
+    },
+    {
+      "raw": "Kate Miner, Urbana, 18:35.2"
+    },
+    {
+      "raw": "Hailey Lane, Tuscarora, 18:39.6"
+    },
+    {
+      "raw": "MadeleneKate Partlow, Thomas Johnson, 18:58.9"
+    },
+    {
+      "raw": "Natalie Barber, Urbana, 19:03.1"
+    },
+    {
+      "raw": "Samantha Whiteman, Linganore, 19:06.6"
+    },
+    {
+      "raw": "Siena Foster, Tuscarora, 19:16.8"
+    },
+    {
+      "raw": "Maya Osher, Urbana, 19:22.2"
+    },
+    {
+      "raw": "Leticia Detrow, MSD, 19:26.2"
+    },
+    {
+      "raw": "Yasmeena Hassen Friess, Frederick, 19:37.5"
+    },
+    {
+      "raw": "Rachel Herbst, Thomas Johnson, 19:58.4"
+    },
+    {
+      "raw": "Elizabeth Lombardo, Thomas Johnson, 20:05.4"
+    },
+    {
+      "raw": "Salma Mahfoud, Thomas Johnson, 20:11.3"
+    },
+    {
+      "raw": "Olivia Gregory, Frederick, 20:12.3"
+    },
+    {
+      "raw": "Elizabeth Watkins, Linganore, 20:23.2"
+    },
+    {
+      "raw": "Ivy McWilliams, Frederick, 20:29.1"
+    },
+    {
+      "raw": "Brenna Davies, Urbana, 20:29.7"
+    },
+    {
+      "raw": "Nina Kirkendall-Plaia, Thomas Johnson, 20:30.5"
+    },
+    {
+      "raw": "Audrey Borleis, Urbana, 20:33.0"
+    },
+    {
+      "raw": "Johanna Mitchell, Oakdale, 20:35.0"
+    },
+    {
+      "raw": "Leah Harshman, Middletown, 20:36.7"
+    },
+    {
+      "raw": "Cara Carpenter, Middletown, 20:37.7"
+    },
+    {
+      "raw": "Sydney Bowman, Tuscarora, 20:44.3"
+    },
+    {
+      "raw": "Danica Arrington, Frederick, 20:51.8"
+    },
+    {
+      "raw": "Lizzie Wells, Oakdale, 20:59.6"
+    },
+    {
+      "raw": "Annalise Wells, Oakdale, 21:00.1\tField Hockey\t1.  Linganore\t2.  Urbana\t3.  Walkersville\t4.  Oakdale\tGolf\t1. Linganore\t2. Middletown\t3. Oakdale\tVolleyball\t1.  Urbana\t2.  Tuscarora\t3.  Oakdale\t4. MSD\t\t\u25a0Editor\u2019s Note: Statistics that appear on the High School Hangout page are submitted by coaches\tor team designated statisticians. This is the final page for the fall season.\tStaff photo by Katina Zentz"
+    },
+    {
+      "raw": "Linganore\u2019s Autumn Jordan, left, and Madison Wallace celebrate after the Lancers defeated Westminster 4-3\tin the Class 3A field hockey state championship at Stevenson University on Nov. 8. Linganore won in double\tovertime for Frederick County\u2019s first state title in field hockey since 1993.\t"
     }
   ]
 }
