@@ -3027,7 +3027,7 @@ def process_golf_sport(text: str):
 
 def main():
     """Main extraction function."""
-    pdf_path = '/home/user/frederick_sports/hs_hangout/2025_10_23.pdf'
+    pdf_path = 'hs_hangout/2025_12_06.pdf'
 
     print("Extracting text from PDF...")
     text = extract_text_from_pdf(pdf_path)
