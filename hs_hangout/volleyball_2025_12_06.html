@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball - High School Hangout (Dec 6, 2025)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .sport-section {
+            margin: 30px 0;
+        }
+
+        .sport-title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #666;
+        }
+
+        .conference-title {
+            font-size: 22px;
+            color: #444;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+        }
+
+        .division-title {
+            font-size: 18px;
+            color: #555;
+            margin: 25px 0 10px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            margin-top: 50px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #666;
+            text-transform: uppercase;
+        }
+
+        .standings {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0 30px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .standings th,
+        .standings td {
+            padding: 12px 10px;
+            border: 1px solid #ddd;
+        }
+
+        .standings thead th {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+
+        .standings thead tr:first-child th {
+            background-color: #222;
+        }
+
+        .standings th:first-child {
+            text-align: left;
+        }
+
+        .standings td {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .standings td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .standings tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .standings tbody tr:hover {
+            background-color: #e8f4f8;
+            transition: background-color 0.2s ease;
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .stats-table th,
+        .stats-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        .stats-table thead th {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .stats-table th:first-child,
+        .stats-table th:nth-child(2) {
+            text-align: left;
+        }
+
+        .stats-table td {
+            text-align: center;
+        }
+
+        .stats-table td:first-child,
+        .stats-table td:nth-child(2) {
+            text-align: left;
+        }
+
+        .stats-table td:first-child {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .stats-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .stats-table tbody tr:hover {
+            background-color: #e8f4f8;
+            transition: background-color 0.2s ease;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .sport-title {
+                font-size: 22px;
+            }
+
+            .division-title {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .standings th,
+            .standings td,
+            .stats-table th,
+            .stats-table td {
+                padding: 8px 4px;
+                font-size: 12px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .standings tbody tr:hover,
+            .stats-table tbody tr:hover {
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Volleyball - Team Standings & Individual Leaders</h1>
+            <p class="subtitle">Updated Through December 4, 2025</p>
+            <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
+        </header>
+
+        <main>
+            <!-- TEAM STANDINGS SECTION -->
+            <section id="standings" class="sport-section">
+                <h2 class="sport-title">Team Standings</h2>
+                <h3 class="conference-title">Central Maryland Conference</h3>
+
+                <!-- SPIRES DIVISION -->
+                <h4 class="division-title">Spires Division</h4>
+                <table class="standings">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Team</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
+                        </tr>
+                        <tr>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Urbana</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Thomas Johnson</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>South Hagerstown</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Frederick</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>9</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- POTOMAC DIVISION -->
+                <h4 class="division-title">Potomac Division</h4>
+                <table class="standings">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Team</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
+                        </tr>
+                        <tr>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>N. Hagerstown</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>13</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Tuscarora</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Oakdale</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>9</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Linganore</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- GAMBRILL DIVISION -->
+                <h4 class="division-title">Gambrill Division</h4>
+                <table class="standings">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Team</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
+                        </tr>
+                        <tr>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Williamsport</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>11</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Middletown</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Brunswick</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>Walkersville</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- ANTIETAM DIVISION -->
+                <h4 class="division-title">Antietam Division</h4>
+                <table class="standings">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Team</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
+                        </tr>
+                        <tr>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clear Spring</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Boonsboro</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>7</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Smithsburg</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Catoctin</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>11</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- OTHER SCHOOLS -->
+                <h4 class="division-title">Other Schools</h4>
+                <table class="standings">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MSD</td>
+                            <td>18</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SJCP</td>
+                            <td>5</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            
+            <!-- PLAYER STATS SECTION -->
+            <section id="player-stats" class="sport-section">
+                <h2 class="section-title">Individual Leaders</h2>
+<div class="sport-section">
+                <h2 class="section-title">Kills Leaders</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>SP</th>
+                            <th>Kills</th>
+                            <th>Hit%</th>
+                            <th>Avg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maliyah Coleman</td>
+                            <td>Maryland School for the Deaf</td>
+                            <td>99</td>
+                            <td>534</td>
+                            <td>.314</td>
+                            <td>5.39</td>
+                        </tr>
+                        <tr>
+                            <td>Nikita Dzougoutov</td>
+                            <td>Maryland School for the Deaf</td>
+                            <td>91</td>
+                            <td>349</td>
+                            <td>.236</td>
+                            <td>3.84</td>
+                        </tr>
+                        <tr>
+                            <td>Jocelyn Miller</td>
+                            <td>Middletown</td>
+                            <td>55</td>
+                            <td>189</td>
+                            <td>.256</td>
+                            <td>3.44</td>
+                        </tr>
+                        <tr>
+                            <td>Kaniyah Ball</td>
+                            <td>Frederick</td>
+                            <td>45</td>
+                            <td>153</td>
+                            <td>.149</td>
+                            <td>3.40</td>
+                        </tr>
+                        <tr>
+                            <td>Lily King</td>
+                            <td>Tuscarora</td>
+                            <td>55</td>
+                            <td>161</td>
+                            <td>.202</td>
+                            <td>2.93</td>
+                        </tr>
+                        <tr>
+                            <td>Ella Grove</td>
+                            <td>St. John's Catholic Prep</td>
+                            <td>72</td>
+                            <td>210</td>
+                            <td>.130</td>
+                            <td>2.92</td>
+                        </tr>
+                        <tr>
+                            <td>Raylin Horst</td>
+                            <td>Thomas Johnson</td>
+                            <td>62</td>
+                            <td>171</td>
+                            <td>-</td>
+                            <td>2.76</td>
+                        </tr>
+                        <tr>
+                            <td>Ivory Boone</td>
+                            <td>Urbana</td>
+                            <td>34</td>
+                            <td>92</td>
+                            <td>.423</td>
+                            <td>2.71</td>
+                        </tr>
+                        <tr>
+                            <td>Simone Assasie</td>
+                            <td>Urbana</td>
+                            <td>34</td>
+                            <td>87</td>
+                            <td>.300</td>
+                            <td>2.56</td>
+                        </tr>
+                        <tr>
+                            <td>Amy Latimer</td>
+                            <td>Linganore</td>
+                            <td>58</td>
+                            <td>147</td>
+                            <td>-</td>
+                            <td>2.53</td>
+                        </tr>
+                        <tr>
+                            <td>Skye Taylor</td>
+                            <td>Oakdale</td>
+                            <td>70</td>
+                            <td>165</td>
+                            <td>-</td>
+                            <td>2.36</td>
+                        </tr>
+                        <tr>
+                            <td>Talia DoCarmo</td>
+                            <td>Urbana</td>
+                            <td>35</td>
+                            <td>72</td>
+                            <td>.260</td>
+                            <td>2.06</td>
+                        </tr>
+                        <tr>
+                            <td>Susannah Claney</td>
+                            <td>Middletown</td>
+                            <td>58</td>
+                            <td>116</td>
+                            <td>.069</td>
+                            <td>2.00</td>
+                        </tr>
+                        <tr>
+                            <td>Leila Manan</td>
+                            <td>Oakdale</td>
+                            <td>60</td>
+                            <td>109</td>
+                            <td>-</td>
+                            <td>1.82</td>
+                        </tr>
+                        <tr>
+                            <td>Temi Oluboyo</td>
+                            <td>Thomas Johnson</td>
+                            <td>62</td>
+                            <td>112</td>
+                            <td>.-</td>
+                            <td>1.81</td>
+                        </tr>
+                        <tr>
+                            <td>BreyLynn Scott</td>
+                            <td>St. John's Catholic Prep</td>
+                            <td>73</td>
+                            <td>127</td>
+                            <td>.289</td>
+                            <td>1.74</td>
+                        </tr>
+                        <tr>
+                            <td>Payten Marko</td>
+                            <td>Oakdale</td>
+                            <td>65</td>
+                            <td>109</td>
+                            <td>-</td>
+                            <td>1.68</td>
+                        </tr>
+                        <tr>
+                            <td>Shannah Khavrutskii</td>
+                            <td>Oakdale</td>
+                            <td>58</td>
+                            <td>96</td>
+                            <td>-</td>
+                            <td>1.66</td>
+                        </tr>
+                        <tr>
+                            <td>Carissa Dolney</td>
+                            <td>Linganore</td>
+                            <td>58</td>
+                            <td>96</td>
+                            <td>-</td>
+                            <td>1.66</td>
+                        </tr>
+                        <tr>
+                            <td>Jayla Harris</td>
+                            <td>Tuscarora</td>
+                            <td>53</td>
+                            <td>86</td>
+                            <td>.097</td>
+                            <td>1.62</td>
+                        </tr>
+                        <tr>
+                            <td>Sofia Krasta</td>
+                            <td>Thomas Johnson</td>
+                            <td>62</td>
+                            <td>100</td>
+                            <td>-</td>
+                            <td>1.61</td>
+                        </tr>
+                        <tr>
+                            <td>Brooke Wolbert</td>
+                            <td>Middletown</td>
+                            <td>53</td>
+                            <td>75</td>
+                            <td>.1025</td>
+                            <td>1.42</td>
+                        </tr>
+                        <tr>
+                            <td>Charis Burge</td>
+                            <td>Urbana</td>
+                            <td>36</td>
+                            <td>49</td>
+                            <td>.184</td>
+                            <td>1.36</td>
+                        </tr>
+                        <tr>
+                            <td>Deborah Adeyemi</td>
+                            <td>Tuscarora</td>
+                            <td>56</td>
+                            <td>74</td>
+                            <td>.399</td>
+                            <td>1.32</td>
+                        </tr>
+                        <tr>
+                            <td>Kacie Phillips</td>
+                            <td>Middletown</td>
+                            <td>59</td>
+                            <td>78</td>
+                            <td>.282</td>
+                            <td>1.32</td>
+                        </tr>
+                        <tr>
+                            <td>Ivana Kusi</td>
+                            <td>Oakdale</td>
+                            <td>38</td>
+                            <td>49</td>
+                            <td>-</td>
+                            <td>1.29</td>
+                        </tr>
+                        <tr>
+                            <td>Julia Tomaski</td>
+                            <td>Linganore</td>
+                            <td>58</td>
+                            <td>65</td>
+                            <td>-</td>
+                            <td>1.12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sport-section">
+                <h2 class="section-title">Assists Leaders</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>SP</th>
+                            <th>Asts</th>
+                            <th>Digs</th>
+                            <th>Avg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emma Le</td>
+                            <td>Maryland School for the Deaf</td>
+                            <td></td>
+                            <td>100</td>
+                            <td>879</td>
+                            <td>8.79</td>
+                        </tr>
+                        <tr>
+                            <td>Charlye Wood</td>
+                            <td>Middletown</td>
+                            <td></td>
+                            <td>59</td>
+                            <td>440</td>
+                            <td>7.46</td>
+                        </tr>
+                        <tr>
+                            <td>Adelle Kusi</td>
+                            <td>Oakdale</td>
+                            <td></td>
+                            <td>61</td>
+                            <td>426</td>
+                            <td>6.98</td>
+                        </tr>
+                        <tr>
+                            <td>Kendall Ortiz</td>
+                            <td>Frederick</td>
+                            <td></td>
+                            <td>45</td>
+                            <td>314</td>
+                            <td>6.98</td>
+                        </tr>
+                        <tr>
+                            <td>Charis Burge</td>
+                            <td>Urbana</td>
+                            <td></td>
+                            <td>36</td>
+                            <td>193</td>
+                            <td>5.36</td>
+                        </tr>
+                        <tr>
+                            <td>Lili’uokalani Primacio</td>
+                            <td>St. John's Catholic Prep</td>
+                            <td></td>
+                            <td>73</td>
+                            <td>390</td>
+                            <td>5.34</td>
+                        </tr>
+                        <tr>
+                            <td>Zayna Brooks</td>
+                            <td>Tuscarora</td>
+                            <td></td>
+                            <td>55</td>
+                            <td>266</td>
+                            <td>4.84</td>
+                        </tr>
+                        <tr>
+                            <td>Julia Tomaski</td>
+                            <td>Linganore</td>
+                            <td></td>
+                            <td>58</td>
+                            <td>242</td>
+                            <td>4.17</td>
+                        </tr>
+                        <tr>
+                            <td>Saya Chin</td>
+                            <td>Thomas Johnson</td>
+                            <td></td>
+                            <td>62</td>
+                            <td>251</td>
+                            <td>4.05</td>
+                        </tr>
+                        <tr>
+                            <td>Serena Treadwell</td>
+                            <td>Tuscarora</td>
+                            <td></td>
+                            <td>55</td>
+                            <td>213</td>
+                            <td>3.87</td>
+                        </tr>
+                        <tr>
+                            <td>Abby Bell</td>
+                            <td>Urbana</td>
+                            <td></td>
+                            <td>29</td>
+                            <td>101</td>
+                            <td>3.48</td>
+                        </tr>
+                        <tr>
+                            <td>Sara Burke</td>
+                            <td>Linganore</td>
+                            <td></td>
+                            <td>55</td>
+                            <td>151</td>
+                            <td>2.75</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sport-section">
+                <h2 class="section-title">Digs Leaders</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>SP</th>
+                            <th>Digs</th>
+                            <th>Avg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kaniyah Ball</td>
+                            <td>Frederick</td>
+                            <td>45</td>
+                            <td>232</td>
+                            <td>5.16</td>
+                        </tr>
+                        <tr>
+                            <td>Makenzie Shearer</td>
+                            <td>Linganore</td>
+                            <td>58</td>
+                            <td>244</td>
+                            <td>4.21</td>
+                        </tr>
+                        <tr>
+                            <td>Lilah Colbert</td>
+                            <td>Oakdale</td>
+                            <td>60</td>
+                            <td>250</td>
+                            <td>4.17</td>
+                        </tr>
+                        <tr>
+                            <td>Bella Brown</td>
+                            <td>Thomas Johnson</td>
+                            <td>49</td>
+                            <td>204</td>
+                            <td>4.16</td>
+                        </tr>
+                        <tr>
+                            <td>Talia DoCarmo</td>
+                            <td>Urbana</td>
+                            <td>35</td>
+                            <td>130</td>
+                            <td>3.71</td>
+                        </tr>
+                        <tr>
+                            <td>Megan Jay</td>
+                            <td>Tuscarora</td>
+                            <td>55</td>
+                            <td>201</td>
+                            <td>3.65</td>
+                        </tr>
+                        <tr>
+                            <td>Kailyn Bryant</td>
+                            <td>Frederick</td>
+                            <td>45</td>
+                            <td>157</td>
+                            <td>3.49</td>
+                        </tr>
+                        <tr>
+                            <td>Raylin Horst</td>
+                            <td>Thomas Johnson</td>
+                            <td>62</td>
+                            <td>194</td>
+                            <td>3.13</td>
+                        </tr>
+                        <tr>
+                            <td>Lily King</td>
+                            <td>Tuscarora</td>
+                            <td>55</td>
+                            <td>168</td>
+                            <td>3.05</td>
+                        </tr>
+                        <tr>
+                            <td>Zayna Brooks</td>
+                            <td>Tuscarora</td>
+                            <td>55</td>
+                            <td>148</td>
+                            <td>2.69</td>
+                        </tr>
+                        <tr>
+                            <td>Amy Latimer</td>
+                            <td>Linganore</td>
+                            <td>58</td>
+                            <td>150</td>
+                            <td>2.59</td>
+                        </tr>
+                        <tr>
+                            <td>Zoe Stevenson</td>
+                            <td>Oakdale</td>
+                            <td>47</td>
+                            <td>119</td>
+                            <td>2.53</td>
+                        </tr>
+                        <tr>
+                            <td>Adrianna Howell</td>
+                            <td>Linganore</td>
+                            <td>58</td>
+                            <td>146</td>
+                            <td>2.52</td>
+                        </tr>
+                        <tr>
+                            <td>Maliyah Coleman</td>
+                            <td>Maryland School for the Deaf</td>
+                            <td>99</td>
+                            <td>248</td>
+                            <td>2.51</td>
+                        </tr>
+                        <tr>
+                            <td>Kendall Ortiz</td>
+                            <td>Frederick</td>
+                            <td>45</td>
+                            <td>111</td>
+                            <td>2.47</td>
+                        </tr>
+                        <tr>
+                            <td>Julia Tomaski</td>
+                            <td>Linganore</td>
+                            <td>58</td>
+                            <td>138</td>
+                            <td>2.38</td>
+                        </tr>
+                        <tr>
+                            <td>Nikita Dzougoutov</td>
+                            <td>Maryland School for the Deaf</td>
+                            <td>91</td>
+                            <td>202</td>
+                            <td>2.22</td>
+                        </tr>
+                        <tr>
+                            <td>Naomi McNeal</td>
+                            <td>Urbana</td>
+                            <td>34</td>
+                            <td>75</td>
+                            <td>2.21</td>
+                        </tr>
+                        <tr>
+                            <td>Ella Grove</td>
+                            <td>St. John's Catholic Prep</td>
+                            <td>72</td>
+                            <td>156</td>
+                            <td>2.17</td>
+                        </tr>
+                        <tr>
+                            <td>Lili’uokalani Primacio</td>
+                            <td>St. John's Catholic Prep</td>
+                            <td>73</td>
+                            <td>157</td>
+                            <td>2.15</td>
+                        </tr>
+                        <tr>
+                            <td>Saya Chin</td>
+                            <td>Thomas Johnson</td>
+                            <td>62</td>
+                            <td>130</td>
+                            <td>2.10</td>
+                        </tr>
+                        <tr>
+                            <td>Rita Virnig</td>
+                            <td>Maryland School for the Deaf</td>
+                            <td>100</td>
+                            <td>203</td>
+                            <td>2.03</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Column Abbreviations:</strong></p>
+            <p>W = Wins, L = Losses | SP = Sets Played, Hit% = Hitting Percentage, Avg = Average, Asts = Assists</p>
+            <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
+            <p>Statistics submitted by coaches and team statisticians</p>
+        </footer>
+    </div>
+</body>
+</html>
