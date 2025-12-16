@@ -1,65 +1,352 @@
 {
-  "standings": {
-    "FCPS": [],
-    "Other Schools": []
-  },
-  "stats": {
-    "rushing": [
-      {
-        "player": "Bradly Matthews",
-        "school": "Linganore",
-        "att": "140",
-        "yds": "1256",
-        "avg": "8.97",
-        "td": "23"
-      },
-      {
-        "player": "Colton Amoriell",
-        "school": "Walkersville",
-        "att": "124",
-        "yds": "1020",
-        "avg": "8.22",
-        "td": "13"
-      }
-    ],
-    "passing": [
-      {
-        "player": "Brittin Poffenbarger",
-        "school": "Middletown",
-        "comp": "105",
-        "att": "145",
-        "pct": ".724",
-        "yds": "1760",
-        "td": "19"
-      },
-      {
-        "player": "Randy Embrey",
-        "school": "Thomas Johnson",
-        "comp": "102",
-        "att": "182",
-        "pct": ".560",
-        "yds": "1399",
-        "td": "15"
-      },
-      {
-        "player": "Miles Robinson",
-        "school": "Frederick",
-        "comp": "135",
-        "att": "202",
-        "pct": ".668",
-        "yds": "1294",
-        "td": "9"
-      },
-      {
-        "player": "Owen Brooks",
-        "school": "Walkersville",
-        "comp": "43",
-        "att": "100",
-        "pct": ".430",
-        "yds": "776",
-        "td": "6"
-      }
-    ],
-    "receiving": []
-  }
+  "rushing": [
+    {
+      "player": "Bradly Matthews",
+      "school": "Linganore",
+      "att": "140",
+      "yds": "1,256",
+      "avg": "8.97",
+      "td": "23"
+    },
+    {
+      "player": "Colton Amoriell",
+      "school": "Walkersville",
+      "att": "124",
+      "yds": "1,020",
+      "avg": "8.22",
+      "td": "13"
+    },
+    {
+      "player": "Mark Gwynn III",
+      "school": "MSD",
+      "att": "57",
+      "yds": "774",
+      "avg": "13.57",
+      "td": "11"
+    },
+    {
+      "player": "Alex Rodriguez",
+      "school": "Oakdale",
+      "att": "76",
+      "yds": "683",
+      "avg": "8.98",
+      "td": "8"
+    },
+    {
+      "player": "Nakhi Bagwell",
+      "school": "T. Johnson",
+      "att": "99",
+      "yds": "538",
+      "avg": "5.43",
+      "td": "2"
+    },
+    {
+      "player": "Ryan McLister",
+      "school": "Middletown",
+      "att": "47",
+      "yds": "457",
+      "avg": "9.72",
+      "td": "6"
+    },
+    {
+      "player": "Owen Brooks",
+      "school": "Walkersville",
+      "att": "49",
+      "yds": "426",
+      "avg": "8.69",
+      "td": "7"
+    },
+    {
+      "player": "Cayden McIver",
+      "school": "Urbana",
+      "att": "52",
+      "yds": "352",
+      "avg": "6.77",
+      "td": "1"
+    },
+    {
+      "player": "Orllen Ocean",
+      "school": "Tuscarora",
+      "att": "88",
+      "yds": "351",
+      "avg": "3.99",
+      "td": "6"
+    },
+    {
+      "player": "Ryder Smart",
+      "school": "Urbana",
+      "att": "52",
+      "yds": "346",
+      "avg": "6.65",
+      "td": "2"
+    },
+    {
+      "player": "Shemiah Hill",
+      "school": "Oakdale",
+      "att": "46",
+      "yds": "342",
+      "avg": "7.33",
+      "td": "5"
+    },
+    {
+      "player": "Miles Robinson",
+      "school": "Frederick",
+      "att": "63",
+      "yds": "342",
+      "avg": "5.4",
+      "td": "4"
+    },
+    {
+      "player": "Ryker Pedersen",
+      "school": "MSD",
+      "att": "44",
+      "yds": "313",
+      "avg": "7.1",
+      "td": "5"
+    },
+    {
+      "player": "Barima Baffoe",
+      "school": "Brunswick",
+      "att": "43",
+      "yds": "306",
+      "avg": "7.1",
+      "td": "3"
+    },
+    {
+      "player": "Brittin Poffenbarger",
+      "school": "Mid.",
+      "att": "51",
+      "yds": "299",
+      "avg": "5.9",
+      "td": "3"
+    },
+    {
+      "player": "Quintin Thompson",
+      "school": "Catoctin",
+      "att": "77",
+      "yds": "257",
+      "avg": "3.33",
+      "td": "2"
+    }
+  ],
+  "passing": [
+    {
+      "player": "Brittin Poffenbarger",
+      "school": "Mid.",
+      "comp": "105",
+      "att": "145",
+      "pct": ".724",
+      "yds": "1,760",
+      "td": "19"
+    },
+    {
+      "player": "Randy Embrey",
+      "school": "T. Johnson",
+      "comp": "102",
+      "att": "182",
+      "pct": ".560",
+      "yds": "1,399",
+      "td": "15"
+    },
+    {
+      "player": "Miles Robinson",
+      "school": "Frederick",
+      "comp": "135",
+      "att": "202",
+      "pct": ".668",
+      "yds": "1,294",
+      "td": "9"
+    },
+    {
+      "player": "Landon Rosenberg",
+      "school": "Tus.",
+      "comp": "81",
+      "att": "159",
+      "pct": ".509",
+      "yds": "1,277",
+      "td": "11"
+    },
+    {
+      "player": "Alex Rodriguez",
+      "school": "Oakdale",
+      "comp": "64",
+      "att": "114",
+      "pct": ".561",
+      "yds": "1,049",
+      "td": "9"
+    },
+    {
+      "player": "David Doy",
+      "school": "Linganore",
+      "comp": "61",
+      "att": "84",
+      "pct": ".730",
+      "yds": "1,020",
+      "td": "14"
+    },
+    {
+      "player": "Owen Brooks",
+      "school": "Walkersville",
+      "comp": "43",
+      "att": "100",
+      "pct": ".430",
+      "yds": "776",
+      "td": "6"
+    },
+    {
+      "player": "Josh White",
+      "school": "Urbana",
+      "comp": "36",
+      "att": "72",
+      "pct": ".500",
+      "yds": "500",
+      "td": "12"
+    },
+    {
+      "player": "Chase Cregger",
+      "school": "Catoctin",
+      "comp": "41",
+      "att": "87",
+      "pct": ".471",
+      "yds": "474",
+      "td": "2"
+    },
+    {
+      "player": "Brady Renn",
+      "school": "Brunswick",
+      "comp": "25",
+      "att": "53",
+      "pct": ".471",
+      "yds": "416",
+      "td": "6"
+    }
+  ],
+  "receiving": [
+    {
+      "player": "Paul Huff",
+      "school": "Frederick",
+      "rec": "54",
+      "yds": "637",
+      "td": "4"
+    },
+    {
+      "player": "Dyvae Ambush",
+      "school": "T. Johnson",
+      "rec": "51",
+      "yds": "784",
+      "td": "7"
+    },
+    {
+      "player": "Naheme Johnson",
+      "school": "Tuscarora",
+      "rec": "32",
+      "yds": "318",
+      "td": "2"
+    },
+    {
+      "player": "Philip Bailey",
+      "school": "Frederick",
+      "rec": "30",
+      "yds": "237",
+      "td": "1"
+    },
+    {
+      "player": "Nathan Borawski",
+      "school": "Middletown",
+      "rec": "28",
+      "yds": "359",
+      "td": "4"
+    },
+    {
+      "player": "Clinton Lee",
+      "school": "Middletown",
+      "rec": "27",
+      "yds": "583",
+      "td": "5"
+    },
+    {
+      "player": "Charles Alt",
+      "school": "Oakdale",
+      "rec": "27",
+      "yds": "486",
+      "td": "4"
+    },
+    {
+      "player": "Ryan McLister",
+      "school": "Middletown",
+      "rec": "25",
+      "yds": "374",
+      "td": "4"
+    },
+    {
+      "player": "Joziah Cobb",
+      "school": "Oakdale",
+      "rec": "21",
+      "yds": "370",
+      "td": "4"
+    },
+    {
+      "player": "Chase Perry",
+      "school": "Linganore",
+      "rec": "20",
+      "yds": "404",
+      "td": "6"
+    },
+    {
+      "player": "Darnell Taylor",
+      "school": "T. Johnson",
+      "rec": "20",
+      "yds": "327",
+      "td": "4"
+    },
+    {
+      "player": "Ronte Faunteroy",
+      "school": "Frederick",
+      "rec": "20",
+      "yds": "252",
+      "td": "1"
+    },
+    {
+      "player": "Mickey Cammarata",
+      "school": "Tuscarora",
+      "rec": "19",
+      "yds": "337",
+      "td": "2"
+    },
+    {
+      "player": "Tyler McCallion",
+      "school": "Catoctin",
+      "rec": "19",
+      "yds": "173",
+      "td": "0"
+    },
+    {
+      "player": "Levi Misner",
+      "school": "Catoctin",
+      "rec": "19",
+      "yds": "155",
+      "td": "1"
+    },
+    {
+      "player": "Masiah Martin",
+      "school": "Walkersville",
+      "rec": "18",
+      "yds": "225",
+      "td": "0"
+    },
+    {
+      "player": "Jayden Sharper",
+      "school": "Urbana",
+      "rec": "14",
+      "yds": "375",
+      "td": "5"
+    },
+    {
+      "player": "Konnor Dodson",
+      "school": "Catoctin",
+      "rec": "14",
+      "yds": "165",
+      "td": "2"
+    }
+  ]
 }

@@ -1,0 +1,338 @@
+{
+  "scoring": [
+    {
+      "player": "Brooke Clagett",
+      "school": "Oakdale",
+      "gp": "10",
+      "g": "22",
+      "a": "3",
+      "pts": "47"
+    },
+    {
+      "player": "Emily Feaster",
+      "school": "Oakdale",
+      "gp": "13",
+      "g": "13",
+      "a": "3",
+      "pts": "29"
+    },
+    {
+      "player": "Olivia Baker",
+      "school": "Catoctin",
+      "gp": "12",
+      "g": "9",
+      "a": "5",
+      "pts": "23"
+    },
+    {
+      "player": "Adalyn DeGrange",
+      "school": "Catoctin",
+      "gp": "12",
+      "g": "7",
+      "a": "9",
+      "pts": "23"
+    },
+    {
+      "player": "Laila Jackson",
+      "school": "Brunswick",
+      "gp": "13",
+      "g": "9",
+      "a": "4",
+      "pts": "22"
+    },
+    {
+      "player": "Jamisyn Kenyatta",
+      "school": "Frederick",
+      "gp": "11",
+      "g": "10",
+      "a": "2",
+      "pts": "22"
+    },
+    {
+      "player": "Fiona Collins",
+      "school": "Oakdale",
+      "gp": "13",
+      "g": "6",
+      "a": "8",
+      "pts": "20"
+    },
+    {
+      "player": "Katie Hargett",
+      "school": "Brunswick",
+      "gp": "13",
+      "g": "4",
+      "a": "9",
+      "pts": "17"
+    },
+    {
+      "player": "Emilee Schwier",
+      "school": "Linganore",
+      "gp": "12",
+      "g": "7",
+      "a": "3",
+      "pts": "17"
+    },
+    {
+      "player": "Reese Bender",
+      "school": "Urbana",
+      "gp": "9",
+      "g": "7",
+      "a": "1",
+      "pts": "15"
+    },
+    {
+      "player": "Lexi Clagett",
+      "school": "Oakdale",
+      "gp": "13",
+      "g": "5",
+      "a": "5",
+      "pts": "15"
+    },
+    {
+      "player": "Leah Smallwood",
+      "school": "Brunswick",
+      "gp": "13",
+      "g": "5",
+      "a": "5",
+      "pts": "15"
+    },
+    {
+      "player": "Isabel Vanderau",
+      "school": "Walkersville",
+      "gp": "12",
+      "g": "6",
+      "a": "3",
+      "pts": "15"
+    },
+    {
+      "player": "Emma Esquivel",
+      "school": "Linganore",
+      "gp": "12",
+      "g": "5",
+      "a": "4",
+      "pts": "14"
+    },
+    {
+      "player": "MacKenzie Thompson",
+      "school": "Ling.",
+      "gp": "12",
+      "g": "5",
+      "a": "4",
+      "pts": "14"
+    },
+    {
+      "player": "Lizeth Duran",
+      "school": "Tuscarora",
+      "gp": "12",
+      "g": "4",
+      "a": "5",
+      "pts": "13"
+    },
+    {
+      "player": "Tatiana Fernandes",
+      "school": "Walk.",
+      "gp": "12",
+      "g": "6",
+      "a": "1",
+      "pts": "13"
+    },
+    {
+      "player": "Adalyn Mucker",
+      "school": "Catoctin",
+      "gp": "12",
+      "g": "5",
+      "a": "3",
+      "pts": "13"
+    },
+    {
+      "player": "Alex Bender",
+      "school": "Tuscarora",
+      "gp": "12",
+      "g": "6",
+      "a": "0",
+      "pts": "12"
+    },
+    {
+      "player": "Morgan Bilbrey",
+      "school": "Brunswick",
+      "gp": "13",
+      "g": "5",
+      "a": "2",
+      "pts": "12"
+    },
+    {
+      "player": "Katie Crummit",
+      "school": "Middletown",
+      "gp": "12",
+      "g": "5",
+      "a": "2",
+      "pts": "12"
+    },
+    {
+      "player": "Toni Daramola",
+      "school": "Urbana",
+      "gp": "5",
+      "g": "5",
+      "a": "1",
+      "pts": "11"
+    },
+    {
+      "player": "Addison Oldham",
+      "school": "Oakdale",
+      "gp": "13",
+      "g": "3",
+      "a": "5",
+      "pts": "11"
+    },
+    {
+      "player": "Tatum Smith",
+      "school": "Brunswick",
+      "gp": "13",
+      "g": "5",
+      "a": "1",
+      "pts": "11"
+    },
+    {
+      "player": "Taylor Wurm",
+      "school": "Urbana",
+      "gp": "9",
+      "g": "5",
+      "a": "1",
+      "pts": "11"
+    },
+    {
+      "player": "Sylvia Apshago",
+      "school": "Frederick",
+      "gp": "9",
+      "g": "3",
+      "a": "4",
+      "pts": "10"
+    },
+    {
+      "player": "Cece Atadika",
+      "school": "Walkersville",
+      "gp": "12",
+      "g": "2",
+      "a": "6",
+      "pts": "10"
+    },
+    {
+      "player": "Zara Borel",
+      "school": "Tuscarora",
+      "gp": "12",
+      "g": "4",
+      "a": "2",
+      "pts": "10"
+    }
+  ],
+  "goalkeepers": [
+    {
+      "player": "Brynn Clagett",
+      "school": "Oakdale",
+      "gp": "12",
+      "ga": "5",
+      "so": "10",
+      "sv_pct": "\u2014",
+      "gaa": "0.31"
+    },
+    {
+      "player": "Makayla Olenchalk",
+      "school": "Mid.",
+      "gp": "9",
+      "ga": "2",
+      "so": "0",
+      "sv_pct": ".909",
+      "gaa": "0.41"
+    },
+    {
+      "player": "Emily Krichbaum",
+      "school": "Mid.",
+      "gp": "10",
+      "ga": "4",
+      "so": "2",
+      "sv_pct": ".902",
+      "gaa": "0.54"
+    },
+    {
+      "player": "Hannah Cook",
+      "school": "Brunswick",
+      "gp": "13",
+      "ga": "5",
+      "so": "2.5",
+      "sv_pct": ".907",
+      "gaa": "0.62"
+    },
+    {
+      "player": "Paige Miller",
+      "school": "Walkersville",
+      "gp": "12",
+      "ga": "11",
+      "so": "6",
+      "sv_pct": "\u2014",
+      "gaa": "1.00"
+    },
+    {
+      "player": "Hannah Zirk",
+      "school": "Linganore",
+      "gp": "10",
+      "ga": "11",
+      "so": "4",
+      "sv_pct": ".750",
+      "gaa": "1.00"
+    },
+    {
+      "player": "Chandler Ways",
+      "school": "Urbana",
+      "gp": "10",
+      "ga": "\u2014",
+      "so": "2.5",
+      "sv_pct": "\u2014",
+      "gaa": "1.17"
+    },
+    {
+      "player": "Janelle Razunguzwa",
+      "school": "Brun.",
+      "gp": "12",
+      "ga": "8",
+      "so": "2.5",
+      "sv_pct": ".784",
+      "gaa": "1.23"
+    },
+    {
+      "player": "Sophia Perez",
+      "school": "Catoctin",
+      "gp": "12",
+      "ga": "29",
+      "so": "2",
+      "sv_pct": ".890",
+      "gaa": "2.4"
+    },
+    {
+      "player": "Bella Donigian",
+      "school": "Frederick",
+      "gp": "9",
+      "ga": "31",
+      "so": "0",
+      "sv_pct": "\u2014",
+      "gaa": "3.89"
+    },
+    {
+      "player": "Berkley Wetzel",
+      "school": "Frederick",
+      "gp": "11",
+      "ga": "9",
+      "so": "0",
+      "sv_pct": ".800",
+      "gaa": "4.20"
+    },
+    {
+      "player": "Genesis Ortega",
+      "school": "Tuscarora",
+      "gp": "10",
+      "ga": "16",
+      "so": "4",
+      "sv_pct": "\u2014",
+      "gaa": "\u2014"
+    }
+  ]
+}

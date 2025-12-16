@@ -1,0 +1,429 @@
+{
+  "kills": [
+    {
+      "player": "Maliyah Coleman",
+      "school": "MSD",
+      "sp": "94",
+      "kills": "512",
+      "hit_pct": ".314",
+      "avg": "5.45"
+    },
+    {
+      "player": "Nikita Dzougoutov",
+      "school": "MSD",
+      "sp": "86",
+      "kills": "329",
+      "hit_pct": ".236",
+      "avg": "3.83"
+    },
+    {
+      "player": "Jocelyn Miller",
+      "school": "Middletown",
+      "sp": "41",
+      "kills": "147",
+      "hit_pct": ".245",
+      "avg": "3.59"
+    },
+    {
+      "player": "Kaniyah Ball",
+      "school": "Frederick",
+      "sp": "41",
+      "kills": "138",
+      "hit_pct": ".152",
+      "avg": "3.37"
+    },
+    {
+      "player": "Lily King",
+      "school": "Tuscarora",
+      "sp": "39",
+      "kills": "118",
+      "hit_pct": ".204",
+      "avg": "3.03"
+    },
+    {
+      "player": "Ella Grove",
+      "school": "SJCP",
+      "sp": "42",
+      "kills": "119",
+      "hit_pct": ".108",
+      "avg": "2.83"
+    },
+    {
+      "player": "Raylin Horst",
+      "school": "T. Johnson",
+      "sp": "52",
+      "kills": "143",
+      "hit_pct": ".230",
+      "avg": "2.75"
+    },
+    {
+      "player": "Ivory Boone",
+      "school": "Urbana",
+      "sp": "34",
+      "kills": "92",
+      "hit_pct": ".423",
+      "avg": "2.71"
+    },
+    {
+      "player": "Simone Assasie",
+      "school": "Urbana",
+      "sp": "34",
+      "kills": "87",
+      "hit_pct": ".300",
+      "avg": "2.56"
+    },
+    {
+      "player": "Amy Latimer",
+      "school": "Linganore",
+      "sp": "51",
+      "kills": "130",
+      "hit_pct": "-",
+      "avg": "2.55"
+    },
+    {
+      "player": "Skye Taylor",
+      "school": "Oakdale",
+      "sp": "61",
+      "kills": "143",
+      "hit_pct": "-",
+      "avg": "2.34"
+    },
+    {
+      "player": "Susannah Claney",
+      "school": "Mid.",
+      "sp": "43",
+      "kills": "97",
+      "hit_pct": ".084",
+      "avg": "2.26"
+    },
+    {
+      "player": "Talia DoCarmo",
+      "school": "Urbana",
+      "sp": "35",
+      "kills": "72",
+      "hit_pct": ".260",
+      "avg": "2.06"
+    },
+    {
+      "player": "Leila Manan",
+      "school": "Oakdale",
+      "sp": "51",
+      "kills": "96",
+      "hit_pct": "-",
+      "avg": "1.88"
+    },
+    {
+      "player": "Carissa Dolney",
+      "school": "Linganore",
+      "sp": "51",
+      "kills": "93",
+      "hit_pct": "-",
+      "avg": "1.82"
+    },
+    {
+      "player": "Payten Marko",
+      "school": "Oakdale",
+      "sp": "56",
+      "kills": "101",
+      "hit_pct": "-",
+      "avg": "1.80"
+    },
+    {
+      "player": "Shannah Khavrutskii",
+      "school": "Oak.",
+      "sp": "49",
+      "kills": "87",
+      "hit_pct": "-",
+      "avg": "1.78"
+    },
+    {
+      "player": "Temi Oluboyo",
+      "school": "T. Johnson",
+      "sp": "52",
+      "kills": "91",
+      "hit_pct": ".380",
+      "avg": "1.75"
+    },
+    {
+      "player": "Jayla Harris",
+      "school": "Tuscarora",
+      "sp": "37",
+      "kills": "62",
+      "hit_pct": ".129",
+      "avg": "1.68"
+    },
+    {
+      "player": "Sofie Krasta",
+      "school": "T. Johnson",
+      "sp": "52",
+      "kills": "80",
+      "hit_pct": ".150",
+      "avg": "1.54"
+    },
+    {
+      "player": "Brooke Wolbert",
+      "school": "Mid.",
+      "sp": "41",
+      "kills": "56",
+      "hit_pct": ".101",
+      "avg": "1.37"
+    },
+    {
+      "player": "Charis Burge",
+      "school": "Urbana",
+      "sp": "36",
+      "kills": "49",
+      "hit_pct": ".184",
+      "avg": "1.36"
+    },
+    {
+      "player": "BreyLynn Scott",
+      "school": "SJCP",
+      "sp": "42",
+      "kills": "57",
+      "hit_pct": ".207",
+      "avg": "1.36"
+    }
+  ],
+  "assists": [
+    {
+      "player": "Emma Le",
+      "school": "MSD",
+      "sp": "",
+      "asts": "95",
+      "digs": "833",
+      "avg": "8.77"
+    },
+    {
+      "player": "Charlye Wood",
+      "school": "Middletown",
+      "sp": "",
+      "asts": "44",
+      "digs": "338",
+      "avg": "7.68"
+    },
+    {
+      "player": "Adelle Kusi",
+      "school": "Oakdale",
+      "sp": "",
+      "asts": "52",
+      "digs": "372",
+      "avg": "7.15"
+    },
+    {
+      "player": "Kendall Ortiz",
+      "school": "Frederick",
+      "sp": "",
+      "asts": "41",
+      "digs": "281",
+      "avg": "6.85"
+    },
+    {
+      "player": "Charis Burge",
+      "school": "Urbana",
+      "sp": "",
+      "asts": "36",
+      "digs": "193",
+      "avg": "5.36"
+    },
+    {
+      "player": "Lili\u2019uokalani Primacio",
+      "school": "SJCP",
+      "sp": "",
+      "asts": "42",
+      "digs": "216",
+      "avg": "5.14"
+    },
+    {
+      "player": "Zayna Brooks",
+      "school": "Tuscarora",
+      "sp": "",
+      "asts": "39",
+      "digs": "179",
+      "avg": "4.59"
+    },
+    {
+      "player": "Julia Tomaski",
+      "school": "Linganore",
+      "sp": "",
+      "asts": "51",
+      "digs": "217",
+      "avg": "4.25"
+    },
+    {
+      "player": "Serena Treadwell",
+      "school": "Tuscarora",
+      "sp": "",
+      "asts": "39",
+      "digs": "155",
+      "avg": "3.97"
+    },
+    {
+      "player": "Saya Chin",
+      "school": "T. Johnson",
+      "sp": "",
+      "asts": "52",
+      "digs": "196",
+      "avg": "3.77"
+    },
+    {
+      "player": "Abby Bell",
+      "school": "Urbana",
+      "sp": "",
+      "asts": "29",
+      "digs": "101",
+      "avg": "3.48"
+    },
+    {
+      "player": "Sara Burke",
+      "school": "Linganore",
+      "sp": "",
+      "asts": "48",
+      "digs": "138",
+      "avg": "2.88"
+    },
+    {
+      "player": "Xenia Quire",
+      "school": "T. Johnson",
+      "sp": "",
+      "asts": "47",
+      "digs": "107",
+      "avg": "2.28"
+    }
+  ],
+  "digs": [
+    {
+      "player": "Kaniyah Ball",
+      "school": "Frederick",
+      "sp": "41",
+      "digs": "218",
+      "avg": "5.32"
+    },
+    {
+      "player": "Makenzie Shearer",
+      "school": "Linganore",
+      "sp": "51",
+      "digs": "225",
+      "avg": "4.41"
+    },
+    {
+      "player": "Lilah Colbert",
+      "school": "Oakdale",
+      "sp": "51",
+      "digs": "214",
+      "avg": "4.20"
+    },
+    {
+      "player": "Bella Brown",
+      "school": "T. Johnson",
+      "sp": "39",
+      "digs": "157",
+      "avg": "4.03"
+    },
+    {
+      "player": "Megan Jay",
+      "school": "Tuscarora",
+      "sp": "39",
+      "digs": "149",
+      "avg": "3.82"
+    },
+    {
+      "player": "Talia DoCarmo",
+      "school": "Urbana",
+      "sp": "35",
+      "digs": "130",
+      "avg": "3.71"
+    },
+    {
+      "player": "Kailyn Bryant",
+      "school": "Frederick",
+      "sp": "41",
+      "digs": "146",
+      "avg": "3.56"
+    },
+    {
+      "player": "Lily King",
+      "school": "Tuscarora",
+      "sp": "39",
+      "digs": "115",
+      "avg": "2.95"
+    },
+    {
+      "player": "Amy Latimer",
+      "school": "Linganore",
+      "sp": "51",
+      "digs": "148",
+      "avg": "2.90"
+    },
+    {
+      "player": "Raylin Horst",
+      "school": "T. Johnson",
+      "sp": "52",
+      "digs": "150",
+      "avg": "2.88"
+    },
+    {
+      "player": "Zayna Brooks",
+      "school": "Tuscarora",
+      "sp": "39",
+      "digs": "105",
+      "avg": "2.69"
+    },
+    {
+      "player": "Adrianna Howell",
+      "school": "Linganore",
+      "sp": "51",
+      "digs": "135",
+      "avg": "2.65"
+    },
+    {
+      "player": "Maliyah Coleman",
+      "school": "MSD",
+      "sp": "94",
+      "digs": "237",
+      "avg": "2.52"
+    },
+    {
+      "player": "Zoe Stevenson",
+      "school": "Oakdale",
+      "sp": "40",
+      "digs": "100",
+      "avg": "2.50"
+    },
+    {
+      "player": "Julia Tomaski",
+      "school": "Linganore",
+      "sp": "51",
+      "digs": "126",
+      "avg": "2.47"
+    },
+    {
+      "player": "Josie Patil",
+      "school": "SJCP",
+      "sp": "29",
+      "digs": "69",
+      "avg": "2.38"
+    },
+    {
+      "player": "Ella Grove",
+      "school": "SJCP",
+      "sp": "42",
+      "digs": "96",
+      "avg": "2.29"
+    },
+    {
+      "player": "Kendall Ortiz",
+      "school": "Frederick",
+      "sp": "41",
+      "digs": "91",
+      "avg": "2.22"
+    },
+    {
+      "player": "Nikita Dzougoutov",
+      "school": "MSD",
+      "sp": "86",
+      "digs": "190",
+      "avg": "2.21"
+    }
+  ]
+}
