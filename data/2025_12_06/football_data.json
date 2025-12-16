@@ -1,0 +1,72 @@
+{
+  "standings": {
+    "FCPS": [],
+    "Other Schools": []
+  },
+  "stats": {
+    "rushing": [
+      {
+        "player": "Bradly Matthews",
+        "school": "Linganore",
+        "att": "246",
+        "yds": "2124",
+        "avg": "8.63",
+        "td": "41"
+      }
+    ],
+    "passing": [
+      {
+        "player": "Brittin Poffenbarger",
+        "school": "Middletown",
+        "comp": "148",
+        "att": "206",
+        "pct": ".718",
+        "yds": "2461",
+        "td": "29"
+      },
+      {
+        "player": "Randy Embrey",
+        "school": "Thomas Johnson",
+        "comp": "145",
+        "att": "265",
+        "pct": ".547",
+        "yds": "2243",
+        "td": "22"
+      },
+      {
+        "player": "Miles Robinson",
+        "school": "Frederick",
+        "comp": "197",
+        "att": "282",
+        "pct": ".699",
+        "yds": "2096",
+        "td": "16"
+      },
+      {
+        "player": "Owen Brooks",
+        "school": "Walkersville",
+        "comp": "74",
+        "att": "163",
+        "pct": ".454",
+        "yds": "1192",
+        "td": "9"
+      }
+    ],
+    "receiving": [
+      {
+        "player": "Charlotte Felton",
+        "school": "Middletown",
+        "rec": "15",
+        "yds": "33",
+        "td": "6"
+      },
+      {
+        "player": "Jocelyn Miller",
+        "school": "Middletown",
+        "rec": "55",
+        "yds": "189",
+        "td": ".256"
+      }
+    ]
+  }
+}

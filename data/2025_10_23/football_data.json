@@ -1,0 +1,65 @@
+{
+  "standings": {
+    "FCPS": [],
+    "Other Schools": []
+  },
+  "stats": {
+    "rushing": [
+      {
+        "player": "Bradly Matthews",
+        "school": "Linganore",
+        "att": "140",
+        "yds": "1256",
+        "avg": "8.97",
+        "td": "23"
+      },
+      {
+        "player": "Colton Amoriell",
+        "school": "Walkersville",
+        "att": "124",
+        "yds": "1020",
+        "avg": "8.22",
+        "td": "13"
+      }
+    ],
+    "passing": [
+      {
+        "player": "Brittin Poffenbarger",
+        "school": "Middletown",
+        "comp": "105",
+        "att": "145",
+        "pct": ".724",
+        "yds": "1760",
+        "td": "19"
+      },
+      {
+        "player": "Randy Embrey",
+        "school": "Thomas Johnson",
+        "comp": "102",
+        "att": "182",
+        "pct": ".560",
+        "yds": "1399",
+        "td": "15"
+      },
+      {
+        "player": "Miles Robinson",
+        "school": "Frederick",
+        "comp": "135",
+        "att": "202",
+        "pct": ".668",
+        "yds": "1294",
+        "td": "9"
+      },
+      {
+        "player": "Owen Brooks",
+        "school": "Walkersville",
+        "comp": "43",
+        "att": "100",
+        "pct": ".430",
+        "yds": "776",
+        "td": "6"
+      }
+    ],
+    "receiving": []
+  }
+}
