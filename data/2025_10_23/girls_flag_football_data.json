@@ -1,0 +1,306 @@
+{
+  "rushing": [
+    {
+      "player": "Lexi Petrie",
+      "school": "Linganore",
+      "att": "44",
+      "yds": "296",
+      "avg": "6.7",
+      "td": "3"
+    },
+    {
+      "player": "Rachael Hepner",
+      "school": "Linganore",
+      "att": "23",
+      "yds": "292",
+      "avg": "12.7",
+      "td": "1"
+    },
+    {
+      "player": "Da\u2019Myra Wallace",
+      "school": "Frederick",
+      "att": "31",
+      "yds": "256",
+      "avg": "8.3",
+      "td": "5"
+    },
+    {
+      "player": "Ashlyn Lackemeyer",
+      "school": "Oakdale",
+      "att": "40",
+      "yds": "244",
+      "avg": "6.1",
+      "td": "1"
+    },
+    {
+      "player": "Morgan Booth",
+      "school": "Oakdale",
+      "att": "25",
+      "yds": "180",
+      "avg": "7.2",
+      "td": "0"
+    },
+    {
+      "player": "Brynn Bradshaw",
+      "school": "Tuscarora",
+      "att": "20",
+      "yds": "141",
+      "avg": "7.1",
+      "td": "1"
+    },
+    {
+      "player": "Abena Adu",
+      "school": "Tuscarora",
+      "att": "24",
+      "yds": "117",
+      "avg": "4.9",
+      "td": "1"
+    },
+    {
+      "player": "Allie Keller",
+      "school": "Catoctin",
+      "att": "-",
+      "yds": "91",
+      "avg": "-",
+      "td": "-"
+    },
+    {
+      "player": "Addison Shackleford",
+      "school": "Brun.",
+      "att": "23",
+      "yds": "82",
+      "avg": "3.6",
+      "td": "0"
+    },
+    {
+      "player": "Emma Rosales",
+      "school": "Tuscarora",
+      "att": "22",
+      "yds": "56",
+      "avg": "2.5",
+      "td": "0"
+    },
+    {
+      "player": "Sha\u2019Niyah Goines",
+      "school": "Frederick",
+      "att": "6",
+      "yds": "48",
+      "avg": "8.0",
+      "td": "0"
+    },
+    {
+      "player": "Melysa Morales",
+      "school": "Tuscarora",
+      "att": "12",
+      "yds": "45",
+      "avg": "3.8",
+      "td": "0"
+    }
+  ],
+  "passing": [
+    {
+      "player": "Lexi Petrie",
+      "school": "Linganore",
+      "comp": "168",
+      "att": "272",
+      "pct": ".618",
+      "yds": "2,150",
+      "td": "25"
+    },
+    {
+      "player": "Da\u2019Myra Wallace",
+      "school": "Frederick",
+      "comp": "141",
+      "att": "249",
+      "pct": ".566",
+      "yds": "1,936",
+      "td": "20"
+    },
+    {
+      "player": "Audrey Newton",
+      "school": "Urbana",
+      "comp": "156",
+      "att": "228",
+      "pct": ".684",
+      "yds": "1,655",
+      "td": "23"
+    },
+    {
+      "player": "Ashlyn Lackemeyer",
+      "school": "Oakdale",
+      "comp": "107",
+      "att": "224",
+      "pct": ".478",
+      "yds": "1,296",
+      "td": "12"
+    },
+    {
+      "player": "Chloe Mathias",
+      "school": "Catoctin",
+      "comp": "-",
+      "att": "-",
+      "pct": "-",
+      "yds": "436",
+      "td": "-"
+    },
+    {
+      "player": "Addison Shackleford",
+      "school": "Brun.",
+      "comp": "23",
+      "att": "59",
+      "pct": ".390",
+      "yds": "287",
+      "td": "1"
+    },
+    {
+      "player": "Addison Fehl",
+      "school": "Urbana",
+      "comp": "24",
+      "att": "46",
+      "pct": ".522",
+      "yds": "190",
+      "td": "4"
+    },
+    {
+      "player": "Scarlett Hudson",
+      "school": "Urbana",
+      "comp": "18",
+      "att": "35",
+      "pct": ".514",
+      "yds": "180",
+      "td": "3"
+    },
+    {
+      "player": "Brynn Bradshaw",
+      "school": "Tuscarora",
+      "comp": "14",
+      "att": "22",
+      "pct": ".636",
+      "yds": "151",
+      "td": "2"
+    },
+    {
+      "player": "Abena Adu",
+      "school": "Tuscarora",
+      "comp": "7",
+      "att": "32",
+      "pct": ".219",
+      "yds": "100",
+      "td": "0"
+    }
+  ],
+  "receiving": [
+    {
+      "player": "Makenna Roberts",
+      "school": "Linganore",
+      "rec": "69",
+      "yds": "833",
+      "td": "10"
+    },
+    {
+      "player": "Maya Robinson",
+      "school": "Frederick",
+      "rec": "57",
+      "yds": "786",
+      "td": "11"
+    },
+    {
+      "player": "Avery Ray",
+      "school": "Oakdale",
+      "rec": "41",
+      "yds": "476",
+      "td": "8"
+    },
+    {
+      "player": "Julia Duerr",
+      "school": "Urbana",
+      "rec": "37",
+      "yds": "348",
+      "td": "4"
+    },
+    {
+      "player": "Rachael Hepner",
+      "school": "Linganore",
+      "rec": "36",
+      "yds": "458",
+      "td": "8"
+    },
+    {
+      "player": "Sha\u2019Niyah Goines",
+      "school": "Frederick",
+      "rec": "33",
+      "yds": "554",
+      "td": "2"
+    },
+    {
+      "player": "Mackenna Patterson",
+      "school": "Urbana",
+      "rec": "27",
+      "yds": "277",
+      "td": "1"
+    },
+    {
+      "player": "Elena Doyle",
+      "school": "Linganore",
+      "rec": "27",
+      "yds": "262",
+      "td": "2"
+    },
+    {
+      "player": "Morgan Booth",
+      "school": "Oakdale",
+      "rec": "23",
+      "yds": "248",
+      "td": "3"
+    },
+    {
+      "player": "Molly Hagan",
+      "school": "Oakdale",
+      "rec": "22",
+      "yds": "301",
+      "td": "0"
+    },
+    {
+      "player": "Kyla Gales",
+      "school": "Frederick",
+      "rec": "21",
+      "yds": "268",
+      "td": "4"
+    },
+    {
+      "player": "Colby Johnson",
+      "school": "Urbana",
+      "rec": "18",
+      "yds": "251",
+      "td": "4"
+    },
+    {
+      "player": "Addison Queen",
+      "school": "Urbana",
+      "rec": "17",
+      "yds": "214",
+      "td": "3"
+    },
+    {
+      "player": "Avery Walder",
+      "school": "Urbana",
+      "rec": "17",
+      "yds": "199",
+      "td": "4"
+    },
+    {
+      "player": "Emma Warner",
+      "school": "Urbana",
+      "rec": "17",
+      "yds": "141",
+      "td": "3"
+    },
+    {
+      "player": "Lilli Pontius",
+      "school": "Urbana",
+      "rec": "15",
+      "yds": "192",
+      "td": "4"
+    }
+  ]
+}

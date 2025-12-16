@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girls Flag Football - High School Hangout (Dec 6, 2025)</title>
+    <title>Girls Flag Football Player Stats - High School Hangout (Oct 23, 2025)</title>
     <style>
         * {
             margin: 0;
@@ -50,83 +50,13 @@
             margin: 30px 0;
         }
 
-        .sport-title {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #666;
-        }
-
-        .conference-title {
-            font-size: 22px;
-            color: #444;
-            margin: 30px 0 15px 0;
-            font-weight: bold;
-        }
-
-        .division-title {
-            font-size: 18px;
-            color: #555;
-            margin: 25px 0 10px 0;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
         .section-title {
             font-size: 24px;
             color: #333;
             margin-bottom: 20px;
-            margin-top: 50px;
             padding-bottom: 10px;
             border-bottom: 2px solid #666;
             text-transform: uppercase;
-        }
-
-        .standings {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0 30px 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .standings th,
-        .standings td {
-            padding: 12px 10px;
-            border: 1px solid #ddd;
-        }
-
-        .standings thead th {
-            background-color: #333;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            font-size: 13px;
-            letter-spacing: 0.5px;
-        }
-
-        .standings th:first-child {
-            text-align: left;
-        }
-
-        .standings td {
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .standings td:first-child {
-            text-align: left;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .standings tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .standings tbody tr:hover {
-            background-color: #e8f4f8;
-            transition: background-color 0.2s ease;
         }
 
         .stats-table {
@@ -207,41 +137,29 @@
                 font-size: 24px;
             }
 
-            .sport-title {
-                font-size: 22px;
-            }
-
-            .division-title {
-                font-size: 16px;
-            }
-
             .section-title {
                 font-size: 20px;
             }
 
-            .standings th,
-            .standings td,
             .stats-table th,
             .stats-table td {
-                padding: 8px 4px;
-                font-size: 12px;
+                padding: 8px 10px;
+                font-size: 14px;
             }
         }
 
-        /* Print styles */
         @media print {
             body {
                 background-color: white;
+                padding: 0;
             }
 
             .container {
                 box-shadow: none;
-                padding: 0;
             }
 
-            .standings tbody tr:hover,
             .stats-table tbody tr:hover {
-                background-color: transparent;
+                background-color: inherit;
             }
         }
     </style>
@@ -249,107 +167,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>Girls Flag Football - Team Standings & Individual Leaders</h1>
-            <p class="subtitle">Updated Through December 4, 2025</p>
+            <h1>Girls Flag Football Individual Leaders</h1>
+            <p class="subtitle">Updated Through October 21, 2025</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
         <main>
-            <!-- TEAM STANDINGS SECTION -->
-            <section id="standings" class="sport-section">
-                <h2 class="sport-title">Team Standings</h2>
 
-                <h3 class="conference-title">FCPS</h3>
-                <table class="standings">
-                    <thead>
-                        <tr>
-                            <th>Team</th>
-                            <th>W</th>
-                            <th>L</th>
-                            <th>PF</th>
-                            <th>PA</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Urbana</td>
-                            <td>8</td>
-                            <td>0</td>
-                            <td>240</td>
-                            <td>37</td>
-                        </tr>
-                        <tr>
-                            <td>Linganore</td>
-                            <td>7</td>
-                            <td>2</td>
-                            <td>199</td>
-                            <td>72</td>
-                        </tr>
-                        <tr>
-                            <td>Frederick</td>
-                            <td>6</td>
-                            <td>2</td>
-                            <td>186</td>
-                            <td>58</td>
-                        </tr>
-                        <tr>
-                            <td>Thomas Johnson</td>
-                            <td>6</td>
-                            <td>2</td>
-                            <td>163</td>
-                            <td>51</td>
-                        </tr>
-                        <tr>
-                            <td>Oakdale</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>78</td>
-                            <td>107</td>
-                        </tr>
-                        <tr>
-                            <td>Walkersville</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>35</td>
-                            <td>108</td>
-                        </tr>
-                        <tr>
-                            <td>Tuscarora</td>
-                            <td>2</td>
-                            <td>5</td>
-                            <td>22</td>
-                            <td>61</td>
-                        </tr>
-                        <tr>
-                            <td>Middletown</td>
-                            <td>2</td>
-                            <td>6</td>
-                            <td>112</td>
-                            <td>146</td>
-                        </tr>
-                        <tr>
-                            <td>Brunswick</td>
-                            <td>2</td>
-                            <td>6</td>
-                            <td>26</td>
-                            <td>165</td>
-                        </tr>
-                        <tr>
-                            <td>Catoctin</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>33</td>
-                            <td>177</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            
-            <!-- PLAYER STATS SECTION -->
-            <section id="player-stats" class="sport-section">
-                <h2 class="section-title">Individual Leaders</h2>
-<div class="sport-section">
+            <div class="sport-section">
                 <h2 class="section-title">Rushing Leaders</h2>
                 <table class="stats-table">
                     <thead>
@@ -744,449 +569,11 @@
                 </table>
             </div>
 
-            <div class="sport-section">
-                <h2 class="section-title">Defensive Leaders</h2>
-                <table class="stats-table">
-                    <thead>
-                        <tr>
-                            <th>Player</th>
-                            <th>School</th>
-                            <th>Tkl</th>
-                            <th>TFL</th>
-                            <th>Int</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Brooklyn Dommel</td>
-                            <td>Linganore</td>
-                            <td>67</td>
-                            <td>0</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Jordyn Summers</td>
-                            <td>Frederick</td>
-                            <td>57</td>
-                            <td>5</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Melysa Morales</td>
-                            <td>Tuscarora</td>
-                            <td>55</td>
-                            <td>7</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Lily Savoie</td>
-                            <td>Oakdale</td>
-                            <td>53</td>
-                            <td>0</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Makenna Roberts</td>
-                            <td>Linganore</td>
-                            <td>52</td>
-                            <td>0</td>
-                            <td>13</td>
-                        </tr>
-                        <tr>
-                            <td>Jenell Quansah</td>
-                            <td>Linganore</td>
-                            <td>52</td>
-                            <td>6</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Morgan Booth</td>
-                            <td>Oakdale</td>
-                            <td>48</td>
-                            <td>19</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Zoe Lange</td>
-                            <td>Linganore</td>
-                            <td>48</td>
-                            <td>0</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Mackenna Patterson</td>
-                            <td>Urbana</td>
-                            <td>47</td>
-                            <td>0</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>Kessy Panou-Kwadjambou</td>
-                            <td>Frederick</td>
-                            <td>44</td>
-                            <td>28</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Cahya Jefferson</td>
-                            <td>Tuscarora</td>
-                            <td>44</td>
-                            <td>1</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>Lily Childers</td>
-                            <td>Linganore</td>
-                            <td>43</td>
-                            <td>12</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Brooke Putnam</td>
-                            <td>Walkersville</td>
-                            <td>43</td>
-                            <td>0</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>Layla Curtis</td>
-                            <td>Tuscarora</td>
-                            <td>42</td>
-                            <td>7</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Maya Lambert</td>
-                            <td>Linganore</td>
-                            <td>42</td>
-                            <td>0</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Lily Brown</td>
-                            <td>Middletown</td>
-                            <td>38</td>
-                            <td>5</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Ava Carlson</td>
-                            <td>Walkersville</td>
-                            <td>38</td>
-                            <td>1</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Charlotte Haga</td>
-                            <td>Brunswick</td>
-                            <td>38</td>
-                            <td>0</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Christiana Smith</td>
-                            <td>Catoctin</td>
-                            <td>38</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Nyah Brooks</td>
-                            <td>Thomas Johnson</td>
-                            <td>37</td>
-                            <td>0</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Avery Ray</td>
-                            <td>Oakdale</td>
-                            <td>37</td>
-                            <td>0</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Katherine Christian-Rawls</td>
-                            <td>Frederick</td>
-                            <td>37</td>
-                            <td>0</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Madelyn Hartman</td>
-                            <td>Oakdale</td>
-                            <td>36</td>
-                            <td>21</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Avery Schneider</td>
-                            <td>Middletown</td>
-                            <td>36</td>
-                            <td>19</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Brynn Bradshaw</td>
-                            <td>Tuscarora</td>
-                            <td>35</td>
-                            <td>4</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Ade Adebambo</td>
-                            <td>Thomas Johnson</td>
-                            <td>35</td>
-                            <td>0</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Sienna Russo</td>
-                            <td>Brunswick</td>
-                            <td>34</td>
-                            <td>13</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Elianna Dougan</td>
-                            <td>Urbana</td>
-                            <td>33</td>
-                            <td>24</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Kate Virgilio</td>
-                            <td>Brunswick</td>
-                            <td>33</td>
-                            <td>12</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Rylie Howard</td>
-                            <td>Frederick</td>
-                            <td>33</td>
-                            <td>0</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Addison Wadding</td>
-                            <td>Tuscarora</td>
-                            <td>32</td>
-                            <td>18</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Kaitlyn Ramos</td>
-                            <td>Linganore</td>
-                            <td>32</td>
-                            <td>17</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Addison Queen</td>
-                            <td>Urbana</td>
-                            <td>32</td>
-                            <td>0</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Alanah Fore</td>
-                            <td>Walkersville</td>
-                            <td>31</td>
-                            <td>4</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Ella Sadiku</td>
-                            <td>Brunswick</td>
-                            <td>31</td>
-                            <td>0</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Sarah Chlebda</td>
-                            <td>Oakdale</td>
-                            <td>31</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Allie Miranda</td>
-                            <td>Tuscarora</td>
-                            <td>30</td>
-                            <td>3</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Tatiana Gonzalez</td>
-                            <td>Urbana</td>
-                            <td>28</td>
-                            <td>0</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Bella Sindler</td>
-                            <td>Brunswick</td>
-                            <td>27</td>
-                            <td>6</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Natasha Hall</td>
-                            <td>Frederick</td>
-                            <td>26</td>
-                            <td>3</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Becca Burgess</td>
-                            <td>Middletown</td>
-                            <td>26</td>
-                            <td>1</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Savannah Seir</td>
-                            <td>Brunswick</td>
-                            <td>26</td>
-                            <td>0</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Addison Dryman</td>
-                            <td>Linganore</td>
-                            <td>26</td>
-                            <td>0</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Lily Ault</td>
-                            <td>Brunswick</td>
-                            <td>25</td>
-                            <td>1</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>Summer Singletary</td>
-                            <td>Frederick</td>
-                            <td>25</td>
-                            <td>0</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Ava Pauley</td>
-                            <td>Linganore</td>
-                            <td>24</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Claire Duclos</td>
-                            <td>Urbana</td>
-                            <td>20</td>
-                            <td>16</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Dominique Williams</td>
-                            <td>Oakdale</td>
-                            <td>20</td>
-                            <td>8</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Lily Bastian</td>
-                            <td>Urbana</td>
-                            <td>19</td>
-                            <td>11</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Kayla Tyler</td>
-                            <td>Urbana</td>
-                            <td>19</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Emma Rosales</td>
-                            <td>Tuscarora</td>
-                            <td>17</td>
-                            <td>15</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Ava Higgins</td>
-                            <td>Brunswick</td>
-                            <td>17</td>
-                            <td>0</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Aliyah Mahicka</td>
-                            <td>Thomas Johnson</td>
-                            <td>15</td>
-                            <td>10</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Katelyn Waguespack</td>
-                            <td>Thomas Johnson</td>
-                            <td>14</td>
-                            <td>0</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Molly Hagan</td>
-                            <td>Oakdale</td>
-                            <td>14</td>
-                            <td>0</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Zoe Nso</td>
-                            <td>Thomas Johnson</td>
-                            <td>12</td>
-                            <td>0</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>Solana Hindman</td>
-                            <td>Brunswick</td>
-                            <td>12</td>
-                            <td>0</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Marlene Kolonda</td>
-                            <td>Frederick</td>
-                            <td>11</td>
-                            <td>9</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Jocelyn Hayward</td>
-                            <td>Frederick</td>
-                            <td>10</td>
-                            <td>0</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Jayna Day</td>
-                            <td>Oakdale</td>
-                            <td>10</td>
-                            <td>0</td>
-                            <td>1</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            </section>
         </main>
 
         <footer>
             <p><strong>Column Abbreviations:</strong></p>
-            <p>W = Wins, L = Losses, PF = Points For, PA = Points Against</p>
-            <p>Att = Attempts, Yds = Yards, Avg = Average, TD = Touchdowns, Comp = Completions, Pct = Completion Percentage, Rec = Receptions</p>
+            <p>Att = Attempts, Yds = Yards, Avg = Average, TD = Touchdowns, Comp = Completions, Pct = Completion Percentage, Rec = Receptions, Tkl = Tackles, TFL = Tackles for Loss, Int = Interceptions</p>
             <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
             <p>Statistics submitted by coaches and team statisticians</p>
         </footer>

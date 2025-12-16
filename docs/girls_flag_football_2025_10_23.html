@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girls Flag Football - High School Hangout (Oct 23, 2025)</title>
+    <title>Girls Flag Football Player Stats - High School Hangout (Oct 23, 2025)</title>
     <style>
         * {
             margin: 0;
@@ -50,83 +50,13 @@
             margin: 30px 0;
         }
 
-        .sport-title {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #666;
-        }
-
-        .conference-title {
-            font-size: 22px;
-            color: #444;
-            margin: 30px 0 15px 0;
-            font-weight: bold;
-        }
-
-        .division-title {
-            font-size: 18px;
-            color: #555;
-            margin: 25px 0 10px 0;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
         .section-title {
             font-size: 24px;
             color: #333;
             margin-bottom: 20px;
-            margin-top: 50px;
             padding-bottom: 10px;
             border-bottom: 2px solid #666;
             text-transform: uppercase;
-        }
-
-        .standings {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0 30px 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .standings th,
-        .standings td {
-            padding: 12px 10px;
-            border: 1px solid #ddd;
-        }
-
-        .standings thead th {
-            background-color: #333;
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            font-size: 13px;
-            letter-spacing: 0.5px;
-        }
-
-        .standings th:first-child {
-            text-align: left;
-        }
-
-        .standings td {
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .standings td:first-child {
-            text-align: left;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .standings tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .standings tbody tr:hover {
-            background-color: #e8f4f8;
-            transition: background-color 0.2s ease;
         }
 
         .stats-table {
@@ -207,41 +137,29 @@
                 font-size: 24px;
             }
 
-            .sport-title {
-                font-size: 22px;
-            }
-
-            .division-title {
-                font-size: 16px;
-            }
-
             .section-title {
                 font-size: 20px;
             }
 
-            .standings th,
-            .standings td,
             .stats-table th,
             .stats-table td {
-                padding: 8px 4px;
-                font-size: 12px;
+                padding: 8px 10px;
+                font-size: 14px;
             }
         }
 
-        /* Print styles */
         @media print {
             body {
                 background-color: white;
+                padding: 0;
             }
 
             .container {
                 box-shadow: none;
-                padding: 0;
             }
 
-            .standings tbody tr:hover,
             .stats-table tbody tr:hover {
-                background-color: transparent;
+                background-color: inherit;
             }
         }
     </style>
@@ -249,467 +167,370 @@
 <body>
     <div class="container">
         <header>
-            <h1>Girls Flag Football - Team Standings & Individual Leaders</h1>
+            <h1>Girls Flag Football Individual Leaders</h1>
             <p class="subtitle">Updated Through October 21, 2025</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
         <main>
-            <!-- TEAM STANDINGS SECTION -->
-            <section id="standings" class="sport-section">
-                <h2 class="sport-title">Team Standings</h2>
 
-                <h3 class="conference-title">FCPS</h3>
-                <table class="standings">
+            <div class="sport-section">
+                <h2 class="section-title">Rushing Leaders</h2>
+                <table class="stats-table">
                     <thead>
                         <tr>
-                            <th>Team</th>
-                            <th>W</th>
-                            <th>L</th>
-                            <th>PF</th>
-                            <th>PA</th>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>Att</th>
+                            <th>Yds</th>
+                            <th>Avg</th>
+                            <th>TD</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Urbana</td>
-                            <td>8</td>
-                            <td>0</td>
-                            <td>240</td>
-                            <td>37</td>
-                        </tr>
-                        <tr>
+                            <td>Lexi Petrie</td>
                             <td>Linganore</td>
-                            <td>7</td>
-                            <td>2</td>
-                            <td>199</td>
-                            <td>72</td>
+                            <td>44</td>
+                            <td>296</td>
+                            <td>6.7</td>
+                            <td>3</td>
                         </tr>
                         <tr>
+                            <td>Rachael Hepner</td>
+                            <td>Linganore</td>
+                            <td>23</td>
+                            <td>292</td>
+                            <td>12.7</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Da’Myra Wallace</td>
+                            <td>Frederick</td>
+                            <td>31</td>
+                            <td>256</td>
+                            <td>8.3</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Ashlyn Lackemeyer</td>
+                            <td>Oakdale</td>
+                            <td>40</td>
+                            <td>244</td>
+                            <td>6.1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Morgan Booth</td>
+                            <td>Oakdale</td>
+                            <td>25</td>
+                            <td>180</td>
+                            <td>7.2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Brynn Bradshaw</td>
+                            <td>Tuscarora</td>
+                            <td>20</td>
+                            <td>141</td>
+                            <td>7.1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Abena Adu</td>
+                            <td>Tuscarora</td>
+                            <td>24</td>
+                            <td>117</td>
+                            <td>4.9</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Allie Keller</td>
+                            <td>Catoctin</td>
+                            <td>-</td>
+                            <td>91</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Addison Shackleford</td>
+                            <td>Brunswick</td>
+                            <td>23</td>
+                            <td>82</td>
+                            <td>3.6</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Emma Rosales</td>
+                            <td>Tuscarora</td>
+                            <td>22</td>
+                            <td>56</td>
+                            <td>2.5</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sha’Niyah Goines</td>
                             <td>Frederick</td>
                             <td>6</td>
-                            <td>2</td>
-                            <td>186</td>
-                            <td>58</td>
+                            <td>48</td>
+                            <td>8.0</td>
+                            <td>0</td>
                         </tr>
                         <tr>
-                            <td>Thomas Johnson</td>
-                            <td>6</td>
-                            <td>2</td>
-                            <td>163</td>
-                            <td>51</td>
-                        </tr>
-                        <tr>
-                            <td>Oakdale</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>78</td>
-                            <td>107</td>
-                        </tr>
-                        <tr>
-                            <td>Walkersville</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>35</td>
-                            <td>108</td>
-                        </tr>
-                        <tr>
+                            <td>Melysa Morales</td>
                             <td>Tuscarora</td>
-                            <td>2</td>
-                            <td>5</td>
-                            <td>22</td>
-                            <td>61</td>
-                        </tr>
-                        <tr>
-                            <td>Middletown</td>
-                            <td>2</td>
-                            <td>6</td>
-                            <td>112</td>
-                            <td>146</td>
-                        </tr>
-                        <tr>
-                            <td>Brunswick</td>
-                            <td>2</td>
-                            <td>6</td>
-                            <td>26</td>
-                            <td>165</td>
-                        </tr>
-                        <tr>
-                            <td>Catoctin</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>33</td>
-                            <td>177</td>
+                            <td>12</td>
+                            <td>45</td>
+                            <td>3.8</td>
+                            <td>0</td>
                         </tr>
                     </tbody>
                 </table>
-            </section>
+            </div>
 
-            <!-- PLAYER STATS SECTION -->
-            <section id="player-stats" class="sport-section">
-                <h2 class="section-title">Individual Leaders</h2>
+            <div class="sport-section">
+                <h2 class="section-title">Passing Leaders</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>Comp</th>
+                            <th>Att</th>
+                            <th>Pct</th>
+                            <th>Yds</th>
+                            <th>TD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lexi Petrie</td>
+                            <td>Linganore</td>
+                            <td>168</td>
+                            <td>272</td>
+                            <td>.618</td>
+                            <td>2,150</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Da’Myra Wallace</td>
+                            <td>Frederick</td>
+                            <td>141</td>
+                            <td>249</td>
+                            <td>.566</td>
+                            <td>1,936</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Audrey Newton</td>
+                            <td>Urbana</td>
+                            <td>156</td>
+                            <td>228</td>
+                            <td>.684</td>
+                            <td>1,655</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Ashlyn Lackemeyer</td>
+                            <td>Oakdale</td>
+                            <td>107</td>
+                            <td>224</td>
+                            <td>.478</td>
+                            <td>1,296</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Chloe Mathias</td>
+                            <td>Catoctin</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>436</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Addison Shackleford</td>
+                            <td>Brunswick</td>
+                            <td>23</td>
+                            <td>59</td>
+                            <td>.390</td>
+                            <td>287</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Addison Fehl</td>
+                            <td>Urbana</td>
+                            <td>24</td>
+                            <td>46</td>
+                            <td>.522</td>
+                            <td>190</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Scarlett Hudson</td>
+                            <td>Urbana</td>
+                            <td>18</td>
+                            <td>35</td>
+                            <td>.514</td>
+                            <td>180</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Brynn Bradshaw</td>
+                            <td>Tuscarora</td>
+                            <td>14</td>
+                            <td>22</td>
+                            <td>.636</td>
+                            <td>151</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Abena Adu</td>
+                            <td>Tuscarora</td>
+                            <td>7</td>
+                            <td>32</td>
+                            <td>.219</td>
+                            <td>100</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                <!-- Rushing Leaders -->
-                <div class="sport-section">
-                    <h3 class="division-title">Rushing Leaders</h3>
-                    <table class="stats-table">
-                        <thead>
-                            <tr>
-                                <th>Player</th>
-                                <th>School</th>
-                                <th>Att</th>
-                                <th>Yds</th>
-                                <th>Avg</th>
-                                <th>TD</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Lexi Petrie</td>
-                                <td>Linganore</td>
-                                <td>44</td>
-                                <td>296</td>
-                                <td>6.7</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Rachael Hepner</td>
-                                <td>Linganore</td>
-                                <td>23</td>
-                                <td>292</td>
-                                <td>12.7</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Da'Myra Wallace</td>
-                                <td>Frederick</td>
-                                <td>31</td>
-                                <td>256</td>
-                                <td>8.3</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>Ashlyn Lackemeyer</td>
-                                <td>Oakdale</td>
-                                <td>40</td>
-                                <td>244</td>
-                                <td>6.1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Morgan Booth</td>
-                                <td>Oakdale</td>
-                                <td>25</td>
-                                <td>180</td>
-                                <td>7.2</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>Brynn Bradshaw</td>
-                                <td>Tuscarora</td>
-                                <td>20</td>
-                                <td>141</td>
-                                <td>7.1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Abena Adu</td>
-                                <td>Tuscarora</td>
-                                <td>24</td>
-                                <td>117</td>
-                                <td>4.9</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Allie Keller</td>
-                                <td>Catoctin</td>
-                                <td>-</td>
-                                <td>91</td>
-                                <td>-</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>Addison Shackleford</td>
-                                <td>Brunswick</td>
-                                <td>23</td>
-                                <td>82</td>
-                                <td>3.6</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>Emma Rosales</td>
-                                <td>Tuscarora</td>
-                                <td>22</td>
-                                <td>56</td>
-                                <td>2.5</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>Sha'Niyah Goines</td>
-                                <td>Frederick</td>
-                                <td>6</td>
-                                <td>48</td>
-                                <td>8.0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>Melysa Morales</td>
-                                <td>Tuscarora</td>
-                                <td>12</td>
-                                <td>45</td>
-                                <td>3.8</td>
-                                <td>0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="sport-section">
+                <h2 class="section-title">Receiving Leaders</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>School</th>
+                            <th>Rec</th>
+                            <th>Yds</th>
+                            <th>TD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Makenna Roberts</td>
+                            <td>Linganore</td>
+                            <td>69</td>
+                            <td>833</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Maya Robinson</td>
+                            <td>Frederick</td>
+                            <td>57</td>
+                            <td>786</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>Avery Ray</td>
+                            <td>Oakdale</td>
+                            <td>41</td>
+                            <td>476</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Julia Duerr</td>
+                            <td>Urbana</td>
+                            <td>37</td>
+                            <td>348</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Rachael Hepner</td>
+                            <td>Linganore</td>
+                            <td>36</td>
+                            <td>458</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Sha’Niyah Goines</td>
+                            <td>Frederick</td>
+                            <td>33</td>
+                            <td>554</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Mackenna Patterson</td>
+                            <td>Urbana</td>
+                            <td>27</td>
+                            <td>277</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Elena Doyle</td>
+                            <td>Linganore</td>
+                            <td>27</td>
+                            <td>262</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Morgan Booth</td>
+                            <td>Oakdale</td>
+                            <td>23</td>
+                            <td>248</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Molly Hagan</td>
+                            <td>Oakdale</td>
+                            <td>22</td>
+                            <td>301</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Kyla Gales</td>
+                            <td>Frederick</td>
+                            <td>21</td>
+                            <td>268</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Colby Johnson</td>
+                            <td>Urbana</td>
+                            <td>18</td>
+                            <td>251</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Addison Queen</td>
+                            <td>Urbana</td>
+                            <td>17</td>
+                            <td>214</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Avery Walder</td>
+                            <td>Urbana</td>
+                            <td>17</td>
+                            <td>199</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Emma Warner</td>
+                            <td>Urbana</td>
+                            <td>17</td>
+                            <td>141</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Lilli Pontius</td>
+                            <td>Urbana</td>
+                            <td>15</td>
+                            <td>192</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                <!-- Passing Leaders -->
-                <div class="sport-section">
-                    <h3 class="division-title">Passing Leaders</h3>
-                    <table class="stats-table">
-                        <thead>
-                            <tr>
-                                <th>Player</th>
-                                <th>School</th>
-                                <th>Comp</th>
-                                <th>Att</th>
-                                <th>Pct</th>
-                                <th>Yds</th>
-                                <th>TD</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Lexi Petrie</td>
-                                <td>Linganore</td>
-                                <td>168</td>
-                                <td>272</td>
-                                <td>.618</td>
-                                <td>2,150</td>
-                                <td>25</td>
-                            </tr>
-                            <tr>
-                                <td>Da'Myra Wallace</td>
-                                <td>Frederick</td>
-                                <td>141</td>
-                                <td>249</td>
-                                <td>.566</td>
-                                <td>1,936</td>
-                                <td>20</td>
-                            </tr>
-                            <tr>
-                                <td>Audrey Newton</td>
-                                <td>Urbana</td>
-                                <td>156</td>
-                                <td>228</td>
-                                <td>.684</td>
-                                <td>1,655</td>
-                                <td>23</td>
-                            </tr>
-                            <tr>
-                                <td>Ashlyn Lackemeyer</td>
-                                <td>Oakdale</td>
-                                <td>107</td>
-                                <td>224</td>
-                                <td>.478</td>
-                                <td>1,296</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <td>Chloe Mathias</td>
-                                <td>Catoctin</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>436</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>Addison Shackleford</td>
-                                <td>Brunswick</td>
-                                <td>23</td>
-                                <td>59</td>
-                                <td>.390</td>
-                                <td>287</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Addison Fehl</td>
-                                <td>Urbana</td>
-                                <td>24</td>
-                                <td>46</td>
-                                <td>.522</td>
-                                <td>190</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>Scarlett Hudson</td>
-                                <td>Urbana</td>
-                                <td>18</td>
-                                <td>35</td>
-                                <td>.514</td>
-                                <td>180</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Brynn Bradshaw</td>
-                                <td>Tuscarora</td>
-                                <td>14</td>
-                                <td>22</td>
-                                <td>.636</td>
-                                <td>151</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Abena Adu</td>
-                                <td>Tuscarora</td>
-                                <td>7</td>
-                                <td>32</td>
-                                <td>.219</td>
-                                <td>100</td>
-                                <td>0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Receiving Leaders -->
-                <div class="sport-section">
-                    <h3 class="division-title">Receiving Leaders</h3>
-                    <table class="stats-table">
-                        <thead>
-                            <tr>
-                                <th>Player</th>
-                                <th>School</th>
-                                <th>Rec</th>
-                                <th>Yds</th>
-                                <th>TD</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Makenna Roberts</td>
-                                <td>Linganore</td>
-                                <td>69</td>
-                                <td>833</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>Maya Robinson</td>
-                                <td>Frederick</td>
-                                <td>57</td>
-                                <td>786</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>Avery Ray</td>
-                                <td>Oakdale</td>
-                                <td>41</td>
-                                <td>476</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <td>Julia Duerr</td>
-                                <td>Urbana</td>
-                                <td>37</td>
-                                <td>348</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>Rachael Hepner</td>
-                                <td>Linganore</td>
-                                <td>36</td>
-                                <td>458</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <td>Sha'Niyah Goines</td>
-                                <td>Frederick</td>
-                                <td>33</td>
-                                <td>554</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Mackenna Patterson</td>
-                                <td>Urbana</td>
-                                <td>27</td>
-                                <td>277</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Elena Doyle</td>
-                                <td>Linganore</td>
-                                <td>27</td>
-                                <td>262</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Morgan Booth</td>
-                                <td>Oakdale</td>
-                                <td>23</td>
-                                <td>248</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Molly Hagan</td>
-                                <td>Oakdale</td>
-                                <td>22</td>
-                                <td>301</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>Kyla Gales</td>
-                                <td>Frederick</td>
-                                <td>21</td>
-                                <td>268</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>Colby Johnson</td>
-                                <td>Urbana</td>
-                                <td>18</td>
-                                <td>251</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>Addison Queen</td>
-                                <td>Urbana</td>
-                                <td>17</td>
-                                <td>214</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Avery Walder</td>
-                                <td>Urbana</td>
-                                <td>17</td>
-                                <td>199</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>Emma Warner</td>
-                                <td>Urbana</td>
-                                <td>17</td>
-                                <td>141</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Lilli Pontius</td>
-                                <td>Urbana</td>
-                                <td>15</td>
-                                <td>192</td>
-                                <td>4</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
         </main>
 
         <footer>
             <p><strong>Column Abbreviations:</strong></p>
-            <p>W = Wins, L = Losses, PF = Points For, PA = Points Against</p>
-            <p>Att = Attempts, Yds = Yards, Avg = Average, TD = Touchdowns, Comp = Completions, Pct = Completion Percentage, Rec = Receptions</p>
+            <p>Att = Attempts, Yds = Yards, Avg = Average, TD = Touchdowns, Comp = Completions, Pct = Completion Percentage, Rec = Receptions, Tkl = Tackles, TFL = Tackles for Loss, Int = Interceptions</p>
             <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
             <p>Statistics submitted by coaches and team statisticians</p>
         </footer>

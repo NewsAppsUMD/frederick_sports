@@ -793,10 +793,11 @@ def parse_cross_country_stats(text: str) -> Dict[str, List[Dict[str, Any]]]:
     # Split text into lines for easier parsing
     lines = text.split('\n')
 
-    # Find "Top 5K Times" section
+    # Find "Top 5K Times" section (case-insensitive)
     top_5k_idx = None
     for i, line in enumerate(lines):
-        if line.strip() == 'Top 5K Times':
+        stripped = line.strip()
+        if stripped.upper() == 'TOP 5K TIMES':
             top_5k_idx = i
             break
 

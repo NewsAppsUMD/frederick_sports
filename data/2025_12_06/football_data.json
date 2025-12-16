@@ -1,72 +1,396 @@
 {
-  "standings": {
-    "FCPS": [],
-    "Other Schools": []
-  },
-  "stats": {
-    "rushing": [
-      {
-        "player": "Bradly Matthews",
-        "school": "Linganore",
-        "att": "246",
-        "yds": "2124",
-        "avg": "8.63",
-        "td": "41"
-      }
-    ],
-    "passing": [
-      {
-        "player": "Brittin Poffenbarger",
-        "school": "Middletown",
-        "comp": "148",
-        "att": "206",
-        "pct": ".718",
-        "yds": "2461",
-        "td": "29"
-      },
-      {
-        "player": "Randy Embrey",
-        "school": "Thomas Johnson",
-        "comp": "145",
-        "att": "265",
-        "pct": ".547",
-        "yds": "2243",
-        "td": "22"
-      },
-      {
-        "player": "Miles Robinson",
-        "school": "Frederick",
-        "comp": "197",
-        "att": "282",
-        "pct": ".699",
-        "yds": "2096",
-        "td": "16"
-      },
-      {
-        "player": "Owen Brooks",
-        "school": "Walkersville",
-        "comp": "74",
-        "att": "163",
-        "pct": ".454",
-        "yds": "1192",
-        "td": "9"
-      }
-    ],
-    "receiving": [
-      {
-        "player": "Charlotte Felton",
-        "school": "Middletown",
-        "rec": "15",
-        "yds": "33",
-        "td": "6"
-      },
-      {
-        "player": "Jocelyn Miller",
-        "school": "Middletown",
-        "rec": "55",
-        "yds": "189",
-        "td": ".256"
-      }
-    ]
-  }
+  "rushing": [
+    {
+      "player": "Bradly Matthews",
+      "school": "Linganore",
+      "att": "246",
+      "yds": "2,124",
+      "avg": "8.63",
+      "td": "41"
+    },
+    {
+      "player": "Colton Amoriell",
+      "school": "Walkersville",
+      "att": "235",
+      "yds": "1,765",
+      "avg": "7.5",
+      "td": "21"
+    },
+    {
+      "player": "Mark Gwynn III",
+      "school": "MSD",
+      "att": "103",
+      "yds": "1,095",
+      "avg": "10.63",
+      "td": "14"
+    },
+    {
+      "player": "Alex Rodriguez",
+      "school": "Oakdale",
+      "att": "134",
+      "yds": "1,042",
+      "avg": "7.77",
+      "td": "16"
+    },
+    {
+      "player": "Nakhi Bagwell",
+      "school": "T. Johnson",
+      "att": "159",
+      "yds": "892",
+      "avg": "5.61",
+      "td": "5"
+    },
+    {
+      "player": "Shemiah Hill",
+      "school": "Oakdale",
+      "att": "104",
+      "yds": "820",
+      "avg": "7.88",
+      "td": "8"
+    },
+    {
+      "player": "Owen Brooks",
+      "school": "Walkersville",
+      "att": "100",
+      "yds": "764",
+      "avg": "7.6",
+      "td": "15"
+    },
+    {
+      "player": "Ryan McLister",
+      "school": "Middletown",
+      "att": "66",
+      "yds": "618",
+      "avg": "9.36",
+      "td": "9"
+    },
+    {
+      "player": "Miles Robinson",
+      "school": "Frederick",
+      "att": "93",
+      "yds": "554",
+      "avg": "6",
+      "td": "8"
+    },
+    {
+      "player": "Ryker Pedersen",
+      "school": "MSD",
+      "att": "85",
+      "yds": "542",
+      "avg": "6.3",
+      "td": "10"
+    },
+    {
+      "player": "Chase Kramer",
+      "school": "Urbana",
+      "att": "77",
+      "yds": "528",
+      "avg": "6.85",
+      "td": "4"
+    },
+    {
+      "player": "Philip Bailey",
+      "school": "Frederick",
+      "att": "72",
+      "yds": "493",
+      "avg": "6.8",
+      "td": "8"
+    },
+    {
+      "player": "Brittin Poffenbarger",
+      "school": "Mid.",
+      "att": "65",
+      "yds": "455",
+      "avg": "7",
+      "td": "5"
+    },
+    {
+      "player": "Nas Jones",
+      "school": "Frederick",
+      "att": "46",
+      "yds": "444",
+      "avg": "9.7",
+      "td": "3"
+    },
+    {
+      "player": "Ryder Smart",
+      "school": "Urbana",
+      "att": "72",
+      "yds": "439",
+      "avg": "6.09",
+      "td": "2"
+    },
+    {
+      "player": "Barima Baffoe",
+      "school": "Brunswick",
+      "att": "72",
+      "yds": "436",
+      "avg": "6.05",
+      "td": "7"
+    },
+    {
+      "player": "Cayden McIver",
+      "school": "Urbana",
+      "att": "65",
+      "yds": "389",
+      "avg": "5.98",
+      "td": "1"
+    },
+    {
+      "player": "Orllen Ocean",
+      "school": "Tuscarora",
+      "att": "95",
+      "yds": "370",
+      "avg": "3.89",
+      "td": "6"
+    }
+  ],
+  "passing": [
+    {
+      "player": "Brittin Poffenbarger",
+      "school": "Mid.",
+      "comp": "148",
+      "att": "206",
+      "pct": ".718",
+      "yds": "2,461",
+      "td": "29"
+    },
+    {
+      "player": "Randy Embrey",
+      "school": "T. Johnson",
+      "comp": "145",
+      "att": "265",
+      "pct": ".547",
+      "yds": "2,243",
+      "td": "22"
+    },
+    {
+      "player": "Miles Robinson",
+      "school": "Frederick",
+      "comp": "197",
+      "att": "282",
+      "pct": ".699",
+      "yds": "2,096",
+      "td": "16"
+    },
+    {
+      "player": "David Doy",
+      "school": "Linganore",
+      "comp": "117",
+      "att": "172",
+      "pct": ".680",
+      "yds": "1,996",
+      "td": "28"
+    },
+    {
+      "player": "Alex Rodriguez",
+      "school": "Oakdale",
+      "comp": "112",
+      "att": "205",
+      "pct": ".546",
+      "yds": "1,762",
+      "td": "19"
+    },
+    {
+      "player": "Landon Rosenberg",
+      "school": "Tus.",
+      "comp": "108",
+      "att": "209",
+      "pct": ".517",
+      "yds": "1,509",
+      "td": "12"
+    },
+    {
+      "player": "Owen Brooks",
+      "school": "Walkersville",
+      "comp": "74",
+      "att": "163",
+      "pct": ".454",
+      "yds": "1,192",
+      "td": "9"
+    },
+    {
+      "player": "Josh White",
+      "school": "Urbana",
+      "comp": "69",
+      "att": "141",
+      "pct": ".489",
+      "yds": "1,124",
+      "td": "18"
+    },
+    {
+      "player": "Chase Cregger",
+      "school": "Catoctin",
+      "comp": "70",
+      "att": "140",
+      "pct": ".50",
+      "yds": "717",
+      "td": "4"
+    },
+    {
+      "player": "Brady Renn",
+      "school": "Brunswick",
+      "comp": "40",
+      "att": "87",
+      "pct": ".459",
+      "yds": "607",
+      "td": "8"
+    }
+  ],
+  "receiving": [
+    {
+      "player": "Paul Huff",
+      "school": "Frederick",
+      "rec": "75",
+      "yds": "951",
+      "td": "8"
+    },
+    {
+      "player": "Dyvae Ambush",
+      "school": "T. Johnson",
+      "rec": "73",
+      "yds": "1,294",
+      "td": "11"
+    },
+    {
+      "player": "Charles Alt",
+      "school": "Oakdale",
+      "rec": "46",
+      "yds": "763",
+      "td": "8"
+    },
+    {
+      "player": "Philip Bailey",
+      "school": "Frederick",
+      "rec": "44",
+      "yds": "325",
+      "td": "1"
+    },
+    {
+      "player": "Joziah Cobb",
+      "school": "Oakdale",
+      "rec": "41",
+      "yds": "713",
+      "td": "9"
+    },
+    {
+      "player": "Ronte Faunteroy",
+      "school": "Frederick",
+      "rec": "39",
+      "yds": "539",
+      "td": "5"
+    },
+    {
+      "player": "Nathan Borawski",
+      "school": "Mid.",
+      "rec": "38",
+      "yds": "450",
+      "td": "4"
+    },
+    {
+      "player": "Naheme Johnson",
+      "school": "Tuscarora",
+      "rec": "37",
+      "yds": "418",
+      "td": "2"
+    },
+    {
+      "player": "Clinton Lee",
+      "school": "Middletown",
+      "rec": "35",
+      "yds": "760",
+      "td": "9"
+    },
+    {
+      "player": "Chase Perry",
+      "school": "Linganore",
+      "rec": "34",
+      "yds": "723",
+      "td": "10"
+    },
+    {
+      "player": "Ryan McLister",
+      "school": "Middletown",
+      "rec": "33",
+      "yds": "548",
+      "td": "7"
+    },
+    {
+      "player": "Masiah Martin",
+      "school": "Walkersville",
+      "rec": "29",
+      "yds": "405",
+      "td": "2"
+    },
+    {
+      "player": "Landon Allen",
+      "school": "Linganore",
+      "rec": "28",
+      "yds": "482",
+      "td": "7"
+    },
+    {
+      "player": "Mickey Cammarata",
+      "school": "Tus.",
+      "rec": "26",
+      "yds": "393",
+      "td": "2"
+    },
+    {
+      "player": "Jayden Sharper",
+      "school": "Urbana",
+      "rec": "25",
+      "yds": "605",
+      "td": "6"
+    },
+    {
+      "player": "Kiegan Rupinta",
+      "school": "Urbana",
+      "rec": "23",
+      "yds": "244",
+      "td": "6"
+    },
+    {
+      "player": "Konnor Dodson",
+      "school": "Catoctin",
+      "rec": "21",
+      "yds": "284",
+      "td": "4"
+    },
+    {
+      "player": "Kyrin Ambush",
+      "school": "T. Johnson",
+      "rec": "20",
+      "yds": "266",
+      "td": "6"
+    },
+    {
+      "player": "Darnell Taylor",
+      "school": "T. Johnson",
+      "rec": "20",
+      "yds": "327",
+      "td": "4"
+    },
+    {
+      "player": "Ajene Ahmad",
+      "school": "T. Johnson",
+      "rec": "19",
+      "yds": "214",
+      "td": "0"
+    },
+    {
+      "player": "Tyler McCallion",
+      "school": "Catoctin",
+      "rec": "19",
+      "yds": "173",
+      "td": "0"
+    },
+    {
+      "player": "Levi Misner",
+      "school": "Catoctin",
+      "rec": "19",
+      "yds": "155",
+      "td": "1"
+    }
+  ]
 }

@@ -1,0 +1,256 @@
+{
+  "boys": [
+    {
+      "player": "Joshua Rothery",
+      "school": "Urbana",
+      "time": "15:50.6"
+    },
+    {
+      "player": "Patrick Salter",
+      "school": "Oakdale",
+      "time": "15:52.4"
+    },
+    {
+      "player": "Riley Gallogly",
+      "school": "Urbana",
+      "time": "15:56.5"
+    },
+    {
+      "player": "Korey Kauflin",
+      "school": "Urbana",
+      "time": "15:57.9"
+    },
+    {
+      "player": "Asher Adelman",
+      "school": "Brunswick",
+      "time": "16:03:2"
+    },
+    {
+      "player": "Evan Madraymootoo",
+      "school": "Urbana",
+      "time": "16:03.7"
+    },
+    {
+      "player": "Simon McGillivray",
+      "school": "Brunswick",
+      "time": "16:04.3"
+    },
+    {
+      "player": "Cole Cline",
+      "school": "Urbana",
+      "time": "16:04.4"
+    },
+    {
+      "player": "Miles Ghim",
+      "school": "Thomas Johnson",
+      "time": "16:10.4"
+    },
+    {
+      "player": "Dashiell Wexler",
+      "school": "Thomas Johnson",
+      "time": "16:10.5"
+    },
+    {
+      "player": "Simon Lipchock",
+      "school": "Urbana",
+      "time": "16:13.8"
+    },
+    {
+      "player": "Garrett Howes",
+      "school": "Middletown",
+      "time": "16:14.1"
+    },
+    {
+      "player": "Noah Riling",
+      "school": "Catoctin",
+      "time": "16:21.8"
+    },
+    {
+      "player": "Dominic Castillo",
+      "school": "Thomas Johnson",
+      "time": "16:34.9"
+    },
+    {
+      "player": "Matthew Rodrigues",
+      "school": "Urbana",
+      "time": "16:41.0"
+    },
+    {
+      "player": "Hyatt Gordon",
+      "school": "Urbana",
+      "time": "16:41.1"
+    },
+    {
+      "player": "Griffen Adelman",
+      "school": "Brunswick",
+      "time": "16:44.4"
+    },
+    {
+      "player": "Vaughn Ditching",
+      "school": "Thomas Johnson",
+      "time": "16:45.7"
+    },
+    {
+      "player": "Kayden Harris",
+      "school": "Linganore",
+      "time": "16:52.5"
+    },
+    {
+      "player": "Erasmo Sanchez",
+      "school": "Thomas Johnson",
+      "time": "16.52.8"
+    },
+    {
+      "player": "Luke Collins",
+      "school": "Linganore",
+      "time": "16:58.5"
+    },
+    {
+      "player": "Luke Osher",
+      "school": "Urbana",
+      "time": "16:58.9"
+    },
+    {
+      "player": "Koen Edwards",
+      "school": "Urbana",
+      "time": "16:59.9"
+    },
+    {
+      "player": "Scott Rudy",
+      "school": "Thomas Johnson",
+      "time": "17:03.8"
+    },
+    {
+      "player": "Merrick Collins",
+      "school": "Oakdale",
+      "time": "17:06.5"
+    }
+  ],
+  "girls": [
+    {
+      "player": "Kate Miner",
+      "school": "Urbana",
+      "time": "18:35.2"
+    },
+    {
+      "player": "Hailey Lane",
+      "school": "Tuscarora",
+      "time": "18:39.6"
+    },
+    {
+      "player": "MadeleneKate Partlow",
+      "school": "Thomas Johnson",
+      "time": "18:58.9"
+    },
+    {
+      "player": "Natalie Barber",
+      "school": "Urbana",
+      "time": "19:03.1"
+    },
+    {
+      "player": "Samantha Whiteman",
+      "school": "Linganore",
+      "time": "19:06.6"
+    },
+    {
+      "player": "Siena Foster",
+      "school": "Tuscarora",
+      "time": "19:16.8"
+    },
+    {
+      "player": "Maya Osher",
+      "school": "Urbana",
+      "time": "19:22.2"
+    },
+    {
+      "player": "Leticia Detrow",
+      "school": "MSD",
+      "time": "19:26.2"
+    },
+    {
+      "player": "Yasmeena Hassen Friess",
+      "school": "Frederick",
+      "time": "19:37.5"
+    },
+    {
+      "player": "Rachel Herbst",
+      "school": "Thomas Johnson",
+      "time": "19:58.4"
+    },
+    {
+      "player": "Elizabeth Lombardo",
+      "school": "Thomas Johnson",
+      "time": "20:05.4"
+    },
+    {
+      "player": "Salma Mahfoud",
+      "school": "Thomas Johnson",
+      "time": "20:11.3"
+    },
+    {
+      "player": "Olivia Gregory",
+      "school": "Frederick",
+      "time": "20:12.3"
+    },
+    {
+      "player": "Elizabeth Watkins",
+      "school": "Linganore",
+      "time": "20:23.2"
+    },
+    {
+      "player": "Ivy McWilliams",
+      "school": "Frederick",
+      "time": "20:29.1"
+    },
+    {
+      "player": "Brenna Davies",
+      "school": "Urbana",
+      "time": "20:29.7"
+    },
+    {
+      "player": "Nina Kirkendall-Plaia",
+      "school": "Thomas Johnson",
+      "time": "20:30.5"
+    },
+    {
+      "player": "Audrey Borleis",
+      "school": "Urbana",
+      "time": "20:33.0"
+    },
+    {
+      "player": "Johanna Mitchell",
+      "school": "Oakdale",
+      "time": "20:35.0"
+    },
+    {
+      "player": "Leah Harshman",
+      "school": "Middletown",
+      "time": "20:36.7"
+    },
+    {
+      "player": "Cara Carpenter",
+      "school": "Middletown",
+      "time": "20:37.7"
+    },
+    {
+      "player": "Sydney Bowman",
+      "school": "Tuscarora",
+      "time": "20:44.3"
+    },
+    {
+      "player": "Danica Arrington",
+      "school": "Frederick",
+      "time": "20:51.8"
+    },
+    {
+      "player": "Lizzie Wells",
+      "school": "Oakdale",
+      "time": "20:59.6"
+    },
+    {
+      "player": "Annalise Wells",
+      "school": "Oakdale",
+      "time": "21:00.1"
+    }
+  ]
+}
