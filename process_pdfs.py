@@ -19,6 +19,10 @@ from extract_pdf import (
     parse_cross_country_stats,
     parse_golf_stats,
     parse_defensive_stats,
+    # Standings parsing functions
+    parse_fcps_standings,
+    parse_central_maryland_standings,
+    parse_other_schools_standings,
     # Structuring functions
     structure_stats,
     structure_soccer_stats,
@@ -34,6 +38,23 @@ from extract_pdf import (
     generate_cross_country_html,
     generate_golf_html,
 )
+
+
+def get_dates_for_pdf(date_str):
+    """
+    Get formatted publish and update dates for a given PDF date string.
+
+    Args:
+        date_str: Date string in format YYYY_MM_DD
+
+    Returns:
+        Tuple of (publish_date, updated_date)
+    """
+    date_mapping = {
+        '2025_10_23': ('Oct 23, 2025', 'October 21, 2025'),
+        '2025_12_06': ('Dec. 6, 2025', 'December 4, 2025'),
+    }
+    return date_mapping.get(date_str, ('Oct 23, 2025', 'October 21, 2025'))
 
 
 def process_football_style_sport(text, sport_name, section_index, file_prefix, date_str, output_dir, docs_dir):
@@ -69,9 +90,15 @@ def process_football_style_sport(text, sport_name, section_index, file_prefix, d
         except:
             print("  No defensive stats file found")
 
+    # Parse FCPS standings
+    print(f"Parsing FCPS standings...")
+    standings = parse_fcps_standings(text)
+    print(f"  FCPS standings: {len(standings)} teams")
+
     # Generate HTML
     print(f"Generating HTML page...")
-    html = generate_html(stats, sport_name, defensive_stats)
+    publish_date, updated_date = get_dates_for_pdf(date_str)
+    html = generate_html(stats, sport_name, defensive_stats, publish_date, updated_date, standings)
 
     # Save to data folder
     html_file = output_dir / f'{file_prefix}.html'
@@ -117,9 +144,17 @@ def process_soccer_sport(text, sport_name, file_prefix, date_str, output_dir, do
         json.dump(stats, f, indent=2)
     print(f"✓ Saved JSON to {stats_file}")
 
+    # Parse Central Maryland Conference standings
+    print(f"Parsing Central Maryland Conference standings...")
+    standings = parse_central_maryland_standings(text, sport_name)
+    if standings:
+        total_teams = sum(len(teams) for teams in standings.values())
+        print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
+
     # Generate HTML
     print(f"Generating HTML page...")
-    html = generate_soccer_html(stats, sport_name)
+    publish_date, updated_date = get_dates_for_pdf(date_str)
+    html = generate_soccer_html(stats, sport_name, publish_date, updated_date, standings)
 
     # Save to data folder
     html_file = output_dir / f'{file_prefix}.html'
@@ -174,9 +209,17 @@ def process_volleyball(text, date_str, output_dir, docs_dir):
         json.dump(stats, f, indent=2)
     print(f"✓ Saved JSON to {stats_file}")
 
+    # Parse Central Maryland Conference standings
+    print(f"Parsing Central Maryland Conference standings...")
+    standings = parse_central_maryland_standings(text, sport_name)
+    if standings:
+        total_teams = sum(len(teams) for teams in standings.values())
+        print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
+
     # Generate HTML
     print(f"Generating HTML page...")
-    html = generate_volleyball_html(stats, sport_name)
+    publish_date, updated_date = get_dates_for_pdf(date_str)
+    html = generate_volleyball_html(stats, sport_name, publish_date, updated_date, standings)
 
     # Save to data folder
     html_file = output_dir / f'{file_prefix}.html'
@@ -230,9 +273,17 @@ def process_field_hockey(text, date_str, output_dir, docs_dir):
         json.dump(stats, f, indent=2)
     print(f"✓ Saved JSON to {stats_file}")
 
+    # Parse Central Maryland Conference standings
+    print(f"Parsing Central Maryland Conference standings...")
+    standings = parse_central_maryland_standings(text, sport_name)
+    if standings:
+        total_teams = sum(len(teams) for teams in standings.values())
+        print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
+
     # Generate HTML
     print(f"Generating HTML page...")
-    html = generate_field_hockey_html(stats, sport_name)
+    publish_date, updated_date = get_dates_for_pdf(date_str)
+    html = generate_field_hockey_html(stats, sport_name, publish_date, updated_date, standings)
 
     # Save to data folder
     html_file = output_dir / f'{file_prefix}.html'
@@ -288,7 +339,8 @@ def process_cross_country(text, date_str, output_dir, docs_dir):
 
     # Generate HTML
     print(f"Generating HTML page...")
-    html = generate_cross_country_html(stats, sport_name)
+    publish_date, updated_date = get_dates_for_pdf(date_str)
+    html = generate_cross_country_html(stats, sport_name, publish_date, updated_date)
 
     # Save to data folder
     html_file = output_dir / f'{file_prefix}.html'
@@ -332,7 +384,8 @@ def process_golf(text, date_str, output_dir, docs_dir):
 
     # Generate HTML
     print(f"Generating HTML page...")
-    html = generate_golf_html(stats, sport_name)
+    publish_date, updated_date = get_dates_for_pdf(date_str)
+    html = generate_golf_html(stats, sport_name, publish_date, updated_date)
 
     # Save to data folder
     html_file = output_dir / f'{file_prefix}.html'
