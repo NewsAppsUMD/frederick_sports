@@ -465,7 +465,7 @@ def main():
         ],
         'volleyball': True,  # Process with parse_volleyball_stats
         'field_hockey': True,
-        'cross_country': False,  # Not in October PDF
+        'cross_country': True,  # Process cross country
         'golf': True,
     }
 
@@ -483,7 +483,7 @@ def main():
         ],
         'volleyball': True,  # Process with parse_volleyball_stats
         'field_hockey': True,
-        'cross_country': True,  # Rankings only - may not have player stats
+        'cross_country': True,  # Has individual runner times
         'golf': True,
     }
 
