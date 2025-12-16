@@ -1075,15 +1075,228 @@ def structure_golf_stats(raw_stats: List[Dict]) -> List[Dict]:
     return structured
 
 
-def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football", defensive_stats: List[Dict[str, Any]] = None) -> str:
-    """Generate HTML page for player stats."""
+def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
+    """
+    Parse FCPS conference standings.
+
+    Format:
+    FCPS
+    Team    W    L    PF    PA
+    Linganore
+    13
+    3
+    400
+    127
+    """
+    standings = []
+    lines = text.split('\n')
+
+    # Find FCPS section
+    fcps_start = -1
+    for i, line in enumerate(lines):
+        if line.strip() == 'FCPS':
+            fcps_start = i
+            break
+
+    if fcps_start == -1:
+        return standings
+
+    # Skip header lines (FCPS, Team, W, L, PF, PA)
+    i = fcps_start + 7  # Skip FCPS + column headers (Team, W, L, PF, PA)
+
+    while i < len(lines):
+        line = lines[i].strip()
+
+        # Stop at next major section
+        if any(keyword in line for keyword in ['INDIVIDUAL LEADERS', 'CENTRAL MARYLAND', 'OTHER SCHOOLS', 'PASSING', 'RUSHING']):
+            break
+
+        # Skip empty lines
+        if not line:
+            i += 1
+            continue
+
+        # Check if this could be a team name (not just a number)
+        if not line.replace('.', '').replace(',', '').isdigit():
+            team_name = line
+
+            # Next 4 lines should be: W, L, PF, PA
+            if i + 4 < len(lines):
+                try:
+                    wins = lines[i + 1].strip()
+                    losses = lines[i + 2].strip()
+                    pf = lines[i + 3].strip()
+                    pa = lines[i + 4].strip()
+
+                    standings.append({
+                        'team': team_name,
+                        'wins': wins,
+                        'losses': losses,
+                        'pf': pf,
+                        'pa': pa
+                    })
+                    i += 5  # Skip the stats we just parsed
+                    continue
+                except:
+                    pass
+
+        i += 1
+
+    return standings
+
+
+def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball") -> Dict[str, List[Dict[str, str]]]:
+    """
+    Parse CENTRAL MARYLAND CONFERENCE standings.
+
+    Format varies by sport:
+    - Volleyball/Field Hockey: Division and Overall records, organized by divisions
+    - Soccer: Division and Overall records, organized by divisions
+
+    Returns dict with division names as keys and team lists as values.
+    """
+    standings = {}
+    lines = text.split('\n')
+
+    # Find CENTRAL MARYLAND CONFERENCE section
+    cm_start = -1
+    for i, line in enumerate(lines):
+        if 'CENTRAL MARYLAND CONFERENCE' in line:
+            cm_start = i
+            break
+
+    if cm_start == -1:
+        return standings
+
+    i = cm_start + 1
+    current_division = None
+
+    while i < len(lines):
+        line = lines[i].strip()
+
+        # Stop at next major section
+        if any(keyword in line for keyword in ['INDIVIDUAL LEADERS', 'FCPS', 'OTHER SCHOOLS', 'PASSING', 'RUSHING', 'SCORING']):
+            break
+
+        # Check for division headers
+        if 'DIVISION' in line or 'SCHOOL' in line:
+            current_division = line
+            standings[current_division] = []
+            # Skip column headers (Team, W, L, W, L)
+            i += 7  # Skip division name + column headers
+            continue
+
+        # Skip empty lines and header lines
+        if not line or line in ['Team', 'W', 'L', 'Division', 'Overall']:
+            i += 1
+            continue
+
+        # Check if this is a team name (not just a number)
+        if current_division and not line.replace('.', '').isdigit():
+            team_name = line
+
+            # Next lines: div_w, div_l, (empty/spacing), overall_w, overall_l
+            if i + 5 < len(lines):
+                try:
+                    div_wins = lines[i + 1].strip()
+                    div_losses = lines[i + 2].strip()
+                    # Skip empty line
+                    overall_wins = lines[i + 4].strip()
+                    overall_losses = lines[i + 5].strip()
+
+                    # Validate these are numbers
+                    if div_wins.isdigit() and div_losses.isdigit():
+                        standings[current_division].append({
+                            'team': team_name,
+                            'div_wins': div_wins,
+                            'div_losses': div_losses,
+                            'overall_wins': overall_wins,
+                            'overall_losses': overall_losses
+                        })
+                        i += 6  # Skip the stats we just parsed
+                        continue
+                except:
+                    pass
+
+        i += 1
+
+    return standings
+
+
+def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
+    """
+    Parse OTHER SCHOOLS standings.
+
+    Format:
+    OTHER SCHOOLS
+    Team    W    L
+    MSD
+    18
+    1
+    """
+    standings = []
+    lines = text.split('\n')
+
+    # Find OTHER SCHOOLS section
+    os_start = -1
+    for i, line in enumerate(lines):
+        if 'OTHER SCHOOLS' in line:
+            os_start = i
+            break
+
+    if os_start == -1:
+        return standings
+
+    # Skip header lines (OTHER SCHOOLS, Team, W, L)
+    i = os_start + 4
+
+    while i < len(lines):
+        line = lines[i].strip()
+
+        # Stop at next major section
+        if any(keyword in line for keyword in ['INDIVIDUAL LEADERS', 'CENTRAL MARYLAND', 'FCPS', 'PASSING', 'RUSHING', 'SCORING']):
+            break
+
+        # Skip empty lines
+        if not line:
+            i += 1
+            continue
+
+        # Check if this is a team name (not just a number)
+        if not line.replace('.', '').isdigit():
+            team_name = line
+
+            # Next 2 lines should be: W, L
+            if i + 2 < len(lines):
+                try:
+                    wins = lines[i + 1].strip()
+                    losses = lines[i + 2].strip()
+
+                    if wins.isdigit() and losses.isdigit():
+                        standings.append({
+                            'team': team_name,
+                            'wins': wins,
+                            'losses': losses
+                        })
+                        i += 3  # Skip the stats we just parsed
+                        continue
+                except:
+                    pass
+
+        i += 1
+
+    return standings
+
+
+def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football", defensive_stats: List[Dict[str, Any]] = None, publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025", standings: List[Dict[str, str]] = None) -> str:
+    """Generate HTML page for player stats and standings."""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{sport} Player Stats - High School Hangout (Oct 23, 2025)</title>
+    <title>{sport} Player Stats - High School Hangout ({publish_date})</title>
     <style>
         * {{
             margin: 0;
@@ -1248,11 +1461,42 @@ def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football", defensi
     <div class="container">
         <header>
             <h1>{sport} Individual Leaders</h1>
-            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Updated Through {updated_date}</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
         <main>
+"""
+
+    # FCPS Standings (for Football and Girls Flag Football)
+    if standings:
+        html += """
+            <div class="sport-section">
+                <h2 class="section-title">FCPS Standings</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+        for team in standings:
+            html += f"""                        <tr>
+                            <td>{expand_team_name(team.get('team', ''))}</td>
+                            <td>{team.get('wins', '')}</td>
+                            <td>{team.get('losses', '')}</td>
+                            <td>{team.get('pf', '')}</td>
+                            <td>{team.get('pa', '')}</td>
+                        </tr>
+"""
+        html += """                    </tbody>
+                </table>
+            </div>
 """
 
     # Rushing Leaders
@@ -1402,15 +1646,15 @@ def generate_html(stats: Dict[str, List[Dict]], sport: str = "Football", defensi
     return html
 
 
-def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer") -> str:
-    """Generate HTML page for soccer player stats."""
+def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer", publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025", standings: Dict[str, List[Dict[str, str]]] = None) -> str:
+    """Generate HTML page for soccer player stats and standings."""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{sport} Player Stats - High School Hangout (Oct 23, 2025)</title>
+    <title>{sport} Player Stats - High School Hangout ({publish_date})</title>
     <style>
         * {{
             margin: 0;
@@ -1575,12 +1819,51 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
     <div class="container">
         <header>
             <h1>{sport} Individual Leaders</h1>
-            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Updated Through {updated_date}</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
         <main>
 """
+
+    # Central Maryland Conference Standings
+    if standings:
+        for division_name, teams in standings.items():
+            if teams:  # Only show divisions that have teams
+                html += f"""
+            <div class="sport-section">
+                <h2 class="section-title">{division_name}</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+                for team in teams:
+                    html += f"""                        <tr>
+                            <td>{expand_team_name(team.get('team', ''))}</td>
+                            <td>{team.get('div_wins', '')}</td>
+                            <td>{team.get('div_losses', '')}</td>
+                            <td>{team.get('overall_wins', '')}</td>
+                            <td>{team.get('overall_losses', '')}</td>
+                        </tr>
+"""
+                html += """                    </tbody>
+                </table>
+            </div>
+"""
+
 
     # Scoring Leaders
     if stats.get('scoring'):
@@ -1667,15 +1950,15 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
     return html
 
 
-def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyball") -> str:
-    """Generate HTML page for volleyball player stats."""
+def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyball", publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025", standings: Dict[str, List[Dict[str, str]]] = None) -> str:
+    """Generate HTML page for volleyball player stats and standings."""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{sport} Player Stats - High School Hangout (Oct 23, 2025)</title>
+    <title>{sport} Player Stats - High School Hangout ({publish_date})</title>
     <style>
         * {{
             margin: 0;
@@ -1840,12 +2123,51 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
     <div class="container">
         <header>
             <h1>{sport} Individual Leaders</h1>
-            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Updated Through {updated_date}</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
         <main>
 """
+
+    # Central Maryland Conference Standings
+    if standings:
+        for division_name, teams in standings.items():
+            if teams:  # Only show divisions that have teams
+                html += f"""
+            <div class="sport-section">
+                <h2 class="section-title">{division_name}</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+                for team in teams:
+                    html += f"""                        <tr>
+                            <td>{expand_team_name(team.get('team', ''))}</td>
+                            <td>{team.get('div_wins', '')}</td>
+                            <td>{team.get('div_losses', '')}</td>
+                            <td>{team.get('overall_wins', '')}</td>
+                            <td>{team.get('overall_losses', '')}</td>
+                        </tr>
+"""
+                html += """                    </tbody>
+                </table>
+            </div>
+"""
+
 
     # Kills Leaders
     if stats.get('kills'):
@@ -1961,15 +2283,15 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
     return html
 
 
-def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field Hockey") -> str:
-    """Generate HTML page for field hockey player stats."""
+def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field Hockey", publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025", standings: Dict[str, List[Dict[str, str]]] = None) -> str:
+    """Generate HTML page for field hockey player stats and standings."""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{sport} Player Stats - High School Hangout (Oct 23, 2025)</title>
+    <title>{sport} Player Stats - High School Hangout ({publish_date})</title>
     <style>
         * {{
             margin: 0;
@@ -2134,11 +2456,49 @@ def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field
     <div class="container">
         <header>
             <h1>{sport} Individual Leaders</h1>
-            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Updated Through {updated_date}</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
         <main>
+"""
+
+    # Central Maryland Conference Standings
+    if standings:
+        for division_name, teams in standings.items():
+            if teams:  # Only show divisions that have teams
+                html += f"""
+            <div class="sport-section">
+                <h2 class="section-title">{division_name}</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>W</th>
+                            <th>L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+                for team in teams:
+                    html += f"""                        <tr>
+                            <td>{expand_team_name(team.get('team', ''))}</td>
+                            <td>{team.get('div_wins', '')}</td>
+                            <td>{team.get('div_losses', '')}</td>
+                            <td>{team.get('overall_wins', '')}</td>
+                            <td>{team.get('overall_losses', '')}</td>
+                        </tr>
+"""
+                html += """                    </tbody>
+                </table>
+            </div>
 """
 
     # Scoring Leaders
@@ -2226,7 +2586,7 @@ def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field
     return html
 
 
-def generate_cross_country_html(stats: Dict[str, List[Dict]], sport: str = "Cross Country") -> str:
+def generate_cross_country_html(stats: Dict[str, List[Dict]], sport: str = "Cross Country", publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025") -> str:
     """Generate HTML page for cross country player stats."""
 
     html = f"""<!DOCTYPE html>
@@ -2234,7 +2594,7 @@ def generate_cross_country_html(stats: Dict[str, List[Dict]], sport: str = "Cros
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{sport} Top Times - High School Hangout (Oct 23, 2025)</title>
+    <title>{sport} Top Times - High School Hangout ({publish_date})</title>
     <style>
         * {{
             margin: 0;
@@ -2404,7 +2764,7 @@ def generate_cross_country_html(stats: Dict[str, List[Dict]], sport: str = "Cros
     <div class="container">
         <header>
             <h1>{sport} Top 5K Times</h1>
-            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Updated Through {updated_date}</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
@@ -2485,7 +2845,7 @@ def generate_cross_country_html(stats: Dict[str, List[Dict]], sport: str = "Cros
     return html
 
 
-def generate_golf_html(stats: List[Dict], sport: str = "Golf") -> str:
+def generate_golf_html(stats: List[Dict], sport: str = "Golf", publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025") -> str:
     """Generate HTML page for golf player stats."""
 
     html = f"""<!DOCTYPE html>
@@ -2493,7 +2853,7 @@ def generate_golf_html(stats: List[Dict], sport: str = "Golf") -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{sport} Player Stats - High School Hangout (Oct 23, 2025)</title>
+    <title>{sport} Player Stats - High School Hangout ({publish_date})</title>
     <style>
         * {{
             margin: 0;
@@ -2658,7 +3018,7 @@ def generate_golf_html(stats: List[Dict], sport: str = "Golf") -> str:
     <div class="container">
         <header>
             <h1>{sport} Player Leaders</h1>
-            <p class="subtitle">Updated Through October 21, 2025</p>
+            <p class="subtitle">Updated Through {updated_date}</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
