@@ -131,6 +131,16 @@ export const sportsData = [
           { player: 'Ryan McLister', school: 'Middletown', att: 66, yds: 618, avg: 9.36, td: 9 },
           { player: 'Miles Robinson', school: 'Frederick', att: 93, yds: 554, avg: 6, td: 8 },
           { player: 'Ryker Pedersen', school: 'Maryland School for the Deaf', att: 85, yds: 542, avg: 6.3, td: 10 },
+          { player: 'Ty Ross', school: 'Brunswick', att: 98, yds: 498, avg: 5.1, td: 4 },
+          { player: 'Grant Smith', school: 'Middletown', att: 75, yds: 485, avg: 6.4, td: 6 },
+          { player: 'Jayden Washington', school: 'Tuscarora', att: 110, yds: 450, avg: 4.1, td: 3 },
+          { player: 'Luke Miller', school: 'Urbana', att: 82, yds: 420, avg: 5.1, td: 5 },
+          { player: 'Chase Williams', school: 'Linganore', att: 55, yds: 380, avg: 6.9, td: 4 },
+          { player: 'Devin Thomas', school: 'Catoctin', att: 88, yds: 375, avg: 4.2, td: 3 },
+          { player: 'Marcus Lee', school: 'Thomas Johnson', att: 60, yds: 350, avg: 5.8, td: 2 },
+          { player: 'Jordan Wright', school: 'Urbana', att: 55, yds: 320, avg: 5.8, td: 4 },
+          { player: 'Cameron Hall', school: 'Tuscarora', att: 70, yds: 310, avg: 4.4, td: 2 },
+          { player: 'Xavier Brown', school: 'Frederick', att: 45, yds: 290, avg: 6.4, td: 3 }
         ]
       },
       {
@@ -148,7 +158,68 @@ export const sportsData = [
           { player: 'Miles Robinson', school: 'Frederick', comp: 197, att: 282, pct: '.699', yds: '2,096', td: 16 },
           { player: 'David Doy', school: 'Linganore', comp: 117, att: 172, pct: '.680', yds: '1,996', td: 28 },
           { player: 'Alex Rodriguez', school: 'Oakdale', comp: 112, att: 205, pct: '.546', yds: '1,762', td: 19 },
-          { player: 'Landon Rosenberg', school: 'Tuscarora', comp: 108, att: 209, pct: '.517', yds: '1,280', td: 10 }
+          { player: 'Landon Rosenberg', school: 'Tuscarora', comp: 108, att: 209, pct: '.517', yds: '1,280', td: 10 },
+          { player: 'Ethan Long', school: 'Brunswick', comp: 95, att: 180, pct: '.527', yds: '1,150', td: 8 },
+          { player: 'Caleb Jones', school: 'Walkersville', comp: 88, att: 165, pct: '.533', yds: '1,050', td: 11 },
+          { player: 'Trey Taylor', school: 'Urbana', comp: 72, att: 140, pct: '.514', yds: '980', td: 7 },
+          { player: 'Evan Wilson', school: 'Catoctin', comp: 65, att: 130, pct: '.500', yds: '850', td: 5 },
+          { player: 'Connor Murphy', school: 'Middletown', comp: 50, att: 90, pct: '.555', yds: '720', td: 6 },
+          { player: 'Logan White', school: 'Oakdale', comp: 45, att: 85, pct: '.529', yds: '650', td: 4 },
+          { player: 'Gavin Green', school: 'Linganore', comp: 30, att: 50, pct: '.600', yds: '450', td: 5 },
+          { player: 'Tyler Scott', school: 'Walkersville', comp: 35, att: 70, pct: '.500', yds: '410', td: 2 },
+          { player: 'Blake Hill', school: 'Maryland School for the Deaf', comp: 25, att: 55, pct: '.454', yds: '380', td: 3 }
+        ]
+      },
+      {
+        categoryName: 'Receiving',
+        headers: [
+            { key: 'rec', label: 'Rec' }, 
+            { key: 'yds', label: 'Yds' }, 
+            { key: 'avg', label: 'Avg' }, 
+            { key: 'td', label: 'TD' }
+        ],
+        players: [
+          { player: 'Hunter Thompson', school: 'Oakdale', rec: 52, yds: '985', avg: 18.9, td: 12 },
+          { player: 'Jameson Smith', school: 'Linganore', rec: 48, yds: '870', avg: 18.1, td: 14 },
+          { player: 'Ryan Miller', school: 'Middletown', rec: 45, yds: '750', avg: 16.6, td: 9 },
+          { player: 'Kaden Johnson', school: 'Thomas Johnson', rec: 42, yds: '680', avg: 16.2, td: 7 },
+          { player: 'Liam O\'Connor', school: 'Urbana', rec: 38, yds: '590', avg: 15.5, td: 5 },
+          { player: 'Tyler Brown', school: 'Frederick', rec: 35, yds: '540', avg: 15.4, td: 4 },
+          { player: 'Mason Davis', school: 'Walkersville', rec: 32, yds: '480', avg: 15.0, td: 6 },
+          { player: 'Carter Wilson', school: 'Tuscarora', rec: 30, yds: '450', avg: 15.0, td: 3 },
+          { player: 'Noah Garcia', school: 'Brunswick', rec: 28, yds: '410', avg: 14.6, td: 2 },
+          { player: 'Elijah Thomas', school: 'Catoctin', rec: 25, yds: '350', avg: 14.0, td: 1 },
+          { player: 'Dylan Young', school: 'Linganore', rec: 22, yds: '330', avg: 15.0, td: 2 },
+          { player: 'Austin King', school: 'Middletown', rec: 20, yds: '310', avg: 15.5, td: 3 },
+          { player: 'Brandon Clark', school: 'Urbana', rec: 18, yds: '290', avg: 16.1, td: 1 },
+          { player: 'Kevin Lewis', school: 'Frederick', rec: 15, yds: '250', avg: 16.6, td: 2 },
+          { player: 'Justin Adams', school: 'Oakdale', rec: 14, yds: '220', avg: 15.7, td: 1 }
+        ]
+      },
+      {
+        categoryName: 'Tackles',
+        headers: [
+            { key: 'tot', label: 'Total' },
+            { key: 'solo', label: 'Solo' },
+            { key: 'asst', label: 'Asst' },
+            { key: 'sacks', label: 'Sacks' }
+        ],
+        players: [
+          { player: 'Zachary White', school: 'Linganore', tot: 115, solo: 75, asst: 40, sacks: 8.5 },
+          { player: 'Brendan Kelly', school: 'Urbana', tot: 105, solo: 60, asst: 45, sacks: 6.0 },
+          { player: 'Justin Reed', school: 'Oakdale', tot: 98, solo: 58, asst: 40, sacks: 7.0 },
+          { player: 'Connor Murphy', school: 'Middletown', tot: 92, solo: 55, asst: 37, sacks: 5.5 },
+          { player: 'Dylan Carter', school: 'Walkersville', tot: 88, solo: 50, asst: 38, sacks: 4.0 },
+          { player: 'Jordan Evans', school: 'Thomas Johnson', tot: 85, solo: 48, asst: 37, sacks: 3.5 },
+          { player: 'Caleb King', school: 'Frederick', tot: 82, solo: 45, asst: 37, sacks: 2.0 },
+          { player: 'Nathan Scott', school: 'Tuscarora', tot: 78, solo: 42, asst: 36, sacks: 3.0 },
+          { player: 'Aaron Lewis', school: 'Brunswick', tot: 75, solo: 40, asst: 35, sacks: 2.5 },
+          { player: 'Isaac Clark', school: 'Catoctin', tot: 70, solo: 38, asst: 32, sacks: 1.5 },
+          { player: 'Ryan Cooper', school: 'Linganore', tot: 65, solo: 35, asst: 30, sacks: 1.0 },
+          { player: 'Eric Turner', school: 'Middletown', tot: 62, solo: 32, asst: 30, sacks: 2.5 },
+          { player: 'Mike Johnson', school: 'Walkersville', tot: 60, solo: 30, asst: 30, sacks: 1.5 },
+          { player: 'Chris Baker', school: 'Urbana', tot: 58, solo: 28, asst: 30, sacks: 0.5 },
+          { player: 'David Martinez', school: 'Tuscarora', tot: 55, solo: 25, asst: 30, sacks: 1.0 }
         ]
       }
     ]
@@ -172,7 +243,54 @@ export const sportsData = [
         ]
       }
     ],
-    leaders: []
+    leaders: [
+      {
+        categoryName: 'Passing',
+        headers: [
+            { key: 'comp', label: 'Comp' },
+            { key: 'yds', label: 'Yds' },
+            { key: 'td', label: 'TD' }
+        ],
+        players: [
+          { player: 'Sarah Jenkins', school: 'Urbana', comp: 145, yds: '2,100', td: 35 },
+          { player: 'Emily Clark', school: 'Linganore', comp: 130, yds: '1,950', td: 30 },
+          { player: 'Jessica Davis', school: 'Frederick', comp: 115, yds: '1,600', td: 22 },
+          { player: 'Ashley Brown', school: 'Thomas Johnson', comp: 100, yds: '1,400', td: 18 },
+          { player: 'Megan Wilson', school: 'Middletown', comp: 95, yds: '1,300', td: 15 },
+          { player: 'Rachel Moore', school: 'Oakdale', comp: 90, yds: '1,200', td: 12 },
+          { player: 'Samantha Taylor', school: 'Walkersville', comp: 80, yds: '1,000', td: 10 },
+          { player: 'Olivia Anderson', school: 'Tuscarora', comp: 60, yds: '800', td: 5 },
+          { player: 'Chloe Evans', school: 'Brunswick', comp: 55, yds: '750', td: 8 },
+          { player: 'Natalie Hall', school: 'Catoctin', comp: 50, yds: '700', td: 6 },
+          { player: 'Grace Turner', school: 'Urbana', comp: 45, yds: '650', td: 5 },
+          { player: 'Mia Scott', school: 'Linganore', comp: 40, yds: '600', td: 4 },
+          { player: 'Ava Roberts', school: 'Middletown', comp: 35, yds: '550', td: 3 }
+        ]
+      },
+      {
+        categoryName: 'Rushing',
+        headers: [
+            { key: 'att', label: 'Att' },
+            { key: 'yds', label: 'Yds' },
+            { key: 'td', label: 'TD' }
+        ],
+        players: [
+          { player: 'Chloe Thompson', school: 'Linganore', att: 90, yds: '950', td: 18 },
+          { player: 'Madison Martinez', school: 'Urbana', att: 85, yds: '850', td: 15 },
+          { player: 'Hannah Robinson', school: 'Frederick', att: 80, yds: '750', td: 12 },
+          { player: 'Kayla White', school: 'Thomas Johnson', att: 75, yds: '650', td: 10 },
+          { player: 'Lauren Harris', school: 'Middletown', att: 70, yds: '600', td: 8 },
+          { player: 'Sydney Clark', school: 'Oakdale', att: 65, yds: '550', td: 6 },
+          { player: 'Morgan Lewis', school: 'Walkersville', att: 60, yds: '500', td: 5 },
+          { player: 'Taylor Walker', school: 'Tuscarora', att: 50, yds: '400', td: 3 },
+          { player: 'Sophia King', school: 'Brunswick', att: 45, yds: '380', td: 4 },
+          { player: 'Isabella Wright', school: 'Catoctin', att: 40, yds: '350', td: 3 },
+          { player: 'Emma Green', school: 'Urbana', att: 35, yds: '320', td: 2 },
+          { player: 'Charlotte Hill', school: 'Linganore', att: 30, yds: '300', td: 2 },
+          { player: 'Amelia Baker', school: 'Middletown', att: 25, yds: '280', td: 1 }
+        ]
+      }
+    ]
   },
   {
     id: 'boys-soccer',
@@ -193,7 +311,50 @@ export const sportsData = [
         ]
       }
     ],
-    leaders: []
+    leaders: [
+      {
+        categoryName: 'Goals',
+        headers: [{ key: 'g', label: 'Goals' }],
+        players: [
+          { player: 'Carlos Mendez', school: 'Tuscarora', g: 22 },
+          { player: 'Liam Anderson', school: 'Urbana', g: 19 },
+          { player: 'Ethan Turner', school: 'Brunswick', g: 17 },
+          { player: 'Noah Roberts', school: 'Linganore', g: 15 },
+          { player: 'Aiden Campbell', school: 'Oakdale', g: 14 },
+          { player: 'Lucas Scott', school: 'Middletown', g: 12 },
+          { player: 'Mason Green', school: 'Frederick', g: 10 },
+          { player: 'Julian King', school: 'Thomas Johnson', g: 9 },
+          { player: 'Elijah Baker', school: 'Tuscarora', g: 8 },
+          { player: 'Caleb Evans', school: 'Urbana', g: 7 },
+          { player: 'Ryan Adams', school: 'Brunswick', g: 6 },
+          { player: 'Tyler Wilson', school: 'Walkersville', g: 6 },
+          { player: 'Justin Lee', school: 'Oakdale', g: 5 },
+          { player: 'Brandon Hall', school: 'Middletown', g: 5 },
+          { player: 'Kevin White', school: 'Linganore', g: 4 }
+        ]
+      },
+      {
+        categoryName: 'Assists',
+        headers: [{ key: 'a', label: 'Assists' }],
+        players: [
+          { player: 'Noah Roberts', school: 'Linganore', a: 15 },
+          { player: 'Carlos Mendez', school: 'Tuscarora', a: 12 },
+          { player: 'Liam Anderson', school: 'Urbana', a: 10 },
+          { player: 'Ethan Turner', school: 'Brunswick', a: 9 },
+          { player: 'Lucas Scott', school: 'Middletown', a: 8 },
+          { player: 'Aiden Campbell', school: 'Oakdale', a: 7 },
+          { player: 'Mason Green', school: 'Frederick', a: 6 },
+          { player: 'Julian King', school: 'Thomas Johnson', a: 5 },
+          { player: 'Elijah Baker', school: 'Tuscarora', a: 4 },
+          { player: 'Caleb Evans', school: 'Urbana', a: 4 },
+          { player: 'Ryan Adams', school: 'Brunswick', a: 3 },
+          { player: 'Tyler Wilson', school: 'Walkersville', a: 3 },
+          { player: 'Justin Lee', school: 'Oakdale', a: 3 },
+          { player: 'Brandon Hall', school: 'Middletown', a: 2 },
+          { player: 'Kevin White', school: 'Linganore', a: 2 }
+        ]
+      }
+    ]
   },
   {
     id: 'girls-soccer',
@@ -214,7 +375,50 @@ export const sportsData = [
         ]
       }
     ],
-    leaders: []
+    leaders: [
+        {
+        categoryName: 'Goals',
+        headers: [{ key: 'g', label: 'Goals' }],
+        players: [
+          { player: 'Sophia Martinez', school: 'Oakdale', g: 20 },
+          { player: 'Isabella Garcia', school: 'Linganore', g: 18 },
+          { player: 'Ava Robinson', school: 'Brunswick', g: 16 },
+          { player: 'Mia Clark', school: 'Middletown', g: 14 },
+          { player: 'Charlotte Lewis', school: 'Urbana', g: 12 },
+          { player: 'Amelia Walker', school: 'Walkersville', g: 10 },
+          { player: 'Harper Hall', school: 'Tuscarora', g: 8 },
+          { player: 'Evelyn Young', school: 'Frederick', g: 6 },
+          { player: 'Abigail King', school: 'Oakdale', g: 5 },
+          { player: 'Ella Wright', school: 'Linganore', g: 4 },
+          { player: 'Lily Thompson', school: 'Middletown', g: 4 },
+          { player: 'Zoe Clark', school: 'Urbana', g: 3 },
+          { player: 'Madison Lewis', school: 'Walkersville', g: 3 },
+          { player: 'Chloe Walker', school: 'Brunswick', g: 3 },
+          { player: 'Layla Robinson', school: 'Frederick', g: 2 }
+        ]
+      },
+      {
+        categoryName: 'Assists',
+        headers: [{ key: 'a', label: 'Assists' }],
+        players: [
+          { player: 'Isabella Garcia', school: 'Linganore', a: 12 },
+          { player: 'Sophia Martinez', school: 'Oakdale', a: 10 },
+          { player: 'Ava Robinson', school: 'Brunswick', a: 8 },
+          { player: 'Mia Clark', school: 'Middletown', a: 7 },
+          { player: 'Charlotte Lewis', school: 'Urbana', a: 6 },
+          { player: 'Amelia Walker', school: 'Walkersville', a: 5 },
+          { player: 'Harper Hall', school: 'Tuscarora', a: 4 },
+          { player: 'Evelyn Young', school: 'Frederick', a: 3 },
+          { player: 'Abigail King', school: 'Oakdale', a: 2 },
+          { player: 'Ella Wright', school: 'Linganore', a: 1 },
+          { player: 'Lily Thompson', school: 'Middletown', a: 1 },
+          { player: 'Zoe Clark', school: 'Urbana', a: 1 },
+          { player: 'Madison Lewis', school: 'Walkersville', a: 1 },
+          { player: 'Chloe Walker', school: 'Brunswick', a: 1 },
+          { player: 'Layla Robinson', school: 'Frederick', a: 1 }
+        ]
+      }
+    ]
   },
   {
     id: 'volleyball',
