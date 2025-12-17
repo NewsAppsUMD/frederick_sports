@@ -1,382 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High School Hangout - Team Standings &amp; Player Stats</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frederick Sports Stats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding-bottom: 30px;
-            border-bottom: 3px solid #333;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .subtitle {
-            color: #666;
-            font-size: 18px;
-            margin: 8px 0;
-        }
-
-        .date-selector {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
-
-        .date-button {
-            padding: 12px 30px;
-            border: 2px solid #667eea;
-            background-color: white;
-            color: #667eea;
-            border-radius: 25px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .date-button:hover {
-            background-color: #f0f4ff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
-        }
-
-        .date-button.active {
-            background-color: #667eea;
-            color: white;
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-
-        .intro p {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.8;
-        }
-
-        .section-header {
-            text-align: center;
-            margin: 50px 0 30px 0;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #667eea;
-        }
-
-        .section-header h2 {
-            color: #333;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .sports-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
-        }
-
-        .sport-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-decoration: none;
-            color: white;
-            display: block;
-        }
-
-        .sport-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-        }
-
-        .sport-card h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .sport-card .icon {
-            font-size: 48px;
-            margin-bottom: 15px;
-            opacity: 0.9;
-        }
-
-        .sport-card .description {
-            font-size: 14px;
-            opacity: 0.9;
-            margin-top: 10px;
-        }
-
-        footer {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 2px solid #ddd;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-
-        footer p {
-            margin: 8px 0;
-        }
-
-        .footer-links {
-            margin-top: 20px;
-        }
-
-        .footer-links a {
-            color: #667eea;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: 500;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 25px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            .sports-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .sport-card {
-                padding: 25px;
-            }
-
-            .sport-card h2 {
-                font-size: 20px;
-            }
-        }
-
-        /* Print styles */
-        @media print {
-            body {
-                background: white;
-            }
-
-            .container {
-                box-shadow: none;
-            }
-
-            .sport-card {
-                break-inside: avoid;
-                page-break-inside: avoid;
-            }
-        }
-
-        /* Accessibility */
-        .sport-card:focus {
-            outline: 3px solid #667eea;
-            outline-offset: 2px;
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
+  <link rel="stylesheet" href="/index.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>High School Hangout</h1>
-            <h2 style="color: #667eea; font-size: 28px; margin: 10px 0;">Team Standings &amp; Player Stats</h2>
-
-            <div class="date-selector">
-                <button class="date-button" onclick="selectDate('2025_10_23')">October 23, 2025</button>
-                <button class="date-button active" onclick="selectDate('2025_12_06')">December 6, 2025</button>
+  <body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-2">
+            <i data-lucide="newspaper" class="w-6 h-6 text-blue-200"></i>
+            <div>
+              <h1 class="text-xl font-extrabold tracking-tight uppercase">High School Hangout</h1>
+              <p class="text-[10px] text-blue-200 uppercase tracking-wider leading-none">Frederick County Sports Stats</p>
             </div>
+          </div>
+          
+          <nav id="desktop-nav" class="hidden lg:flex space-x-1 overflow-x-auto no-scrollbar"></nav>
 
-            <p class="subtitle" id="updated-through">Updated Through December 4, 2025</p>
-            <p class="subtitle" id="published-date">Published: Friday, December 6, 2025</p>
-        </header>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-blue-100 hover:text-white">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
 
-        <div class="intro">
-            <p><strong>Welcome to the High School Hangout Stats Hub!</strong></p>
-            <p>Select a sport below to view complete team standings and individual player statistics. All data is sourced from The Frederick News-Post.</p>
+      <div id="mobile-menu" class="hidden lg:hidden bg-blue-800 border-t border-blue-700 pb-2">
+        <div id="mobile-nav-items" class="container mx-auto px-2 pt-2 grid grid-cols-2 gap-2"></div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <!-- Error Display Area -->
+      <div id="error-message" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+        <strong class="font-bold">Error:</strong>
+        <span class="block sm:inline" id="error-text"></span>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar -->
+        <aside class="hidden lg:block w-64 flex-shrink-0">
+           <div class="sticky top-24">
+             <div id="desktop-rankings"></div>
+             <div class="mt-6 bg-yellow-50 p-4 rounded-lg border border-yellow-200 text-sm text-yellow-800">
+                <p class="font-bold mb-1">Note:</p>
+                <p>Statistics are submitted by coaches or team statisticians. Updated through Dec 6.</p>
+             </div>
+           </div>
+        </aside>
+
+        <!-- Main Stats Area -->
+        <div class="flex-1 min-w-0">
+          <div id="sport-view" class="animate-in fade-in duration-500">
+             <div class="text-center py-20 text-gray-500">
+               <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900 mx-auto mb-4"></div>
+               <p>Loading stats...</p>
+             </div>
+          </div>
         </div>
 
-        <main>
-            <!-- Sports Stats Section -->
-            <div class="section-header">
-                <h2>Team Standings &amp; Player Stats</h2>
-            </div>
-            <div class="sports-grid">
-                <!-- Football -->
-                <a href="football_2025_12_06.html" class="sport-card">
-                    <div class="icon">🏈</div>
-                    <h2>Football</h2>
-                    <p class="description">Team Standings &amp; Player Stats (Rushing, Passing, Receiving)</p>
-                </a>
+        <!-- Mobile Rankings -->
+        <div class="lg:hidden mt-8">
+           <div id="mobile-rankings"></div>
+        </div>
+      </div>
+    </main>
 
-                <!-- Girls Flag Football -->
-                <a href="girls_flag_football_2025_12_06.html" class="sport-card">
-                    <div class="icon">🏈</div>
-                    <h2>Girls Flag Football</h2>
-                    <p class="description">Team Standings &amp; Player Stats (Rushing, Passing, Receiving)</p>
-                </a>
+    <footer class="bg-white border-t border-gray-200 py-8 text-center text-sm text-gray-500">
+      <p>&copy; <span id="year"></span> Frederick County Sports Stats. Data extracted from The Frederick News-Post.</p>
+    </footer>
 
-                <!-- Boys Soccer -->
-                <a href="boys_soccer_2025_12_06.html" class="sport-card">
-                    <div class="icon">⚽</div>
-                    <h2>Boys Soccer</h2>
-                    <p class="description">Team Standings &amp; Player Stats (Scoring, Goalkeepers)</p>
-                </a>
-
-                <!-- Girls Soccer -->
-                <a href="girls_soccer_2025_12_06.html" class="sport-card">
-                    <div class="icon">⚽</div>
-                    <h2>Girls Soccer</h2>
-                    <p class="description">Team Standings &amp; Player Stats (Scoring, Goalkeepers)</p>
-                </a>
-
-                <!-- Volleyball -->
-                <a href="volleyball_2025_12_06.html" class="sport-card">
-                    <div class="icon">🏐</div>
-                    <h2>Volleyball</h2>
-                    <p class="description">Team Standings &amp; Player Stats (Kills, Assists, Digs)</p>
-                </a>
-
-                <!-- Field Hockey -->
-                <a href="field_hockey_2025_12_06.html" class="sport-card">
-                    <div class="icon">🏑</div>
-                    <h2>Field Hockey</h2>
-                    <p class="description">Team Standings &amp; Player Stats (Scoring, Goalkeepers)</p>
-                </a>
-
-                <!-- Cross Country -->
-                <a href="cross_country_2025_12_06.html" class="sport-card">
-                    <div class="icon">🏃</div>
-                    <h2>Cross Country</h2>
-                    <p class="description">Top 5K Times (Boys, Girls)</p>
-                </a>
-
-                <!-- Golf -->
-                <a href="golf_2025_12_06.html" class="sport-card">
-                    <div class="icon">⛳</div>
-                    <h2>Golf</h2>
-                    <p class="description">9-Hole Scoring Average</p>
-                </a>
-            </div>
-        </main>
-
-        <footer>
-            <p><strong>About This Data</strong></p>
-            <p>Statistics submitted by coaches or team designated statisticians to The Frederick News-Post.</p>
-            <p>Data should be emailed to sports@newspost.com by 5 p.m. on Wednesday each week.</p>
-            <p style="margin-top: 20px;"><strong>Source:</strong> The Frederick News-Post High School Hangout | <span id="footer-date">Friday, December 6, 2025</span></p>
-
-            <div class="footer-links">
-                <a href="https://www.fredericknewspost.com" target="_blank" rel="noopener">Frederick News-Post</a>
-                <a href="https://github.com/NewsAppsUMD/frederick_sports" target="_blank" rel="noopener">View on GitHub</a>
-            </div>
-
-            <p style="margin-top: 20px; font-size: 12px; color: #999;">
-                Created with ❤️ for Frederick County high school sports fans
-            </p>
-        </footer>
-    </div>
-
+    <!-- Error Handler Script -->
     <script>
-        let currentDate = '2025_12_06'; // Default to latest date
+      // Immediate check for file protocol which blocks modules
+      if (window.location.protocol === 'file:') {
+         const errorDiv = document.getElementById('error-message');
+         const errorText = document.getElementById('error-text');
+         errorDiv.classList.remove('hidden');
+         errorText.innerHTML = "You are trying to run this file directly from your computer (file://). Modern browsers block JavaScript modules for security.<br><br><strong>To fix this:</strong><br>&bull; Use a local server (like VS Code's Live Server)<br>&bull; OR upload to GitHub Pages.";
+      }
 
-        const dateInfo = {
-            '2025_10_23': {
-                updatedThrough: 'Updated Through October 21, 2025',
-                published: 'Published: Thursday, October 23, 2025',
-                footerDate: 'Thursday, October 23, 2025'
-            },
-            '2025_12_06': {
-                updatedThrough: 'Updated Through December 4, 2025',
-                published: 'Published: Friday, December 6, 2025',
-                footerDate: 'Friday, December 6, 2025'
-            }
-        };
-
-        function selectDate(date) {
-            currentDate = date;
-
-            // Update button states
-            document.querySelectorAll('.date-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            event.target.classList.add('active');
-
-            // Update header info
-            document.getElementById('updated-through').textContent = dateInfo[date].updatedThrough;
-            document.getElementById('published-date').textContent = dateInfo[date].published;
-            document.getElementById('footer-date').textContent = dateInfo[date].footerDate;
-
-            // Update all sport card links
-            updateSportLinks(date);
+      window.onerror = function(msg, url, line) {
+        const errorDiv = document.getElementById('error-message');
+        const errorText = document.getElementById('error-text');
+        
+        // Do not overwrite the file protocol message if it's already showing
+        if (!errorDiv.classList.contains('hidden') && errorText.innerHTML.includes('file://')) {
+            return false;
         }
 
-        function updateSportLinks(date) {
-            const sportCards = document.querySelectorAll('.sport-card');
-            sportCards.forEach(card => {
-                const href = card.getAttribute('href');
-                // Replace the date in the href
-                const newHref = href.replace(/2025_\d{2}_\d{2}/, date);
-                card.setAttribute('href', newHref);
-            });
+        errorDiv.classList.remove('hidden');
+        
+        let friendlyMsg = msg;
+        if (msg.toString().includes('Import') || msg.toString().includes('module') || msg.toString().includes('Script error')) {
+          friendlyMsg = "Cannot load data modules. You likely need to use a local server (like Live Server) or deploy to GitHub Pages.";
         }
-
-        // Initialize with default date
-        window.addEventListener('DOMContentLoaded', () => {
-            updateSportLinks(currentDate);
-        });
+        
+        errorText.textContent = friendlyMsg;
+        return false;
+      };
     </script>
+
+    <script type="module" src="./app.js"></script>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>

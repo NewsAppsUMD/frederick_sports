@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Hangout - Team Standings &amp; Player Stats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #333;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .date-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .date-button {
+            padding: 12px 30px;
+            border: 2px solid #667eea;
+            background-color: white;
+            color: #667eea;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .date-button:hover {
+            background-color: #f0f4ff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+        }
+
+        .date-button.active {
+            background-color: #667eea;
+            color: white;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .intro p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .section-header {
+            text-align: center;
+            margin: 50px 0 30px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .section-header h2 {
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .sports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .sport-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .sport-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .sport-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .sport-card .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .sport-card .description {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .sports-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .sport-card {
+                padding: 25px;
+            }
+
+            .sport-card h2 {
+                font-size: 20px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .sport-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Accessibility */
+        .sport-card:focus {
+            outline: 3px solid #667eea;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>High School Hangout</h1>
+            <h2 style="color: #667eea; font-size: 28px; margin: 10px 0;">Team Standings &amp; Player Stats</h2>
+
+            <div class="date-selector">
+                <button class="date-button" onclick="selectDate('2025_10_23')">October 23, 2025</button>
+                <button class="date-button active" onclick="selectDate('2025_12_06')">December 6, 2025</button>
+            </div>
+
+            <p class="subtitle" id="updated-through">Updated Through December 4, 2025</p>
+            <p class="subtitle" id="published-date">Published: Friday, December 6, 2025</p>
+        </header>
+
+        <div class="intro">
+            <p><strong>Welcome to the High School Hangout Stats Hub!</strong></p>
+            <p>Select a sport below to view complete team standings and individual player statistics. All data is sourced from The Frederick News-Post.</p>
+        </div>
+
+        <main>
+            <!-- Sports Stats Section -->
+            <div class="section-header">
+                <h2>Team Standings &amp; Player Stats</h2>
+            </div>
+            <div class="sports-grid">
+                <!-- Football -->
+                <a href="football_2025_12_06.html" class="sport-card">
+                    <div class="icon">🏈</div>
+                    <h2>Football</h2>
+                    <p class="description">Team Standings &amp; Player Stats (Rushing, Passing, Receiving)</p>
+                </a>
+
+                <!-- Girls Flag Football -->
+                <a href="girls_flag_football_2025_12_06.html" class="sport-card">
+                    <div class="icon">🏈</div>
+                    <h2>Girls Flag Football</h2>
+                    <p class="description">Team Standings &amp; Player Stats (Rushing, Passing, Receiving)</p>
+                </a>
+
+                <!-- Boys Soccer -->
+                <a href="boys_soccer_2025_12_06.html" class="sport-card">
+                    <div class="icon">⚽</div>
+                    <h2>Boys Soccer</h2>
+                    <p class="description">Team Standings &amp; Player Stats (Scoring, Goalkeepers)</p>
+                </a>
+
+                <!-- Girls Soccer -->
+                <a href="girls_soccer_2025_12_06.html" class="sport-card">
+                    <div class="icon">⚽</div>
+                    <h2>Girls Soccer</h2>
+                    <p class="description">Team Standings &amp; Player Stats (Scoring, Goalkeepers)</p>
+                </a>
+
+                <!-- Volleyball -->
+                <a href="volleyball_2025_12_06.html" class="sport-card">
+                    <div class="icon">🏐</div>
+                    <h2>Volleyball</h2>
+                    <p class="description">Team Standings &amp; Player Stats (Kills, Assists, Digs)</p>
+                </a>
+
+                <!-- Field Hockey -->
+                <a href="field_hockey_2025_12_06.html" class="sport-card">
+                    <div class="icon">🏑</div>
+                    <h2>Field Hockey</h2>
+                    <p class="description">Team Standings &amp; Player Stats (Scoring, Goalkeepers)</p>
+                </a>
+
+                <!-- Cross Country -->
+                <a href="cross_country_2025_12_06.html" class="sport-card">
+                    <div class="icon">🏃</div>
+                    <h2>Cross Country</h2>
+                    <p class="description">Top 5K Times (Boys, Girls)</p>
+                </a>
+
+                <!-- Golf -->
+                <a href="golf_2025_12_06.html" class="sport-card">
+                    <div class="icon">⛳</div>
+                    <h2>Golf</h2>
+                    <p class="description">9-Hole Scoring Average</p>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong>About This Data</strong></p>
+            <p>Statistics submitted by coaches or team designated statisticians to The Frederick News-Post.</p>
+            <p>Data should be emailed to sports@newspost.com by 5 p.m. on Wednesday each week.</p>
+            <p style="margin-top: 20px;"><strong>Source:</strong> The Frederick News-Post High School Hangout | <span id="footer-date">Friday, December 6, 2025</span></p>
+
+            <div class="footer-links">
+                <a href="https://www.fredericknewspost.com" target="_blank" rel="noopener">Frederick News-Post</a>
+                <a href="https://github.com/NewsAppsUMD/frederick_sports" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+
+            <p style="margin-top: 20px; font-size: 12px; color: #999;">
+                Created with ❤️ for Frederick County high school sports fans
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        let currentDate = '2025_12_06'; // Default to latest date
+
+        const dateInfo = {
+            '2025_10_23': {
+                updatedThrough: 'Updated Through October 21, 2025',
+                published: 'Published: Thursday, October 23, 2025',
+                footerDate: 'Thursday, October 23, 2025'
+            },
+            '2025_12_06': {
+                updatedThrough: 'Updated Through December 4, 2025',
+                published: 'Published: Friday, December 6, 2025',
+                footerDate: 'Friday, December 6, 2025'
+            }
+        };
+
+        function selectDate(date) {
+            currentDate = date;
+
+            // Update button states
+            document.querySelectorAll('.date-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update header info
+            document.getElementById('updated-through').textContent = dateInfo[date].updatedThrough;
+            document.getElementById('published-date').textContent = dateInfo[date].published;
+            document.getElementById('footer-date').textContent = dateInfo[date].footerDate;
+
+            // Update all sport card links
+            updateSportLinks(date);
+        }
+
+        function updateSportLinks(date) {
+            const sportCards = document.querySelectorAll('.sport-card');
+            sportCards.forEach(card => {
+                const href = card.getAttribute('href');
+                // Replace the date in the href
+                const newHref = href.replace(/2025_\d{2}_\d{2}/, date);
+                card.setAttribute('href', newHref);
+            });
+        }
+
+        // Initialize with default date
+        window.addEventListener('DOMContentLoaded', () => {
+            updateSportLinks(currentDate);
+        });
+    </script>
+</body>
+</html>
