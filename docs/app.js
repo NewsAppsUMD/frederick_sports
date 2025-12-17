@@ -1,19 +1,12 @@
 import { sportsData, rankings } from './data.js';
 
 // DOM Elements
-const desktopNav = document.getElementById('desktop-nav');
-const mobileNavItems = document.getElementById('mobile-nav-items');
-const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuIcon = mobileMenuBtn.querySelector('i');
+const navContainer = document.getElementById('nav-container');
 const sportView = document.getElementById('sport-view');
-const desktopRankings = document.getElementById('desktop-rankings');
-const mobileRankings = document.getElementById('mobile-rankings');
-const yearSpan = document.getElementById('year');
+const rankingsContainer = document.getElementById('rankings-container');
 
 // State
 let activeTab = sportsData && sportsData.length > 0 ? sportsData[0].id : null;
-let isMobileMenuOpen = false;
 
 // Initialization
 function init() {
@@ -21,63 +14,30 @@ function init() {
     throw new Error("Data failed to load. Check data.js file.");
   }
 
-  yearSpan.textContent = new Date().getFullYear();
   renderNav();
   renderRankings();
   
   if (activeTab) {
     renderSport(activeTab);
   }
-  
-  // Event Listeners
-  if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-  }
-
-  // Initialize Icons safely
-  updateIcons();
-}
-
-function updateIcons() {
-  // Check if lucide is available globally (from CDN)
-  // @ts-ignore
-  if (typeof window.lucide !== 'undefined' && window.lucide.createIcons) {
-    // @ts-ignore
-    window.lucide.createIcons();
-  }
 }
 
 // Navigation Rendering
 function renderNav() {
-  const navHtml = sportsData.map(sport => `
+  if (!navContainer) return;
+
+  navContainer.innerHTML = sportsData.map(sport => `
     <button
       data-id="${sport.id}"
-      class="px-4 py-2 rounded-md text-sm font-medium transition-colors duration-150 whitespace-nowrap
+      class="px-4 py-2 rounded border text-sm font-semibold transition-colors
       ${activeTab === sport.id 
-        ? 'bg-white text-blue-900 shadow-sm' 
-        : 'text-blue-100 hover:bg-blue-800 hover:text-white'
+        ? 'bg-blue-900 text-white border-blue-900' 
+        : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100 hover:border-gray-300'
       }"
     >
       ${sport.name}
     </button>
   `).join('');
-
-  if (desktopNav) desktopNav.innerHTML = navHtml;
-
-  const mobileHtml = sportsData.map(sport => `
-    <button
-      data-id="${sport.id}"
-      class="px-3 py-2 rounded-md text-sm font-medium text-left transition-colors
-      ${activeTab === sport.id 
-        ? 'bg-white text-blue-900' 
-        : 'text-blue-100 hover:bg-blue-700'
-      }"
-    >
-      ${sport.name}
-    </button>
-  `).join('');
-
-  if (mobileNavItems) mobileNavItems.innerHTML = mobileHtml;
 
   // Attach click listeners
   const buttons = document.querySelectorAll('button[data-id]');
@@ -87,50 +47,26 @@ function renderNav() {
       activeTab = e.currentTarget.dataset.id;
       renderNav(); // Re-render to update active state
       renderSport(activeTab);
-      if (isMobileMenuOpen) toggleMobileMenu();
     });
   });
 }
 
-function toggleMobileMenu() {
-  isMobileMenuOpen = !isMobileMenuOpen;
-  if (isMobileMenuOpen) {
-    mobileMenu.classList.remove('hidden');
-    mobileMenuIcon.setAttribute('data-lucide', 'x');
-  } else {
-    mobileMenu.classList.add('hidden');
-    mobileMenuIcon.setAttribute('data-lucide', 'menu');
-  }
-  updateIcons();
-}
-
-// Rankings Rendering
+// Rankings Rendering (Simplified for footer/grid layout)
 function renderRankings() {
-  const html = `
-    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-      <div class="bg-gray-50 px-4 py-3 border-b border-gray-200 flex items-center gap-2">
-        <i data-lucide="trophy" class="w-5 h-5 text-yellow-600"></i>
-        <h2 class="font-bold text-gray-800 uppercase tracking-wide text-sm">Power Rankings</h2>
-      </div>
-      <div class="divide-y divide-gray-100">
-        ${rankings.map(sport => `
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm mb-2 uppercase">${sport.sport}</h3>
-            <ol class="list-decimal list-inside space-y-1">
-              ${sport.items.map(item => `
-                <li class="text-gray-600 text-sm pl-1">
-                  <span class="font-medium text-gray-900">${item.team}</span>
-                </li>
-              `).join('')}
-            </ol>
-          </div>
+  if (!rankingsContainer) return;
+
+  rankingsContainer.innerHTML = rankings.map(sport => `
+    <div class="bg-gray-50 p-4 rounded border border-gray-200">
+      <h3 class="font-bold text-gray-800 text-sm mb-3 uppercase border-b border-gray-200 pb-1">${sport.sport}</h3>
+      <ol class="list-decimal list-inside space-y-1">
+        ${sport.items.map(item => `
+          <li class="text-gray-600 text-sm">
+            <span class="font-medium text-gray-900">${item.team}</span>
+          </li>
         `).join('')}
-      </div>
+      </ol>
     </div>
-  `;
-  
-  if (desktopRankings) desktopRankings.innerHTML = html;
-  if (mobileRankings) mobileRankings.innerHTML = html;
+  `).join('');
 }
 
 // Main Content Rendering
@@ -141,36 +77,39 @@ function renderSport(id) {
   let standingsHtml = '';
   if (data.standings.length > 0) {
     standingsHtml = `
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-        ${data.standings.map(group => `
-          <div class="mb-8">
-            <h3 class="text-lg font-bold text-gray-800 mb-3 uppercase border-b-2 border-blue-900 pb-1 inline-block">
-              ${group.name}
-            </h3>
-            <div class="overflow-x-auto rounded-lg border border-gray-200">
-              <table class="w-full text-sm text-left text-gray-600">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 border-b border-gray-200">
-                  <tr>
-                    <th scope="col" class="px-4 py-3 font-bold w-1/3">Team</th>
-                    ${group.headers.map(h => `<th scope="col" class="px-4 py-3 font-bold text-center">${h}</th>`).join('')}
-                  </tr>
-                </thead>
-                <tbody>
-                  ${group.rows.map((row, idx) => `
-                    <tr class="border-b border-gray-100 last:border-0 hover:bg-gray-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}">
-                      <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">${row.team}</th>
-                      ${group.headers.map(h => `
-                        <td class="px-4 py-3 text-center font-mono text-gray-700">
-                          ${row[h.toLowerCase()] !== undefined ? row[h.toLowerCase()] : '-'}
-                        </td>
-                      `).join('')}
+      <div class="mb-10">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Standings</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          ${data.standings.map(group => `
+            <div>
+              <h4 class="font-bold text-gray-700 mb-2 uppercase text-sm tracking-wide">
+                ${group.name}
+              </h4>
+              <div class="overflow-x-auto border border-gray-200 rounded">
+                <table class="w-full text-sm text-left">
+                  <thead class="bg-gray-100 text-gray-600 uppercase text-xs font-semibold">
+                    <tr>
+                      <th class="px-3 py-2 w-1/3">Team</th>
+                      ${group.headers.map(h => `<th class="px-3 py-2 text-center">${h}</th>`).join('')}
                     </tr>
-                  `).join('')}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    ${group.rows.map((row, idx) => `
+                      <tr class="${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}">
+                        <td class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap">${row.team}</td>
+                        ${group.headers.map(h => `
+                          <td class="px-3 py-2 text-center text-gray-700 font-mono">
+                            ${row[h.toLowerCase()] !== undefined ? row[h.toLowerCase()] : '-'}
+                          </td>
+                        `).join('')}
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        `).join('')}
+          `).join('')}
+        </div>
       </div>
     `;
   }
@@ -178,33 +117,33 @@ function renderSport(id) {
   let leadersHtml = '';
   if (data.leaders.length > 0) {
     leadersHtml = `
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <h3 class="text-xl font-bold text-gray-900 mb-6 uppercase border-b border-gray-200 pb-2">
-          Individual Leaders
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
+      <div>
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Individual Leaders</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           ${data.leaders.map(cat => `
-            <div class="mb-8 break-inside-avoid">
-              <h3 class="text-md font-bold text-gray-700 mb-3 bg-gray-100 px-2 py-1 uppercase tracking-wider inline-block rounded text-xs">
-                ${cat.categoryName}
-              </h3>
+            <div class="border border-gray-200 rounded bg-white overflow-hidden">
+              <div class="bg-gray-100 px-3 py-2 border-b border-gray-200">
+                <h4 class="font-bold text-gray-700 text-xs uppercase tracking-wider">
+                  ${cat.categoryName}
+                </h4>
+              </div>
               <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left">
-                  <thead class="text-xs text-gray-500 uppercase border-b border-gray-200">
+                <table class="w-full text-sm">
+                  <thead class="text-xs text-gray-500 bg-gray-50 border-b border-gray-100">
                     <tr>
-                      <th scope="col" class="px-2 py-2 font-semibold">Player, School</th>
-                      ${cat.headers.map(h => `<th scope="col" class="px-2 py-2 font-semibold text-right">${h.label}</th>`).join('')}
+                      <th class="px-3 py-2 text-left font-semibold">Player</th>
+                      ${cat.headers.map(h => `<th class="px-3 py-2 text-right font-semibold">${h.label}</th>`).join('')}
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-gray-100">
                     ${cat.players.map(p => `
                       <tr class="hover:bg-gray-50">
-                        <td class="px-2 py-2 font-medium text-gray-900">
-                          <span class="block">${p.player}</span>
-                          <span class="text-xs text-gray-500 font-normal">${p.school}</span>
+                        <td class="px-3 py-2">
+                          <div class="font-medium text-gray-900">${p.player}</div>
+                          <div class="text-xs text-gray-500">${p.school}</div>
                         </td>
                         ${cat.headers.map(h => `
-                          <td class="px-2 py-2 text-right font-mono text-gray-700">${p[h.key]}</td>
+                          <td class="px-3 py-2 text-right font-mono text-gray-700">${p[h.key]}</td>
                         `).join('')}
                       </tr>
                     `).join('')}
@@ -219,16 +158,14 @@ function renderSport(id) {
   }
 
   sportView.innerHTML = `
-    <div class="mb-8">
-      <h2 class="text-3xl font-extrabold text-gray-900 uppercase tracking-tight mb-6">
+    <div class="animate-in fade-in duration-300">
+      <h2 class="text-2xl font-bold text-blue-900 mb-6 pb-2 border-b border-gray-200">
         ${data.name}
       </h2>
       ${standingsHtml}
       ${leadersHtml}
     </div>
   `;
-
-  updateIcons();
 }
 
 // Start

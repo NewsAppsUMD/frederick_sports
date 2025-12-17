@@ -4,113 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frederick Sports Stats</title>
+    <!-- Tailwind is used for utility styling, but the layout is now standard flow -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+      /* Ensure fonts look standard for easy embedding */
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: system-ui, -apple-system, sans-serif;
       }
-      .no-scrollbar::-webkit-scrollbar { display: none; }
-      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
   <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+  <body class="bg-white text-gray-900">
     
-    <!-- Header -->
-    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
-      <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center gap-2">
-            <i data-lucide="newspaper" class="w-6 h-6 text-blue-200"></i>
-            <div>
-              <h1 class="text-xl font-extrabold tracking-tight uppercase">High School Hangout</h1>
-              <p class="text-[10px] text-blue-200 uppercase tracking-wider leading-none">Frederick County Sports Stats</p>
-            </div>
-          </div>
-          
-          <nav id="desktop-nav" class="hidden lg:flex space-x-1 overflow-x-auto no-scrollbar"></nav>
+    <!-- Main Container: Max width centered, suitable for CMS column widths -->
+    <div class="max-w-5xl mx-auto px-4 py-6">
+      
+      <!-- Error Handler -->
+      <div id="error-message" class="hidden bg-red-50 border-l-4 border-red-500 text-red-700 p-4 mb-6" role="alert">
+        <p class="font-bold">Error loading stats</p>
+        <p id="error-text"></p>
+      </div>
 
-          <button id="mobile-menu-btn" class="lg:hidden p-2 text-blue-100 hover:text-white">
-            <i data-lucide="menu"></i>
-          </button>
+      <!-- Simple Header -->
+      <header class="mb-6 border-b border-gray-200 pb-4">
+        <h1 class="text-3xl font-bold text-gray-900 mb-1">High School Hangout</h1>
+        <p class="text-sm text-gray-500">Frederick County Sports Stats &bull; Updated Dec 6</p>
+      </header>
+
+      <!-- Navigation: Simple wrapping buttons -->
+      <nav id="nav-container" class="flex flex-wrap gap-2 mb-8"></nav>
+
+      <!-- Main Stats Content -->
+      <main id="sport-view" class="min-h-[300px] mb-12">
+        <div class="text-center py-12 text-gray-400">
+          <p>Loading statistics...</p>
         </div>
-      </div>
+      </main>
 
-      <div id="mobile-menu" class="hidden lg:hidden bg-blue-800 border-t border-blue-700 pb-2">
-        <div id="mobile-nav-items" class="container mx-auto px-2 pt-2 grid grid-cols-2 gap-2"></div>
-      </div>
-    </header>
+      <!-- Power Rankings Section (Moved to bottom) -->
+      <section class="border-t border-gray-200 pt-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-6 uppercase tracking-wider">Power Rankings</h2>
+        <div id="rankings-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </section>
 
-    <!-- Main Content -->
-    <main class="flex-grow container mx-auto px-4 py-8">
-      <!-- Error Display Area -->
-      <div id="error-message" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
-        <strong class="font-bold">Error:</strong>
-        <span class="block sm:inline" id="error-text"></span>
-      </div>
-
-      <div class="flex flex-col lg:flex-row gap-8">
-        <!-- Sidebar -->
-        <aside class="hidden lg:block w-64 flex-shrink-0">
-           <div class="sticky top-24">
-             <div id="desktop-rankings"></div>
-             <div class="mt-6 bg-yellow-50 p-4 rounded-lg border border-yellow-200 text-sm text-yellow-800">
-                <p class="font-bold mb-1">Note:</p>
-                <p>Statistics are submitted by coaches or team statisticians. Updated through Dec 6.</p>
-             </div>
-           </div>
-        </aside>
-
-        <!-- Main Stats Area -->
-        <div class="flex-1 min-w-0">
-          <div id="sport-view" class="animate-in fade-in duration-500">
-             <div class="text-center py-20 text-gray-500">
-               <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900 mx-auto mb-4"></div>
-               <p>Loading stats...</p>
-             </div>
-          </div>
-        </div>
-
-        <!-- Mobile Rankings -->
-        <div class="lg:hidden mt-8">
-           <div id="mobile-rankings"></div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="bg-white border-t border-gray-200 py-8 text-center text-sm text-gray-500">
-      <p>&copy; <span id="year"></span> Frederick County Sports Stats. Data extracted from The Frederick News-Post.</p>
-    </footer>
+      <footer class="mt-12 text-center text-xs text-gray-400 py-4">
+        <p>Data sourced from The Frederick News-Post.</p>
+      </footer>
+    </div>
 
     <!-- Error Handler Script -->
     <script>
-      // Immediate check for file protocol which blocks modules
       if (window.location.protocol === 'file:') {
          const errorDiv = document.getElementById('error-message');
          const errorText = document.getElementById('error-text');
          errorDiv.classList.remove('hidden');
-         errorText.innerHTML = "You are trying to run this file directly from your computer (file://). Modern browsers block JavaScript modules for security.<br><br><strong>To fix this:</strong><br>&bull; Use a local server (like VS Code's Live Server)<br>&bull; OR upload to GitHub Pages.";
+         errorText.innerHTML = "Browser security blocks local modules (file://). Please use a local server or GitHub Pages.";
       }
 
-      window.onerror = function(msg, url, line) {
+      window.onerror = function(msg) {
         const errorDiv = document.getElementById('error-message');
         const errorText = document.getElementById('error-text');
         
-        // Do not overwrite the file protocol message if it's already showing
-        if (!errorDiv.classList.contains('hidden') && errorText.innerHTML.includes('file://')) {
-            return false;
-        }
+        if (!errorDiv.classList.contains('hidden') && errorText.innerHTML.includes('file://')) return false;
 
         errorDiv.classList.remove('hidden');
-        
-        let friendlyMsg = msg;
-        if (msg.toString().includes('Import') || msg.toString().includes('module') || msg.toString().includes('Script error')) {
-          friendlyMsg = "Cannot load data modules. You likely need to use a local server (like Live Server) or deploy to GitHub Pages.";
-        }
-        
-        errorText.textContent = friendlyMsg;
+        errorText.textContent = msg.toString().includes('Import') ? "Module loading failed. Use a local server." : msg;
         return false;
       };
     </script>
