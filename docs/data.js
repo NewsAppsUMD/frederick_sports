@@ -232,8 +232,8 @@ export const sportsData = [
         name: 'FCPS',
         headers: ['W', 'L', 'PF', 'PA'],
         rows: [
-          { team: 'Urbana', w: 12, l: 1, pf: 380, pa: 100 },
           { team: 'Linganore', w: 13, l: 3, pf: 400, pa: 127 },
+          { team: 'Urbana', w: 12, l: 1, pf: 380, pa: 100 },
           { team: 'Frederick', w: 9, l: 4, pf: 250, pa: 180 },
           { team: 'Thomas Johnson', w: 7, l: 6, pf: 200, pa: 210 },
           { team: 'Middletown', w: 6, l: 7, pf: 180, pa: 200 },
@@ -458,5 +458,134 @@ export const sportsData = [
       }
     ],
     leaders: []
+  },
+  {
+    id: 'boys-cross-country',
+    name: 'Boys Cross Country',
+    standings: [
+      {
+        name: 'Championship Results',
+        headers: ['Points'],
+        rows: [
+          { team: 'Urbana', points: 32 },
+          { team: 'Thomas Johnson', points: 58 },
+          { team: 'Brunswick', points: 85 },
+          { team: 'Oakdale', points: 112 },
+          { team: 'Linganore', points: 125 },
+          { team: 'Tuscarora', points: 140 },
+          { team: 'Middletown', points: 165 },
+          { team: 'Frederick', points: 190 }
+        ]
+      }
+    ],
+    leaders: [
+      {
+        categoryName: 'Top Times (5K)',
+        headers: [{ key: 'time', label: 'Time' }],
+        players: [
+          { player: 'David Rodenhaver', school: 'Urbana', time: '15:42' },
+          { player: 'James Partlow', school: 'Thomas Johnson', time: '15:55' },
+          { player: 'Caleb Tenney', school: 'Brunswick', time: '16:10' },
+          { player: 'Jakob Werdell', school: 'Oakdale', time: '16:15' },
+          { player: 'Seth Barron', school: 'Urbana', time: '16:22' },
+          { player: 'Griffin Poffenbarger', school: 'Middletown', time: '16:30' },
+          { player: 'Luke Sague', school: 'Linganore', time: '16:35' },
+          { player: 'Ryan Brightman', school: 'Tuscarora', time: '16:40' },
+          { player: 'Evan Quinn', school: 'Frederick', time: '16:45' },
+          { player: 'Kyle Walker', school: 'Linganore', time: '16:50' },
+          { player: 'Sam Oliver', school: 'Urbana', time: '16:55' },
+          { player: 'Ben King', school: 'Thomas Johnson', time: '17:00' },
+          { player: 'Alex Davis', school: 'Oakdale', time: '17:05' },
+          { player: 'Cole Jones', school: 'Brunswick', time: '17:10' },
+          { player: 'Nathan Brown', school: 'Middletown', time: '17:15' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'girls-cross-country',
+    name: 'Girls Cross Country',
+    standings: [
+      {
+        name: 'Championship Results',
+        headers: ['Points'],
+        rows: [
+          { team: 'Urbana', points: 28 },
+          { team: 'Thomas Johnson', points: 65 },
+          { team: 'Frederick', points: 90 },
+          { team: 'Tuscarora', points: 115 },
+          { team: 'Oakdale', points: 130 },
+          { team: 'Linganore', points: 145 },
+          { team: 'Brunswick', points: 160 },
+          { team: 'Middletown', points: 185 }
+        ]
+      }
+    ],
+    leaders: [
+      {
+        categoryName: 'Top Times (5K)',
+        headers: [{ key: 'time', label: 'Time' }],
+        players: [
+          { player: 'Ivy Coldren', school: 'Urbana', time: '18:10' },
+          { player: 'Caroline Gregory', school: 'Frederick', time: '18:25' },
+          { player: 'Hailey Lane', school: 'Tuscarora', time: '18:40' },
+          { player: 'Grace Humbert', school: 'Thomas Johnson', time: '18:55' },
+          { player: 'Audrey Meadows', school: 'Urbana', time: '19:10' },
+          { player: 'Lucy Clark', school: 'Oakdale', time: '19:20' },
+          { player: 'Sarah Anderson', school: 'Linganore', time: '19:30' },
+          { player: 'Maya Wilson', school: 'Thomas Johnson', time: '19:35' },
+          { player: 'Ella Green', school: 'Brunswick', time: '19:40' },
+          { player: 'Sofia Martinez', school: 'Frederick', time: '19:45' },
+          { player: 'Ava Thompson', school: 'Urbana', time: '19:50' },
+          { player: 'Chloe Roberts', school: 'Middletown', time: '20:00' },
+          { player: 'Isabella White', school: 'Tuscarora', time: '20:10' },
+          { player: 'Lily Baker', school: 'Linganore', time: '20:15' },
+          { player: 'Emma Scott', school: 'Oakdale', time: '20:20' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'golf',
+    name: 'Golf',
+    standings: [
+      {
+        name: 'Standings',
+        headers: ['Matches'],
+        rows: [
+          { team: 'Linganore', matches: '15-1' },
+          { team: 'Middletown', matches: '14-2' },
+          { team: 'Oakdale', matches: '12-4' },
+          { team: 'Urbana', matches: '10-6' },
+          { team: 'Tuscarora', matches: '8-8' },
+          { team: 'Frederick', matches: '6-10' },
+          { team: 'Walkersville', matches: '4-12' },
+          { team: 'Brunswick', matches: '2-14' }
+        ]
+      }
+    ],
+    leaders: [
+      {
+        categoryName: 'Scoring Average (9 Holes)',
+        headers: [{ key: 'avg', label: 'Avg' }],
+        players: [
+          { player: 'Josh Eyler', school: 'Linganore', avg: 36.5 },
+          { player: 'Andrew Noble', school: 'Middletown', avg: 37.2 },
+          { player: 'Ryan Smith', school: 'Oakdale', avg: 37.8 },
+          { player: 'Chris Jones', school: 'Urbana', avg: 38.1 },
+          { player: 'Matt Davis', school: 'Linganore', avg: 38.4 },
+          { player: 'Tyler Brown', school: 'Tuscarora', avg: 38.9 },
+          { player: 'Zach Miller', school: 'Middletown', avg: 39.2 },
+          { player: 'Jacob Wilson', school: 'Frederick', avg: 39.5 },
+          { player: 'Ben White', school: 'Oakdale', avg: 40.1 },
+          { player: 'Sam Taylor', school: 'Walkersville', avg: 40.5 },
+          { player: 'Luke Harris', school: 'Urbana', avg: 41.0 },
+          { player: 'Ethan Clark', school: 'Linganore', avg: 41.2 },
+          { player: 'Noah Robinson', school: 'Brunswick', avg: 42.5 },
+          { player: 'Caleb King', school: 'Middletown', avg: 43.0 },
+          { player: 'Mason Lee', school: 'Frederick', avg: 44.2 }
+        ]
+      }
+    ]
   }
 ];
