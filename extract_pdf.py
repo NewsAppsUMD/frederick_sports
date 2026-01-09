@@ -197,8 +197,7 @@ def parse_soccer_stats(text: str, sport_name: str = "Boys Soccer") -> Dict[str, 
     # Split text into lines for easier parsing
     lines = text.split('\n')
 
-    # Find SCORING LEADERS sections by looking for the sport's conference structure
-    # Boys Soccer comes before Girls Soccer
+    # Find all SCORING LEADERS and GOALKEEPER STATISTICS sections
     scoring_indices = []
     goalkeeper_indices = []
 
@@ -211,17 +210,68 @@ def parse_soccer_stats(text: str, sport_name: str = "Boys Soccer") -> Dict[str, 
     print(f"DEBUG [{sport_name}]: Found {len(scoring_indices)} SCORING LEADERS sections")
     print(f"DEBUG [{sport_name}]: Found {len(goalkeeper_indices)} GOALKEEPER STATISTICS sections")
 
-    # Determine which sections to use based on sport
-    if "Boys" in sport_name:
-        # Boys Soccer is first
-        scoring_idx = scoring_indices[0] if len(scoring_indices) > 0 else None
-        # Boys Soccer goalkeeper is second (after Field Hockey)
-        goalkeeper_idx = goalkeeper_indices[1] if len(goalkeeper_indices) > 1 else None
-    else:  # Girls Soccer
-        # Girls Soccer is second
-        scoring_idx = scoring_indices[1] if len(scoring_indices) > 1 else None
-        # Girls Soccer goalkeeper is third
-        goalkeeper_idx = goalkeeper_indices[2] if len(goalkeeper_indices) > 2 else None
+    # Match each SCORING LEADERS to its GOALKEEPER STATISTICS by position
+    # A sport's SCORING section comes before its GOALKEEPER section
+    # First GOALKEEPER is always Field Hockey, so skip SCORING sections before it
+
+    first_goalkeeper = goalkeeper_indices[0] if goalkeeper_indices else float('inf')
+
+    # Build pairs of (scoring_idx, goalkeeper_idx) for soccer sections only
+    # Soccer SCORING LEADERS come AFTER Field Hockey's GOALKEEPER STATISTICS
+    soccer_pairs = []
+    for scoring_idx in scoring_indices:
+        if scoring_idx > first_goalkeeper:
+            # Find the first GOALKEEPER after this SCORING
+            for gk_idx in goalkeeper_indices:
+                if gk_idx > scoring_idx:
+                    soccer_pairs.append((scoring_idx, gk_idx))
+                    break
+
+    print(f"DEBUG [{sport_name}]: Found {len(soccer_pairs)} soccer section pairs")
+
+    # Determine which pair is Boys vs Girls by checking player names
+    def is_boys_goalkeeper(gk_idx):
+        """Check if goalkeeper section has male player names."""
+        # Common male first name patterns
+        male_indicators = ['Ben ', 'TJ ', 'Andrew ', 'Chris ', 'Michael ', 'David ',
+                          'James ', 'John ', 'Robert ', 'William ', 'Ryan ', 'Matt ',
+                          'Tyler ', 'Josh ', 'Nick ', 'Mike ', 'Dan ', 'Tom ', 'Joe ']
+        for i in range(gk_idx + 1, min(gk_idx + 15, len(lines))):
+            line = lines[i].strip()
+            if ',' in line and line[0].isalpha():
+                player_name = line.split(',')[0].strip()
+                if player_name and player_name != 'Player':
+                    # Check if name starts with common male indicator
+                    for male in male_indicators:
+                        if player_name.startswith(male.strip()):
+                            return True
+                    return False
+        return False
+
+    # Find the correct pair for this sport
+    scoring_idx = None
+    goalkeeper_idx = None
+
+    for pair_scoring, pair_gk in soccer_pairs:
+        is_boys = is_boys_goalkeeper(pair_gk)
+        if "Boys" in sport_name and is_boys:
+            scoring_idx = pair_scoring
+            goalkeeper_idx = pair_gk
+            break
+        elif "Girls" in sport_name and not is_boys:
+            scoring_idx = pair_scoring
+            goalkeeper_idx = pair_gk
+            break
+
+    # Fallback to position-based if name detection failed
+    if scoring_idx is None and len(soccer_pairs) >= 2:
+        print(f"DEBUG [{sport_name}]: Using fallback position-based matching")
+        if "Boys" in sport_name:
+            scoring_idx, goalkeeper_idx = soccer_pairs[0]
+        else:
+            scoring_idx, goalkeeper_idx = soccer_pairs[1]
+    elif scoring_idx is None and len(soccer_pairs) == 1:
+        scoring_idx, goalkeeper_idx = soccer_pairs[0]
 
     # Parse Scoring Leaders
     if scoring_idx is not None:
@@ -278,7 +328,7 @@ def parse_soccer_stats(text: str, sport_name: str = "Boys Soccer") -> Dict[str, 
             stripped = lines[i].strip()
 
             # Stop conditions
-            if any(keyword in stripped for keyword in ['FCPS', 'CENTRAL MARYLAND', 'SCORING LEADERS']):
+            if any(keyword in stripped for keyword in ['FCPS', 'CENTRAL MARYLAND', 'SCORING LEADERS', 'KEEPING TABS']):
                 save_goalkeeper()
                 break
 
@@ -421,17 +471,22 @@ def parse_field_hockey_stats(text: str) -> Dict[str, List[Dict[str, Any]]]:
     # Split text into lines for easier parsing
     lines = text.split('\n')
 
-    # Find "Scoring Leaders" section (different from soccer's "SCORING LEADERS")
-    scoring_idx = None
+    # First find the first GOALKEEPER STATISTICS (this is always Field Hockey's)
     goalkeeper_idx = None
-
     for i, line in enumerate(lines):
-        if line.strip() == 'Scoring Leaders':
-            scoring_idx = i
         if line.strip() == 'GOALKEEPER STATISTICS':
-            # Field Hockey uses the first GOALKEEPER STATISTICS section
-            if goalkeeper_idx is None:
-                goalkeeper_idx = i
+            goalkeeper_idx = i
+            break
+
+    # Find Field Hockey's "Scoring Leaders" section - it comes BEFORE the first GOALKEEPER
+    # Match both "Scoring Leaders" (mixed case) and "SCORING LEADERS" (uppercase)
+    scoring_idx = None
+    if goalkeeper_idx is not None:
+        for i, line in enumerate(lines):
+            if i >= goalkeeper_idx:
+                break
+            if line.strip().upper() == 'SCORING LEADERS':
+                scoring_idx = i
 
     print(f"DEBUG [Field Hockey]: Scoring Leaders at line {scoring_idx}")
     print(f"DEBUG [Field Hockey]: GOALKEEPER STATISTICS at line {goalkeeper_idx}")

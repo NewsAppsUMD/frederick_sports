@@ -1,5 +1,270 @@
 {
-  "scoring": [],
+  "scoring": [
+    {
+      "player": "Lexi Bristow",
+      "school": "Urbana",
+      "gp": "17",
+      "g": "19",
+      "a": "15",
+      "pts": "53"
+    },
+    {
+      "player": "Mia Marquart",
+      "school": "Walkersville",
+      "gp": "15",
+      "g": "20",
+      "a": "12",
+      "pts": "52"
+    },
+    {
+      "player": "Makenzie Kilcoyne",
+      "school": "Urbana",
+      "gp": "17",
+      "g": "19",
+      "a": "14",
+      "pts": "52"
+    },
+    {
+      "player": "Reese Rymon",
+      "school": "Oakdale",
+      "gp": "16",
+      "g": "21",
+      "a": "8",
+      "pts": "50"
+    },
+    {
+      "player": "Josey Shaffer",
+      "school": "Catoctin",
+      "gp": "15",
+      "g": "18",
+      "a": "9",
+      "pts": "45"
+    },
+    {
+      "player": "Maddie Myers",
+      "school": "Catoctin",
+      "gp": "15",
+      "g": "21",
+      "a": "1",
+      "pts": "43"
+    },
+    {
+      "player": "Autumn Jordan",
+      "school": "Linganore",
+      "gp": "20",
+      "g": "16",
+      "a": "9",
+      "pts": "41"
+    },
+    {
+      "player": "Addison Ridgely",
+      "school": "Linganore",
+      "gp": "20",
+      "g": "16",
+      "a": "7",
+      "pts": "39"
+    },
+    {
+      "player": "Brianna McGuirl",
+      "school": "Linganore",
+      "gp": "20",
+      "g": "17",
+      "a": "2",
+      "pts": "36"
+    },
+    {
+      "player": "Amaya Perera",
+      "school": "Urbana",
+      "gp": "17",
+      "g": "12",
+      "a": "11",
+      "pts": "35"
+    },
+    {
+      "player": "Jordan Zimmerman",
+      "school": "Ling.",
+      "gp": "20",
+      "g": "13",
+      "a": "7",
+      "pts": "33"
+    },
+    {
+      "player": "Amilia Nasto",
+      "school": "Linganore",
+      "gp": "20",
+      "g": "11",
+      "a": "7",
+      "pts": "29"
+    },
+    {
+      "player": "Destiny Shoemaker",
+      "school": "Walk.",
+      "gp": "15",
+      "g": "12",
+      "a": "5",
+      "pts": "29"
+    },
+    {
+      "player": "Alaina Petruzzello",
+      "school": "Frederick",
+      "gp": "14",
+      "g": "12",
+      "a": "4",
+      "pts": "28"
+    },
+    {
+      "player": "Emma Duncan",
+      "school": "Urbana",
+      "gp": "17",
+      "g": "12",
+      "a": "3",
+      "pts": "27"
+    },
+    {
+      "player": "Morgan Boisvert",
+      "school": "Urbana",
+      "gp": "17",
+      "g": "9",
+      "a": "4",
+      "pts": "22"
+    },
+    {
+      "player": "Natalie Keiser",
+      "school": "Walkersville",
+      "gp": "14",
+      "g": "9",
+      "a": "3",
+      "pts": "21"
+    },
+    {
+      "player": "Jordyn Inskeep",
+      "school": "Walkersville",
+      "gp": "15",
+      "g": "9",
+      "a": "3",
+      "pts": "21"
+    },
+    {
+      "player": "Kaitlyn Staiger",
+      "school": "Oakdale",
+      "gp": "15",
+      "g": "6",
+      "a": "8",
+      "pts": "20"
+    },
+    {
+      "player": "Olivia Parmenter",
+      "school": "Middletown",
+      "gp": "17",
+      "g": "7",
+      "a": "5",
+      "pts": "19"
+    },
+    {
+      "player": "Audra Mikalauskas",
+      "school": "Oakdale",
+      "gp": "16",
+      "g": "8",
+      "a": "2",
+      "pts": "18"
+    },
+    {
+      "player": "Anya Towson",
+      "school": "Middletown",
+      "gp": "17",
+      "g": "6",
+      "a": "5",
+      "pts": "17"
+    },
+    {
+      "player": "Kaitlyn Beltran",
+      "school": "Middletown",
+      "gp": "13",
+      "g": "3",
+      "a": "10",
+      "pts": "16"
+    },
+    {
+      "player": "Riley Cadden",
+      "school": "Walkersville",
+      "gp": "15",
+      "g": "6",
+      "a": "3",
+      "pts": "15"
+    },
+    {
+      "player": "Maddie Reaver",
+      "school": "Middletown",
+      "gp": "17",
+      "g": "7",
+      "a": "1",
+      "pts": "15"
+    },
+    {
+      "player": "Elly Eskay",
+      "school": "Urbana",
+      "gp": "10",
+      "g": "5",
+      "a": "4",
+      "pts": "14"
+    },
+    {
+      "player": "Jia Dunn",
+      "school": "Walkersville",
+      "gp": "15",
+      "g": "6",
+      "a": "1",
+      "pts": "13"
+    },
+    {
+      "player": "Alexa Ropp",
+      "school": "Oakdale",
+      "gp": "16",
+      "g": "5",
+      "a": "3",
+      "pts": "13"
+    },
+    {
+      "player": "Nora Davis",
+      "school": "Frederick",
+      "gp": "14",
+      "g": "6",
+      "a": "1",
+      "pts": "13"
+    },
+    {
+      "player": "Kate Zeltwanger",
+      "school": "Middletown",
+      "gp": "17",
+      "g": "6",
+      "a": "1",
+      "pts": "13"
+    },
+    {
+      "player": "Ashley Tucci",
+      "school": "Frederick",
+      "gp": "14",
+      "g": "3",
+      "a": "6",
+      "pts": "12"
+    },
+    {
+      "player": "Charlotte Thibodeau",
+      "school": "Urbana",
+      "gp": "17",
+      "g": "4",
+      "a": "4",
+      "pts": "12"
+    },
+    {
+      "player": "Kaylyn Gilligan",
+      "school": "Urbana",
+      "gp": "16",
+      "g": "5",
+      "a": "2",
+      "pts": "12"
+    }
+  ],
   "goalkeepers": [
     {
       "player": "Katie Schmitt",
