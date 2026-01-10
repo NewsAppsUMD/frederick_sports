@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Country Top Times - High School Hangout (Dec. 6, 2025)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .sport-section {
+            margin: 30px 0;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #666;
+            text-transform: uppercase;
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .stats-table th,
+        .stats-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        .stats-table thead th {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .stats-table th:first-child,
+        .stats-table th:nth-child(2) {
+            text-align: left;
+        }
+
+        .stats-table td {
+            text-align: center;
+        }
+
+        .stats-table td:first-child,
+        .stats-table td:nth-child(2) {
+            text-align: left;
+        }
+
+        .stats-table td:first-child {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .stats-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .stats-table tbody tr:hover {
+            background-color: #e8f4f8;
+            transition: background-color 0.2s ease;
+        }
+
+        .rank {
+            color: #666;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .stats-table th,
+            .stats-table td {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .stats-table tbody tr:hover {
+                background-color: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cross Country Top 5K Times</h1>
+            <p class="subtitle">Updated Through December 4, 2025</p>
+            <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
+        </header>
+
+        <main>
+
+            <div class="sport-section">
+                <h2 class="section-title">Boys Top 5K Times</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Runner</th>
+                            <th>School</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank">1</td>
+                            <td>Joshua Rothery</td>
+                            <td>Urbana</td>
+                            <td>15:50.6</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">2</td>
+                            <td>Patrick Salter</td>
+                            <td>Oakdale</td>
+                            <td>15:52.4</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">3</td>
+                            <td>Riley Gallogly</td>
+                            <td>Urbana</td>
+                            <td>15:56.5</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">4</td>
+                            <td>Korey Kauflin</td>
+                            <td>Urbana</td>
+                            <td>15:57.9</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">5</td>
+                            <td>Asher Adelman</td>
+                            <td>Brunswick</td>
+                            <td>16:03:2</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">6</td>
+                            <td>Evan Madraymootoo</td>
+                            <td>Urbana</td>
+                            <td>16:03.7</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">7</td>
+                            <td>Simon McGillivray</td>
+                            <td>Brunswick</td>
+                            <td>16:04.3</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">8</td>
+                            <td>Cole Cline</td>
+                            <td>Urbana</td>
+                            <td>16:04.4</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">9</td>
+                            <td>Miles Ghim</td>
+                            <td>Thomas Johnson</td>
+                            <td>16:10.4</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">10</td>
+                            <td>Dashiell Wexler</td>
+                            <td>Thomas Johnson</td>
+                            <td>16:10.5</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">11</td>
+                            <td>Simon Lipchock</td>
+                            <td>Urbana</td>
+                            <td>16:13.8</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">12</td>
+                            <td>Garrett Howes</td>
+                            <td>Middletown</td>
+                            <td>16:14.1</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">13</td>
+                            <td>Noah Riling</td>
+                            <td>Catoctin</td>
+                            <td>16:21.8</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">14</td>
+                            <td>Dominic Castillo</td>
+                            <td>Thomas Johnson</td>
+                            <td>16:34.9</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">15</td>
+                            <td>Matthew Rodrigues</td>
+                            <td>Urbana</td>
+                            <td>16:41.0</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">16</td>
+                            <td>Hyatt Gordon</td>
+                            <td>Urbana</td>
+                            <td>16:41.1</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">17</td>
+                            <td>Griffen Adelman</td>
+                            <td>Brunswick</td>
+                            <td>16:44.4</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">18</td>
+                            <td>Vaughn Ditching</td>
+                            <td>Thomas Johnson</td>
+                            <td>16:45.7</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">19</td>
+                            <td>Kayden Harris</td>
+                            <td>Linganore</td>
+                            <td>16:52.5</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">20</td>
+                            <td>Erasmo Sanchez</td>
+                            <td>Thomas Johnson</td>
+                            <td>16.52.8</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">21</td>
+                            <td>Luke Collins</td>
+                            <td>Linganore</td>
+                            <td>16:58.5</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">22</td>
+                            <td>Luke Osher</td>
+                            <td>Urbana</td>
+                            <td>16:58.9</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">23</td>
+                            <td>Koen Edwards</td>
+                            <td>Urbana</td>
+                            <td>16:59.9</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">24</td>
+                            <td>Scott Rudy</td>
+                            <td>Thomas Johnson</td>
+                            <td>17:03.8</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">25</td>
+                            <td>Merrick Collins</td>
+                            <td>Oakdale</td>
+                            <td>17:06.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sport-section">
+                <h2 class="section-title">Girls Top 5K Times</h2>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Runner</th>
+                            <th>School</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank">1</td>
+                            <td>Kate Miner</td>
+                            <td>Urbana</td>
+                            <td>18:35.2</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">2</td>
+                            <td>Hailey Lane</td>
+                            <td>Tuscarora</td>
+                            <td>18:39.6</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">3</td>
+                            <td>MadeleneKate Partlow</td>
+                            <td>Thomas Johnson</td>
+                            <td>18:58.9</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">4</td>
+                            <td>Natalie Barber</td>
+                            <td>Urbana</td>
+                            <td>19:03.1</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">5</td>
+                            <td>Samantha Whiteman</td>
+                            <td>Linganore</td>
+                            <td>19:06.6</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">6</td>
+                            <td>Siena Foster</td>
+                            <td>Tuscarora</td>
+                            <td>19:16.8</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">7</td>
+                            <td>Maya Osher</td>
+                            <td>Urbana</td>
+                            <td>19:22.2</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">8</td>
+                            <td>Leticia Detrow</td>
+                            <td>Maryland School for the Deaf</td>
+                            <td>19:26.2</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">9</td>
+                            <td>Yasmeena Hassen Friess</td>
+                            <td>Frederick</td>
+                            <td>19:37.5</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">10</td>
+                            <td>Rachel Herbst</td>
+                            <td>Thomas Johnson</td>
+                            <td>19:58.4</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">11</td>
+                            <td>Elizabeth Lombardo</td>
+                            <td>Thomas Johnson</td>
+                            <td>20:05.4</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">12</td>
+                            <td>Salma Mahfoud</td>
+                            <td>Thomas Johnson</td>
+                            <td>20:11.3</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">13</td>
+                            <td>Olivia Gregory</td>
+                            <td>Frederick</td>
+                            <td>20:12.3</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">14</td>
+                            <td>Elizabeth Watkins</td>
+                            <td>Linganore</td>
+                            <td>20:23.2</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">15</td>
+                            <td>Ivy McWilliams</td>
+                            <td>Frederick</td>
+                            <td>20:29.1</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">16</td>
+                            <td>Brenna Davies</td>
+                            <td>Urbana</td>
+                            <td>20:29.7</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">17</td>
+                            <td>Nina Kirkendall-Plaia</td>
+                            <td>Thomas Johnson</td>
+                            <td>20:30.5</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">18</td>
+                            <td>Audrey Borleis</td>
+                            <td>Urbana</td>
+                            <td>20:33.0</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">19</td>
+                            <td>Johanna Mitchell</td>
+                            <td>Oakdale</td>
+                            <td>20:35.0</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">20</td>
+                            <td>Leah Harshman</td>
+                            <td>Middletown</td>
+                            <td>20:36.7</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">21</td>
+                            <td>Cara Carpenter</td>
+                            <td>Middletown</td>
+                            <td>20:37.7</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">22</td>
+                            <td>Sydney Bowman</td>
+                            <td>Tuscarora</td>
+                            <td>20:44.3</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">23</td>
+                            <td>Danica Arrington</td>
+                            <td>Frederick</td>
+                            <td>20:51.8</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">24</td>
+                            <td>Lizzie Wells</td>
+                            <td>Oakdale</td>
+                            <td>20:59.6</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">25</td>
+                            <td>Annalise Wells</td>
+                            <td>Oakdale</td>
+                            <td>21:00.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <footer>
+            <p><strong>Note:</strong> Times are for 5K (5000 meter) races</p>
+            <p><strong>Data Source:</strong> The Frederick News-Post - High School Hangout</p>
+            <p>Statistics submitted by coaches and team statisticians</p>
+        </footer>
+    </div>
+</body>
+</html>
