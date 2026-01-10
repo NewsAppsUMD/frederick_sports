@@ -4,29 +4,37 @@
       "team": "Urbana",
       "div_wins": "3",
       "div_losses": "0",
+      "div_ties": "14",
       "overall_wins": "5",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Thomas Johnson",
       "div_wins": "2",
       "div_losses": "1",
+      "div_ties": "9",
       "overall_wins": "7",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "South Hagerstown",
       "div_wins": "1",
       "div_losses": "2",
+      "div_ties": "5",
       "overall_wins": "10",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Frederick",
       "div_wins": "0",
       "div_losses": "3",
+      "div_ties": "2",
       "overall_wins": "11",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     }
   ],
   "POTOMAC DIVISION": [
@@ -34,29 +42,37 @@
       "team": "N. Hagerstown",
       "div_wins": "3",
       "div_losses": "0",
+      "div_ties": "19",
       "overall_wins": "1",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Tuscarora",
       "div_wins": "2",
       "div_losses": "1",
+      "div_ties": "13",
       "overall_wins": "4",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Oakdale",
       "div_wins": "1",
       "div_losses": "2",
+      "div_ties": "11",
       "overall_wins": "5",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Linganore",
       "div_wins": "0",
       "div_losses": "3",
+      "div_ties": "5",
       "overall_wins": "10",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     }
   ],
   "GAMBRILL DIVISION": [
@@ -64,29 +80,37 @@
       "team": "Williamsport",
       "div_wins": "3",
       "div_losses": "0",
+      "div_ties": "16",
       "overall_wins": "4",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Middletown",
       "div_wins": "2",
       "div_losses": "1",
+      "div_ties": "6",
       "overall_wins": "9",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Brunswick",
       "div_wins": "1",
       "div_losses": "2",
+      "div_ties": "2",
       "overall_wins": "12",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Walkersville",
       "div_wins": "0",
       "div_losses": "3",
+      "div_ties": "1",
       "overall_wins": "13",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     }
   ],
   "ANTIETAM DIVISION": [
@@ -94,29 +118,37 @@
       "team": "Clear Spring",
       "div_wins": "3",
       "div_losses": "0",
+      "div_ties": "15",
       "overall_wins": "6",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Boonsboro",
       "div_wins": "2",
       "div_losses": "1",
+      "div_ties": "7",
       "overall_wins": "7",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Smithsburg",
       "div_wins": "1",
       "div_losses": "2",
+      "div_ties": "10",
       "overall_wins": "7",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     },
     {
       "team": "Catoctin",
       "div_wins": "0",
       "div_losses": "3",
+      "div_ties": "3",
       "overall_wins": "13",
-      "overall_losses": ""
+      "overall_losses": "",
+      "overall_ties": ""
     }
   ]
 }

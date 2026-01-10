@@ -1263,8 +1263,9 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
         line = lines[i]
         stripped = line.strip()
 
-        # Stop at next major section
-        if any(keyword in stripped for keyword in ['INDIVIDUAL LEADERS', 'FCPS', 'OTHER SCHOOLS', 'PASSING', 'RUSHING', 'SCORING']):
+        # Stop at next major section (case-insensitive check for key markers)
+        stripped_upper = stripped.upper()
+        if any(keyword in stripped_upper for keyword in ['INDIVIDUAL LEADERS', 'FCPS', 'OTHER SCHOOLS', 'PASSING', 'RUSHING', 'SCORING LEADERS', 'GOALKEEPER']):
             break
 
         section_lines.append(line)
@@ -1314,20 +1315,29 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
                     stats.append(next_val)
                 j += 1
 
-            # If we got at least division W and L (first 2 values), record the team
-            if len(stats) >= 2:
-                div_wins = stats[0]
-                div_losses = stats[1]
-                # Overall might be partial or missing
-                overall_wins = stats[3] if len(stats) > 3 else stats[2] if len(stats) > 2 else ''
-                overall_losses = stats[4] if len(stats) > 4 else ''
-
+            # We expect 6 numeric values: div_w, div_l, div_t, overall_w, overall_l, overall_t
+            if len(stats) >= 6:
                 standings[current_division].append({
                     'team': team_name,
-                    'div_wins': div_wins,
-                    'div_losses': div_losses,
-                    'overall_wins': overall_wins,
-                    'overall_losses': overall_losses
+                    'div_wins': stats[0],
+                    'div_losses': stats[1],
+                    'div_ties': stats[2],
+                    'overall_wins': stats[3],
+                    'overall_losses': stats[4],
+                    'overall_ties': stats[5]
+                })
+                idx = j
+                continue
+            elif len(stats) >= 3:
+                # Partial data - at least have division stats
+                standings[current_division].append({
+                    'team': team_name,
+                    'div_wins': stats[0],
+                    'div_losses': stats[1],
+                    'div_ties': stats[2] if len(stats) > 2 else '0',
+                    'overall_wins': stats[3] if len(stats) > 3 else '',
+                    'overall_losses': stats[4] if len(stats) > 4 else '',
+                    'overall_ties': stats[5] if len(stats) > 5 else ''
                 })
                 idx = j
                 continue

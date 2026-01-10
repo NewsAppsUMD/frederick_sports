@@ -4,43 +4,55 @@
       "team": "Linganore",
       "div_wins": "5",
       "div_losses": "0",
+      "div_ties": "0",
       "overall_wins": "17",
-      "overall_losses": "3"
+      "overall_losses": "3",
+      "overall_ties": "0"
     },
     {
       "team": "Urbana",
       "div_wins": "4",
       "div_losses": "1",
+      "div_ties": "0",
       "overall_wins": "14",
-      "overall_losses": "3"
+      "overall_losses": "3",
+      "overall_ties": "0"
     },
     {
       "team": "Oakdale",
       "div_wins": "3",
       "div_losses": "2",
+      "div_ties": "0",
       "overall_wins": "11",
-      "overall_losses": "5"
+      "overall_losses": "5",
+      "overall_ties": "0"
     },
     {
       "team": "Frederick",
       "div_wins": "2",
       "div_losses": "3",
+      "div_ties": "0",
       "overall_wins": "7",
-      "overall_losses": "8"
+      "overall_losses": "8",
+      "overall_ties": "0"
     },
     {
       "team": "Tuscarora",
       "div_wins": "1",
       "div_losses": "4",
+      "div_ties": "0",
       "overall_wins": "1",
-      "overall_losses": "12"
+      "overall_losses": "12",
+      "overall_ties": "0"
     },
     {
       "team": "Thomas Johnson",
       "div_wins": "0",
       "div_losses": "5",
+      "div_ties": "0",
       "overall_wins": "0",
-      "overall_losses": "13"
+      "overall_losses": "13",
+      "overall_ties": "0"
     }
   ],
   "SMALL SCHOOL": [
@@ -48,29 +60,37 @@
       "team": "Walkersville",
       "div_wins": "3",
       "div_losses": "0",
+      "div_ties": "0",
       "overall_wins": "8",
-      "overall_losses": "7"
+      "overall_losses": "7",
+      "overall_ties": "0"
     },
     {
       "team": "Catoctin",
       "div_wins": "2",
       "div_losses": "1",
+      "div_ties": "0",
       "overall_wins": "7",
-      "overall_losses": "8"
+      "overall_losses": "8",
+      "overall_ties": "0"
     },
     {
       "team": "Middletown",
       "div_wins": "1",
       "div_losses": "2",
+      "div_ties": "0",
       "overall_wins": "8",
-      "overall_losses": "9"
+      "overall_losses": "9",
+      "overall_ties": "0"
     },
     {
       "team": "Brunswick",
       "div_wins": "0",
       "div_losses": "3",
+      "div_ties": "0",
       "overall_wins": "3",
-      "overall_losses": "10"
+      "overall_losses": "10",
+      "overall_ties": "0"
     }
   ]
 }
