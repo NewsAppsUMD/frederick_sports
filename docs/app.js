@@ -1,12 +1,26 @@
-import { sportsData, rankings } from './data.js';
+import { sportsData, rankings, availableDates } from './data.js';
 
 // DOM Elements
 const navContainer = document.getElementById('nav-container');
 const sportView = document.getElementById('sport-view');
 const rankingsContainer = document.getElementById('rankings-container');
+const dateSelector = document.getElementById('date-selector');
 
 // State
-let activeTab = sportsData && sportsData.length > 0 ? sportsData[0].id : null;
+let activeTab = null;
+let selectedDate = availableDates && availableDates.length > 0 ? availableDates[availableDates.length - 1].value : null;
+
+// Get filtered data for selected date
+function getFilteredSportsData() {
+  if (!sportsData || !selectedDate) return [];
+  return sportsData.filter(sport => sport.date === selectedDate);
+}
+
+function getFilteredRankings() {
+  if (!rankings || !selectedDate) return [];
+  const dateRankings = rankings.find(r => r.date === selectedDate);
+  return dateRankings ? dateRankings.items : [];
+}
 
 // Initialization
 function init() {
@@ -14,24 +28,62 @@ function init() {
     throw new Error("Data failed to load. Check data.js file.");
   }
 
+  renderDateSelector();
   renderNav();
   renderRankings();
-  
-  if (activeTab) {
+
+  const filteredData = getFilteredSportsData();
+  if (filteredData.length > 0) {
+    activeTab = filteredData[0].id;
     renderSport(activeTab);
   }
+}
+
+// Date Selector Rendering
+function renderDateSelector() {
+  if (!dateSelector || !availableDates) return;
+
+  dateSelector.innerHTML = availableDates.map(date => `
+    <option value="${date.value}" ${selectedDate === date.value ? 'selected' : ''}>
+      ${date.label}
+    </option>
+  `).join('');
+
+  dateSelector.addEventListener('change', (e) => {
+    selectedDate = e.target.value;
+    // Update header date display
+    const dateDisplay = document.getElementById('date-display');
+    const selectedDateObj = availableDates.find(d => d.value === selectedDate);
+    if (dateDisplay && selectedDateObj) {
+      dateDisplay.textContent = `Updated ${selectedDateObj.label}`;
+    }
+    // Re-render everything
+    renderNav();
+    renderRankings();
+    const filteredData = getFilteredSportsData();
+    if (filteredData.length > 0) {
+      // Try to keep same sport selected, or default to first
+      const currentSportExists = filteredData.some(s => s.id === activeTab);
+      if (!currentSportExists) {
+        activeTab = filteredData[0].id;
+      }
+      renderSport(activeTab);
+    }
+  });
 }
 
 // Navigation Rendering
 function renderNav() {
   if (!navContainer) return;
 
-  navContainer.innerHTML = sportsData.map(sport => `
+  const filteredData = getFilteredSportsData();
+
+  navContainer.innerHTML = filteredData.map(sport => `
     <button
       data-id="${sport.id}"
       class="px-4 py-2 rounded border text-sm font-semibold transition-colors
-      ${activeTab === sport.id 
-        ? 'bg-blue-900 text-white border-blue-900' 
+      ${activeTab === sport.id
+        ? 'bg-blue-900 text-white border-blue-900'
         : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100 hover:border-gray-300'
       }"
     >
@@ -55,7 +107,9 @@ function renderNav() {
 function renderRankings() {
   if (!rankingsContainer) return;
 
-  rankingsContainer.innerHTML = rankings.map(sport => `
+  const filteredRankings = getFilteredRankings();
+
+  rankingsContainer.innerHTML = filteredRankings.map(sport => `
     <div class="bg-gray-50 p-4 rounded border border-gray-200">
       <h3 class="font-bold text-gray-800 text-sm mb-3 uppercase border-b border-gray-200 pb-1">${sport.sport}</h3>
       <ol class="list-decimal list-inside space-y-1">
@@ -71,7 +125,8 @@ function renderRankings() {
 
 // Main Content Rendering
 function renderSport(id) {
-  const data = sportsData.find(d => d.id === id);
+  const filteredData = getFilteredSportsData();
+  const data = filteredData.find(d => d.id === id);
   if (!data || !sportView) return;
 
   let standingsHtml = '';

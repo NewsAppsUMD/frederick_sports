@@ -27,8 +27,18 @@
 
       <!-- Simple Header -->
       <header class="mb-6 border-b border-gray-200 pb-4">
-        <h1 class="text-3xl font-bold text-gray-900 mb-1">High School Hangout</h1>
-        <p class="text-sm text-gray-500">Frederick County Sports Stats &bull; Updated Dec 6</p>
+        <div class="flex justify-between items-start">
+          <div>
+            <h1 class="text-3xl font-bold text-gray-900 mb-1">High School Hangout</h1>
+            <p id="date-display" class="text-sm text-gray-500">Frederick County Sports Stats</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <label for="date-selector" class="text-sm text-gray-600">Stats from:</label>
+            <select id="date-selector" class="px-3 py-2 border border-gray-300 rounded-md text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+              <!-- Options populated by JavaScript -->
+            </select>
+          </div>
+        </div>
       </header>
 
       <!-- Navigation: Simple wrapping buttons -->
