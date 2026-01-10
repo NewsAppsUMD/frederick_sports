@@ -1315,7 +1315,9 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
                     stats.append(next_val)
                 j += 1
 
-            # We expect 6 numeric values: div_w, div_l, div_t, overall_w, overall_l, overall_t
+            # Handle both formats:
+            # - 6 values: div_w, div_l, div_t, overall_w, overall_l, overall_t (with ties)
+            # - 4 values: div_w, div_l, overall_w, overall_l (no ties - December format)
             if len(stats) >= 6:
                 standings[current_division].append({
                     'team': team_name,
@@ -1328,16 +1330,29 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
                 })
                 idx = j
                 continue
-            elif len(stats) >= 3:
-                # Partial data - at least have division stats
+            elif len(stats) == 4 or len(stats) == 5:
+                # 4-value format: div_w, div_l, overall_w, overall_l (no ties column in PDF)
                 standings[current_division].append({
                     'team': team_name,
                     'div_wins': stats[0],
                     'div_losses': stats[1],
-                    'div_ties': stats[2] if len(stats) > 2 else '0',
-                    'overall_wins': stats[3] if len(stats) > 3 else '',
-                    'overall_losses': stats[4] if len(stats) > 4 else '',
-                    'overall_ties': stats[5] if len(stats) > 5 else ''
+                    'div_ties': '0',
+                    'overall_wins': stats[2],
+                    'overall_losses': stats[3],
+                    'overall_ties': '0'
+                })
+                idx = j
+                continue
+            elif len(stats) >= 2:
+                # Minimal data - just division W-L
+                standings[current_division].append({
+                    'team': team_name,
+                    'div_wins': stats[0],
+                    'div_losses': stats[1],
+                    'div_ties': '0',
+                    'overall_wins': '',
+                    'overall_losses': '',
+                    'overall_ties': ''
                 })
                 idx = j
                 continue

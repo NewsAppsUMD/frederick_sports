@@ -541,8 +541,7 @@ def main():
     # Based on analysis: 3 INDIVIDUAL LEADERS sections
     # [0] = Volleyball (KILLS), [1] = Girls Flag Football (RUSHING), [2] = Football (RUSHING)
     # FCPS standings: [0] = Girls Flag Football, [1] = Football
-    # CMC standings: [0] = Volleyball (SPIRES), [1] = Field Hockey (LARGE SCHOOL),
-    #                [2] = Boys Soccer (SPIRES), [3] = Girls Soccer (SPIRES)
+    # CMC standings: [0] = Volleyball, [1] = Field Hockey, [2] = Boys Soccer, [3] = Girls Soccer
     october_config = {
         'football_style': [
             # (sport_name, stats_section_index, file_prefix, fcps_standings_index)
@@ -564,8 +563,7 @@ def main():
     # Based on analysis: 3 INDIVIDUAL LEADERS sections
     # [0] = Girls Flag Football (RUSHING), [1] = Football (RUSHING), [2] = Volleyball (KILLS)
     # FCPS standings: [0] = Girls Flag Football, [1] = Football
-    # CMC standings: [0] = Field Hockey (LARGE SCHOOL), [1] = Boys Soccer (SPIRES),
-    #                [2] = Volleyball (SPIRES), [3] = Girls Soccer (SPIRES)
+    # CMC standings: [0] = Field Hockey, [1] = Boys Soccer, [2] = Volleyball, [3] = Girls Soccer
     december_config = {
         'football_style': [
             # (sport_name, stats_section_index, file_prefix, fcps_standings_index)
