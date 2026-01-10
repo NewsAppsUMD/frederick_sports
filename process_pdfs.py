@@ -57,7 +57,7 @@ def get_dates_for_pdf(date_str):
     return date_mapping.get(date_str, ('Oct 23, 2025', 'October 21, 2025'))
 
 
-def process_football_style_sport(text, sport_name, section_index, file_prefix, date_str, output_dir, docs_dir):
+def process_football_style_sport(text, sport_name, section_index, file_prefix, date_str, output_dir, docs_dir, fcps_standings_index=0):
     """Process sports with rushing/passing/receiving stats (Football, Girls Flag Football)."""
     print(f"\n{'='*70}")
     print(f"Processing {sport_name}")
@@ -91,8 +91,8 @@ def process_football_style_sport(text, sport_name, section_index, file_prefix, d
             print("  No defensive stats file found")
 
     # Parse FCPS standings
-    print(f"Parsing FCPS standings...")
-    standings = parse_fcps_standings(text)
+    print(f"Parsing FCPS standings (section {fcps_standings_index})...")
+    standings = parse_fcps_standings(text, section_index=fcps_standings_index)
     print(f"  FCPS standings: {len(standings)} teams")
 
     # Save standings to JSON
@@ -128,7 +128,7 @@ def process_football_style_sport(text, sport_name, section_index, file_prefix, d
     return stats
 
 
-def process_soccer_sport(text, sport_name, file_prefix, date_str, output_dir, docs_dir):
+def process_soccer_sport(text, sport_name, file_prefix, date_str, output_dir, docs_dir, cmc_standings_index=0):
     """Process soccer sports (Boys Soccer, Girls Soccer)."""
     print(f"\n{'='*70}")
     print(f"Processing {sport_name}")
@@ -152,8 +152,8 @@ def process_soccer_sport(text, sport_name, file_prefix, date_str, output_dir, do
     print(f"✓ Saved JSON to {stats_file}")
 
     # Parse Central Maryland Conference standings
-    print(f"Parsing Central Maryland Conference standings...")
-    standings = parse_central_maryland_standings(text, sport_name)
+    print(f"Parsing Central Maryland Conference standings (section {cmc_standings_index})...")
+    standings = parse_central_maryland_standings(text, sport_name, section_index=cmc_standings_index)
     if standings:
         total_teams = sum(len(teams) for teams in standings.values())
         print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
@@ -195,7 +195,7 @@ def process_soccer_sport(text, sport_name, file_prefix, date_str, output_dir, do
     return stats
 
 
-def process_volleyball(text, date_str, output_dir, docs_dir):
+def process_volleyball(text, date_str, output_dir, docs_dir, cmc_standings_index=0):
     """Process volleyball stats."""
     sport_name = "Volleyball"
     file_prefix = "volleyball"
@@ -223,8 +223,8 @@ def process_volleyball(text, date_str, output_dir, docs_dir):
     print(f"✓ Saved JSON to {stats_file}")
 
     # Parse Central Maryland Conference standings
-    print(f"Parsing Central Maryland Conference standings...")
-    standings = parse_central_maryland_standings(text, sport_name)
+    print(f"Parsing Central Maryland Conference standings (section {cmc_standings_index})...")
+    standings = parse_central_maryland_standings(text, sport_name, section_index=cmc_standings_index)
     if standings:
         total_teams = sum(len(teams) for teams in standings.values())
         print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
@@ -266,7 +266,7 @@ def process_volleyball(text, date_str, output_dir, docs_dir):
     return stats
 
 
-def process_field_hockey(text, date_str, output_dir, docs_dir):
+def process_field_hockey(text, date_str, output_dir, docs_dir, cmc_standings_index=0):
     """Process field hockey stats."""
     sport_name = "Field Hockey"
     file_prefix = "field_hockey"
@@ -293,8 +293,8 @@ def process_field_hockey(text, date_str, output_dir, docs_dir):
     print(f"✓ Saved JSON to {stats_file}")
 
     # Parse Central Maryland Conference standings
-    print(f"Parsing Central Maryland Conference standings...")
-    standings = parse_central_maryland_standings(text, sport_name)
+    print(f"Parsing Central Maryland Conference standings (section {cmc_standings_index})...")
+    standings = parse_central_maryland_standings(text, sport_name, section_index=cmc_standings_index)
     if standings:
         total_teams = sum(len(teams) for teams in standings.values())
         print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
@@ -457,11 +457,13 @@ def process_pdf(pdf_path, date_str, sports_config):
     results = {}
 
     # Process football-style sports (with rushing/passing/receiving)
-    for sport_name, section_index, file_prefix in sports_config.get('football_style', []):
+    for sport_tuple in sports_config.get('football_style', []):
+        sport_name, section_index, file_prefix, fcps_standings_index = sport_tuple
         try:
             stats = process_football_style_sport(
                 text, sport_name, section_index, file_prefix,
-                date_str, output_dir, docs_dir
+                date_str, output_dir, docs_dir,
+                fcps_standings_index=fcps_standings_index
             )
             results[file_prefix] = stats
         except Exception as e:
@@ -470,11 +472,13 @@ def process_pdf(pdf_path, date_str, sports_config):
             traceback.print_exc()
 
     # Process soccer sports
-    for sport_name, file_prefix in sports_config.get('soccer', []):
+    for sport_tuple in sports_config.get('soccer', []):
+        sport_name, file_prefix, cmc_standings_index = sport_tuple
         try:
             stats = process_soccer_sport(
                 text, sport_name, file_prefix,
-                date_str, output_dir, docs_dir
+                date_str, output_dir, docs_dir,
+                cmc_standings_index=cmc_standings_index
             )
             results[file_prefix] = stats
         except Exception as e:
@@ -483,18 +487,22 @@ def process_pdf(pdf_path, date_str, sports_config):
             traceback.print_exc()
 
     # Process other sports
-    if sports_config.get('volleyball', False):
+    volleyball_config = sports_config.get('volleyball', False)
+    if volleyball_config:
         try:
-            stats = process_volleyball(text, date_str, output_dir, docs_dir)
+            cmc_index = volleyball_config.get('cmc_standings_index', 0) if isinstance(volleyball_config, dict) else 0
+            stats = process_volleyball(text, date_str, output_dir, docs_dir, cmc_standings_index=cmc_index)
             results['volleyball'] = stats
         except Exception as e:
             print(f"ERROR processing Volleyball: {e}")
             import traceback
             traceback.print_exc()
 
-    if sports_config.get('field_hockey', False):
+    field_hockey_config = sports_config.get('field_hockey', False)
+    if field_hockey_config:
         try:
-            stats = process_field_hockey(text, date_str, output_dir, docs_dir)
+            cmc_index = field_hockey_config.get('cmc_standings_index', 0) if isinstance(field_hockey_config, dict) else 0
+            stats = process_field_hockey(text, date_str, output_dir, docs_dir, cmc_standings_index=cmc_index)
             results['field_hockey'] = stats
         except Exception as e:
             print(f"ERROR processing Field Hockey: {e}")
@@ -532,17 +540,21 @@ def main():
     # October 2025 PDF configuration
     # Based on analysis: 3 INDIVIDUAL LEADERS sections
     # [0] = Volleyball (KILLS), [1] = Girls Flag Football (RUSHING), [2] = Football (RUSHING)
+    # FCPS standings: [0] = Girls Flag Football, [1] = Football
+    # CMC standings: [0] = Volleyball, [1] = Boys Soccer, [2] = Girls Soccer, [3] = Field Hockey
     october_config = {
         'football_style': [
-            ("Girls Flag Football", 1, "girls_flag_football"),
-            ("Football", 2, "football"),
+            # (sport_name, stats_section_index, file_prefix, fcps_standings_index)
+            ("Girls Flag Football", 1, "girls_flag_football", 0),
+            ("Football", 2, "football", 1),
         ],
         'soccer': [
-            ("Boys Soccer", "boys_soccer"),
-            ("Girls Soccer", "girls_soccer"),
+            # (sport_name, file_prefix, cmc_standings_index)
+            ("Boys Soccer", "boys_soccer", 1),
+            ("Girls Soccer", "girls_soccer", 2),
         ],
-        'volleyball': True,  # Process with parse_volleyball_stats
-        'field_hockey': True,
+        'volleyball': {'enabled': True, 'cmc_standings_index': 0},
+        'field_hockey': {'enabled': True, 'cmc_standings_index': 3},
         'cross_country': True,  # Process cross country
         'golf': True,
     }
@@ -550,17 +562,21 @@ def main():
     # December 2025 PDF configuration
     # Based on analysis: 3 INDIVIDUAL LEADERS sections
     # [0] = Girls Flag Football (RUSHING), [1] = Football (RUSHING), [2] = Volleyball (KILLS)
+    # FCPS standings: [0] = Girls Flag Football, [1] = Football
+    # CMC standings: [0] = Boys Soccer, [1] = Girls Soccer, [2] = Volleyball, [3] = Field Hockey
     december_config = {
         'football_style': [
-            ("Girls Flag Football", 0, "girls_flag_football"),
-            ("Football", 1, "football"),
+            # (sport_name, stats_section_index, file_prefix, fcps_standings_index)
+            ("Girls Flag Football", 0, "girls_flag_football", 0),
+            ("Football", 1, "football", 1),
         ],
         'soccer': [
-            ("Boys Soccer", "boys_soccer"),
-            ("Girls Soccer", "girls_soccer"),
+            # (sport_name, file_prefix, cmc_standings_index)
+            ("Boys Soccer", "boys_soccer", 0),
+            ("Girls Soccer", "girls_soccer", 1),
         ],
-        'volleyball': True,  # Process with parse_volleyball_stats
-        'field_hockey': True,
+        'volleyball': {'enabled': True, 'cmc_standings_index': 2},
+        'field_hockey': {'enabled': True, 'cmc_standings_index': 3},
         'cross_country': True,  # Has individual runner times
         'golf': True,
     }

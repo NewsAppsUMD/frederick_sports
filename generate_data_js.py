@@ -243,7 +243,7 @@ SPORTS_CONFIG = {
                 'categoryName': '9-Hole Average',
                 'source': 'players',
                 'headers': [
-                    {'key': 'avg', 'label': 'Avg'}
+                    {'key': 'average', 'label': 'Avg'}
                 ]
             }
         ]

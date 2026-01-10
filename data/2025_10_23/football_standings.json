@@ -3,65 +3,72 @@
     {
       "team": "Linganore",
       "wins": "7",
-      "losses": "2",
-      "pf": "199",
-      "pa": "72"
+      "losses": "0",
+      "pf": "312",
+      "pa": "96"
     },
     {
-      "team": "Frederick",
-      "wins": "6",
+      "team": "Middletown",
+      "wins": "5",
       "losses": "2",
-      "pf": "186",
-      "pa": "58"
-    },
-    {
-      "team": "Thomas Johnson",
-      "wins": "6",
-      "losses": "2",
-      "pf": "163",
-      "pa": "51"
+      "pf": "228",
+      "pa": "135"
     },
     {
       "team": "Oakdale",
+      "wins": "5",
+      "losses": "2",
+      "pf": "261",
+      "pa": "116"
+    },
+    {
+      "team": "Urbana",
       "wins": "4",
-      "losses": "4",
-      "pf": "78",
-      "pa": "107"
+      "losses": "3",
+      "pf": "225",
+      "pa": "157"
     },
     {
       "team": "Walkersville",
       "wins": "4",
+      "losses": "3",
+      "pf": "226",
+      "pa": "181"
+    },
+    {
+      "team": "Frederick",
+      "wins": "3",
       "losses": "4",
-      "pf": "35",
-      "pa": "108"
+      "pf": "159",
+      "pa": "166"
+    },
+    {
+      "team": "Thomas Johnson",
+      "wins": "2",
+      "losses": "5",
+      "pf": "142",
+      "pa": "281"
     },
     {
       "team": "Tuscarora",
       "wins": "2",
       "losses": "5",
-      "pf": "22",
-      "pa": "61"
-    },
-    {
-      "team": "Middletown",
-      "wins": "2",
-      "losses": "6",
-      "pf": "112",
-      "pa": "146"
+      "pf": "147",
+      "pa": "279"
     },
     {
       "team": "Brunswick",
-      "wins": "2",
+      "wins": "1",
       "losses": "6",
-      "pf": "26",
-      "pa": "165"
+      "pf": "93",
+      "pa": "239"
     },
     {
       "team": "Catoctin",
       "wins": "1",
-      "losses": "7",
-      "pf": "33",
-      "pa": "177"
+      "losses": "6",
+      "pf": "52",
+      "pa": "188"
     }
   ]
 }
