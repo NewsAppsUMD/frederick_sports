@@ -1,0 +1,67 @@
+{
+  "fcps": [
+    {
+      "team": "Urbana",
+      "wins": "12",
+      "losses": "1",
+      "pf": "329",
+      "pa": "76"
+    },
+    {
+      "team": "Frederick",
+      "wins": "9",
+      "losses": "3",
+      "pf": "228",
+      "pa": "71"
+    },
+    {
+      "team": "Thomas Johnson",
+      "wins": "7",
+      "losses": "4",
+      "pf": "201",
+      "pa": "77"
+    },
+    {
+      "team": "Oakdale",
+      "wins": "6",
+      "losses": "6",
+      "pf": "124",
+      "pa": "160"
+    },
+    {
+      "team": "Middletown",
+      "wins": "4",
+      "losses": "7",
+      "pf": "153",
+      "pa": "185"
+    },
+    {
+      "team": "Walkersville",
+      "wins": "4",
+      "losses": "7",
+      "pf": "35",
+      "pa": "187"
+    },
+    {
+      "team": "Brunswick",
+      "wins": "3",
+      "losses": "8",
+      "pf": "64",
+      "pa": "238"
+    },
+    {
+      "team": "Tuscarora",
+      "wins": "2",
+      "losses": "8",
+      "pf": "26",
+      "pa": "115"
+    },
+    {
+      "team": "Catoctin",
+      "wins": "1",
+      "losses": "9",
+      "pf": "51",
+      "pa": "211"
+    }
+  ]
+}

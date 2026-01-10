@@ -130,7 +130,7 @@ function renderSport(id) {
   if (!data || !sportView) return;
 
   let standingsHtml = '';
-  if (data.standings.length > 0) {
+  if (data.standings && data.standings.length > 0) {
     standingsHtml = `
       <div class="mb-10">
         <h3 class="text-xl font-bold text-gray-800 mb-4">Standings</h3>
@@ -138,23 +138,23 @@ function renderSport(id) {
           ${data.standings.map(group => `
             <div>
               <h4 class="font-bold text-gray-700 mb-2 uppercase text-sm tracking-wide">
-                ${group.name}
+                ${group.division}
               </h4>
               <div class="overflow-x-auto border border-gray-200 rounded">
                 <table class="w-full text-sm text-left">
                   <thead class="bg-gray-100 text-gray-600 uppercase text-xs font-semibold">
                     <tr>
                       <th class="px-3 py-2 w-1/3">Team</th>
-                      ${group.headers.map(h => `<th class="px-3 py-2 text-center">${h}</th>`).join('')}
+                      ${group.headers.map(h => `<th class="px-3 py-2 text-center">${h.label}</th>`).join('')}
                     </tr>
                   </thead>
                   <tbody class="divide-y divide-gray-100">
-                    ${group.rows.map((row, idx) => `
+                    ${group.teams.map((team, idx) => `
                       <tr class="${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}">
-                        <td class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap">${row.team}</td>
+                        <td class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap">${team.team}</td>
                         ${group.headers.map(h => `
                           <td class="px-3 py-2 text-center text-gray-700 font-mono">
-                            ${row[h.toLowerCase()] !== undefined ? row[h.toLowerCase()] : '-'}
+                            ${team[h.key] !== undefined && team[h.key] !== '' ? team[h.key] : '-'}
                           </td>
                         `).join('')}
                       </tr>

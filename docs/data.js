@@ -330,7 +330,94 @@ export const sportsData = [
     "id": "football",
     "name": "Football",
     "date": "2025_10_23",
-    "standings": [],
+    "standings": [
+      {
+        "division": "FCPS",
+        "headers": [
+          {
+            "key": "wins",
+            "label": "W"
+          },
+          {
+            "key": "losses",
+            "label": "L"
+          },
+          {
+            "key": "pf",
+            "label": "PF"
+          },
+          {
+            "key": "pa",
+            "label": "PA"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Linganore",
+            "wins": "7",
+            "losses": "2",
+            "pf": "199",
+            "pa": "72"
+          },
+          {
+            "team": "Frederick",
+            "wins": "6",
+            "losses": "2",
+            "pf": "186",
+            "pa": "58"
+          },
+          {
+            "team": "Thomas Johnson",
+            "wins": "6",
+            "losses": "2",
+            "pf": "163",
+            "pa": "51"
+          },
+          {
+            "team": "Oakdale",
+            "wins": "4",
+            "losses": "4",
+            "pf": "78",
+            "pa": "107"
+          },
+          {
+            "team": "Walkersville",
+            "wins": "4",
+            "losses": "4",
+            "pf": "35",
+            "pa": "108"
+          },
+          {
+            "team": "Tuscarora",
+            "wins": "2",
+            "losses": "5",
+            "pf": "22",
+            "pa": "61"
+          },
+          {
+            "team": "Middletown",
+            "wins": "2",
+            "losses": "6",
+            "pf": "112",
+            "pa": "146"
+          },
+          {
+            "team": "Brunswick",
+            "wins": "2",
+            "losses": "6",
+            "pf": "26",
+            "pa": "165"
+          },
+          {
+            "team": "Catoctin",
+            "wins": "1",
+            "losses": "7",
+            "pf": "33",
+            "pa": "177"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Rushing",
@@ -751,7 +838,94 @@ export const sportsData = [
     "id": "girls-flag-football",
     "name": "Girls Flag Football",
     "date": "2025_10_23",
-    "standings": [],
+    "standings": [
+      {
+        "division": "FCPS",
+        "headers": [
+          {
+            "key": "wins",
+            "label": "W"
+          },
+          {
+            "key": "losses",
+            "label": "L"
+          },
+          {
+            "key": "pf",
+            "label": "PF"
+          },
+          {
+            "key": "pa",
+            "label": "PA"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Linganore",
+            "wins": "7",
+            "losses": "2",
+            "pf": "199",
+            "pa": "72"
+          },
+          {
+            "team": "Frederick",
+            "wins": "6",
+            "losses": "2",
+            "pf": "186",
+            "pa": "58"
+          },
+          {
+            "team": "Thomas Johnson",
+            "wins": "6",
+            "losses": "2",
+            "pf": "163",
+            "pa": "51"
+          },
+          {
+            "team": "Oakdale",
+            "wins": "4",
+            "losses": "4",
+            "pf": "78",
+            "pa": "107"
+          },
+          {
+            "team": "Walkersville",
+            "wins": "4",
+            "losses": "4",
+            "pf": "35",
+            "pa": "108"
+          },
+          {
+            "team": "Tuscarora",
+            "wins": "2",
+            "losses": "5",
+            "pf": "22",
+            "pa": "61"
+          },
+          {
+            "team": "Middletown",
+            "wins": "2",
+            "losses": "6",
+            "pf": "112",
+            "pa": "146"
+          },
+          {
+            "team": "Brunswick",
+            "wins": "2",
+            "losses": "6",
+            "pf": "26",
+            "pa": "165"
+          },
+          {
+            "team": "Catoctin",
+            "wins": "1",
+            "losses": "7",
+            "pf": "33",
+            "pa": "177"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Rushing",
@@ -1126,7 +1300,212 @@ export const sportsData = [
     "id": "boys-soccer",
     "name": "Boys Soccer",
     "date": "2025_10_23",
-    "standings": [],
+    "standings": [
+      {
+        "division": "SPIRES DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Urbana",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "South Hagerstown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "9",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "POTOMAC DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "N. Hagerstown",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "0",
+            "overall_losses": ""
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "4",
+            "overall_losses": ""
+          },
+          {
+            "team": "Linganore",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "8",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "GAMBRILL DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Williamsport",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "2",
+            "overall_losses": ""
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": ""
+          },
+          {
+            "team": "Walkersville",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "10",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "ANTIETAM DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Clear Spring",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Boonsboro",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "5",
+            "overall_losses": ""
+          },
+          {
+            "team": "Smithsburg",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "11",
+            "overall_losses": ""
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Scoring",
@@ -1412,7 +1791,212 @@ export const sportsData = [
     "id": "girls-soccer",
     "name": "Girls Soccer",
     "date": "2025_10_23",
-    "standings": [],
+    "standings": [
+      {
+        "division": "SPIRES DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Urbana",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "South Hagerstown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "9",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "POTOMAC DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "N. Hagerstown",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "0",
+            "overall_losses": ""
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "4",
+            "overall_losses": ""
+          },
+          {
+            "team": "Linganore",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "8",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "GAMBRILL DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Williamsport",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "2",
+            "overall_losses": ""
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": ""
+          },
+          {
+            "team": "Walkersville",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "10",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "ANTIETAM DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Clear Spring",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Boonsboro",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "5",
+            "overall_losses": ""
+          },
+          {
+            "team": "Smithsburg",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "11",
+            "overall_losses": ""
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Scoring",
@@ -1734,7 +2318,212 @@ export const sportsData = [
     "id": "field-hockey",
     "name": "Field Hockey",
     "date": "2025_10_23",
-    "standings": [],
+    "standings": [
+      {
+        "division": "SPIRES DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Urbana",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "South Hagerstown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "9",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "POTOMAC DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "N. Hagerstown",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "0",
+            "overall_losses": ""
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "4",
+            "overall_losses": ""
+          },
+          {
+            "team": "Linganore",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "8",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "GAMBRILL DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Williamsport",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "2",
+            "overall_losses": ""
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": ""
+          },
+          {
+            "team": "Walkersville",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "10",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "ANTIETAM DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Clear Spring",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Boonsboro",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "5",
+            "overall_losses": ""
+          },
+          {
+            "team": "Smithsburg",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "11",
+            "overall_losses": ""
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Scoring",
@@ -2011,7 +2800,212 @@ export const sportsData = [
     "id": "volleyball",
     "name": "Volleyball",
     "date": "2025_10_23",
-    "standings": [],
+    "standings": [
+      {
+        "division": "SPIRES DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Urbana",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "South Hagerstown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "9",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "POTOMAC DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "N. Hagerstown",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "0",
+            "overall_losses": ""
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "4",
+            "overall_losses": ""
+          },
+          {
+            "team": "Linganore",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "8",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "GAMBRILL DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Williamsport",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "2",
+            "overall_losses": ""
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "8",
+            "overall_losses": ""
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": ""
+          },
+          {
+            "team": "Walkersville",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "10",
+            "overall_losses": ""
+          }
+        ]
+      },
+      {
+        "division": "ANTIETAM DIVISION",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Clear Spring",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "3",
+            "overall_losses": ""
+          },
+          {
+            "team": "Boonsboro",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "5",
+            "overall_losses": ""
+          },
+          {
+            "team": "Smithsburg",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "6",
+            "overall_losses": ""
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "11",
+            "overall_losses": ""
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Kills",
@@ -2822,7 +3816,94 @@ export const sportsData = [
     "id": "football",
     "name": "Football",
     "date": "2025_12_06",
-    "standings": [],
+    "standings": [
+      {
+        "division": "FCPS",
+        "headers": [
+          {
+            "key": "wins",
+            "label": "W"
+          },
+          {
+            "key": "losses",
+            "label": "L"
+          },
+          {
+            "key": "pf",
+            "label": "PF"
+          },
+          {
+            "key": "pa",
+            "label": "PA"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Urbana",
+            "wins": "12",
+            "losses": "1",
+            "pf": "329",
+            "pa": "76"
+          },
+          {
+            "team": "Frederick",
+            "wins": "9",
+            "losses": "3",
+            "pf": "228",
+            "pa": "71"
+          },
+          {
+            "team": "Thomas Johnson",
+            "wins": "7",
+            "losses": "4",
+            "pf": "201",
+            "pa": "77"
+          },
+          {
+            "team": "Oakdale",
+            "wins": "6",
+            "losses": "6",
+            "pf": "124",
+            "pa": "160"
+          },
+          {
+            "team": "Middletown",
+            "wins": "4",
+            "losses": "7",
+            "pf": "153",
+            "pa": "185"
+          },
+          {
+            "team": "Walkersville",
+            "wins": "4",
+            "losses": "7",
+            "pf": "35",
+            "pa": "187"
+          },
+          {
+            "team": "Brunswick",
+            "wins": "3",
+            "losses": "8",
+            "pf": "64",
+            "pa": "238"
+          },
+          {
+            "team": "Tuscarora",
+            "wins": "2",
+            "losses": "8",
+            "pf": "26",
+            "pa": "115"
+          },
+          {
+            "team": "Catoctin",
+            "wins": "1",
+            "losses": "9",
+            "pf": "51",
+            "pa": "211"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Rushing",
@@ -3273,7 +4354,94 @@ export const sportsData = [
     "id": "girls-flag-football",
     "name": "Girls Flag Football",
     "date": "2025_12_06",
-    "standings": [],
+    "standings": [
+      {
+        "division": "FCPS",
+        "headers": [
+          {
+            "key": "wins",
+            "label": "W"
+          },
+          {
+            "key": "losses",
+            "label": "L"
+          },
+          {
+            "key": "pf",
+            "label": "PF"
+          },
+          {
+            "key": "pa",
+            "label": "PA"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Urbana",
+            "wins": "12",
+            "losses": "1",
+            "pf": "329",
+            "pa": "76"
+          },
+          {
+            "team": "Frederick",
+            "wins": "9",
+            "losses": "3",
+            "pf": "228",
+            "pa": "71"
+          },
+          {
+            "team": "Thomas Johnson",
+            "wins": "7",
+            "losses": "4",
+            "pf": "201",
+            "pa": "77"
+          },
+          {
+            "team": "Oakdale",
+            "wins": "6",
+            "losses": "6",
+            "pf": "124",
+            "pa": "160"
+          },
+          {
+            "team": "Middletown",
+            "wins": "4",
+            "losses": "7",
+            "pf": "153",
+            "pa": "185"
+          },
+          {
+            "team": "Walkersville",
+            "wins": "4",
+            "losses": "7",
+            "pf": "35",
+            "pa": "187"
+          },
+          {
+            "team": "Brunswick",
+            "wins": "3",
+            "losses": "8",
+            "pf": "64",
+            "pa": "238"
+          },
+          {
+            "team": "Tuscarora",
+            "wins": "2",
+            "losses": "8",
+            "pf": "26",
+            "pa": "115"
+          },
+          {
+            "team": "Catoctin",
+            "wins": "1",
+            "losses": "9",
+            "pf": "51",
+            "pa": "211"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Rushing",
@@ -3642,7 +4810,124 @@ export const sportsData = [
     "id": "boys-soccer",
     "name": "Boys Soccer",
     "date": "2025_12_06",
-    "standings": [],
+    "standings": [
+      {
+        "division": "LARGE SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Linganore",
+            "div_wins": "5",
+            "div_losses": "0",
+            "overall_wins": "17",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Urbana",
+            "div_wins": "4",
+            "div_losses": "1",
+            "overall_wins": "14",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "3",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": "5"
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "2",
+            "div_losses": "3",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "1",
+            "div_losses": "4",
+            "overall_wins": "1",
+            "overall_losses": "12"
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "0",
+            "div_losses": "5",
+            "overall_wins": "0",
+            "overall_losses": "13"
+          }
+        ]
+      },
+      {
+        "division": "SMALL SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Walkersville",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "8",
+            "overall_losses": "7"
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": "9"
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "3",
+            "overall_losses": "10"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Scoring",
@@ -3928,7 +5213,124 @@ export const sportsData = [
     "id": "girls-soccer",
     "name": "Girls Soccer",
     "date": "2025_12_06",
-    "standings": [],
+    "standings": [
+      {
+        "division": "LARGE SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Linganore",
+            "div_wins": "5",
+            "div_losses": "0",
+            "overall_wins": "17",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Urbana",
+            "div_wins": "4",
+            "div_losses": "1",
+            "overall_wins": "14",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "3",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": "5"
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "2",
+            "div_losses": "3",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "1",
+            "div_losses": "4",
+            "overall_wins": "1",
+            "overall_losses": "12"
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "0",
+            "div_losses": "5",
+            "overall_wins": "0",
+            "overall_losses": "13"
+          }
+        ]
+      },
+      {
+        "division": "SMALL SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Walkersville",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "8",
+            "overall_losses": "7"
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": "9"
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "3",
+            "overall_losses": "10"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Scoring",
@@ -4205,7 +5607,124 @@ export const sportsData = [
     "id": "field-hockey",
     "name": "Field Hockey",
     "date": "2025_12_06",
-    "standings": [],
+    "standings": [
+      {
+        "division": "LARGE SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Linganore",
+            "div_wins": "5",
+            "div_losses": "0",
+            "overall_wins": "17",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Urbana",
+            "div_wins": "4",
+            "div_losses": "1",
+            "overall_wins": "14",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "3",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": "5"
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "2",
+            "div_losses": "3",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "1",
+            "div_losses": "4",
+            "overall_wins": "1",
+            "overall_losses": "12"
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "0",
+            "div_losses": "5",
+            "overall_wins": "0",
+            "overall_losses": "13"
+          }
+        ]
+      },
+      {
+        "division": "SMALL SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Walkersville",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "8",
+            "overall_losses": "7"
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": "9"
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "3",
+            "overall_losses": "10"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Scoring",
@@ -4482,7 +6001,124 @@ export const sportsData = [
     "id": "volleyball",
     "name": "Volleyball",
     "date": "2025_12_06",
-    "standings": [],
+    "standings": [
+      {
+        "division": "LARGE SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Linganore",
+            "div_wins": "5",
+            "div_losses": "0",
+            "overall_wins": "17",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Urbana",
+            "div_wins": "4",
+            "div_losses": "1",
+            "overall_wins": "14",
+            "overall_losses": "3"
+          },
+          {
+            "team": "Oakdale",
+            "div_wins": "3",
+            "div_losses": "2",
+            "overall_wins": "11",
+            "overall_losses": "5"
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "2",
+            "div_losses": "3",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "1",
+            "div_losses": "4",
+            "overall_wins": "1",
+            "overall_losses": "12"
+          },
+          {
+            "team": "Thomas Johnson",
+            "div_wins": "0",
+            "div_losses": "5",
+            "overall_wins": "0",
+            "overall_losses": "13"
+          }
+        ]
+      },
+      {
+        "division": "SMALL SCHOOL",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Overall W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Overall L"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Walkersville",
+            "div_wins": "3",
+            "div_losses": "0",
+            "overall_wins": "8",
+            "overall_losses": "7"
+          },
+          {
+            "team": "Catoctin",
+            "div_wins": "2",
+            "div_losses": "1",
+            "overall_wins": "7",
+            "overall_losses": "8"
+          },
+          {
+            "team": "Middletown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "overall_wins": "8",
+            "overall_losses": "9"
+          },
+          {
+            "team": "Brunswick",
+            "div_wins": "0",
+            "div_losses": "3",
+            "overall_wins": "3",
+            "overall_losses": "10"
+          }
+        ]
+      }
+    ],
     "leaders": [
       {
         "categoryName": "Kills",

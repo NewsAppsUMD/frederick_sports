@@ -1,0 +1,76 @@
+{
+  "LARGE SCHOOL": [
+    {
+      "team": "Linganore",
+      "div_wins": "5",
+      "div_losses": "0",
+      "overall_wins": "17",
+      "overall_losses": "3"
+    },
+    {
+      "team": "Urbana",
+      "div_wins": "4",
+      "div_losses": "1",
+      "overall_wins": "14",
+      "overall_losses": "3"
+    },
+    {
+      "team": "Oakdale",
+      "div_wins": "3",
+      "div_losses": "2",
+      "overall_wins": "11",
+      "overall_losses": "5"
+    },
+    {
+      "team": "Frederick",
+      "div_wins": "2",
+      "div_losses": "3",
+      "overall_wins": "7",
+      "overall_losses": "8"
+    },
+    {
+      "team": "Tuscarora",
+      "div_wins": "1",
+      "div_losses": "4",
+      "overall_wins": "1",
+      "overall_losses": "12"
+    },
+    {
+      "team": "Thomas Johnson",
+      "div_wins": "0",
+      "div_losses": "5",
+      "overall_wins": "0",
+      "overall_losses": "13"
+    }
+  ],
+  "SMALL SCHOOL": [
+    {
+      "team": "Walkersville",
+      "div_wins": "3",
+      "div_losses": "0",
+      "overall_wins": "8",
+      "overall_losses": "7"
+    },
+    {
+      "team": "Catoctin",
+      "div_wins": "2",
+      "div_losses": "1",
+      "overall_wins": "7",
+      "overall_losses": "8"
+    },
+    {
+      "team": "Middletown",
+      "div_wins": "1",
+      "div_losses": "2",
+      "overall_wins": "8",
+      "overall_losses": "9"
+    },
+    {
+      "team": "Brunswick",
+      "div_wins": "0",
+      "div_losses": "3",
+      "overall_wins": "3",
+      "overall_losses": "10"
+    }
+  ]
+}
