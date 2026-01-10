@@ -333,7 +333,7 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
                         'teams': fcps_teams
                     })
             elif standings_type == 'cmc':
-                # Central Maryland Conference format: {DIVISION: [{team, div_wins, div_losses, overall_wins, overall_losses}]}
+                # Central Maryland Conference format: {DIVISION: [{team, div_wins, div_losses, div_ties, overall_wins, overall_losses, overall_ties}]}
                 for division, teams in standings_data.items():
                     if teams:
                         standings.append({
@@ -341,8 +341,10 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
                             'headers': [
                                 {'key': 'div_wins', 'label': 'Div W'},
                                 {'key': 'div_losses', 'label': 'Div L'},
-                                {'key': 'overall_wins', 'label': 'Overall W'},
-                                {'key': 'overall_losses', 'label': 'Overall L'}
+                                {'key': 'div_ties', 'label': 'Div T'},
+                                {'key': 'overall_wins', 'label': 'Ovr W'},
+                                {'key': 'overall_losses', 'label': 'Ovr L'},
+                                {'key': 'overall_ties', 'label': 'Ovr T'}
                             ],
                             'teams': teams
                         })

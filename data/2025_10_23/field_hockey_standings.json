@@ -1,122 +1,96 @@
 {
-  "SPIRES DIVISION": [
+  "LARGE SCHOOL": [
+    {
+      "team": "Linganore",
+      "div_wins": "5",
+      "div_losses": "0",
+      "div_ties": "0",
+      "overall_wins": "12",
+      "overall_losses": "3",
+      "overall_ties": "0"
+    },
     {
       "team": "Urbana",
-      "div_wins": "3",
-      "div_losses": "0",
-      "overall_wins": "6",
-      "overall_losses": "5"
+      "div_wins": "4",
+      "div_losses": "1",
+      "div_ties": "0",
+      "overall_wins": "12",
+      "overall_losses": "2",
+      "overall_ties": "0"
     },
-    {
-      "team": "Frederick",
-      "div_wins": "1",
-      "div_losses": "2",
-      "overall_wins": "3",
-      "overall_losses": "8"
-    },
-    {
-      "team": "Thomas Johnson",
-      "div_wins": "1",
-      "div_losses": "2",
-      "overall_wins": "1",
-      "overall_losses": "9"
-    },
-    {
-      "team": "South Hagerstown",
-      "div_wins": "0",
-      "div_losses": "3",
-      "overall_wins": "0",
-      "overall_losses": "12"
-    }
-  ],
-  "POTOMAC DIVISION": [
     {
       "team": "Oakdale",
       "div_wins": "3",
-      "div_losses": "0",
-      "overall_wins": "12",
-      "overall_losses": "1"
+      "div_losses": "2",
+      "div_ties": "0",
+      "overall_wins": "10",
+      "overall_losses": "4",
+      "overall_ties": "0"
     },
     {
-      "team": "Linganore",
+      "team": "Frederick",
       "div_wins": "2",
-      "div_losses": "1",
-      "overall_wins": "8",
-      "overall_losses": "2"
+      "div_losses": "3",
+      "div_ties": "0",
+      "overall_wins": "7",
+      "overall_losses": "7",
+      "overall_ties": "0"
     },
     {
       "team": "Tuscarora",
       "div_wins": "1",
-      "div_losses": "2",
-      "overall_wins": "8",
-      "overall_losses": "4"
+      "div_losses": "4",
+      "div_ties": "0",
+      "overall_wins": "1",
+      "overall_losses": "11",
+      "overall_ties": "0"
     },
     {
-      "team": "North Hagerstown",
+      "team": "Thomas Johnson",
       "div_wins": "0",
-      "div_losses": "3",
-      "overall_wins": "3",
-      "overall_losses": "9"
+      "div_losses": "5",
+      "div_ties": "0",
+      "overall_wins": "0",
+      "overall_losses": "12",
+      "overall_ties": "0"
     }
   ],
-  "GAMBRILL DIVISION": [
-    {
-      "team": "Brunswick",
-      "div_wins": "2",
-      "div_losses": "1",
-      "overall_wins": "9",
-      "overall_losses": "4"
-    },
-    {
-      "team": "Middletown",
-      "div_wins": "2",
-      "div_losses": "1",
-      "overall_wins": "8",
-      "overall_losses": "3"
-    },
+  "SMALL SCHOOL": [
     {
       "team": "Walkersville",
-      "div_wins": "2",
-      "div_losses": "1",
-      "overall_wins": "7",
-      "overall_losses": "4"
-    },
-    {
-      "team": "Williamsport",
-      "div_wins": "0",
-      "div_losses": "3",
-      "overall_wins": "2",
-      "overall_losses": "9"
-    }
-  ],
-  "ANTIETAM DIVISION": [
-    {
-      "team": "Smithsburg",
       "div_wins": "3",
       "div_losses": "0",
-      "overall_wins": "8",
-      "overall_losses": "7"
-    },
-    {
-      "team": "Boonsboro",
-      "div_wins": "2",
-      "div_losses": "1",
-      "overall_wins": "6",
-      "overall_losses": "7"
+      "div_ties": "0",
+      "overall_wins": "7",
+      "overall_losses": "6",
+      "overall_ties": "0"
     },
     {
       "team": "Catoctin",
-      "div_wins": "1",
-      "div_losses": "2",
+      "div_wins": "2",
+      "div_losses": "1",
+      "div_ties": "0",
       "overall_wins": "6",
-      "overall_losses": "7"
+      "overall_losses": "7",
+      "overall_ties": "0"
     },
     {
-      "team": "Clear Spring",
+      "team": "Middletown",
+      "div_wins": "1",
+      "div_losses": "2",
+      "div_ties": "0",
+      "overall_wins": "6",
+      "overall_losses": "8",
+      "overall_ties": "0"
+    },
+    {
+      "team": "Brunswick",
       "div_wins": "0",
       "div_losses": "3",
-      "overall_wins": "2",
-      "overall_losses": "11"
+      "div_ties": "0",
+      "overall_wins": "3",
+      "overall_losses": "9",
+      "overall_ties": "0"
     }
   ]
 }

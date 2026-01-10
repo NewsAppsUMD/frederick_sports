@@ -1263,8 +1263,9 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
         line = lines[i]
         stripped = line.strip()
 
-        # Stop at next major section
-        if any(keyword in stripped for keyword in ['INDIVIDUAL LEADERS', 'FCPS', 'OTHER SCHOOLS', 'PASSING', 'RUSHING', 'SCORING']):
+        # Stop at next major section (case-insensitive check for key markers)
+        stripped_upper = stripped.upper()
+        if any(keyword in stripped_upper for keyword in ['INDIVIDUAL LEADERS', 'FCPS', 'OTHER SCHOOLS', 'PASSING', 'RUSHING', 'SCORING LEADERS', 'GOALKEEPER']):
             break
 
         section_lines.append(line)
@@ -1314,20 +1315,44 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
                     stats.append(next_val)
                 j += 1
 
-            # If we got at least division W and L (first 2 values), record the team
-            if len(stats) >= 2:
-                div_wins = stats[0]
-                div_losses = stats[1]
-                # Overall might be partial or missing
-                overall_wins = stats[3] if len(stats) > 3 else stats[2] if len(stats) > 2 else ''
-                overall_losses = stats[4] if len(stats) > 4 else ''
-
+            # Handle both formats:
+            # - 6 values: div_w, div_l, div_t, overall_w, overall_l, overall_t (with ties)
+            # - 4 values: div_w, div_l, overall_w, overall_l (no ties - December format)
+            if len(stats) >= 6:
                 standings[current_division].append({
                     'team': team_name,
-                    'div_wins': div_wins,
-                    'div_losses': div_losses,
-                    'overall_wins': overall_wins,
-                    'overall_losses': overall_losses
+                    'div_wins': stats[0],
+                    'div_losses': stats[1],
+                    'div_ties': stats[2],
+                    'overall_wins': stats[3],
+                    'overall_losses': stats[4],
+                    'overall_ties': stats[5]
+                })
+                idx = j
+                continue
+            elif len(stats) == 4 or len(stats) == 5:
+                # 4-value format: div_w, div_l, overall_w, overall_l (no ties column in PDF)
+                standings[current_division].append({
+                    'team': team_name,
+                    'div_wins': stats[0],
+                    'div_losses': stats[1],
+                    'div_ties': '0',
+                    'overall_wins': stats[2],
+                    'overall_losses': stats[3],
+                    'overall_ties': '0'
+                })
+                idx = j
+                continue
+            elif len(stats) >= 2:
+                # Minimal data - just division W-L
+                standings[current_division].append({
+                    'team': team_name,
+                    'div_wins': stats[0],
+                    'div_losses': stats[1],
+                    'div_ties': '0',
+                    'overall_wins': '',
+                    'overall_losses': '',
+                    'overall_ties': ''
                 })
                 idx = j
                 continue

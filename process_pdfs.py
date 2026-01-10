@@ -541,7 +541,7 @@ def main():
     # Based on analysis: 3 INDIVIDUAL LEADERS sections
     # [0] = Volleyball (KILLS), [1] = Girls Flag Football (RUSHING), [2] = Football (RUSHING)
     # FCPS standings: [0] = Girls Flag Football, [1] = Football
-    # CMC standings: [0] = Volleyball, [1] = Boys Soccer, [2] = Girls Soccer, [3] = Field Hockey
+    # CMC standings: [0] = Volleyball, [1] = Field Hockey, [2] = Boys Soccer, [3] = Girls Soccer
     october_config = {
         'football_style': [
             # (sport_name, stats_section_index, file_prefix, fcps_standings_index)
@@ -550,11 +550,11 @@ def main():
         ],
         'soccer': [
             # (sport_name, file_prefix, cmc_standings_index)
-            ("Boys Soccer", "boys_soccer", 1),
-            ("Girls Soccer", "girls_soccer", 2),
+            ("Boys Soccer", "boys_soccer", 2),
+            ("Girls Soccer", "girls_soccer", 3),
         ],
         'volleyball': {'enabled': True, 'cmc_standings_index': 0},
-        'field_hockey': {'enabled': True, 'cmc_standings_index': 3},
+        'field_hockey': {'enabled': True, 'cmc_standings_index': 1},
         'cross_country': True,  # Process cross country
         'golf': True,
     }
@@ -563,7 +563,7 @@ def main():
     # Based on analysis: 3 INDIVIDUAL LEADERS sections
     # [0] = Girls Flag Football (RUSHING), [1] = Football (RUSHING), [2] = Volleyball (KILLS)
     # FCPS standings: [0] = Girls Flag Football, [1] = Football
-    # CMC standings: [0] = Boys Soccer, [1] = Girls Soccer, [2] = Volleyball, [3] = Field Hockey
+    # CMC standings: [0] = Field Hockey, [1] = Boys Soccer, [2] = Volleyball, [3] = Girls Soccer
     december_config = {
         'football_style': [
             # (sport_name, stats_section_index, file_prefix, fcps_standings_index)
@@ -572,11 +572,11 @@ def main():
         ],
         'soccer': [
             # (sport_name, file_prefix, cmc_standings_index)
-            ("Boys Soccer", "boys_soccer", 0),
-            ("Girls Soccer", "girls_soccer", 1),
+            ("Boys Soccer", "boys_soccer", 1),
+            ("Girls Soccer", "girls_soccer", 3),
         ],
         'volleyball': {'enabled': True, 'cmc_standings_index': 2},
-        'field_hockey': {'enabled': True, 'cmc_standings_index': 3},
+        'field_hockey': {'enabled': True, 'cmc_standings_index': 0},
         'cross_country': True,  # Has individual runner times
         'golf': True,
     }
