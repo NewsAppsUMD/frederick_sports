@@ -1,0 +1,353 @@
+#!/usr/bin/env python3
+"""
+Generate data.js file for the web frontend from JSON data files.
+Combines data from multiple dates into a single JavaScript module.
+"""
+
+import json
+from pathlib import Path
+from datetime import datetime
+
+# Configuration
+DATA_DIR = Path('data')
+OUTPUT_FILE = Path('docs/data.js')
+
+# Date configurations
+DATES = [
+    {'value': '2025_10_23', 'label': 'Oct 23, 2025'},
+    {'value': '2025_12_06', 'label': 'Dec 6, 2025'},
+]
+
+# Sport configurations
+SPORTS_CONFIG = {
+    'football': {
+        'name': 'Football',
+        'file': 'football_data.json',
+        'leaders': [
+            {
+                'categoryName': 'Rushing',
+                'source': 'rushing',
+                'headers': [
+                    {'key': 'att', 'label': 'Att'},
+                    {'key': 'yds', 'label': 'Yds'},
+                    {'key': 'avg', 'label': 'Avg'},
+                    {'key': 'td', 'label': 'TD'}
+                ]
+            },
+            {
+                'categoryName': 'Passing',
+                'source': 'passing',
+                'headers': [
+                    {'key': 'comp', 'label': 'Comp'},
+                    {'key': 'att', 'label': 'Att'},
+                    {'key': 'pct', 'label': 'Pct'},
+                    {'key': 'yds', 'label': 'Yds'},
+                    {'key': 'td', 'label': 'TD'}
+                ]
+            },
+            {
+                'categoryName': 'Receiving',
+                'source': 'receiving',
+                'headers': [
+                    {'key': 'rec', 'label': 'Rec'},
+                    {'key': 'yds', 'label': 'Yds'},
+                    {'key': 'td', 'label': 'TD'}
+                ]
+            }
+        ]
+    },
+    'girls-flag-football': {
+        'name': 'Girls Flag Football',
+        'file': 'girls_flag_football_data.json',
+        'leaders': [
+            {
+                'categoryName': 'Rushing',
+                'source': 'rushing',
+                'headers': [
+                    {'key': 'att', 'label': 'Att'},
+                    {'key': 'yds', 'label': 'Yds'},
+                    {'key': 'avg', 'label': 'Avg'},
+                    {'key': 'td', 'label': 'TD'}
+                ]
+            },
+            {
+                'categoryName': 'Passing',
+                'source': 'passing',
+                'headers': [
+                    {'key': 'comp', 'label': 'Comp'},
+                    {'key': 'att', 'label': 'Att'},
+                    {'key': 'pct', 'label': 'Pct'},
+                    {'key': 'yds', 'label': 'Yds'},
+                    {'key': 'td', 'label': 'TD'}
+                ]
+            },
+            {
+                'categoryName': 'Receiving',
+                'source': 'receiving',
+                'headers': [
+                    {'key': 'rec', 'label': 'Rec'},
+                    {'key': 'yds', 'label': 'Yds'},
+                    {'key': 'td', 'label': 'TD'}
+                ]
+            }
+        ]
+    },
+    'boys-soccer': {
+        'name': 'Boys Soccer',
+        'file': 'boys_soccer_data.json',
+        'leaders': [
+            {
+                'categoryName': 'Scoring',
+                'source': 'scoring',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'g', 'label': 'G'},
+                    {'key': 'a', 'label': 'A'},
+                    {'key': 'pts', 'label': 'Pts'}
+                ]
+            },
+            {
+                'categoryName': 'Goalkeepers',
+                'source': 'goalkeepers',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'ga', 'label': 'GA'},
+                    {'key': 'so', 'label': 'SO'},
+                    {'key': 'gaa', 'label': 'GAA'}
+                ]
+            }
+        ]
+    },
+    'girls-soccer': {
+        'name': 'Girls Soccer',
+        'file': 'girls_soccer_data.json',
+        'leaders': [
+            {
+                'categoryName': 'Scoring',
+                'source': 'scoring',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'g', 'label': 'G'},
+                    {'key': 'a', 'label': 'A'},
+                    {'key': 'pts', 'label': 'Pts'}
+                ]
+            },
+            {
+                'categoryName': 'Goalkeepers',
+                'source': 'goalkeepers',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'ga', 'label': 'GA'},
+                    {'key': 'so', 'label': 'SO'},
+                    {'key': 'gaa', 'label': 'GAA'}
+                ]
+            }
+        ]
+    },
+    'field-hockey': {
+        'name': 'Field Hockey',
+        'file': 'field_hockey_data.json',
+        'leaders': [
+            {
+                'categoryName': 'Scoring',
+                'source': 'scoring',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'g', 'label': 'G'},
+                    {'key': 'a', 'label': 'A'},
+                    {'key': 'pts', 'label': 'Pts'}
+                ]
+            },
+            {
+                'categoryName': 'Goalkeepers',
+                'source': 'goalkeepers',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'ga', 'label': 'GA'},
+                    {'key': 'so', 'label': 'SO'},
+                    {'key': 'gaa', 'label': 'GAA'}
+                ]
+            }
+        ]
+    },
+    'volleyball': {
+        'name': 'Volleyball',
+        'file': 'volleyball_data.json',
+        'leaders': [
+            {
+                'categoryName': 'Kills',
+                'source': 'kills',
+                'headers': [
+                    {'key': 'sp', 'label': 'SP'},
+                    {'key': 'kills', 'label': 'Kills'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            },
+            {
+                'categoryName': 'Assists',
+                'source': 'assists',
+                'headers': [
+                    {'key': 'sp', 'label': 'SP'},
+                    {'key': 'assists', 'label': 'Asts'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            },
+            {
+                'categoryName': 'Digs',
+                'source': 'digs',
+                'headers': [
+                    {'key': 'sp', 'label': 'SP'},
+                    {'key': 'digs', 'label': 'Digs'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            }
+        ]
+    },
+    'cross-country': {
+        'name': 'Cross Country',
+        'file': 'cross_country_data.json',
+        'leaders': [
+            {
+                'categoryName': 'Boys Top Times',
+                'source': 'boys',
+                'headers': [
+                    {'key': 'time', 'label': 'Time'}
+                ]
+            },
+            {
+                'categoryName': 'Girls Top Times',
+                'source': 'girls',
+                'headers': [
+                    {'key': 'time', 'label': 'Time'}
+                ]
+            }
+        ]
+    },
+    'golf': {
+        'name': 'Golf',
+        'file': 'golf_data.json',
+        'leaders': [
+            {
+                'categoryName': '9-Hole Average',
+                'source': 'players',
+                'headers': [
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            }
+        ]
+    }
+}
+
+# Rankings by date (hardcoded since they're not in JSON)
+RANKINGS_BY_DATE = {
+    '2025_10_23': [
+        {'sport': 'Football', 'items': [{'team': 'Linganore'}, {'team': 'Oakdale'}, {'team': 'Middletown'}, {'team': 'Urbana'}]},
+        {'sport': 'Boys Soccer', 'items': [{'team': 'Tuscarora'}, {'team': 'Urbana'}, {'team': 'Linganore'}, {'team': 'Brunswick'}]},
+        {'sport': 'Girls Flag Football', 'items': [{'team': 'Urbana'}, {'team': 'Linganore'}, {'team': 'Frederick'}, {'team': 'Thomas Johnson'}]},
+        {'sport': 'Girls Soccer', 'items': [{'team': 'Oakdale'}, {'team': 'Linganore'}, {'team': 'Brunswick'}, {'team': 'Middletown'}]},
+        {'sport': 'Volleyball', 'items': [{'team': 'Urbana'}, {'team': 'Tuscarora'}, {'team': 'Oakdale'}, {'team': 'Maryland School for the Deaf'}]},
+        {'sport': 'Field Hockey', 'items': [{'team': 'Linganore'}, {'team': 'Urbana'}, {'team': 'Walkersville'}, {'team': 'Oakdale'}]},
+        {'sport': 'Boys Cross Country', 'items': [{'team': 'Urbana'}, {'team': 'Thomas Johnson'}, {'team': 'Brunswick'}, {'team': 'Oakdale'}]},
+        {'sport': 'Girls Cross Country', 'items': [{'team': 'Urbana'}, {'team': 'Thomas Johnson'}, {'team': 'Frederick'}, {'team': 'Tuscarora'}]},
+        {'sport': 'Golf', 'items': [{'team': 'Linganore'}, {'team': 'Middletown'}, {'team': 'Oakdale'}]},
+    ],
+    '2025_12_06': [
+        {'sport': 'Football', 'items': [{'team': 'Linganore'}, {'team': 'Oakdale'}, {'team': 'Middletown'}, {'team': 'Urbana'}]},
+        {'sport': 'Boys Soccer', 'items': [{'team': 'Tuscarora'}, {'team': 'Urbana'}, {'team': 'Linganore'}, {'team': 'Brunswick'}]},
+        {'sport': 'Girls Flag Football', 'items': [{'team': 'Urbana'}, {'team': 'Linganore'}, {'team': 'Frederick'}, {'team': 'Thomas Johnson'}]},
+        {'sport': 'Girls Soccer', 'items': [{'team': 'Oakdale'}, {'team': 'Linganore'}, {'team': 'Brunswick'}, {'team': 'Middletown'}]},
+        {'sport': 'Volleyball', 'items': [{'team': 'Urbana'}, {'team': 'Tuscarora'}, {'team': 'Oakdale'}, {'team': 'Maryland School for the Deaf'}]},
+        {'sport': 'Field Hockey', 'items': [{'team': 'Linganore'}, {'team': 'Urbana'}, {'team': 'Walkersville'}, {'team': 'Oakdale'}]},
+        {'sport': 'Boys Cross Country', 'items': [{'team': 'Urbana'}, {'team': 'Thomas Johnson'}, {'team': 'Brunswick'}, {'team': 'Oakdale'}]},
+        {'sport': 'Girls Cross Country', 'items': [{'team': 'Urbana'}, {'team': 'Thomas Johnson'}, {'team': 'Frederick'}, {'team': 'Tuscarora'}]},
+        {'sport': 'Golf', 'items': [{'team': 'Linganore'}, {'team': 'Middletown'}, {'team': 'Oakdale'}]},
+    ]
+}
+
+
+def load_json_data(date_str: str, filename: str) -> dict:
+    """Load JSON data from a file."""
+    filepath = DATA_DIR / date_str / filename
+    if filepath.exists():
+        with open(filepath, 'r') as f:
+            return json.load(f)
+    return {}
+
+
+def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
+    """Build sport data structure for a single date."""
+    data = load_json_data(date_str, config['file'])
+    if not data:
+        return None
+
+    leaders = []
+    for leader_config in config['leaders']:
+        source_key = leader_config['source']
+
+        # Handle different data structures
+        if source_key == 'players':
+            # Golf has flat list
+            players = data if isinstance(data, list) else []
+        else:
+            players = data.get(source_key, [])
+
+        if players:
+            leaders.append({
+                'categoryName': leader_config['categoryName'],
+                'headers': leader_config['headers'],
+                'players': players[:20]  # Limit to top 20
+            })
+
+    return {
+        'id': sport_id,
+        'name': config['name'],
+        'date': date_str,
+        'standings': [],  # We could add standings parsing later
+        'leaders': leaders
+    }
+
+
+def generate_data_js():
+    """Generate the data.js file."""
+    all_sports_data = []
+
+    # Build sports data for each date
+    for date_config in DATES:
+        date_str = date_config['value']
+        for sport_id, config in SPORTS_CONFIG.items():
+            sport_data = build_sport_data(sport_id, config, date_str)
+            if sport_data:
+                all_sports_data.append(sport_data)
+
+    # Build rankings data
+    rankings_data = []
+    for date_config in DATES:
+        date_str = date_config['value']
+        rankings_data.append({
+            'date': date_str,
+            'items': RANKINGS_BY_DATE.get(date_str, [])
+        })
+
+    # Generate JavaScript
+    js_content = f"""// Auto-generated data file
+// Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+export const availableDates = {json.dumps(DATES, indent=2)};
+
+export const rankings = {json.dumps(rankings_data, indent=2)};
+
+export const sportsData = {json.dumps(all_sports_data, indent=2)};
+"""
+
+    # Write to file
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(OUTPUT_FILE, 'w') as f:
+        f.write(js_content)
+
+    print(f"Generated {OUTPUT_FILE}")
+    print(f"  - {len(DATES)} dates")
+    print(f"  - {len(all_sports_data)} sport entries")
+
+
+if __name__ == '__main__':
+    generate_data_js()
