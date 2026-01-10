@@ -1130,7 +1130,7 @@ def structure_golf_stats(raw_stats: List[Dict]) -> List[Dict]:
     return structured
 
 
-def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
+def parse_fcps_standings(text: str, section_index: int = 0) -> List[Dict[str, str]]:
     """
     Parse FCPS conference standings.
 
@@ -1145,22 +1145,28 @@ def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
 
     Note: PDF extraction may produce tab-merged data like "Thomas Johnson\t7"
     where the team name and first stat value are on the same line.
+
+    Args:
+        text: The PDF text content
+        section_index: Which FCPS section to parse (0=first, 1=second, etc.)
+                      Girls Flag Football uses section 0, Football uses section 1
     """
     standings = []
     lines = text.split('\n')
 
-    # Find FCPS section
-    fcps_start = -1
+    # Find all FCPS sections
+    fcps_sections = []
     for i, line in enumerate(lines):
         if line.strip() == 'FCPS':
-            fcps_start = i
-            break
+            fcps_sections.append(i)
 
-    if fcps_start == -1:
+    if section_index >= len(fcps_sections):
         return standings
 
+    fcps_start = fcps_sections[section_index]
+
     # Skip header lines (FCPS, Team, W, L, PF, PA)
-    i = fcps_start + 7  # Skip FCPS + column headers (Team, W, L, PF, PA)
+    i = fcps_start + 6  # Skip FCPS + column headers (Team, W, L, PF, PA) - 6 header lines total
 
     # Collect all values first, handling tabs
     values = []
@@ -1217,7 +1223,7 @@ def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
     return standings
 
 
-def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball") -> Dict[str, List[Dict[str, str]]]:
+def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", section_index: int = 0) -> Dict[str, List[Dict[str, str]]]:
     """
     Parse CENTRAL MARYLAND CONFERENCE standings.
 
@@ -1228,20 +1234,27 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball") 
     Note: PDF extraction may produce tab-merged data. Values are collected and
     then parsed in groups.
 
+    Args:
+        text: The PDF text content
+        sport_name: Name of the sport (for logging)
+        section_index: Which CMC section to parse (0=Boys Soccer, 1=Girls Soccer,
+                      2=Volleyball, 3=Field Hockey)
+
     Returns dict with division names as keys and team lists as values.
     """
     standings = {}
     lines = text.split('\n')
 
-    # Find CENTRAL MARYLAND CONFERENCE section
-    cm_start = -1
+    # Find all CENTRAL MARYLAND CONFERENCE sections
+    cmc_sections = []
     for i, line in enumerate(lines):
         if 'CENTRAL MARYLAND CONFERENCE' in line:
-            cm_start = i
-            break
+            cmc_sections.append(i)
 
-    if cm_start == -1:
+    if section_index >= len(cmc_sections):
         return standings
+
+    cm_start = cmc_sections[section_index]
 
     # Collect all lines in the section
     section_lines = []
