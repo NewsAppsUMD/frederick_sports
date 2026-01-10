@@ -18,7 +18,7 @@
     },
     {
       "player": "Mark Gwynn III",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "att": "103",
       "yds": "1,095",
       "avg": "10.63",
@@ -34,7 +34,7 @@
     },
     {
       "player": "Nakhi Bagwell",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "att": "159",
       "yds": "892",
       "avg": "5.61",
@@ -74,7 +74,7 @@
     },
     {
       "player": "Ryker Pedersen",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "att": "85",
       "yds": "542",
       "avg": "6.3",
@@ -98,7 +98,7 @@
     },
     {
       "player": "Brittin Poffenbarger",
-      "school": "Mid.",
+      "school": "Middletown",
       "att": "65",
       "yds": "455",
       "avg": "7",
@@ -148,7 +148,7 @@
   "passing": [
     {
       "player": "Brittin Poffenbarger",
-      "school": "Mid.",
+      "school": "Middletown",
       "comp": "148",
       "att": "206",
       "pct": ".718",
@@ -157,7 +157,7 @@
     },
     {
       "player": "Randy Embrey",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "comp": "145",
       "att": "265",
       "pct": ".547",
@@ -193,7 +193,7 @@
     },
     {
       "player": "Landon Rosenberg",
-      "school": "Tus.",
+      "school": "Tuscarora",
       "comp": "108",
       "att": "209",
       "pct": ".517",
@@ -247,7 +247,7 @@
     },
     {
       "player": "Dyvae Ambush",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "rec": "73",
       "yds": "1,294",
       "td": "11"
@@ -282,7 +282,7 @@
     },
     {
       "player": "Nathan Borawski",
-      "school": "Mid.",
+      "school": "Middletown",
       "rec": "38",
       "yds": "450",
       "td": "4"
@@ -331,7 +331,7 @@
     },
     {
       "player": "Mickey Cammarata",
-      "school": "Tus.",
+      "school": "Tuscarora",
       "rec": "26",
       "yds": "393",
       "td": "2"
@@ -359,21 +359,21 @@
     },
     {
       "player": "Kyrin Ambush",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "rec": "20",
       "yds": "266",
       "td": "6"
     },
     {
       "player": "Darnell Taylor",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "rec": "20",
       "yds": "327",
       "td": "4"
     },
     {
       "player": "Ajene Ahmad",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "rec": "19",
       "yds": "214",
       "td": "0"
