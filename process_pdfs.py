@@ -95,6 +95,13 @@ def process_football_style_sport(text, sport_name, section_index, file_prefix, d
     standings = parse_fcps_standings(text)
     print(f"  FCPS standings: {len(standings)} teams")
 
+    # Save standings to JSON
+    standings_data = {'fcps': standings}
+    standings_json_file = output_dir / f'{file_prefix}_standings.json'
+    with open(standings_json_file, 'w') as f:
+        json.dump(standings_data, f, indent=2)
+    print(f"✓ Saved standings JSON to {standings_json_file}")
+
     # Generate HTML
     print(f"Generating HTML page...")
     publish_date, updated_date = get_dates_for_pdf(date_str)
@@ -150,6 +157,12 @@ def process_soccer_sport(text, sport_name, file_prefix, date_str, output_dir, do
     if standings:
         total_teams = sum(len(teams) for teams in standings.values())
         print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
+
+    # Save standings to JSON
+    standings_json_file = output_dir / f'{file_prefix}_standings.json'
+    with open(standings_json_file, 'w') as f:
+        json.dump(standings, f, indent=2)
+    print(f"✓ Saved standings JSON to {standings_json_file}")
 
     # Generate HTML
     print(f"Generating HTML page...")
@@ -216,6 +229,12 @@ def process_volleyball(text, date_str, output_dir, docs_dir):
         total_teams = sum(len(teams) for teams in standings.values())
         print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
 
+    # Save standings to JSON
+    standings_json_file = output_dir / f'{file_prefix}_standings.json'
+    with open(standings_json_file, 'w') as f:
+        json.dump(standings, f, indent=2)
+    print(f"✓ Saved standings JSON to {standings_json_file}")
+
     # Generate HTML
     print(f"Generating HTML page...")
     publish_date, updated_date = get_dates_for_pdf(date_str)
@@ -279,6 +298,12 @@ def process_field_hockey(text, date_str, output_dir, docs_dir):
     if standings:
         total_teams = sum(len(teams) for teams in standings.values())
         print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
+
+    # Save standings to JSON
+    standings_json_file = output_dir / f'{file_prefix}_standings.json'
+    with open(standings_json_file, 'w') as f:
+        json.dump(standings, f, indent=2)
+    print(f"✓ Saved standings JSON to {standings_json_file}")
 
     # Generate HTML
     print(f"Generating HTML page...")

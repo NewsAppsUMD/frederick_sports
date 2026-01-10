@@ -1142,6 +1142,9 @@ def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
     3
     400
     127
+
+    Note: PDF extraction may produce tab-merged data like "Thomas Johnson\t7"
+    where the team name and first stat value are on the same line.
     """
     standings = []
     lines = text.split('\n')
@@ -1159,6 +1162,8 @@ def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
     # Skip header lines (FCPS, Team, W, L, PF, PA)
     i = fcps_start + 7  # Skip FCPS + column headers (Team, W, L, PF, PA)
 
+    # Collect all values first, handling tabs
+    values = []
     while i < len(lines):
         line = lines[i].strip()
 
@@ -1171,18 +1176,30 @@ def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
             i += 1
             continue
 
-        # Check if this could be a team name (not just a number)
-        if not line.replace('.', '').replace(',', '').isdigit():
-            team_name = line
+        # Split by tabs and clean up whitespace
+        parts = [p.strip() for p in line.split('\t') if p.strip()]
+        values.extend(parts)
+        i += 1
 
-            # Next 4 lines should be: W, L, PF, PA
-            if i + 4 < len(lines):
-                try:
-                    wins = lines[i + 1].strip()
-                    losses = lines[i + 2].strip()
-                    pf = lines[i + 3].strip()
-                    pa = lines[i + 4].strip()
+    # Now parse the collected values in groups of 5 (team, w, l, pf, pa)
+    idx = 0
+    while idx + 4 < len(values):
+        # Find next team name (non-numeric value)
+        if not values[idx].replace('.', '').replace(',', '').isdigit():
+            team_name = expand_team_name(values[idx])
 
+            # Next 4 values should be stats
+            try:
+                wins = values[idx + 1]
+                losses = values[idx + 2]
+                pf = values[idx + 3]
+                pa = values[idx + 4]
+
+                # Validate that these look like numbers
+                if (wins.replace(',', '').isdigit() and
+                    losses.replace(',', '').isdigit() and
+                    pf.replace(',', '').isdigit() and
+                    pa.replace(',', '').isdigit()):
                     standings.append({
                         'team': team_name,
                         'wins': wins,
@@ -1190,12 +1207,12 @@ def parse_fcps_standings(text: str) -> List[Dict[str, str]]:
                         'pf': pf,
                         'pa': pa
                     })
-                    i += 5  # Skip the stats we just parsed
+                    idx += 5
                     continue
-                except:
-                    pass
+            except (IndexError, ValueError):
+                pass
 
-        i += 1
+        idx += 1
 
     return standings
 
@@ -1206,7 +1223,10 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball") 
 
     Format varies by sport:
     - Volleyball/Field Hockey: Division and Overall records, organized by divisions
-    - Soccer: Division and Overall records, organized by divisions
+    - Soccer: Division and Overall records, organized by divisions (W, L, T format)
+
+    Note: PDF extraction may produce tab-merged data. Values are collected and
+    then parsed in groups.
 
     Returns dict with division names as keys and team lists as values.
     """
@@ -1223,57 +1243,83 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball") 
     if cm_start == -1:
         return standings
 
+    # Collect all lines in the section
+    section_lines = []
     i = cm_start + 1
-    current_division = None
-
     while i < len(lines):
-        line = lines[i].strip()
+        line = lines[i]
+        stripped = line.strip()
 
         # Stop at next major section
-        if any(keyword in line for keyword in ['INDIVIDUAL LEADERS', 'FCPS', 'OTHER SCHOOLS', 'PASSING', 'RUSHING', 'SCORING']):
+        if any(keyword in stripped for keyword in ['INDIVIDUAL LEADERS', 'FCPS', 'OTHER SCHOOLS', 'PASSING', 'RUSHING', 'SCORING']):
             break
 
-        # Check for division headers
-        if 'DIVISION' in line or 'SCHOOL' in line:
-            current_division = line
-            standings[current_division] = []
-            # Skip column headers (Team, W, L, W, L)
-            i += 7  # Skip division name + column headers
-            continue
-
-        # Skip empty lines and header lines
-        if not line or line in ['Team', 'W', 'L', 'Division', 'Overall']:
-            i += 1
-            continue
-
-        # Check if this is a team name (not just a number)
-        if current_division and not line.replace('.', '').isdigit():
-            team_name = line
-
-            # Next lines: div_w, div_l, (empty/spacing), overall_w, overall_l
-            if i + 5 < len(lines):
-                try:
-                    div_wins = lines[i + 1].strip()
-                    div_losses = lines[i + 2].strip()
-                    # Skip empty line
-                    overall_wins = lines[i + 4].strip()
-                    overall_losses = lines[i + 5].strip()
-
-                    # Validate these are numbers
-                    if div_wins.isdigit() and div_losses.isdigit():
-                        standings[current_division].append({
-                            'team': team_name,
-                            'div_wins': div_wins,
-                            'div_losses': div_losses,
-                            'overall_wins': overall_wins,
-                            'overall_losses': overall_losses
-                        })
-                        i += 6  # Skip the stats we just parsed
-                        continue
-                except:
-                    pass
-
+        section_lines.append(line)
         i += 1
+
+    # Flatten all values, splitting on tabs
+    values = []
+    for line in section_lines:
+        parts = [p.strip() for p in line.split('\t') if p.strip()]
+        values.extend(parts)
+
+    # Clean out header words
+    header_words = {'Team', 'W', 'L', 'T', 'Division', 'Overall'}
+    values = [v for v in values if v not in header_words]
+
+    # Parse values
+    current_division = None
+    idx = 0
+
+    while idx < len(values):
+        val = values[idx]
+
+        # Check for division headers
+        if 'DIVISION' in val or 'SCHOOL' in val:
+            # Clean up division name (remove trailing tabs/spaces)
+            current_division = val.strip()
+            standings[current_division] = []
+            idx += 1
+            continue
+
+        # Check if this is a team name (starts with letter, not all digits)
+        if current_division is not None and not val.replace('.', '').replace(',', '').isdigit():
+            team_name = expand_team_name(val)
+
+            # Collect numeric values for this team (Division W, L, T; Overall W, L, T)
+            # We expect 6 numeric values: div_w, div_l, div_t, overall_w, overall_l, overall_t
+            stats = []
+            j = idx + 1
+            while j < len(values) and len(stats) < 6:
+                next_val = values[j]
+                # Stop if we hit another team name or division header
+                if ('DIVISION' in next_val or 'SCHOOL' in next_val or
+                    (not next_val.replace('.', '').replace(',', '').isdigit() and
+                     next_val not in header_words)):
+                    break
+                if next_val.replace(',', '').isdigit():
+                    stats.append(next_val)
+                j += 1
+
+            # If we got at least division W and L (first 2 values), record the team
+            if len(stats) >= 2:
+                div_wins = stats[0]
+                div_losses = stats[1]
+                # Overall might be partial or missing
+                overall_wins = stats[3] if len(stats) > 3 else stats[2] if len(stats) > 2 else ''
+                overall_losses = stats[4] if len(stats) > 4 else ''
+
+                standings[current_division].append({
+                    'team': team_name,
+                    'div_wins': div_wins,
+                    'div_losses': div_losses,
+                    'overall_wins': overall_wins,
+                    'overall_losses': overall_losses
+                })
+                idx = j
+                continue
+
+        idx += 1
 
     return standings
 
@@ -1288,6 +1334,8 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
     MSD
     18
     1
+
+    Note: PDF extraction may produce tab-merged data.
     """
     standings = []
     lines = text.split('\n')
@@ -1302,43 +1350,57 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
     if os_start == -1:
         return standings
 
-    # Skip header lines (OTHER SCHOOLS, Team, W, L)
-    i = os_start + 4
-
+    # Collect all lines in the section
+    section_lines = []
+    i = os_start + 1
     while i < len(lines):
-        line = lines[i].strip()
+        line = lines[i]
+        stripped = line.strip()
 
         # Stop at next major section
-        if any(keyword in line for keyword in ['INDIVIDUAL LEADERS', 'CENTRAL MARYLAND', 'FCPS', 'PASSING', 'RUSHING', 'SCORING']):
+        if any(keyword in stripped for keyword in ['INDIVIDUAL LEADERS', 'CENTRAL MARYLAND', 'FCPS', 'PASSING', 'RUSHING', 'SCORING']):
             break
 
-        # Skip empty lines
-        if not line:
-            i += 1
-            continue
+        section_lines.append(line)
+        i += 1
+
+    # Flatten all values, splitting on tabs
+    values = []
+    for line in section_lines:
+        parts = [p.strip() for p in line.split('\t') if p.strip()]
+        values.extend(parts)
+
+    # Clean out header words
+    header_words = {'Team', 'W', 'L'}
+    values = [v for v in values if v not in header_words]
+
+    # Parse values in groups of 3 (team, w, l)
+    idx = 0
+    while idx < len(values):
+        val = values[idx]
 
         # Check if this is a team name (not just a number)
-        if not line.replace('.', '').isdigit():
-            team_name = line
+        if not val.replace('.', '').replace(',', '').isdigit():
+            team_name = expand_team_name(val)
 
-            # Next 2 lines should be: W, L
-            if i + 2 < len(lines):
+            # Next 2 values should be wins and losses
+            if idx + 2 < len(values):
                 try:
-                    wins = lines[i + 1].strip()
-                    losses = lines[i + 2].strip()
+                    wins = values[idx + 1]
+                    losses = values[idx + 2]
 
-                    if wins.isdigit() and losses.isdigit():
+                    if wins.replace(',', '').isdigit() and losses.replace(',', '').isdigit():
                         standings.append({
                             'team': team_name,
                             'wins': wins,
                             'losses': losses
                         })
-                        i += 3  # Skip the stats we just parsed
+                        idx += 3
                         continue
                 except:
                     pass
 
-        i += 1
+        idx += 1
 
     return standings
 

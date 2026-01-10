@@ -1,0 +1,67 @@
+{
+  "fcps": [
+    {
+      "team": "Linganore",
+      "wins": "7",
+      "losses": "2",
+      "pf": "199",
+      "pa": "72"
+    },
+    {
+      "team": "Frederick",
+      "wins": "6",
+      "losses": "2",
+      "pf": "186",
+      "pa": "58"
+    },
+    {
+      "team": "Thomas Johnson",
+      "wins": "6",
+      "losses": "2",
+      "pf": "163",
+      "pa": "51"
+    },
+    {
+      "team": "Oakdale",
+      "wins": "4",
+      "losses": "4",
+      "pf": "78",
+      "pa": "107"
+    },
+    {
+      "team": "Walkersville",
+      "wins": "4",
+      "losses": "4",
+      "pf": "35",
+      "pa": "108"
+    },
+    {
+      "team": "Tuscarora",
+      "wins": "2",
+      "losses": "5",
+      "pf": "22",
+      "pa": "61"
+    },
+    {
+      "team": "Middletown",
+      "wins": "2",
+      "losses": "6",
+      "pf": "112",
+      "pa": "146"
+    },
+    {
+      "team": "Brunswick",
+      "wins": "2",
+      "losses": "6",
+      "pf": "26",
+      "pa": "165"
+    },
+    {
+      "team": "Catoctin",
+      "wins": "1",
+      "losses": "7",
+      "pf": "33",
+      "pa": "177"
+    }
+  ]
+}

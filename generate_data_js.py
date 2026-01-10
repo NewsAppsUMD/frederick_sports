@@ -23,6 +23,8 @@ SPORTS_CONFIG = {
     'football': {
         'name': 'Football',
         'file': 'football_data.json',
+        'standings_file': 'football_standings.json',
+        'standings_type': 'fcps',  # FCPS conference with W/L/PF/PA
         'leaders': [
             {
                 'categoryName': 'Rushing',
@@ -59,6 +61,8 @@ SPORTS_CONFIG = {
     'girls-flag-football': {
         'name': 'Girls Flag Football',
         'file': 'girls_flag_football_data.json',
+        'standings_file': 'girls_flag_football_standings.json',
+        'standings_type': 'fcps',
         'leaders': [
             {
                 'categoryName': 'Rushing',
@@ -95,6 +99,8 @@ SPORTS_CONFIG = {
     'boys-soccer': {
         'name': 'Boys Soccer',
         'file': 'boys_soccer_data.json',
+        'standings_file': 'boys_soccer_standings.json',
+        'standings_type': 'cmc',  # Central Maryland Conference with divisions
         'leaders': [
             {
                 'categoryName': 'Scoring',
@@ -121,6 +127,8 @@ SPORTS_CONFIG = {
     'girls-soccer': {
         'name': 'Girls Soccer',
         'file': 'girls_soccer_data.json',
+        'standings_file': 'girls_soccer_standings.json',
+        'standings_type': 'cmc',
         'leaders': [
             {
                 'categoryName': 'Scoring',
@@ -147,6 +155,8 @@ SPORTS_CONFIG = {
     'field-hockey': {
         'name': 'Field Hockey',
         'file': 'field_hockey_data.json',
+        'standings_file': 'field_hockey_standings.json',
+        'standings_type': 'cmc',
         'leaders': [
             {
                 'categoryName': 'Scoring',
@@ -173,6 +183,8 @@ SPORTS_CONFIG = {
     'volleyball': {
         'name': 'Volleyball',
         'file': 'volleyball_data.json',
+        'standings_file': 'volleyball_standings.json',
+        'standings_type': 'cmc',
         'leaders': [
             {
                 'categoryName': 'Kills',
@@ -298,11 +310,48 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
                 'players': players[:20]  # Limit to top 20
             })
 
+    # Load standings if available
+    standings = []
+    standings_file = config.get('standings_file')
+    standings_type = config.get('standings_type')
+
+    if standings_file:
+        standings_data = load_json_data(date_str, standings_file)
+        if standings_data:
+            if standings_type == 'fcps':
+                # FCPS conference format: {fcps: [{team, wins, losses, pf, pa}]}
+                fcps_teams = standings_data.get('fcps', [])
+                if fcps_teams:
+                    standings.append({
+                        'division': 'FCPS',
+                        'headers': [
+                            {'key': 'wins', 'label': 'W'},
+                            {'key': 'losses', 'label': 'L'},
+                            {'key': 'pf', 'label': 'PF'},
+                            {'key': 'pa', 'label': 'PA'}
+                        ],
+                        'teams': fcps_teams
+                    })
+            elif standings_type == 'cmc':
+                # Central Maryland Conference format: {DIVISION: [{team, div_wins, div_losses, overall_wins, overall_losses}]}
+                for division, teams in standings_data.items():
+                    if teams:
+                        standings.append({
+                            'division': division,
+                            'headers': [
+                                {'key': 'div_wins', 'label': 'Div W'},
+                                {'key': 'div_losses', 'label': 'Div L'},
+                                {'key': 'overall_wins', 'label': 'Overall W'},
+                                {'key': 'overall_losses', 'label': 'Overall L'}
+                            ],
+                            'teams': teams
+                        })
+
     return {
         'id': sport_id,
         'name': config['name'],
         'date': date_str,
-        'standings': [],  # We could add standings parsing later
+        'standings': standings,
         'leaders': leaders
     }
 

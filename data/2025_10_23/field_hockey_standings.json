@@ -1,0 +1,122 @@
+{
+  "SPIRES DIVISION": [
+    {
+      "team": "Urbana",
+      "div_wins": "3",
+      "div_losses": "0",
+      "overall_wins": "3",
+      "overall_losses": ""
+    },
+    {
+      "team": "Thomas Johnson",
+      "div_wins": "2",
+      "div_losses": "1",
+      "overall_wins": "6",
+      "overall_losses": ""
+    },
+    {
+      "team": "South Hagerstown",
+      "div_wins": "1",
+      "div_losses": "2",
+      "overall_wins": "8",
+      "overall_losses": ""
+    },
+    {
+      "team": "Frederick",
+      "div_wins": "0",
+      "div_losses": "3",
+      "overall_wins": "9",
+      "overall_losses": ""
+    }
+  ],
+  "POTOMAC DIVISION": [
+    {
+      "team": "N. Hagerstown",
+      "div_wins": "3",
+      "div_losses": "0",
+      "overall_wins": "0",
+      "overall_losses": ""
+    },
+    {
+      "team": "Tuscarora",
+      "div_wins": "2",
+      "div_losses": "1",
+      "overall_wins": "3",
+      "overall_losses": ""
+    },
+    {
+      "team": "Oakdale",
+      "div_wins": "1",
+      "div_losses": "2",
+      "overall_wins": "4",
+      "overall_losses": ""
+    },
+    {
+      "team": "Linganore",
+      "div_wins": "0",
+      "div_losses": "3",
+      "overall_wins": "8",
+      "overall_losses": ""
+    }
+  ],
+  "GAMBRILL DIVISION": [
+    {
+      "team": "Williamsport",
+      "div_wins": "3",
+      "div_losses": "0",
+      "overall_wins": "2",
+      "overall_losses": ""
+    },
+    {
+      "team": "Middletown",
+      "div_wins": "2",
+      "div_losses": "1",
+      "overall_wins": "8",
+      "overall_losses": ""
+    },
+    {
+      "team": "Brunswick",
+      "div_wins": "1",
+      "div_losses": "2",
+      "overall_wins": "11",
+      "overall_losses": ""
+    },
+    {
+      "team": "Walkersville",
+      "div_wins": "0",
+      "div_losses": "3",
+      "overall_wins": "10",
+      "overall_losses": ""
+    }
+  ],
+  "ANTIETAM DIVISION": [
+    {
+      "team": "Clear Spring",
+      "div_wins": "3",
+      "div_losses": "0",
+      "overall_wins": "3",
+      "overall_losses": ""
+    },
+    {
+      "team": "Boonsboro",
+      "div_wins": "2",
+      "div_losses": "1",
+      "overall_wins": "5",
+      "overall_losses": ""
+    },
+    {
+      "team": "Smithsburg",
+      "div_wins": "1",
+      "div_losses": "2",
+      "overall_wins": "6",
+      "overall_losses": ""
+    },
+    {
+      "team": "Catoctin",
+      "div_wins": "0",
+      "div_losses": "3",
+      "overall_wins": "11",
+      "overall_losses": ""
+    }
+  ]
+}
