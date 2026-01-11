@@ -609,7 +609,7 @@ def parse_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -677,7 +677,7 @@ def parse_soccer_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -737,7 +737,7 @@ def parse_volleyball_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -804,7 +804,7 @@ def parse_field_hockey_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -936,7 +936,7 @@ def parse_cross_country_player_entry(raw: str) -> Dict[str, Any]:
 
     return {
         'player': player_name,
-        'school': school,
+        'school': expand_team_name(school),
         'time': time
     }
 
@@ -1031,7 +1031,7 @@ def parse_golf_player_entry(raw: str) -> Dict[str, Any]:
 
     return {
         'player': player_name,
-        'school': school,
+        'school': expand_team_name(school),
         'average': average
     }
 
@@ -3632,7 +3632,7 @@ def parse_defensive_stats(file_path: str = 'FlagDefenseStats.txt') -> List[Dict[
 
             defensive_stats.append({
                 'player': player,
-                'school': school,
+                'school': expand_team_name(school),
                 'tkl': tkl_val if tkl_val != '-' else '0',
                 'tfl': tfl_val if tfl_val != '-' else '0',
                 'int': int_val if int_val != '-' else '0'
