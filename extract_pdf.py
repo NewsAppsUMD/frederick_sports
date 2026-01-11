@@ -1992,15 +1992,17 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
                     <thead>
                         <tr>
                             <th>Team</th>
-                            <th colspan="2">Division</th>
-                            <th colspan="2">Overall</th>
+                            <th colspan="3">Division</th>
+                            <th colspan="3">Overall</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>W</th>
                             <th>L</th>
+                            <th>T</th>
                             <th>W</th>
                             <th>L</th>
+                            <th>T</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2010,8 +2012,10 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
                             <td>{expand_team_name(team.get('team', ''))}</td>
                             <td>{team.get('div_wins', '')}</td>
                             <td>{team.get('div_losses', '')}</td>
+                            <td>{team.get('div_ties', '0')}</td>
                             <td>{team.get('overall_wins', '')}</td>
                             <td>{team.get('overall_losses', '')}</td>
+                            <td>{team.get('overall_ties', '0')}</td>
                         </tr>
 """
                 html += """                    </tbody>
@@ -2296,15 +2300,17 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                     <thead>
                         <tr>
                             <th>Team</th>
-                            <th colspan="2">Division</th>
-                            <th colspan="2">Overall</th>
+                            <th colspan="3">Division</th>
+                            <th colspan="3">Overall</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>W</th>
                             <th>L</th>
+                            <th>T</th>
                             <th>W</th>
                             <th>L</th>
+                            <th>T</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2314,8 +2320,10 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                             <td>{expand_team_name(team.get('team', ''))}</td>
                             <td>{team.get('div_wins', '')}</td>
                             <td>{team.get('div_losses', '')}</td>
+                            <td>{team.get('div_ties', '0')}</td>
                             <td>{team.get('overall_wins', '')}</td>
                             <td>{team.get('overall_losses', '')}</td>
+                            <td>{team.get('overall_ties', '0')}</td>
                         </tr>
 """
                 html += """                    </tbody>
@@ -2629,15 +2637,17 @@ def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field
                     <thead>
                         <tr>
                             <th>Team</th>
-                            <th colspan="2">Division</th>
-                            <th colspan="2">Overall</th>
+                            <th colspan="3">Division</th>
+                            <th colspan="3">Overall</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>W</th>
                             <th>L</th>
+                            <th>T</th>
                             <th>W</th>
                             <th>L</th>
+                            <th>T</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2647,8 +2657,10 @@ def generate_field_hockey_html(stats: Dict[str, List[Dict]], sport: str = "Field
                             <td>{expand_team_name(team.get('team', ''))}</td>
                             <td>{team.get('div_wins', '')}</td>
                             <td>{team.get('div_losses', '')}</td>
+                            <td>{team.get('div_ties', '0')}</td>
                             <td>{team.get('overall_wins', '')}</td>
                             <td>{team.get('overall_losses', '')}</td>
+                            <td>{team.get('overall_ties', '0')}</td>
                         </tr>
 """
                 html += """                    </tbody>
