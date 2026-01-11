@@ -18,7 +18,7 @@
     },
     {
       "player": "Mark Gwynn III",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "att": "57",
       "yds": "774",
       "avg": "13.57",
@@ -34,7 +34,7 @@
     },
     {
       "player": "Nakhi Bagwell",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "att": "99",
       "yds": "538",
       "avg": "5.43",
@@ -98,7 +98,7 @@
     },
     {
       "player": "Ryker Pedersen",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "att": "44",
       "yds": "313",
       "avg": "7.1",
@@ -114,7 +114,7 @@
     },
     {
       "player": "Brittin Poffenbarger",
-      "school": "Mid.",
+      "school": "Middletown",
       "att": "51",
       "yds": "299",
       "avg": "5.9",
@@ -132,7 +132,7 @@
   "passing": [
     {
       "player": "Brittin Poffenbarger",
-      "school": "Mid.",
+      "school": "Middletown",
       "comp": "105",
       "att": "145",
       "pct": ".724",
@@ -141,7 +141,7 @@
     },
     {
       "player": "Randy Embrey",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "comp": "102",
       "att": "182",
       "pct": ".560",
@@ -159,7 +159,7 @@
     },
     {
       "player": "Landon Rosenberg",
-      "school": "Tus.",
+      "school": "Tuscarora",
       "comp": "81",
       "att": "159",
       "pct": ".509",
@@ -231,7 +231,7 @@
     },
     {
       "player": "Dyvae Ambush",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "rec": "51",
       "yds": "784",
       "td": "7"
@@ -294,7 +294,7 @@
     },
     {
       "player": "Darnell Taylor",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "rec": "20",
       "yds": "327",
       "td": "4"
