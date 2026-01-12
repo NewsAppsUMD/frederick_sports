@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-01-11 19:52:23
+// Generated on 2026-01-11 20:27:48
 
 export const availableDates = [
   {
@@ -1582,6 +1582,43 @@ export const sportsData = [
             "overall_ties": "0"
           }
         ]
+      },
+      {
+        "division": "OTHER SCHOOLS",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "div_ties",
+            "label": "Div T"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Ovr W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Ovr L"
+          },
+          {
+            "key": "overall_ties",
+            "label": "Ovr T"
+          }
+        ],
+        "teams": [
+          {
+            "team": "St. John's Catholic Prep",
+            "overall_wins": "0",
+            "overall_losses": "7",
+            "overall_ties": "2"
+          }
+        ]
       }
     ],
     "leaders": [
@@ -2134,6 +2171,43 @@ export const sportsData = [
             "div_ties": "0",
             "overall_wins": "2",
             "overall_losses": "11",
+            "overall_ties": "0"
+          }
+        ]
+      },
+      {
+        "division": "OTHER SCHOOLS",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "div_ties",
+            "label": "Div T"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Ovr W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Ovr L"
+          },
+          {
+            "key": "overall_ties",
+            "label": "Ovr T"
+          }
+        ],
+        "teams": [
+          {
+            "team": "St. John's Catholic Prep",
+            "overall_wins": "2",
+            "overall_losses": "8",
             "overall_ties": "0"
           }
         ]
@@ -5014,29 +5088,29 @@ export const sportsData = [
             "div_losses": "0",
             "div_ties": "0",
             "overall_wins": "14",
-            "overall_losses": "2",
-            "overall_ties": "1"
-          },
-          {
-            "team": "Frederick",
-            "div_wins": "2",
-            "div_losses": "1",
-            "div_ties": "0",
-            "overall_wins": "5",
-            "overall_losses": "9",
-            "overall_ties": "1"
-          },
-          {
-            "team": "Thomas Johnson",
-            "div_wins": "1",
-            "div_losses": "2",
-            "div_ties": "0",
-            "overall_wins": "11",
             "overall_losses": "5",
             "overall_ties": "0"
           },
           {
+            "team": "Thomas Johnson",
+            "div_wins": "2",
+            "div_losses": "1",
+            "div_ties": "0",
+            "overall_wins": "9",
+            "overall_losses": "7",
+            "overall_ties": "0"
+          },
+          {
             "team": "South Hagerstown",
+            "div_wins": "1",
+            "div_losses": "2",
+            "div_ties": "0",
+            "overall_wins": "5",
+            "overall_losses": "10",
+            "overall_ties": "0"
+          },
+          {
+            "team": "Frederick",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
@@ -5076,12 +5150,12 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "Linganore",
+            "team": "N. Hagerstown",
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "12",
-            "overall_losses": "3",
+            "overall_wins": "19",
+            "overall_losses": "1",
             "overall_ties": "0"
           },
           {
@@ -5091,25 +5165,25 @@ export const sportsData = [
             "div_ties": "0",
             "overall_wins": "13",
             "overall_losses": "4",
-            "overall_ties": "1"
-          },
-          {
-            "team": "North Hagerstown",
-            "div_wins": "1",
-            "div_losses": "2",
-            "div_ties": "0",
-            "overall_wins": "8",
-            "overall_losses": "6",
             "overall_ties": "0"
           },
           {
             "team": "Oakdale",
+            "div_wins": "1",
+            "div_losses": "2",
+            "div_ties": "0",
+            "overall_wins": "11",
+            "overall_losses": "5",
+            "overall_ties": "0"
+          },
+          {
+            "team": "Linganore",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "6",
-            "overall_losses": "7",
-            "overall_ties": "1"
+            "overall_wins": "5",
+            "overall_losses": "10",
+            "overall_ties": "0"
           }
         ]
       },
@@ -5144,38 +5218,38 @@ export const sportsData = [
         "teams": [
           {
             "team": "Williamsport",
+            "div_wins": "3",
+            "div_losses": "0",
+            "div_ties": "0",
+            "overall_wins": "16",
+            "overall_losses": "4",
+            "overall_ties": "0"
+          },
+          {
+            "team": "Middletown",
             "div_wins": "2",
             "div_losses": "1",
             "div_ties": "0",
-            "overall_wins": "14",
-            "overall_losses": "2",
+            "overall_wins": "6",
+            "overall_losses": "9",
             "overall_ties": "0"
           },
           {
             "team": "Brunswick",
-            "div_wins": "2",
-            "div_losses": "1",
+            "div_wins": "1",
+            "div_losses": "2",
             "div_ties": "0",
-            "overall_wins": "12",
-            "overall_losses": "6",
-            "overall_ties": "1"
+            "overall_wins": "2",
+            "overall_losses": "12",
+            "overall_ties": "0"
           },
           {
             "team": "Walkersville",
-            "div_wins": "2",
-            "div_losses": "1",
-            "div_ties": "0",
-            "overall_wins": "7",
-            "overall_losses": "7",
-            "overall_ties": "2"
-          },
-          {
-            "team": "Middletown",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "5",
-            "overall_losses": "10",
+            "overall_wins": "1",
+            "overall_losses": "13",
             "overall_ties": "0"
           }
         ]
@@ -5214,17 +5288,17 @@ export const sportsData = [
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "8",
+            "overall_wins": "15",
             "overall_losses": "6",
             "overall_ties": "0"
           },
           {
-            "team": "Catoctin",
-            "div_wins": "1",
-            "div_losses": "2",
+            "team": "Boonsboro",
+            "div_wins": "2",
+            "div_losses": "1",
             "div_ties": "0",
-            "overall_wins": "4",
-            "overall_losses": "10",
+            "overall_wins": "7",
+            "overall_losses": "7",
             "overall_ties": "0"
           },
           {
@@ -5232,17 +5306,60 @@ export const sportsData = [
             "div_wins": "1",
             "div_losses": "2",
             "div_ties": "0",
-            "overall_wins": "2",
-            "overall_losses": "13",
+            "overall_wins": "10",
+            "overall_losses": "7",
             "overall_ties": "0"
           },
           {
-            "team": "Boonsboro",
-            "div_wins": "1",
-            "div_losses": "2",
+            "team": "Catoctin",
+            "div_wins": "0",
+            "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "1",
-            "overall_losses": "14",
+            "overall_wins": "3",
+            "overall_losses": "13",
+            "overall_ties": "0"
+          }
+        ]
+      },
+      {
+        "division": "OTHER SCHOOLS",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "div_ties",
+            "label": "Div T"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Ovr W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Ovr L"
+          },
+          {
+            "key": "overall_ties",
+            "label": "Ovr T"
+          }
+        ],
+        "teams": [
+          {
+            "team": "Maryland School for the Deaf",
+            "overall_wins": "18",
+            "overall_losses": "2",
+            "overall_ties": "0"
+          },
+          {
+            "team": "St. John's Catholic Prep",
+            "overall_wins": "5",
+            "overall_losses": "10",
             "overall_ties": "0"
           }
         ]
@@ -5568,35 +5685,35 @@ export const sportsData = [
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "14",
+            "overall_wins": "7",
             "overall_losses": "5",
+            "overall_ties": "1"
+          },
+          {
+            "team": "Frederick",
+            "div_wins": "2",
+            "div_losses": "1",
+            "div_ties": "0",
+            "overall_wins": "5",
+            "overall_losses": "9",
             "overall_ties": "0"
           },
           {
             "team": "Thomas Johnson",
-            "div_wins": "2",
-            "div_losses": "1",
-            "div_ties": "0",
-            "overall_wins": "9",
-            "overall_losses": "7",
-            "overall_ties": "0"
-          },
-          {
-            "team": "South Hagerstown",
             "div_wins": "1",
             "div_losses": "2",
             "div_ties": "0",
-            "overall_wins": "5",
+            "overall_wins": "1",
             "overall_losses": "10",
             "overall_ties": "0"
           },
           {
-            "team": "Frederick",
+            "team": "South Hagerstown",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "2",
-            "overall_losses": "11",
+            "overall_wins": "0",
+            "overall_losses": "13",
             "overall_ties": "0"
           }
         ]
@@ -5631,40 +5748,40 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "N. Hagerstown",
+            "team": "Oakdale",
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "19",
-            "overall_losses": "1",
-            "overall_ties": "0"
-          },
-          {
-            "team": "Tuscarora",
-            "div_wins": "2",
-            "div_losses": "1",
-            "div_ties": "0",
-            "overall_wins": "13",
-            "overall_losses": "4",
-            "overall_ties": "0"
-          },
-          {
-            "team": "Oakdale",
-            "div_wins": "1",
-            "div_losses": "2",
-            "div_ties": "0",
-            "overall_wins": "11",
-            "overall_losses": "5",
+            "overall_wins": "17",
+            "overall_losses": "2",
             "overall_ties": "0"
           },
           {
             "team": "Linganore",
+            "div_wins": "2",
+            "div_losses": "1",
+            "div_ties": "0",
+            "overall_wins": "10",
+            "overall_losses": "4",
+            "overall_ties": "2"
+          },
+          {
+            "team": "Tuscarora",
+            "div_wins": "1",
+            "div_losses": "2",
+            "div_ties": "0",
+            "overall_wins": "8",
+            "overall_losses": "5",
+            "overall_ties": "0"
+          },
+          {
+            "team": "North Hagerstown",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "5",
+            "overall_wins": "3",
             "overall_losses": "10",
-            "overall_ties": "0"
+            "overall_ties": "2"
           }
         ]
       },
@@ -5698,40 +5815,40 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "Williamsport",
-            "div_wins": "3",
-            "div_losses": "0",
+            "team": "Brunswick",
+            "div_wins": "2",
+            "div_losses": "1",
             "div_ties": "0",
-            "overall_wins": "16",
-            "overall_losses": "4",
-            "overall_ties": "0"
+            "overall_wins": "10",
+            "overall_losses": "5",
+            "overall_ties": "1"
           },
           {
             "team": "Middletown",
             "div_wins": "2",
             "div_losses": "1",
             "div_ties": "0",
-            "overall_wins": "6",
-            "overall_losses": "9",
-            "overall_ties": "0"
-          },
-          {
-            "team": "Brunswick",
-            "div_wins": "1",
-            "div_losses": "2",
-            "div_ties": "0",
-            "overall_wins": "2",
-            "overall_losses": "12",
-            "overall_ties": "0"
+            "overall_wins": "9",
+            "overall_losses": "4",
+            "overall_ties": "1"
           },
           {
             "team": "Walkersville",
+            "div_wins": "2",
+            "div_losses": "1",
+            "div_ties": "0",
+            "overall_wins": "9",
+            "overall_losses": "5",
+            "overall_ties": "1"
+          },
+          {
+            "team": "Williamsport",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "1",
-            "overall_losses": "13",
-            "overall_ties": "0"
+            "overall_wins": "2",
+            "overall_losses": "10",
+            "overall_ties": "2"
           }
         ]
       },
@@ -5765,12 +5882,12 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "Clear Spring",
+            "team": "Smithsburg",
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "15",
-            "overall_losses": "6",
+            "overall_wins": "9",
+            "overall_losses": "8",
             "overall_ties": "0"
           },
           {
@@ -5779,25 +5896,62 @@ export const sportsData = [
             "div_losses": "1",
             "div_ties": "0",
             "overall_wins": "7",
-            "overall_losses": "7",
-            "overall_ties": "0"
-          },
-          {
-            "team": "Smithsburg",
-            "div_wins": "1",
-            "div_losses": "2",
-            "div_ties": "0",
-            "overall_wins": "10",
-            "overall_losses": "7",
-            "overall_ties": "0"
+            "overall_losses": "8",
+            "overall_ties": "1"
           },
           {
             "team": "Catoctin",
+            "div_wins": "1",
+            "div_losses": "2",
+            "div_ties": "0",
+            "overall_wins": "6",
+            "overall_losses": "8",
+            "overall_ties": "0"
+          },
+          {
+            "team": "Clear Spring",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "3",
-            "overall_losses": "13",
+            "overall_wins": "2",
+            "overall_losses": "12",
+            "overall_ties": "0"
+          }
+        ]
+      },
+      {
+        "division": "OTHER SCHOOLS",
+        "headers": [
+          {
+            "key": "div_wins",
+            "label": "Div W"
+          },
+          {
+            "key": "div_losses",
+            "label": "Div L"
+          },
+          {
+            "key": "div_ties",
+            "label": "Div T"
+          },
+          {
+            "key": "overall_wins",
+            "label": "Ovr W"
+          },
+          {
+            "key": "overall_losses",
+            "label": "Ovr L"
+          },
+          {
+            "key": "overall_ties",
+            "label": "Ovr T"
+          }
+        ],
+        "teams": [
+          {
+            "team": "St. John's Catholic Prep",
+            "overall_wins": "2",
+            "overall_losses": "10",
             "overall_ties": "0"
           }
         ]
@@ -6544,8 +6698,8 @@ export const sportsData = [
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "7",
-            "overall_losses": "5",
+            "overall_wins": "14",
+            "overall_losses": "2",
             "overall_ties": "1"
           },
           {
@@ -6555,15 +6709,15 @@ export const sportsData = [
             "div_ties": "0",
             "overall_wins": "5",
             "overall_losses": "9",
-            "overall_ties": "0"
+            "overall_ties": "1"
           },
           {
             "team": "Thomas Johnson",
             "div_wins": "1",
             "div_losses": "2",
             "div_ties": "0",
-            "overall_wins": "1",
-            "overall_losses": "10",
+            "overall_wins": "11",
+            "overall_losses": "5",
             "overall_ties": "0"
           },
           {
@@ -6571,8 +6725,8 @@ export const sportsData = [
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "0",
-            "overall_losses": "13",
+            "overall_wins": "2",
+            "overall_losses": "11",
             "overall_ties": "0"
           }
         ]
@@ -6607,40 +6761,40 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "Oakdale",
+            "team": "Linganore",
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "17",
-            "overall_losses": "2",
+            "overall_wins": "12",
+            "overall_losses": "3",
             "overall_ties": "0"
           },
           {
-            "team": "Linganore",
+            "team": "Tuscarora",
             "div_wins": "2",
             "div_losses": "1",
             "div_ties": "0",
-            "overall_wins": "10",
+            "overall_wins": "13",
             "overall_losses": "4",
-            "overall_ties": "2"
+            "overall_ties": "1"
           },
           {
-            "team": "Tuscarora",
+            "team": "North Hagerstown",
             "div_wins": "1",
             "div_losses": "2",
             "div_ties": "0",
             "overall_wins": "8",
-            "overall_losses": "5",
+            "overall_losses": "6",
             "overall_ties": "0"
           },
           {
-            "team": "North Hagerstown",
+            "team": "Oakdale",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "3",
-            "overall_losses": "10",
-            "overall_ties": "2"
+            "overall_wins": "6",
+            "overall_losses": "7",
+            "overall_ties": "1"
           }
         ]
       },
@@ -6674,21 +6828,21 @@ export const sportsData = [
         ],
         "teams": [
           {
+            "team": "Williamsport",
+            "div_wins": "2",
+            "div_losses": "1",
+            "div_ties": "0",
+            "overall_wins": "14",
+            "overall_losses": "2",
+            "overall_ties": "0"
+          },
+          {
             "team": "Brunswick",
             "div_wins": "2",
             "div_losses": "1",
             "div_ties": "0",
-            "overall_wins": "10",
-            "overall_losses": "5",
-            "overall_ties": "1"
-          },
-          {
-            "team": "Middletown",
-            "div_wins": "2",
-            "div_losses": "1",
-            "div_ties": "0",
-            "overall_wins": "9",
-            "overall_losses": "4",
+            "overall_wins": "12",
+            "overall_losses": "6",
             "overall_ties": "1"
           },
           {
@@ -6696,18 +6850,18 @@ export const sportsData = [
             "div_wins": "2",
             "div_losses": "1",
             "div_ties": "0",
-            "overall_wins": "9",
-            "overall_losses": "5",
-            "overall_ties": "1"
+            "overall_wins": "7",
+            "overall_losses": "7",
+            "overall_ties": "2"
           },
           {
-            "team": "Williamsport",
+            "team": "Middletown",
             "div_wins": "0",
             "div_losses": "3",
             "div_ties": "0",
-            "overall_wins": "2",
+            "overall_wins": "5",
             "overall_losses": "10",
-            "overall_ties": "2"
+            "overall_ties": "0"
           }
         ]
       },
@@ -6741,39 +6895,39 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "Smithsburg",
+            "team": "Clear Spring",
             "div_wins": "3",
             "div_losses": "0",
             "div_ties": "0",
-            "overall_wins": "9",
-            "overall_losses": "8",
+            "overall_wins": "8",
+            "overall_losses": "6",
             "overall_ties": "0"
-          },
-          {
-            "team": "Boonsboro",
-            "div_wins": "2",
-            "div_losses": "1",
-            "div_ties": "0",
-            "overall_wins": "7",
-            "overall_losses": "8",
-            "overall_ties": "1"
           },
           {
             "team": "Catoctin",
             "div_wins": "1",
             "div_losses": "2",
             "div_ties": "0",
-            "overall_wins": "6",
-            "overall_losses": "8",
+            "overall_wins": "4",
+            "overall_losses": "10",
             "overall_ties": "0"
           },
           {
-            "team": "Clear Spring",
-            "div_wins": "0",
-            "div_losses": "3",
+            "team": "Smithsburg",
+            "div_wins": "1",
+            "div_losses": "2",
             "div_ties": "0",
             "overall_wins": "2",
-            "overall_losses": "12",
+            "overall_losses": "13",
+            "overall_ties": "0"
+          },
+          {
+            "team": "Boonsboro",
+            "div_wins": "1",
+            "div_losses": "2",
+            "div_ties": "0",
+            "overall_wins": "1",
+            "overall_losses": "14",
             "overall_ties": "0"
           }
         ]
