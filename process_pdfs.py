@@ -158,6 +158,15 @@ def process_soccer_sport(text, sport_name, file_prefix, date_str, output_dir, do
         total_teams = sum(len(teams) for teams in standings.values())
         print(f"  Central Maryland standings: {len(standings)} divisions, {total_teams} teams")
 
+    # Parse Other Schools standings if present (search after the CMC section)
+    lines = text.split('\n')
+    cmc_sections = [i for i, line in enumerate(lines) if 'CENTRAL MARYLAND CONFERENCE' in line]
+    after_line = cmc_sections[cmc_standings_index] if cmc_standings_index < len(cmc_sections) else 0
+    other_schools = parse_other_schools_standings(text, after_line=after_line)
+    if other_schools:
+        standings['OTHER SCHOOLS'] = other_schools
+        print(f"  Other Schools: {len(other_schools)} teams")
+
     # Save standings to JSON
     standings_json_file = output_dir / f'{file_prefix}_standings.json'
     with open(standings_json_file, 'w') as f:
@@ -563,7 +572,7 @@ def main():
     # Based on analysis: 3 INDIVIDUAL LEADERS sections
     # [0] = Girls Flag Football (RUSHING), [1] = Football (RUSHING), [2] = Volleyball (KILLS)
     # FCPS standings: [0] = Girls Flag Football, [1] = Football
-    # CMC standings: [0] = Field Hockey, [1] = Girls Soccer, [2] = Volleyball, [3] = Boys Soccer
+    # CMC standings: [0] = Field Hockey, [1] = Boys Soccer, [2] = Girls Soccer, [3] = Volleyball
     december_config = {
         'football_style': [
             # (sport_name, stats_section_index, file_prefix, fcps_standings_index)
@@ -572,10 +581,10 @@ def main():
         ],
         'soccer': [
             # (sport_name, file_prefix, cmc_standings_index)
-            ("Boys Soccer", "boys_soccer", 3),
-            ("Girls Soccer", "girls_soccer", 1),
+            ("Boys Soccer", "boys_soccer", 1),
+            ("Girls Soccer", "girls_soccer", 2),
         ],
-        'volleyball': {'enabled': True, 'cmc_standings_index': 2},
+        'volleyball': {'enabled': True, 'cmc_standings_index': 3},
         'field_hockey': {'enabled': True, 'cmc_standings_index': 0},
         'cross_country': True,  # Has individual runner times
         'golf': True,

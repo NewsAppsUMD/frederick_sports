@@ -1362,7 +1362,7 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
     return standings
 
 
-def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
+def parse_other_schools_standings(text: str, after_line: int = 0) -> List[Dict[str, str]]:
     """
     Parse OTHER SCHOOLS standings.
 
@@ -1374,14 +1374,18 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
     1
 
     Note: PDF extraction may produce tab-merged data.
+
+    Args:
+        text: The PDF text content
+        after_line: Start searching for OTHER SCHOOLS after this line number
     """
     standings = []
     lines = text.split('\n')
 
-    # Find OTHER SCHOOLS section
+    # Find OTHER SCHOOLS section after the specified line
     os_start = -1
     for i, line in enumerate(lines):
-        if 'OTHER SCHOOLS' in line:
+        if i > after_line and 'OTHER SCHOOLS' in line:
             os_start = i
             break
 
@@ -1409,10 +1413,10 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
         values.extend(parts)
 
     # Clean out header words
-    header_words = {'Team', 'W', 'L'}
+    header_words = {'Team', 'W', 'L', 'T'}
     values = [v for v in values if v not in header_words]
 
-    # Parse values in groups of 3 (team, w, l)
+    # Parse values - could be groups of 3 (team, w, l) or 4 (team, w, l, t)
     idx = 0
     while idx < len(values):
         val = values[idx]
@@ -1421,19 +1425,27 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
         if not val.replace('.', '').replace(',', '').isdigit():
             team_name = expand_team_name(val)
 
-            # Next 2 values should be wins and losses
+            # Try to get wins, losses, and optionally ties
             if idx + 2 < len(values):
                 try:
                     wins = values[idx + 1]
                     losses = values[idx + 2]
 
                     if wins.replace(',', '').isdigit() and losses.replace(',', '').isdigit():
+                        # Check if there's a ties value
+                        ties = '0'
+                        advance = 3
+                        if idx + 3 < len(values) and values[idx + 3].replace(',', '').isdigit():
+                            ties = values[idx + 3]
+                            advance = 4
+
                         standings.append({
                             'team': team_name,
-                            'wins': wins,
-                            'losses': losses
+                            'overall_wins': wins,
+                            'overall_losses': losses,
+                            'overall_ties': ties
                         })
-                        idx += 3
+                        idx += advance
                         continue
                 except:
                     pass
