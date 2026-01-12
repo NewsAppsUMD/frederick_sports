@@ -2116,7 +2116,10 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
 
 
 def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyball", publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025", standings: Dict[str, List[Dict[str, str]]] = None) -> str:
-    """Generate HTML page for volleyball player stats and standings."""
+    """Generate HTML page for volleyball player stats and standings.
+
+    Note: Volleyball does not have ties, so standings tables will show W-L format only.
+    """
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -2295,7 +2298,7 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
         <main>
 """
 
-    # Central Maryland Conference Standings
+    # Central Maryland Conference Standings (Volleyball has no ties)
     if standings:
         for division_name, teams in standings.items():
             if teams:  # Only show divisions that have teams
@@ -2306,17 +2309,15 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                     <thead>
                         <tr>
                             <th>Team</th>
-                            <th colspan="3">Division</th>
-                            <th colspan="3">Overall</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>W</th>
                             <th>L</th>
-                            <th>T</th>
                             <th>W</th>
                             <th>L</th>
-                            <th>T</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2326,10 +2327,8 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                             <td>{expand_team_name(team.get('team', ''))}</td>
                             <td>{team.get('div_wins', '')}</td>
                             <td>{team.get('div_losses', '')}</td>
-                            <td>{team.get('div_ties', '0')}</td>
                             <td>{team.get('overall_wins', '')}</td>
                             <td>{team.get('overall_losses', '')}</td>
-                            <td>{team.get('overall_ties', '0')}</td>
                         </tr>
 """
                 html += """                    </tbody>
@@ -2381,7 +2380,6 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                         <tr>
                             <th>Player</th>
                             <th>School</th>
-                            <th>SP</th>
                             <th>Asts</th>
                             <th>Digs</th>
                             <th>Avg</th>
@@ -2393,7 +2391,6 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
                             <td>{expand_team_name(player.get('school', ''))}</td>
-                            <td>{player.get('sp', '')}</td>
                             <td>{player.get('asts', '')}</td>
                             <td>{player.get('digs', '')}</td>
                             <td>{player.get('avg', '')}</td>
