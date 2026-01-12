@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-01-11 21:29:42
+// Generated on 2026-01-12 07:54:50
 
 export const availableDates = [
   {
