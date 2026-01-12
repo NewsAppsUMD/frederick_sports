@@ -752,11 +752,11 @@ def parse_volleyball_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
         if len(stats_values) >= 4:
             result['avg'] = stats_values[3]
     elif stat_type == 'assists':
-        # Assists: Asts, Digs, Avg (no SP column)
+        # Assists: SP, Asts, Avg
         if len(stats_values) >= 1:
-            result['asts'] = stats_values[0]
+            result['sp'] = stats_values[0]
         if len(stats_values) >= 2:
-            result['digs'] = stats_values[1]
+            result['assists'] = stats_values[1]
         if len(stats_values) >= 3:
             result['avg'] = stats_values[2]
     elif stat_type == 'digs':

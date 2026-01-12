@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-01-12 07:54:50
+// Generated on 2026-01-12 07:56:16
 
 export const availableDates = [
   {
@@ -3482,92 +3482,92 @@ export const sportsData = [
           {
             "player": "Emma Le",
             "school": "Maryland School for the Deaf",
-            "asts": "95",
-            "digs": "833",
+            "sp": "95",
+            "assists": "833",
             "avg": "8.77"
           },
           {
             "player": "Charlye Wood",
             "school": "Middletown",
-            "asts": "44",
-            "digs": "338",
+            "sp": "44",
+            "assists": "338",
             "avg": "7.68"
           },
           {
             "player": "Adelle Kusi",
             "school": "Oakdale",
-            "asts": "52",
-            "digs": "372",
+            "sp": "52",
+            "assists": "372",
             "avg": "7.15"
           },
           {
             "player": "Kendall Ortiz",
             "school": "Frederick",
-            "asts": "41",
-            "digs": "281",
+            "sp": "41",
+            "assists": "281",
             "avg": "6.85"
           },
           {
             "player": "Charis Burge",
             "school": "Urbana",
-            "asts": "36",
-            "digs": "193",
+            "sp": "36",
+            "assists": "193",
             "avg": "5.36"
           },
           {
             "player": "Lili\u2019uokalani Primacio",
             "school": "St. John's Catholic Prep",
-            "asts": "42",
-            "digs": "216",
+            "sp": "42",
+            "assists": "216",
             "avg": "5.14"
           },
           {
             "player": "Zayna Brooks",
             "school": "Tuscarora",
-            "asts": "39",
-            "digs": "179",
+            "sp": "39",
+            "assists": "179",
             "avg": "4.59"
           },
           {
             "player": "Julia Tomaski",
             "school": "Linganore",
-            "asts": "51",
-            "digs": "217",
+            "sp": "51",
+            "assists": "217",
             "avg": "4.25"
           },
           {
             "player": "Serena Treadwell",
             "school": "Tuscarora",
-            "asts": "39",
-            "digs": "155",
+            "sp": "39",
+            "assists": "155",
             "avg": "3.97"
           },
           {
             "player": "Saya Chin",
             "school": "Thomas Johnson",
-            "asts": "52",
-            "digs": "196",
+            "sp": "52",
+            "assists": "196",
             "avg": "3.77"
           },
           {
             "player": "Abby Bell",
             "school": "Urbana",
-            "asts": "29",
-            "digs": "101",
+            "sp": "29",
+            "assists": "101",
             "avg": "3.48"
           },
           {
             "player": "Sara Burke",
             "school": "Linganore",
-            "asts": "48",
-            "digs": "138",
+            "sp": "48",
+            "assists": "138",
             "avg": "2.88"
           },
           {
             "player": "Xenia Quire",
             "school": "Thomas Johnson",
-            "asts": "47",
-            "digs": "107",
+            "sp": "47",
+            "assists": "107",
             "avg": "2.28"
           }
         ]
@@ -7216,85 +7216,85 @@ export const sportsData = [
           {
             "player": "Emma Le",
             "school": "Maryland School for the Deaf",
-            "asts": "100",
-            "digs": "879",
+            "sp": "100",
+            "assists": "879",
             "avg": "8.79"
           },
           {
             "player": "Charlye Wood",
             "school": "Middletown",
-            "asts": "59",
-            "digs": "440",
+            "sp": "59",
+            "assists": "440",
             "avg": "7.46"
           },
           {
             "player": "Adelle Kusi",
             "school": "Oakdale",
-            "asts": "61",
-            "digs": "426",
+            "sp": "61",
+            "assists": "426",
             "avg": "6.98"
           },
           {
             "player": "Kendall Ortiz",
             "school": "Frederick",
-            "asts": "45",
-            "digs": "314",
+            "sp": "45",
+            "assists": "314",
             "avg": "6.98"
           },
           {
             "player": "Charis Burge",
             "school": "Urbana",
-            "asts": "36",
-            "digs": "193",
+            "sp": "36",
+            "assists": "193",
             "avg": "5.36"
           },
           {
             "player": "Lili\u2019uokalani Primacio",
             "school": "St. John's Catholic Prep",
-            "asts": "73",
-            "digs": "390",
+            "sp": "73",
+            "assists": "390",
             "avg": "5.34"
           },
           {
             "player": "Zayna Brooks",
             "school": "Tuscarora",
-            "asts": "55",
-            "digs": "266",
+            "sp": "55",
+            "assists": "266",
             "avg": "4.84"
           },
           {
             "player": "Julia Tomaski",
             "school": "Linganore",
-            "asts": "58",
-            "digs": "242",
+            "sp": "58",
+            "assists": "242",
             "avg": "4.17"
           },
           {
             "player": "Saya Chin",
             "school": "Thomas Johnson",
-            "asts": "62",
-            "digs": "251",
+            "sp": "62",
+            "assists": "251",
             "avg": "4.05"
           },
           {
             "player": "Serena Treadwell",
             "school": "Tuscarora",
-            "asts": "55",
-            "digs": "213",
+            "sp": "55",
+            "assists": "213",
             "avg": "3.87"
           },
           {
             "player": "Abby Bell",
             "school": "Urbana",
-            "asts": "29",
-            "digs": "101",
+            "sp": "29",
+            "assists": "101",
             "avg": "3.48"
           },
           {
             "player": "Sara Burke",
             "school": "Linganore",
-            "asts": "55",
-            "digs": "151",
+            "sp": "55",
+            "assists": "151",
             "avg": "2.75"
           }
         ]
