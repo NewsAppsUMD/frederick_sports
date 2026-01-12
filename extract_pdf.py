@@ -2380,8 +2380,8 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                         <tr>
                             <th>Player</th>
                             <th>School</th>
+                            <th>SP</th>
                             <th>Asts</th>
-                            <th>Digs</th>
                             <th>Avg</th>
                         </tr>
                     </thead>
