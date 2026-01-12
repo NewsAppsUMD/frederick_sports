@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-01-11 20:41:07
+// Generated on 2026-01-11 20:56:27
 
 export const availableDates = [
   {
@@ -3035,37 +3035,29 @@ export const sportsData = [
             "team": "Urbana",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "9",
-            "overall_losses": "3",
-            "overall_ties": "0"
+            "overall_losses": "3"
           },
           {
             "team": "Thomas Johnson",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "7",
-            "overall_losses": "6",
-            "overall_ties": "0"
+            "overall_losses": "6"
           },
           {
             "team": "South Hagerstown",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "5",
-            "overall_losses": "8",
-            "overall_ties": "0"
+            "overall_losses": "8"
           },
           {
             "team": "Frederick",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "2",
-            "overall_losses": "9",
-            "overall_ties": "0"
+            "overall_losses": "9"
           }
         ]
       },
@@ -3102,37 +3094,29 @@ export const sportsData = [
             "team": "N. Hagerstown",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "13",
-            "overall_losses": "0",
-            "overall_ties": "0"
+            "overall_losses": "0"
           },
           {
             "team": "Tuscarora",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "9",
-            "overall_losses": "3",
-            "overall_ties": "0"
+            "overall_losses": "3"
           },
           {
             "team": "Oakdale",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "9",
-            "overall_losses": "4",
-            "overall_ties": "0"
+            "overall_losses": "4"
           },
           {
             "team": "Linganore",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "5",
-            "overall_losses": "8",
-            "overall_ties": "0"
+            "overall_losses": "8"
           }
         ]
       },
@@ -3169,37 +3153,29 @@ export const sportsData = [
             "team": "Williamsport",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "11",
-            "overall_losses": "2",
-            "overall_ties": "0"
+            "overall_losses": "2"
           },
           {
             "team": "Middletown",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "4",
-            "overall_losses": "8",
-            "overall_ties": "0"
+            "overall_losses": "8"
           },
           {
             "team": "Brunswick",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "2",
-            "overall_losses": "11",
-            "overall_ties": "0"
+            "overall_losses": "11"
           },
           {
             "team": "Walkersville",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "1",
-            "overall_losses": "10",
-            "overall_ties": "0"
+            "overall_losses": "10"
           }
         ]
       },
@@ -3236,37 +3212,29 @@ export const sportsData = [
             "team": "Clear Spring",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "9",
-            "overall_losses": "3",
-            "overall_ties": "0"
+            "overall_losses": "3"
           },
           {
             "team": "Boonsboro",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "7",
-            "overall_losses": "5",
-            "overall_ties": "0"
+            "overall_losses": "5"
           },
           {
             "team": "Smithsburg",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "7",
-            "overall_losses": "6",
-            "overall_ties": "0"
+            "overall_losses": "6"
           },
           {
             "team": "Catoctin",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "2",
-            "overall_losses": "11",
-            "overall_ties": "0"
+            "overall_losses": "11"
           }
         ]
       },
@@ -3514,7 +3482,6 @@ export const sportsData = [
           {
             "player": "Emma Le",
             "school": "Maryland School for the Deaf",
-            "sp": "",
             "asts": "95",
             "digs": "833",
             "avg": "8.77"
@@ -3522,7 +3489,6 @@ export const sportsData = [
           {
             "player": "Charlye Wood",
             "school": "Middletown",
-            "sp": "",
             "asts": "44",
             "digs": "338",
             "avg": "7.68"
@@ -3530,7 +3496,6 @@ export const sportsData = [
           {
             "player": "Adelle Kusi",
             "school": "Oakdale",
-            "sp": "",
             "asts": "52",
             "digs": "372",
             "avg": "7.15"
@@ -3538,7 +3503,6 @@ export const sportsData = [
           {
             "player": "Kendall Ortiz",
             "school": "Frederick",
-            "sp": "",
             "asts": "41",
             "digs": "281",
             "avg": "6.85"
@@ -3546,7 +3510,6 @@ export const sportsData = [
           {
             "player": "Charis Burge",
             "school": "Urbana",
-            "sp": "",
             "asts": "36",
             "digs": "193",
             "avg": "5.36"
@@ -3554,7 +3517,6 @@ export const sportsData = [
           {
             "player": "Lili\u2019uokalani Primacio",
             "school": "St. John's Catholic Prep",
-            "sp": "",
             "asts": "42",
             "digs": "216",
             "avg": "5.14"
@@ -3562,7 +3524,6 @@ export const sportsData = [
           {
             "player": "Zayna Brooks",
             "school": "Tuscarora",
-            "sp": "",
             "asts": "39",
             "digs": "179",
             "avg": "4.59"
@@ -3570,7 +3531,6 @@ export const sportsData = [
           {
             "player": "Julia Tomaski",
             "school": "Linganore",
-            "sp": "",
             "asts": "51",
             "digs": "217",
             "avg": "4.25"
@@ -3578,7 +3538,6 @@ export const sportsData = [
           {
             "player": "Serena Treadwell",
             "school": "Tuscarora",
-            "sp": "",
             "asts": "39",
             "digs": "155",
             "avg": "3.97"
@@ -3586,7 +3545,6 @@ export const sportsData = [
           {
             "player": "Saya Chin",
             "school": "Thomas Johnson",
-            "sp": "",
             "asts": "52",
             "digs": "196",
             "avg": "3.77"
@@ -3594,7 +3552,6 @@ export const sportsData = [
           {
             "player": "Abby Bell",
             "school": "Urbana",
-            "sp": "",
             "asts": "29",
             "digs": "101",
             "avg": "3.48"
@@ -3602,7 +3559,6 @@ export const sportsData = [
           {
             "player": "Sara Burke",
             "school": "Linganore",
-            "sp": "",
             "asts": "48",
             "digs": "138",
             "avg": "2.88"
@@ -3610,7 +3566,6 @@ export const sportsData = [
           {
             "player": "Xenia Quire",
             "school": "Thomas Johnson",
-            "sp": "",
             "asts": "47",
             "digs": "107",
             "avg": "2.28"
@@ -6814,37 +6769,29 @@ export const sportsData = [
             "team": "Urbana",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "14",
-            "overall_losses": "5",
-            "overall_ties": "0"
+            "overall_losses": "5"
           },
           {
             "team": "Thomas Johnson",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "9",
-            "overall_losses": "7",
-            "overall_ties": "0"
+            "overall_losses": "7"
           },
           {
             "team": "South Hagerstown",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "5",
-            "overall_losses": "10",
-            "overall_ties": "0"
+            "overall_losses": "10"
           },
           {
             "team": "Frederick",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "2",
-            "overall_losses": "11",
-            "overall_ties": "0"
+            "overall_losses": "11"
           }
         ]
       },
@@ -6881,37 +6828,29 @@ export const sportsData = [
             "team": "N. Hagerstown",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "19",
-            "overall_losses": "1",
-            "overall_ties": "0"
+            "overall_losses": "1"
           },
           {
             "team": "Tuscarora",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "13",
-            "overall_losses": "4",
-            "overall_ties": "0"
+            "overall_losses": "4"
           },
           {
             "team": "Oakdale",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "11",
-            "overall_losses": "5",
-            "overall_ties": "0"
+            "overall_losses": "5"
           },
           {
             "team": "Linganore",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "5",
-            "overall_losses": "10",
-            "overall_ties": "0"
+            "overall_losses": "10"
           }
         ]
       },
@@ -6948,37 +6887,29 @@ export const sportsData = [
             "team": "Williamsport",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "16",
-            "overall_losses": "4",
-            "overall_ties": "0"
+            "overall_losses": "4"
           },
           {
             "team": "Middletown",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "6",
-            "overall_losses": "9",
-            "overall_ties": "0"
+            "overall_losses": "9"
           },
           {
             "team": "Brunswick",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "2",
-            "overall_losses": "12",
-            "overall_ties": "0"
+            "overall_losses": "12"
           },
           {
             "team": "Walkersville",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "1",
-            "overall_losses": "13",
-            "overall_ties": "0"
+            "overall_losses": "13"
           }
         ]
       },
@@ -7015,37 +6946,29 @@ export const sportsData = [
             "team": "Clear Spring",
             "div_wins": "3",
             "div_losses": "0",
-            "div_ties": "0",
             "overall_wins": "15",
-            "overall_losses": "6",
-            "overall_ties": "0"
+            "overall_losses": "6"
           },
           {
             "team": "Boonsboro",
             "div_wins": "2",
             "div_losses": "1",
-            "div_ties": "0",
             "overall_wins": "7",
-            "overall_losses": "7",
-            "overall_ties": "0"
+            "overall_losses": "7"
           },
           {
             "team": "Smithsburg",
             "div_wins": "1",
             "div_losses": "2",
-            "div_ties": "0",
             "overall_wins": "10",
-            "overall_losses": "7",
-            "overall_ties": "0"
+            "overall_losses": "7"
           },
           {
             "team": "Catoctin",
             "div_wins": "0",
             "div_losses": "3",
-            "div_ties": "0",
             "overall_wins": "3",
-            "overall_losses": "13",
-            "overall_ties": "0"
+            "overall_losses": "13"
           }
         ]
       },
@@ -7293,7 +7216,6 @@ export const sportsData = [
           {
             "player": "Emma Le",
             "school": "Maryland School for the Deaf",
-            "sp": "",
             "asts": "100",
             "digs": "879",
             "avg": "8.79"
@@ -7301,7 +7223,6 @@ export const sportsData = [
           {
             "player": "Charlye Wood",
             "school": "Middletown",
-            "sp": "",
             "asts": "59",
             "digs": "440",
             "avg": "7.46"
@@ -7309,7 +7230,6 @@ export const sportsData = [
           {
             "player": "Adelle Kusi",
             "school": "Oakdale",
-            "sp": "",
             "asts": "61",
             "digs": "426",
             "avg": "6.98"
@@ -7317,7 +7237,6 @@ export const sportsData = [
           {
             "player": "Kendall Ortiz",
             "school": "Frederick",
-            "sp": "",
             "asts": "45",
             "digs": "314",
             "avg": "6.98"
@@ -7325,7 +7244,6 @@ export const sportsData = [
           {
             "player": "Charis Burge",
             "school": "Urbana",
-            "sp": "",
             "asts": "36",
             "digs": "193",
             "avg": "5.36"
@@ -7333,7 +7251,6 @@ export const sportsData = [
           {
             "player": "Lili\u2019uokalani Primacio",
             "school": "St. John's Catholic Prep",
-            "sp": "",
             "asts": "73",
             "digs": "390",
             "avg": "5.34"
@@ -7341,7 +7258,6 @@ export const sportsData = [
           {
             "player": "Zayna Brooks",
             "school": "Tuscarora",
-            "sp": "",
             "asts": "55",
             "digs": "266",
             "avg": "4.84"
@@ -7349,7 +7265,6 @@ export const sportsData = [
           {
             "player": "Julia Tomaski",
             "school": "Linganore",
-            "sp": "",
             "asts": "58",
             "digs": "242",
             "avg": "4.17"
@@ -7357,7 +7272,6 @@ export const sportsData = [
           {
             "player": "Saya Chin",
             "school": "Thomas Johnson",
-            "sp": "",
             "asts": "62",
             "digs": "251",
             "avg": "4.05"
@@ -7365,7 +7279,6 @@ export const sportsData = [
           {
             "player": "Serena Treadwell",
             "school": "Tuscarora",
-            "sp": "",
             "asts": "55",
             "digs": "213",
             "avg": "3.87"
@@ -7373,7 +7286,6 @@ export const sportsData = [
           {
             "player": "Abby Bell",
             "school": "Urbana",
-            "sp": "",
             "asts": "29",
             "digs": "101",
             "avg": "3.48"
@@ -7381,7 +7293,6 @@ export const sportsData = [
           {
             "player": "Sara Burke",
             "school": "Linganore",
-            "sp": "",
             "asts": "55",
             "digs": "151",
             "avg": "2.75"

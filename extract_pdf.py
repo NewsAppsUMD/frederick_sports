@@ -752,16 +752,13 @@ def parse_volleyball_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
         if len(stats_values) >= 4:
             result['avg'] = stats_values[3]
     elif stat_type == 'assists':
-        # Assists: SP (if present), Asts, Digs, Avg
-        # Note: Some entries may not have SP
+        # Assists: Asts, Digs, Avg (no SP column)
         if len(stats_values) >= 1:
-            result['sp'] = stats_values[0] if len(stats_values) == 4 else ''
+            result['asts'] = stats_values[0]
         if len(stats_values) >= 2:
-            result['asts'] = stats_values[1] if len(stats_values) == 4 else stats_values[0]
+            result['digs'] = stats_values[1]
         if len(stats_values) >= 3:
-            result['digs'] = stats_values[2] if len(stats_values) == 4 else stats_values[1]
-        if len(stats_values) >= 3:
-            result['avg'] = stats_values[3] if len(stats_values) == 4 else stats_values[2]
+            result['avg'] = stats_values[2]
     elif stat_type == 'digs':
         # Digs: SP, Digs, Avg
         if len(stats_values) >= 1:
@@ -1332,27 +1329,24 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
                 continue
             elif len(stats) == 4 or len(stats) == 5:
                 # 4-value format: div_w, div_l, overall_w, overall_l (no ties column in PDF)
+                # Don't include ties fields for sports that don't have ties (like volleyball)
                 standings[current_division].append({
                     'team': team_name,
                     'div_wins': stats[0],
                     'div_losses': stats[1],
-                    'div_ties': '0',
                     'overall_wins': stats[2],
-                    'overall_losses': stats[3],
-                    'overall_ties': '0'
+                    'overall_losses': stats[3]
                 })
                 idx = j
                 continue
             elif len(stats) >= 2:
-                # Minimal data - just division W-L
+                # Minimal data - just division W-L (no overall or ties)
                 standings[current_division].append({
                     'team': team_name,
                     'div_wins': stats[0],
                     'div_losses': stats[1],
-                    'div_ties': '0',
                     'overall_wins': '',
-                    'overall_losses': '',
-                    'overall_ties': ''
+                    'overall_losses': ''
                 })
                 idx = j
                 continue
