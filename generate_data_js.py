@@ -7,6 +7,7 @@ Combines data from multiple dates into a single JavaScript module.
 import json
 from pathlib import Path
 from datetime import datetime
+from generate_embed_html import generate_all_embeds
 
 # Configuration
 DATA_DIR = Path('data')
@@ -411,6 +412,10 @@ export const sportsData = {json.dumps(all_sports_data, indent=2)};
     print(f"Generated {OUTPUT_FILE}")
     print(f"  - {len(DATES)} dates")
     print(f"  - {len(all_sports_data)} sport entries")
+
+    # Also regenerate embed HTML files
+    print("\nRegenerating embed HTML files...")
+    generate_all_embeds()
 
 
 if __name__ == '__main__':
