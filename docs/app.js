@@ -214,9 +214,23 @@ function renderSport(id) {
 
   sportView.innerHTML = `
     <div class="animate-in fade-in duration-300">
-      <h2 class="text-2xl font-bold text-blue-900 mb-6 pb-2 border-b border-gray-200">
-        ${data.name}
-      </h2>
+      <div class="flex items-center justify-between mb-6 pb-2 border-b border-gray-200">
+        <h2 class="text-2xl font-bold text-blue-900">
+          ${data.name}
+        </h2>
+        <button
+          id="copy-embed-btn"
+          onclick="copyEmbedHtml('${id}', '${selectedDate}')"
+          class="px-3 py-1.5 text-xs font-medium rounded border border-gray-300 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors flex items-center gap-1.5"
+          title="Copy embeddable HTML for CMS"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          Copy Embed
+        </button>
+      </div>
       ${standingsHtml}
       ${leadersHtml}
     </div>
@@ -225,3 +239,48 @@ function renderSport(id) {
 
 // Start
 document.addEventListener('DOMContentLoaded', init);
+
+// Copy embed HTML functionality
+async function copyEmbedHtml(sportId, date) {
+  const embedPath = `embed/${date}/${sportId}.html`;
+
+  try {
+    const response = await fetch(embedPath);
+    if (!response.ok) {
+      throw new Error('Embed file not found');
+    }
+    const html = await response.text();
+    await navigator.clipboard.writeText(html);
+
+    // Show success feedback
+    const btn = document.getElementById('copy-embed-btn');
+    if (btn) {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Copied!';
+      btn.classList.remove('bg-gray-100', 'hover:bg-gray-200', 'text-gray-600');
+      btn.classList.add('bg-green-100', 'text-green-700');
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.classList.remove('bg-green-100', 'text-green-700');
+        btn.classList.add('bg-gray-100', 'hover:bg-gray-200', 'text-gray-600');
+      }, 2000);
+    }
+  } catch (error) {
+    console.error('Failed to copy embed HTML:', error);
+    const btn = document.getElementById('copy-embed-btn');
+    if (btn) {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Error';
+      btn.classList.remove('bg-gray-100', 'hover:bg-gray-200', 'text-gray-600');
+      btn.classList.add('bg-red-100', 'text-red-700');
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.classList.remove('bg-red-100', 'text-red-700');
+        btn.classList.add('bg-gray-100', 'hover:bg-gray-200', 'text-gray-600');
+      }, 2000);
+    }
+  }
+}
+
+// Expose to window for onclick handler
+window.copyEmbedHtml = copyEmbedHtml;
