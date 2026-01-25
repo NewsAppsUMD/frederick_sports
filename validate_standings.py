@@ -268,8 +268,8 @@ def main():
             'field_hockey': 1,
         },
         '2025_12_06': {
-            'boys_soccer': 1,
-            'girls_soccer': 3,
+            'boys_soccer': 3,
+            'girls_soccer': 1,
             'volleyball': 2,
             'field_hockey': 0,
         }

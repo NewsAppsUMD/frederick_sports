@@ -609,7 +609,7 @@ def parse_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -677,7 +677,7 @@ def parse_soccer_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -737,7 +737,7 @@ def parse_volleyball_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -752,16 +752,13 @@ def parse_volleyball_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
         if len(stats_values) >= 4:
             result['avg'] = stats_values[3]
     elif stat_type == 'assists':
-        # Assists: SP (if present), Asts, Digs, Avg
-        # Note: Some entries may not have SP
+        # Assists: SP, Asts, Avg
         if len(stats_values) >= 1:
-            result['sp'] = stats_values[0] if len(stats_values) == 4 else ''
+            result['sp'] = stats_values[0]
         if len(stats_values) >= 2:
-            result['asts'] = stats_values[1] if len(stats_values) == 4 else stats_values[0]
+            result['assists'] = stats_values[1]
         if len(stats_values) >= 3:
-            result['digs'] = stats_values[2] if len(stats_values) == 4 else stats_values[1]
-        if len(stats_values) >= 3:
-            result['avg'] = stats_values[3] if len(stats_values) == 4 else stats_values[2]
+            result['avg'] = stats_values[2]
     elif stat_type == 'digs':
         # Digs: SP, Digs, Avg
         if len(stats_values) >= 1:
@@ -804,7 +801,7 @@ def parse_field_hockey_player_entry(raw: str, stat_type: str) -> Dict[str, Any]:
 
     result = {
         'player': player_name,
-        'school': school
+        'school': expand_team_name(school)
     }
 
     # Parse stats based on type
@@ -936,7 +933,7 @@ def parse_cross_country_player_entry(raw: str) -> Dict[str, Any]:
 
     return {
         'player': player_name,
-        'school': school,
+        'school': expand_team_name(school),
         'time': time
     }
 
@@ -1031,7 +1028,7 @@ def parse_golf_player_entry(raw: str) -> Dict[str, Any]:
 
     return {
         'player': player_name,
-        'school': school,
+        'school': expand_team_name(school),
         'average': average
     }
 
@@ -1332,27 +1329,24 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
                 continue
             elif len(stats) == 4 or len(stats) == 5:
                 # 4-value format: div_w, div_l, overall_w, overall_l (no ties column in PDF)
+                # Don't include ties fields for sports that don't have ties (like volleyball)
                 standings[current_division].append({
                     'team': team_name,
                     'div_wins': stats[0],
                     'div_losses': stats[1],
-                    'div_ties': '0',
                     'overall_wins': stats[2],
-                    'overall_losses': stats[3],
-                    'overall_ties': '0'
+                    'overall_losses': stats[3]
                 })
                 idx = j
                 continue
             elif len(stats) >= 2:
-                # Minimal data - just division W-L
+                # Minimal data - just division W-L (no overall or ties)
                 standings[current_division].append({
                     'team': team_name,
                     'div_wins': stats[0],
                     'div_losses': stats[1],
-                    'div_ties': '0',
                     'overall_wins': '',
-                    'overall_losses': '',
-                    'overall_ties': ''
+                    'overall_losses': ''
                 })
                 idx = j
                 continue
@@ -1362,7 +1356,7 @@ def parse_central_maryland_standings(text: str, sport_name: str = "Volleyball", 
     return standings
 
 
-def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
+def parse_other_schools_standings(text: str, after_line: int = 0) -> List[Dict[str, str]]:
     """
     Parse OTHER SCHOOLS standings.
 
@@ -1372,6 +1366,10 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
     MSD    9    3    418    127
 
     Note: PDF extraction may produce tab-merged data.
+
+    Args:
+        text: The PDF text content
+        after_line: Start searching for OTHER SCHOOLS after this line number
     """
     standings = []
     lines = text.split('\n')
@@ -1379,7 +1377,7 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
     # Find the FIRST OTHER SCHOOLS section (for football - appears before INDIVIDUAL LEADERS)
     os_start = -1
     for i, line in enumerate(lines):
-        if 'OTHER SCHOOLS' in line:
+        if i > after_line and 'OTHER SCHOOLS' in line:
             os_start = i
             break
 
@@ -2124,7 +2122,10 @@ def generate_soccer_html(stats: Dict[str, List[Dict]], sport: str = "Boys Soccer
 
 
 def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyball", publish_date: str = "Oct 23, 2025", updated_date: str = "October 21, 2025", standings: Dict[str, List[Dict[str, str]]] = None) -> str:
-    """Generate HTML page for volleyball player stats and standings."""
+    """Generate HTML page for volleyball player stats and standings.
+
+    Note: Volleyball does not have ties, so standings tables will show W-L format only.
+    """
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -2303,7 +2304,7 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
         <main>
 """
 
-    # Central Maryland Conference Standings
+    # Central Maryland Conference Standings (Volleyball has no ties)
     if standings:
         for division_name, teams in standings.items():
             if teams:  # Only show divisions that have teams
@@ -2314,17 +2315,15 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                     <thead>
                         <tr>
                             <th>Team</th>
-                            <th colspan="3">Division</th>
-                            <th colspan="3">Overall</th>
+                            <th colspan="2">Division</th>
+                            <th colspan="2">Overall</th>
                         </tr>
                         <tr>
                             <th></th>
                             <th>W</th>
                             <th>L</th>
-                            <th>T</th>
                             <th>W</th>
                             <th>L</th>
-                            <th>T</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2334,10 +2333,8 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                             <td>{expand_team_name(team.get('team', ''))}</td>
                             <td>{team.get('div_wins', '')}</td>
                             <td>{team.get('div_losses', '')}</td>
-                            <td>{team.get('div_ties', '0')}</td>
                             <td>{team.get('overall_wins', '')}</td>
                             <td>{team.get('overall_losses', '')}</td>
-                            <td>{team.get('overall_ties', '0')}</td>
                         </tr>
 """
                 html += """                    </tbody>
@@ -2391,7 +2388,6 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
                             <th>School</th>
                             <th>SP</th>
                             <th>Asts</th>
-                            <th>Digs</th>
                             <th>Avg</th>
                         </tr>
                     </thead>
@@ -2401,7 +2397,6 @@ def generate_volleyball_html(stats: Dict[str, List[Dict]], sport: str = "Volleyb
             html += f"""                        <tr>
                             <td>{player.get('player', '')}</td>
                             <td>{expand_team_name(player.get('school', ''))}</td>
-                            <td>{player.get('sp', '')}</td>
                             <td>{player.get('asts', '')}</td>
                             <td>{player.get('digs', '')}</td>
                             <td>{player.get('avg', '')}</td>
@@ -3646,7 +3641,7 @@ def parse_defensive_stats(file_path: str = 'FlagDefenseStats.txt') -> List[Dict[
 
             defensive_stats.append({
                 'player': player,
-                'school': school,
+                'school': expand_team_name(school),
                 'tkl': tkl_val if tkl_val != '-' else '0',
                 'tfl': tfl_val if tfl_val != '-' else '0',
                 'int': int_val if int_val != '-' else '0'

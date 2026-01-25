@@ -2,7 +2,7 @@
   "kills": [
     {
       "player": "Maliyah Coleman",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "sp": "94",
       "kills": "512",
       "hit_pct": ".314",
@@ -10,7 +10,7 @@
     },
     {
       "player": "Nikita Dzougoutov",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "sp": "86",
       "kills": "329",
       "hit_pct": ".236",
@@ -42,7 +42,7 @@
     },
     {
       "player": "Ella Grove",
-      "school": "SJCP",
+      "school": "St. John's Catholic Prep",
       "sp": "42",
       "kills": "119",
       "hit_pct": ".108",
@@ -50,7 +50,7 @@
     },
     {
       "player": "Raylin Horst",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "sp": "52",
       "kills": "143",
       "hit_pct": ".230",
@@ -90,7 +90,7 @@
     },
     {
       "player": "Susannah Claney",
-      "school": "Mid.",
+      "school": "Middletown",
       "sp": "43",
       "kills": "97",
       "hit_pct": ".084",
@@ -130,7 +130,7 @@
     },
     {
       "player": "Shannah Khavrutskii",
-      "school": "Oak.",
+      "school": "Oakdale",
       "sp": "49",
       "kills": "87",
       "hit_pct": "-",
@@ -138,7 +138,7 @@
     },
     {
       "player": "Temi Oluboyo",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "sp": "52",
       "kills": "91",
       "hit_pct": ".380",
@@ -154,7 +154,7 @@
     },
     {
       "player": "Sofie Krasta",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "sp": "52",
       "kills": "80",
       "hit_pct": ".150",
@@ -162,7 +162,7 @@
     },
     {
       "player": "Brooke Wolbert",
-      "school": "Mid.",
+      "school": "Middletown",
       "sp": "41",
       "kills": "56",
       "hit_pct": ".101",
@@ -178,7 +178,7 @@
     },
     {
       "player": "BreyLynn Scott",
-      "school": "SJCP",
+      "school": "St. John's Catholic Prep",
       "sp": "42",
       "kills": "57",
       "hit_pct": ".207",
@@ -188,106 +188,93 @@
   "assists": [
     {
       "player": "Emma Le",
-      "school": "MSD",
-      "sp": "",
-      "asts": "95",
-      "digs": "833",
+      "school": "Maryland School for the Deaf",
+      "sp": "95",
+      "assists": "833",
       "avg": "8.77"
     },
     {
       "player": "Charlye Wood",
       "school": "Middletown",
-      "sp": "",
-      "asts": "44",
-      "digs": "338",
+      "sp": "44",
+      "assists": "338",
       "avg": "7.68"
     },
     {
       "player": "Adelle Kusi",
       "school": "Oakdale",
-      "sp": "",
-      "asts": "52",
-      "digs": "372",
+      "sp": "52",
+      "assists": "372",
       "avg": "7.15"
     },
     {
       "player": "Kendall Ortiz",
       "school": "Frederick",
-      "sp": "",
-      "asts": "41",
-      "digs": "281",
+      "sp": "41",
+      "assists": "281",
       "avg": "6.85"
     },
     {
       "player": "Charis Burge",
       "school": "Urbana",
-      "sp": "",
-      "asts": "36",
-      "digs": "193",
+      "sp": "36",
+      "assists": "193",
       "avg": "5.36"
     },
     {
       "player": "Lili\u2019uokalani Primacio",
-      "school": "SJCP",
-      "sp": "",
-      "asts": "42",
-      "digs": "216",
+      "school": "St. John's Catholic Prep",
+      "sp": "42",
+      "assists": "216",
       "avg": "5.14"
     },
     {
       "player": "Zayna Brooks",
       "school": "Tuscarora",
-      "sp": "",
-      "asts": "39",
-      "digs": "179",
+      "sp": "39",
+      "assists": "179",
       "avg": "4.59"
     },
     {
       "player": "Julia Tomaski",
       "school": "Linganore",
-      "sp": "",
-      "asts": "51",
-      "digs": "217",
+      "sp": "51",
+      "assists": "217",
       "avg": "4.25"
     },
     {
       "player": "Serena Treadwell",
       "school": "Tuscarora",
-      "sp": "",
-      "asts": "39",
-      "digs": "155",
+      "sp": "39",
+      "assists": "155",
       "avg": "3.97"
     },
     {
       "player": "Saya Chin",
-      "school": "T. Johnson",
-      "sp": "",
-      "asts": "52",
-      "digs": "196",
+      "school": "Thomas Johnson",
+      "sp": "52",
+      "assists": "196",
       "avg": "3.77"
     },
     {
       "player": "Abby Bell",
       "school": "Urbana",
-      "sp": "",
-      "asts": "29",
-      "digs": "101",
+      "sp": "29",
+      "assists": "101",
       "avg": "3.48"
     },
     {
       "player": "Sara Burke",
       "school": "Linganore",
-      "sp": "",
-      "asts": "48",
-      "digs": "138",
+      "sp": "48",
+      "assists": "138",
       "avg": "2.88"
     },
     {
       "player": "Xenia Quire",
-      "school": "T. Johnson",
-      "sp": "",
-      "asts": "47",
-      "digs": "107",
+      "school": "Thomas Johnson",
+      "sp": "47",
+      "assists": "107",
       "avg": "2.28"
     }
   ],
@@ -315,7 +302,7 @@
     },
     {
       "player": "Bella Brown",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "sp": "39",
       "digs": "157",
       "avg": "4.03"
@@ -357,7 +344,7 @@
     },
     {
       "player": "Raylin Horst",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "sp": "52",
       "digs": "150",
       "avg": "2.88"
@@ -378,7 +365,7 @@
     },
     {
       "player": "Maliyah Coleman",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "sp": "94",
       "digs": "237",
       "avg": "2.52"
@@ -399,14 +386,14 @@
     },
     {
       "player": "Josie Patil",
-      "school": "SJCP",
+      "school": "St. John's Catholic Prep",
       "sp": "29",
       "digs": "69",
       "avg": "2.38"
     },
     {
       "player": "Ella Grove",
-      "school": "SJCP",
+      "school": "St. John's Catholic Prep",
       "sp": "42",
       "digs": "96",
       "avg": "2.29"
@@ -420,7 +407,7 @@
     },
     {
       "player": "Nikita Dzougoutov",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "sp": "86",
       "digs": "190",
       "avg": "2.21"
