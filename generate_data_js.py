@@ -307,7 +307,7 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
             leaders.append({
                 'categoryName': leader_config['categoryName'],
                 'headers': leader_config['headers'],
-                'players': players[:20]  # Limit to top 20
+                'players': players  # Show all players
             })
 
     # Load standings if available
@@ -319,7 +319,7 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
         standings_data = load_json_data(date_str, standings_file)
         if standings_data:
             if standings_type == 'fcps':
-                # FCPS conference format: {fcps: [{team, wins, losses, pf, pa}]}
+                # FCPS conference format: {fcps: [{team, wins, losses, pf, pa}], other_schools: [{team, wins, losses, pf, pa}]}
                 fcps_teams = standings_data.get('fcps', [])
                 if fcps_teams:
                     standings.append({
@@ -331,6 +331,19 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
                             {'key': 'pa', 'label': 'PA'}
                         ],
                         'teams': fcps_teams
+                    })
+                # Add OTHER SCHOOLS if present (for Football)
+                other_schools = standings_data.get('other_schools', [])
+                if other_schools:
+                    standings.append({
+                        'division': 'Other Schools',
+                        'headers': [
+                            {'key': 'wins', 'label': 'W'},
+                            {'key': 'losses', 'label': 'L'},
+                            {'key': 'pf', 'label': 'PF'},
+                            {'key': 'pa', 'label': 'PA'}
+                        ],
+                        'teams': other_schools
                     })
             elif standings_type == 'cmc':
                 # Central Maryland Conference format: {DIVISION: [{team, div_wins, div_losses, div_ties, overall_wins, overall_losses, overall_ties}]}

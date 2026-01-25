@@ -70,5 +70,17 @@
       "pf": "52",
       "pa": "188"
     }
+  ],
+  "other_schools": [
+    {
+      "team": "Maryland School for the Deaf",
+      "wins": "18",
+      "losses": "1"
+    },
+    {
+      "team": "St. John's Catholic Prep",
+      "wins": "5",
+      "losses": "10"
+    }
   ]
 }

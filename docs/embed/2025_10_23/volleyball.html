@@ -1,0 +1,225 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Volleyball</h2>
+<h3>Standings</h3>
+<div class="standings-grid">
+<div>
+<h4>SPIRES DIVISION</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Div T</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th><th class="numeric">Ovr T</th></tr></thead>
+<tbody>
+<tr><td>Urbana</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">0</td><td class="numeric">9</td><td class="numeric">3</td><td class="numeric">0</td></tr>
+<tr><td>Thomas Johnson</td><td class="numeric">2</td><td class="numeric">1</td><td class="numeric">0</td><td class="numeric">7</td><td class="numeric">6</td><td class="numeric">0</td></tr>
+<tr><td>South Hagerstown</td><td class="numeric">1</td><td class="numeric">2</td><td class="numeric">0</td><td class="numeric">5</td><td class="numeric">8</td><td class="numeric">0</td></tr>
+<tr><td>Frederick</td><td class="numeric">0</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">2</td><td class="numeric">9</td><td class="numeric">0</td></tr>
+</tbody></table>
+</div>
+<div>
+<h4>POTOMAC DIVISION</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Div T</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th><th class="numeric">Ovr T</th></tr></thead>
+<tbody>
+<tr><td>N. Hagerstown</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">0</td><td class="numeric">13</td><td class="numeric">0</td><td class="numeric">0</td></tr>
+<tr><td>Tuscarora</td><td class="numeric">2</td><td class="numeric">1</td><td class="numeric">0</td><td class="numeric">9</td><td class="numeric">3</td><td class="numeric">0</td></tr>
+<tr><td>Oakdale</td><td class="numeric">1</td><td class="numeric">2</td><td class="numeric">0</td><td class="numeric">9</td><td class="numeric">4</td><td class="numeric">0</td></tr>
+<tr><td>Linganore</td><td class="numeric">0</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">5</td><td class="numeric">8</td><td class="numeric">0</td></tr>
+</tbody></table>
+</div>
+<div>
+<h4>GAMBRILL DIVISION</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Div T</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th><th class="numeric">Ovr T</th></tr></thead>
+<tbody>
+<tr><td>Williamsport</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">0</td><td class="numeric">11</td><td class="numeric">2</td><td class="numeric">0</td></tr>
+<tr><td>Middletown</td><td class="numeric">2</td><td class="numeric">1</td><td class="numeric">0</td><td class="numeric">4</td><td class="numeric">8</td><td class="numeric">0</td></tr>
+<tr><td>Brunswick</td><td class="numeric">1</td><td class="numeric">2</td><td class="numeric">0</td><td class="numeric">2</td><td class="numeric">11</td><td class="numeric">0</td></tr>
+<tr><td>Walkersville</td><td class="numeric">0</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">1</td><td class="numeric">10</td><td class="numeric">0</td></tr>
+</tbody></table>
+</div>
+<div>
+<h4>ANTIETAM DIVISION</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Div T</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th><th class="numeric">Ovr T</th></tr></thead>
+<tbody>
+<tr><td>Clear Spring</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">0</td><td class="numeric">9</td><td class="numeric">3</td><td class="numeric">0</td></tr>
+<tr><td>Boonsboro</td><td class="numeric">2</td><td class="numeric">1</td><td class="numeric">0</td><td class="numeric">7</td><td class="numeric">5</td><td class="numeric">0</td></tr>
+<tr><td>Smithsburg</td><td class="numeric">1</td><td class="numeric">2</td><td class="numeric">0</td><td class="numeric">7</td><td class="numeric">6</td><td class="numeric">0</td></tr>
+<tr><td>Catoctin</td><td class="numeric">0</td><td class="numeric">3</td><td class="numeric">0</td><td class="numeric">2</td><td class="numeric">11</td><td class="numeric">0</td></tr>
+</tbody></table>
+</div>
+</div>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>Kills</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">SP</th><th class="numeric">Kills</th><th class="numeric">Avg</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Maliyah Coleman</div><div class="player-school">MSD</div></td><td class="numeric">94</td><td class="numeric">512</td><td class="numeric">5.45</td></tr>
+<tr><td><div class="player-name">Nikita Dzougoutov</div><div class="player-school">MSD</div></td><td class="numeric">86</td><td class="numeric">329</td><td class="numeric">3.83</td></tr>
+<tr><td><div class="player-name">Jocelyn Miller</div><div class="player-school">Middletown</div></td><td class="numeric">41</td><td class="numeric">147</td><td class="numeric">3.59</td></tr>
+<tr><td><div class="player-name">Kaniyah Ball</div><div class="player-school">Frederick</div></td><td class="numeric">41</td><td class="numeric">138</td><td class="numeric">3.37</td></tr>
+<tr><td><div class="player-name">Lily King</div><div class="player-school">Tuscarora</div></td><td class="numeric">39</td><td class="numeric">118</td><td class="numeric">3.03</td></tr>
+<tr><td><div class="player-name">Ella Grove</div><div class="player-school">SJCP</div></td><td class="numeric">42</td><td class="numeric">119</td><td class="numeric">2.83</td></tr>
+<tr><td><div class="player-name">Raylin Horst</div><div class="player-school">T. Johnson</div></td><td class="numeric">52</td><td class="numeric">143</td><td class="numeric">2.75</td></tr>
+<tr><td><div class="player-name">Ivory Boone</div><div class="player-school">Urbana</div></td><td class="numeric">34</td><td class="numeric">92</td><td class="numeric">2.71</td></tr>
+<tr><td><div class="player-name">Simone Assasie</div><div class="player-school">Urbana</div></td><td class="numeric">34</td><td class="numeric">87</td><td class="numeric">2.56</td></tr>
+<tr><td><div class="player-name">Amy Latimer</div><div class="player-school">Linganore</div></td><td class="numeric">51</td><td class="numeric">130</td><td class="numeric">2.55</td></tr>
+<tr><td><div class="player-name">Skye Taylor</div><div class="player-school">Oakdale</div></td><td class="numeric">61</td><td class="numeric">143</td><td class="numeric">2.34</td></tr>
+<tr><td><div class="player-name">Susannah Claney</div><div class="player-school">Mid.</div></td><td class="numeric">43</td><td class="numeric">97</td><td class="numeric">2.26</td></tr>
+<tr><td><div class="player-name">Talia DoCarmo</div><div class="player-school">Urbana</div></td><td class="numeric">35</td><td class="numeric">72</td><td class="numeric">2.06</td></tr>
+<tr><td><div class="player-name">Leila Manan</div><div class="player-school">Oakdale</div></td><td class="numeric">51</td><td class="numeric">96</td><td class="numeric">1.88</td></tr>
+<tr><td><div class="player-name">Carissa Dolney</div><div class="player-school">Linganore</div></td><td class="numeric">51</td><td class="numeric">93</td><td class="numeric">1.82</td></tr>
+<tr><td><div class="player-name">Payten Marko</div><div class="player-school">Oakdale</div></td><td class="numeric">56</td><td class="numeric">101</td><td class="numeric">1.80</td></tr>
+<tr><td><div class="player-name">Shannah Khavrutskii</div><div class="player-school">Oak.</div></td><td class="numeric">49</td><td class="numeric">87</td><td class="numeric">1.78</td></tr>
+<tr><td><div class="player-name">Temi Oluboyo</div><div class="player-school">T. Johnson</div></td><td class="numeric">52</td><td class="numeric">91</td><td class="numeric">1.75</td></tr>
+<tr><td><div class="player-name">Jayla Harris</div><div class="player-school">Tuscarora</div></td><td class="numeric">37</td><td class="numeric">62</td><td class="numeric">1.68</td></tr>
+<tr><td><div class="player-name">Sofie Krasta</div><div class="player-school">T. Johnson</div></td><td class="numeric">52</td><td class="numeric">80</td><td class="numeric">1.54</td></tr>
+<tr><td><div class="player-name">Brooke Wolbert</div><div class="player-school">Mid.</div></td><td class="numeric">41</td><td class="numeric">56</td><td class="numeric">1.37</td></tr>
+<tr><td><div class="player-name">Charis Burge</div><div class="player-school">Urbana</div></td><td class="numeric">36</td><td class="numeric">49</td><td class="numeric">1.36</td></tr>
+<tr><td><div class="player-name">BreyLynn Scott</div><div class="player-school">SJCP</div></td><td class="numeric">42</td><td class="numeric">57</td><td class="numeric">1.36</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Assists</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">SP</th><th class="numeric">Ast</th><th class="numeric">Avg</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Emma Le</div><div class="player-school">MSD</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">8.77</td></tr>
+<tr><td><div class="player-name">Charlye Wood</div><div class="player-school">Middletown</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">7.68</td></tr>
+<tr><td><div class="player-name">Adelle Kusi</div><div class="player-school">Oakdale</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">7.15</td></tr>
+<tr><td><div class="player-name">Kendall Ortiz</div><div class="player-school">Frederick</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">6.85</td></tr>
+<tr><td><div class="player-name">Charis Burge</div><div class="player-school">Urbana</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">5.36</td></tr>
+<tr><td><div class="player-name">Lili’uokalani Primacio</div><div class="player-school">SJCP</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">5.14</td></tr>
+<tr><td><div class="player-name">Zayna Brooks</div><div class="player-school">Tuscarora</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">4.59</td></tr>
+<tr><td><div class="player-name">Julia Tomaski</div><div class="player-school">Linganore</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">4.25</td></tr>
+<tr><td><div class="player-name">Serena Treadwell</div><div class="player-school">Tuscarora</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">3.97</td></tr>
+<tr><td><div class="player-name">Saya Chin</div><div class="player-school">T. Johnson</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">3.77</td></tr>
+<tr><td><div class="player-name">Abby Bell</div><div class="player-school">Urbana</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">3.48</td></tr>
+<tr><td><div class="player-name">Sara Burke</div><div class="player-school">Linganore</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">2.88</td></tr>
+<tr><td><div class="player-name">Xenia Quire</div><div class="player-school">T. Johnson</div></td><td class="numeric"></td><td class="numeric"></td><td class="numeric">2.28</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Digs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">SP</th><th class="numeric">Digs</th><th class="numeric">Avg</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Kaniyah Ball</div><div class="player-school">Frederick</div></td><td class="numeric">41</td><td class="numeric">218</td><td class="numeric">5.32</td></tr>
+<tr><td><div class="player-name">Makenzie Shearer</div><div class="player-school">Linganore</div></td><td class="numeric">51</td><td class="numeric">225</td><td class="numeric">4.41</td></tr>
+<tr><td><div class="player-name">Lilah Colbert</div><div class="player-school">Oakdale</div></td><td class="numeric">51</td><td class="numeric">214</td><td class="numeric">4.20</td></tr>
+<tr><td><div class="player-name">Bella Brown</div><div class="player-school">T. Johnson</div></td><td class="numeric">39</td><td class="numeric">157</td><td class="numeric">4.03</td></tr>
+<tr><td><div class="player-name">Megan Jay</div><div class="player-school">Tuscarora</div></td><td class="numeric">39</td><td class="numeric">149</td><td class="numeric">3.82</td></tr>
+<tr><td><div class="player-name">Talia DoCarmo</div><div class="player-school">Urbana</div></td><td class="numeric">35</td><td class="numeric">130</td><td class="numeric">3.71</td></tr>
+<tr><td><div class="player-name">Kailyn Bryant</div><div class="player-school">Frederick</div></td><td class="numeric">41</td><td class="numeric">146</td><td class="numeric">3.56</td></tr>
+<tr><td><div class="player-name">Lily King</div><div class="player-school">Tuscarora</div></td><td class="numeric">39</td><td class="numeric">115</td><td class="numeric">2.95</td></tr>
+<tr><td><div class="player-name">Amy Latimer</div><div class="player-school">Linganore</div></td><td class="numeric">51</td><td class="numeric">148</td><td class="numeric">2.90</td></tr>
+<tr><td><div class="player-name">Raylin Horst</div><div class="player-school">T. Johnson</div></td><td class="numeric">52</td><td class="numeric">150</td><td class="numeric">2.88</td></tr>
+<tr><td><div class="player-name">Zayna Brooks</div><div class="player-school">Tuscarora</div></td><td class="numeric">39</td><td class="numeric">105</td><td class="numeric">2.69</td></tr>
+<tr><td><div class="player-name">Adrianna Howell</div><div class="player-school">Linganore</div></td><td class="numeric">51</td><td class="numeric">135</td><td class="numeric">2.65</td></tr>
+<tr><td><div class="player-name">Maliyah Coleman</div><div class="player-school">MSD</div></td><td class="numeric">94</td><td class="numeric">237</td><td class="numeric">2.52</td></tr>
+<tr><td><div class="player-name">Zoe Stevenson</div><div class="player-school">Oakdale</div></td><td class="numeric">40</td><td class="numeric">100</td><td class="numeric">2.50</td></tr>
+<tr><td><div class="player-name">Julia Tomaski</div><div class="player-school">Linganore</div></td><td class="numeric">51</td><td class="numeric">126</td><td class="numeric">2.47</td></tr>
+<tr><td><div class="player-name">Josie Patil</div><div class="player-school">SJCP</div></td><td class="numeric">29</td><td class="numeric">69</td><td class="numeric">2.38</td></tr>
+<tr><td><div class="player-name">Ella Grove</div><div class="player-school">SJCP</div></td><td class="numeric">42</td><td class="numeric">96</td><td class="numeric">2.29</td></tr>
+<tr><td><div class="player-name">Kendall Ortiz</div><div class="player-school">Frederick</div></td><td class="numeric">41</td><td class="numeric">91</td><td class="numeric">2.22</td></tr>
+<tr><td><div class="player-name">Nikita Dzougoutov</div><div class="player-school">MSD</div></td><td class="numeric">86</td><td class="numeric">190</td><td class="numeric">2.21</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>

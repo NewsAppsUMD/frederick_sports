@@ -1,0 +1,166 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Cross Country</h2>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys Top 5K Times</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Time</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Joshua Rothery</div><div class="player-school">Urbana</div></td><td class="numeric">15:50.6</td></tr>
+<tr><td><div class="player-name">Patrick Salter</div><div class="player-school">Oakdale</div></td><td class="numeric">15:52.4</td></tr>
+<tr><td><div class="player-name">Riley Gallogly</div><div class="player-school">Urbana</div></td><td class="numeric">15:56.5</td></tr>
+<tr><td><div class="player-name">Korey Kauflin</div><div class="player-school">Urbana</div></td><td class="numeric">15:57.9</td></tr>
+<tr><td><div class="player-name">Asher Adelman</div><div class="player-school">Brunswick</div></td><td class="numeric">16:03:2</td></tr>
+<tr><td><div class="player-name">Evan Madraymootoo</div><div class="player-school">Urbana</div></td><td class="numeric">16:03.7</td></tr>
+<tr><td><div class="player-name">Simon McGillivray</div><div class="player-school">Brunswick</div></td><td class="numeric">16:04.3</td></tr>
+<tr><td><div class="player-name">Cole Cline</div><div class="player-school">Urbana</div></td><td class="numeric">16:04.4</td></tr>
+<tr><td><div class="player-name">Miles Ghim</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">16:10.4</td></tr>
+<tr><td><div class="player-name">Dashiell Wexler</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">16:10.5</td></tr>
+<tr><td><div class="player-name">Simon Lipchock</div><div class="player-school">Urbana</div></td><td class="numeric">16:13.8</td></tr>
+<tr><td><div class="player-name">Garrett Howes</div><div class="player-school">Middletown</div></td><td class="numeric">16:14.1</td></tr>
+<tr><td><div class="player-name">Noah Riling</div><div class="player-school">Catoctin</div></td><td class="numeric">16:21.8</td></tr>
+<tr><td><div class="player-name">Dominic Castillo</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">16:34.9</td></tr>
+<tr><td><div class="player-name">Matthew Rodrigues</div><div class="player-school">Urbana</div></td><td class="numeric">16:41.0</td></tr>
+<tr><td><div class="player-name">Hyatt Gordon</div><div class="player-school">Urbana</div></td><td class="numeric">16:41.1</td></tr>
+<tr><td><div class="player-name">Griffen Adelman</div><div class="player-school">Brunswick</div></td><td class="numeric">16:44.4</td></tr>
+<tr><td><div class="player-name">Vaughn Ditching</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">16:45.7</td></tr>
+<tr><td><div class="player-name">Kayden Harris</div><div class="player-school">Linganore</div></td><td class="numeric">16:52.5</td></tr>
+<tr><td><div class="player-name">Erasmo Sanchez</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">16.52.8</td></tr>
+<tr><td><div class="player-name">Luke Collins</div><div class="player-school">Linganore</div></td><td class="numeric">16:58.5</td></tr>
+<tr><td><div class="player-name">Luke Osher</div><div class="player-school">Urbana</div></td><td class="numeric">16:58.9</td></tr>
+<tr><td><div class="player-name">Koen Edwards</div><div class="player-school">Urbana</div></td><td class="numeric">16:59.9</td></tr>
+<tr><td><div class="player-name">Scott Rudy</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">17:03.8</td></tr>
+<tr><td><div class="player-name">Merrick Collins</div><div class="player-school">Oakdale</div></td><td class="numeric">17:06.5</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls Top 5K Times</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Time</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Kate Miner</div><div class="player-school">Urbana</div></td><td class="numeric">18:35.2</td></tr>
+<tr><td><div class="player-name">Hailey Lane</div><div class="player-school">Tuscarora</div></td><td class="numeric">18:39.6</td></tr>
+<tr><td><div class="player-name">MadeleneKate Partlow</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18:58.9</td></tr>
+<tr><td><div class="player-name">Natalie Barber</div><div class="player-school">Urbana</div></td><td class="numeric">19:03.1</td></tr>
+<tr><td><div class="player-name">Samantha Whiteman</div><div class="player-school">Linganore</div></td><td class="numeric">19:06.6</td></tr>
+<tr><td><div class="player-name">Siena Foster</div><div class="player-school">Tuscarora</div></td><td class="numeric">19:16.8</td></tr>
+<tr><td><div class="player-name">Maya Osher</div><div class="player-school">Urbana</div></td><td class="numeric">19:22.2</td></tr>
+<tr><td><div class="player-name">Leticia Detrow</div><div class="player-school">MSD</div></td><td class="numeric">19:26.2</td></tr>
+<tr><td><div class="player-name">Yasmeena Hassen Friess</div><div class="player-school">Frederick</div></td><td class="numeric">19:37.5</td></tr>
+<tr><td><div class="player-name">Rachel Herbst</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">19:58.4</td></tr>
+<tr><td><div class="player-name">Elizabeth Lombardo</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">20:05.4</td></tr>
+<tr><td><div class="player-name">Salma Mahfoud</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">20:11.3</td></tr>
+<tr><td><div class="player-name">Olivia Gregory</div><div class="player-school">Frederick</div></td><td class="numeric">20:12.3</td></tr>
+<tr><td><div class="player-name">Elizabeth Watkins</div><div class="player-school">Linganore</div></td><td class="numeric">20:23.2</td></tr>
+<tr><td><div class="player-name">Ivy McWilliams</div><div class="player-school">Frederick</div></td><td class="numeric">20:29.1</td></tr>
+<tr><td><div class="player-name">Brenna Davies</div><div class="player-school">Urbana</div></td><td class="numeric">20:29.7</td></tr>
+<tr><td><div class="player-name">Nina Kirkendall-Plaia</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">20:30.5</td></tr>
+<tr><td><div class="player-name">Audrey Borleis</div><div class="player-school">Urbana</div></td><td class="numeric">20:33.0</td></tr>
+<tr><td><div class="player-name">Johanna Mitchell</div><div class="player-school">Oakdale</div></td><td class="numeric">20:35.0</td></tr>
+<tr><td><div class="player-name">Leah Harshman</div><div class="player-school">Middletown</div></td><td class="numeric">20:36.7</td></tr>
+<tr><td><div class="player-name">Cara Carpenter</div><div class="player-school">Middletown</div></td><td class="numeric">20:37.7</td></tr>
+<tr><td><div class="player-name">Sydney Bowman</div><div class="player-school">Tuscarora</div></td><td class="numeric">20:44.3</td></tr>
+<tr><td><div class="player-name">Danica Arrington</div><div class="player-school">Frederick</div></td><td class="numeric">20:51.8</td></tr>
+<tr><td><div class="player-name">Lizzie Wells</div><div class="player-school">Oakdale</div></td><td class="numeric">20:59.6</td></tr>
+<tr><td><div class="player-name">Annalise Wells</div><div class="player-school">Oakdale</div></td><td class="numeric">21:00.1</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
