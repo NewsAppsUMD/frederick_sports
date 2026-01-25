@@ -95,8 +95,17 @@ def process_football_style_sport(text, sport_name, section_index, file_prefix, d
     standings = parse_fcps_standings(text, section_index=fcps_standings_index)
     print(f"  FCPS standings: {len(standings)} teams")
 
+    # Parse OTHER SCHOOLS standings (only for Football, not Girls Flag Football)
+    other_schools = []
+    if sport_name == "Football":
+        other_schools = parse_other_schools_standings(text)
+        if other_schools:
+            print(f"  Other Schools standings: {len(other_schools)} teams")
+
     # Save standings to JSON
     standings_data = {'fcps': standings}
+    if other_schools:
+        standings_data['other_schools'] = other_schools
     standings_json_file = output_dir / f'{file_prefix}_standings.json'
     with open(standings_json_file, 'w') as f:
         json.dump(standings_data, f, indent=2)

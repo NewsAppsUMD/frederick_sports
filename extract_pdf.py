@@ -1366,19 +1366,17 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
     """
     Parse OTHER SCHOOLS standings.
 
-    Format:
+    Format for Football:
     OTHER SCHOOLS
-    Team    W    L
-    MSD
-    18
-    1
+    Team    W    L    PF    PA
+    MSD    9    3    418    127
 
     Note: PDF extraction may produce tab-merged data.
     """
     standings = []
     lines = text.split('\n')
 
-    # Find OTHER SCHOOLS section
+    # Find the FIRST OTHER SCHOOLS section (for football - appears before INDIVIDUAL LEADERS)
     os_start = -1
     for i, line in enumerate(lines):
         if 'OTHER SCHOOLS' in line:
@@ -1409,10 +1407,10 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
         values.extend(parts)
 
     # Clean out header words
-    header_words = {'Team', 'W', 'L'}
+    header_words = {'Team', 'W', 'L', 'PF', 'PA', 'T'}
     values = [v for v in values if v not in header_words]
 
-    # Parse values in groups of 3 (team, w, l)
+    # Parse values - try 5 values first (team, w, l, pf, pa), fall back to 3 (team, w, l)
     idx = 0
     while idx < len(values):
         val = values[idx]
@@ -1421,22 +1419,38 @@ def parse_other_schools_standings(text: str) -> List[Dict[str, str]]:
         if not val.replace('.', '').replace(',', '').isdigit():
             team_name = expand_team_name(val)
 
-            # Next 2 values should be wins and losses
-            if idx + 2 < len(values):
-                try:
-                    wins = values[idx + 1]
-                    losses = values[idx + 2]
+            # Try to get 4 numeric values (W, L, PF, PA) for football
+            if idx + 4 < len(values):
+                wins = values[idx + 1]
+                losses = values[idx + 2]
+                pf = values[idx + 3]
+                pa = values[idx + 4]
 
-                    if wins.replace(',', '').isdigit() and losses.replace(',', '').isdigit():
-                        standings.append({
-                            'team': team_name,
-                            'wins': wins,
-                            'losses': losses
-                        })
-                        idx += 3
-                        continue
-                except:
-                    pass
+                if (wins.replace(',', '').isdigit() and losses.replace(',', '').isdigit() and
+                    pf.replace(',', '').isdigit() and pa.replace(',', '').isdigit()):
+                    standings.append({
+                        'team': team_name,
+                        'wins': wins,
+                        'losses': losses,
+                        'pf': pf,
+                        'pa': pa
+                    })
+                    idx += 5
+                    continue
+
+            # Fall back to just W, L
+            if idx + 2 < len(values):
+                wins = values[idx + 1]
+                losses = values[idx + 2]
+
+                if wins.replace(',', '').isdigit() and losses.replace(',', '').isdigit():
+                    standings.append({
+                        'team': team_name,
+                        'wins': wins,
+                        'losses': losses
+                    })
+                    idx += 3
+                    continue
 
         idx += 1
 
