@@ -402,19 +402,21 @@ def generate_embed_for_sport(sport_id: str, config: dict, date_str: str) -> str:
     return html
 
 
-def main():
-    parser = argparse.ArgumentParser(description='Generate embeddable HTML for CMS')
-    parser.add_argument('--date', type=str, help='Date (YYYY_MM_DD)')
-    parser.add_argument('--sport', type=str, help='Sport ID (e.g., football, boys_soccer)')
-    args = parser.parse_args()
+def generate_all_embeds(dates=None, sports=None):
+    """
+    Generate embed HTML files for all (or specified) dates and sports.
 
+    Args:
+        dates: List of date strings (YYYY_MM_DD format), or None for all dates
+        sports: List of sport IDs, or None for all sports
+    """
     # Create output directory
     embed_dir = Path('docs/embed')
     embed_dir.mkdir(exist_ok=True)
 
     # Determine which dates and sports to process
-    dates = [args.date] if args.date else AVAILABLE_DATES
-    sports = [args.sport] if args.sport else list(SPORT_CONFIGS.keys())
+    dates = dates if dates else AVAILABLE_DATES
+    sports = sports if sports else list(SPORT_CONFIGS.keys())
 
     for date_str in dates:
         date_dir = embed_dir / date_str
@@ -443,6 +445,17 @@ def main():
 
     print(f"\nEmbed files saved to {embed_dir}/")
     print("Copy the contents of any .html file to paste into your CMS.")
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Generate embeddable HTML for CMS')
+    parser.add_argument('--date', type=str, help='Date (YYYY_MM_DD)')
+    parser.add_argument('--sport', type=str, help='Sport ID (e.g., football, boys_soccer)')
+    args = parser.parse_args()
+
+    dates = [args.date] if args.date else None
+    sports = [args.sport] if args.sport else None
+    generate_all_embeds(dates, sports)
 
 
 if __name__ == '__main__':
