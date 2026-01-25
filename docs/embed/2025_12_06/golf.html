@@ -1,0 +1,134 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Golf</h2>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>9-Hole Average</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Avg</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Landon Tudor</div><div class="player-school">Oakdale</div></td><td class="numeric">35</td></tr>
+<tr><td><div class="player-name">Callen Edmonston</div><div class="player-school">Catoctin</div></td><td class="numeric">36.4</td></tr>
+<tr><td><div class="player-name">Cooper Moskowitz</div><div class="player-school">Middletown</div></td><td class="numeric">37.4</td></tr>
+<tr><td><div class="player-name">Claire Son</div><div class="player-school">Urbana</div></td><td class="numeric">38</td></tr>
+<tr><td><div class="player-name">Zac Taylor</div><div class="player-school">Oakdale</div></td><td class="numeric">38.4</td></tr>
+<tr><td><div class="player-name">Clayton Bowman</div><div class="player-school">Urbana</div></td><td class="numeric">38.6</td></tr>
+<tr><td><div class="player-name">Caden Roosa</div><div class="player-school">Oakdale</div></td><td class="numeric">38.8</td></tr>
+<tr><td><div class="player-name">Ollie Witt</div><div class="player-school">Middletown</div></td><td class="numeric">39</td></tr>
+<tr><td><div class="player-name">Celine Lieu</div><div class="player-school">Walkersville</div></td><td class="numeric">39.2</td></tr>
+<tr><td><div class="player-name">Aidan Nilan</div><div class="player-school">Oakdale</div></td><td class="numeric">39.2</td></tr>
+<tr><td><div class="player-name">Schaffer Wisnom</div><div class="player-school">Linganore</div></td><td class="numeric">39.5</td></tr>
+<tr><td><div class="player-name">Johann Aguillon</div><div class="player-school">Linganore</div></td><td class="numeric">39.8</td></tr>
+<tr><td><div class="player-name">Joseph Pearson</div><div class="player-school">Linganore</div></td><td class="numeric">40</td></tr>
+<tr><td><div class="player-name">Charlie Scarzello</div><div class="player-school">Oakdale</div></td><td class="numeric">40.6</td></tr>
+<tr><td><div class="player-name">Layden Barker</div><div class="player-school">Walkersville</div></td><td class="numeric">40.9</td></tr>
+<tr><td><div class="player-name">Emmett Russell</div><div class="player-school">Tuscarora</div></td><td class="numeric">41</td></tr>
+<tr><td><div class="player-name">Jackson Stanley</div><div class="player-school">Linganore</div></td><td class="numeric">41</td></tr>
+<tr><td><div class="player-name">Camden Forsythe</div><div class="player-school">Urbana</div></td><td class="numeric">41.4</td></tr>
+<tr><td><div class="player-name">Bodie Winfield</div><div class="player-school">Middletown</div></td><td class="numeric">41.4</td></tr>
+<tr><td><div class="player-name">Madison Boucher</div><div class="player-school">Urbana</div></td><td class="numeric">41.6</td></tr>
+<tr><td><div class="player-name">Luke Del Balzo</div><div class="player-school">Brunswick</div></td><td class="numeric">41.6</td></tr>
+<tr><td><div class="player-name">Heath Detterline</div><div class="player-school">Oakdale</div></td><td class="numeric">41.6</td></tr>
+<tr><td><div class="player-name">Tyler Spruill</div><div class="player-school">Urbana</div></td><td class="numeric">42</td></tr>
+<tr><td><div class="player-name">Colby Burke</div><div class="player-school">Linganore</div></td><td class="numeric">42.5</td></tr>
+<tr><td><div class="player-name">Gavin Flyte</div><div class="player-school">Urbana</div></td><td class="numeric">42.5</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
