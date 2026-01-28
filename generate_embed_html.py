@@ -251,7 +251,7 @@ SPORT_CONFIGS = {
             ]}
         ]
     },
-    'girls_flag_football': {
+    'girls-flag-football': {
         'name': 'Girls Flag Football',
         'data_file': 'girls_flag_football_data.json',
         'standings_file': 'girls_flag_football_standings.json',
@@ -271,7 +271,7 @@ SPORT_CONFIGS = {
             ]}
         ]
     },
-    'boys_soccer': {
+    'boys-soccer': {
         'name': 'Boys Soccer',
         'data_file': 'boys_soccer_data.json',
         'standings_file': 'boys_soccer_standings.json',
@@ -287,7 +287,7 @@ SPORT_CONFIGS = {
             ]}
         ]
     },
-    'girls_soccer': {
+    'girls-soccer': {
         'name': 'Girls Soccer',
         'data_file': 'girls_soccer_data.json',
         'standings_file': 'girls_soccer_standings.json',
@@ -323,7 +323,7 @@ SPORT_CONFIGS = {
             ]}
         ]
     },
-    'field_hockey': {
+    'field-hockey': {
         'name': 'Field Hockey',
         'data_file': 'field_hockey_data.json',
         'standings_file': 'field_hockey_standings.json',
@@ -339,7 +339,7 @@ SPORT_CONFIGS = {
             ]}
         ]
     },
-    'cross_country': {
+    'cross-country': {
         'name': 'Cross Country',
         'data_file': 'cross_country_data.json',
         'standings_file': None,
