@@ -8,6 +8,7 @@ Usage:
 """
 
 import html
+import json
 import os
 import re
 
@@ -1112,6 +1113,87 @@ def generate_rankings_html(rankings_data):
     return ''.join(parts)
 
 
+def export_basketball_json(bball_data, data_dir, prefix):
+    """Export basketball data as JSON files matching generate_data_js.py schema."""
+    leader_key_map = {
+        'scoring': ['gp', 'pts', 'avg'],
+        'rebounds': ['gp', 'reb', 'avg'],
+        'assists': ['gp', 'ast', 'avg'],
+    }
+    data_json = {}
+    for cat_key, keys in leader_key_map.items():
+        players = bball_data.get('leaders', {}).get(cat_key, [])
+        data_json[cat_key] = []
+        for p in players:
+            entry = {'player': p['player'], 'school': p['school']}
+            for i, k in enumerate(keys):
+                entry[k] = p['values'][i] if i < len(p['values']) else ''
+            data_json[cat_key].append(entry)
+
+    with open(os.path.join(data_dir, f'{prefix}_data.json'), 'w') as f:
+        json.dump(data_json, f, indent=2)
+
+    standings = bball_data.get('standings', {})
+    with open(os.path.join(data_dir, f'{prefix}_standings.json'), 'w') as f:
+        json.dump(standings, f, indent=2)
+
+
+def export_wrestling_json(wrestling_data, data_dir, prefix):
+    """Export wrestling data as JSON with weight class keys."""
+    result = {}
+    for wc in wrestling_data.get('weight_classes', []):
+        key = f"wc_{wc['weight']}"
+        result[key] = [
+            {'player': w['name'], 'school': w['school'], 'rank': w['rank']}
+            for w in wc['wrestlers']
+        ]
+    with open(os.path.join(data_dir, f'{prefix}_data.json'), 'w') as f:
+        json.dump(result, f, indent=2)
+
+
+def export_track_json(track_data, data_dir, filename):
+    """Export track data as JSON with event keys."""
+    result = {}
+    for gender in ['boys', 'girls']:
+        events = track_data.get(gender, {})
+        for event_name, athletes in events.items():
+            key = f"{gender}_{event_name.lower().replace(' ', '_').replace(',', '').replace('-', '_')}"
+            # Normalize: "55-meter dash" -> "55_meter_dash"
+            result[key] = [
+                {'player': a['entry'], 'school': '', 'result': a['result']}
+                for a in athletes
+            ]
+    with open(os.path.join(data_dir, filename), 'w') as f:
+        json.dump(result, f, indent=2)
+
+
+def export_swimming_json(swim_data, data_dir, filename):
+    """Export swimming data as JSON with event keys."""
+    result = {}
+    for gender in ['boys', 'girls']:
+        events = swim_data.get(gender, {})
+        for event_name, athletes in events.items():
+            key = f"{gender}_{event_name.lower().replace(' ', '_').replace(',', '').replace('-', '_')}"
+            result[key] = [
+                {'player': a['entry'], 'school': '', 'result': a['result']}
+                for a in athletes
+            ]
+    with open(os.path.join(data_dir, filename), 'w') as f:
+        json.dump(result, f, indent=2)
+
+
+def export_json_data(data, data_dir):
+    """Export all parsed data as JSON files for generate_data_js.py."""
+    os.makedirs(data_dir, exist_ok=True)
+    export_basketball_json(data['boys_basketball'], data_dir, 'boys_basketball')
+    export_basketball_json(data['girls_basketball'], data_dir, 'girls_basketball')
+    export_wrestling_json(data['boys_wrestling'], data_dir, 'boys_wrestling')
+    export_wrestling_json(data['girls_wrestling'], data_dir, 'girls_wrestling')
+    export_track_json(data['indoor_track'], data_dir, 'indoor_track_data.json')
+    export_swimming_json(data['swimming'], data_dir, 'swimming_data.json')
+    print(f"Exported JSON data to {data_dir}")
+
+
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     input_file = os.path.join(script_dir, 'hs_hangout', 'FNPHangoutTextState1.29.26.txt')
@@ -1139,6 +1221,10 @@ def main():
 
     print(f"\nGenerated: {output_file}")
     print(f"File size: {len(html_content):,} bytes")
+
+    # Export JSON data for the dropdown integration
+    data_dir = os.path.join(script_dir, 'data', '2026_01_29')
+    export_json_data(data, data_dir)
 
 
 if __name__ == '__main__':

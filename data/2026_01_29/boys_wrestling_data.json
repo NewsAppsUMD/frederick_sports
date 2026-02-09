@@ -1,0 +1,240 @@
+{
+  "wc_106": [
+    {
+      "player": "Paul Fitzpatrick",
+      "school": "Oakdale",
+      "rank": "1"
+    },
+    {
+      "player": "Parker Brown",
+      "school": "Middletown",
+      "rank": "2"
+    },
+    {
+      "player": "Nick Gordon",
+      "school": "Linganore",
+      "rank": "3"
+    }
+  ],
+  "wc_113": [
+    {
+      "player": "Jayden Lassiter",
+      "school": "Linganore",
+      "rank": "1"
+    },
+    {
+      "player": "Eugene Amardi-Frimpong",
+      "school": "Tuscarora",
+      "rank": "2"
+    },
+    {
+      "player": "Amir Bakari",
+      "school": "Frederick",
+      "rank": "3"
+    }
+  ],
+  "wc_120": [
+    {
+      "player": "Gabe Helman",
+      "school": "Urbana",
+      "rank": "1"
+    },
+    {
+      "player": "Campbell Bowman",
+      "school": "Middletown",
+      "rank": "2"
+    },
+    {
+      "player": "Trey Covey",
+      "school": "Linganore",
+      "rank": "3"
+    }
+  ],
+  "wc_126": [
+    {
+      "player": "Liam Soe",
+      "school": "Middletown",
+      "rank": "1"
+    },
+    {
+      "player": "Nick Putnam",
+      "school": "Thomas Johnson",
+      "rank": "2"
+    },
+    {
+      "player": "Jackson Stanley",
+      "school": "Linganore",
+      "rank": "3"
+    }
+  ],
+  "wc_132": [
+    {
+      "player": "Calvin Smith",
+      "school": "Middletown",
+      "rank": "1"
+    },
+    {
+      "player": "Ryan Wheeler",
+      "school": "Tuscarora",
+      "rank": "2"
+    },
+    {
+      "player": "Reese Davis",
+      "school": "Thomas Johnson",
+      "rank": "3"
+    }
+  ],
+  "wc_138": [
+    {
+      "player": "Brodie Burdette",
+      "school": "Middletown",
+      "rank": "1"
+    },
+    {
+      "player": "Austin Flook",
+      "school": "Tuscarora",
+      "rank": "2"
+    },
+    {
+      "player": "Cayden Boedecker",
+      "school": "Brunswick",
+      "rank": "3"
+    }
+  ],
+  "wc_144": [
+    {
+      "player": "Ashton Thompson",
+      "school": "Catoctin",
+      "rank": "1"
+    },
+    {
+      "player": "Rhys Ferguson",
+      "school": "Thomas Johnson",
+      "rank": "2"
+    },
+    {
+      "player": "Ryker Keeney",
+      "school": "Middletown",
+      "rank": "3"
+    }
+  ],
+  "wc_150": [
+    {
+      "player": "Seth Crawford",
+      "school": "Brunswick",
+      "rank": "1"
+    },
+    {
+      "player": "Marty Sandy",
+      "school": "Oakdale",
+      "rank": "2"
+    },
+    {
+      "player": "Xavier Ford",
+      "school": "Middletown",
+      "rank": "3"
+    }
+  ],
+  "wc_157": [
+    {
+      "player": "Cash Wheat",
+      "school": "Linganore",
+      "rank": "1"
+    },
+    {
+      "player": "CJ Watts",
+      "school": "Brunswick",
+      "rank": "2"
+    },
+    {
+      "player": "Tobias White",
+      "school": "Middletown",
+      "rank": "3"
+    }
+  ],
+  "wc_165": [
+    {
+      "player": "Carter Canale",
+      "school": "Middletown",
+      "rank": "1"
+    },
+    {
+      "player": "Victor Guerra",
+      "school": "Frederick",
+      "rank": "2"
+    },
+    {
+      "player": "Carter Kuhar",
+      "school": "Urbana",
+      "rank": "3"
+    }
+  ],
+  "wc_175": [
+    {
+      "player": "Zach Landis",
+      "school": "Middletown",
+      "rank": "1"
+    },
+    {
+      "player": "Noah Zohrabi",
+      "school": "Linganore",
+      "rank": "2"
+    },
+    {
+      "player": "Eddy Beza",
+      "school": "Oakdale",
+      "rank": "3"
+    }
+  ],
+  "wc_190": [
+    {
+      "player": "Max Birth",
+      "school": "Walkersville",
+      "rank": "1"
+    },
+    {
+      "player": "Ben Guyton",
+      "school": "Brunswick",
+      "rank": "2"
+    },
+    {
+      "player": "Jeremy Lemus",
+      "school": "Thomas Johnson",
+      "rank": "3"
+    }
+  ],
+  "wc_215": [
+    {
+      "player": "Sam Oji",
+      "school": "Tuscarora",
+      "rank": "1"
+    },
+    {
+      "player": "Alex Tortolani",
+      "school": "Linganore",
+      "rank": "2"
+    },
+    {
+      "player": "Dorran Charles",
+      "school": "Brunswick",
+      "rank": "3"
+    }
+  ],
+  "wc_285": [
+    {
+      "player": "Lane Riggleman",
+      "school": "Brunswick",
+      "rank": "1"
+    },
+    {
+      "player": "Landon Hofgesang",
+      "school": "Middletown",
+      "rank": "2"
+    },
+    {
+      "player": "Mason Gladhill",
+      "school": "Oakdale",
+      "rank": "3"
+    }
+  ]
+}

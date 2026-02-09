@@ -1,0 +1,240 @@
+{
+  "wc_100": [
+    {
+      "player": "Emma Cruz",
+      "school": "Tuscarora",
+      "rank": "1"
+    },
+    {
+      "player": "Aline Gonzalez",
+      "school": "Thomas Johnson",
+      "rank": "2"
+    },
+    {
+      "player": "Alexia Cornwell",
+      "school": "Brunswick",
+      "rank": "3"
+    }
+  ],
+  "wc_105": [
+    {
+      "player": "Catherine Orndorff",
+      "school": "Brunswick",
+      "rank": "1"
+    },
+    {
+      "player": "Dylan Bleignier",
+      "school": "Urbana",
+      "rank": "2"
+    },
+    {
+      "player": "Kiara Funes",
+      "school": "Tuscarora",
+      "rank": "3"
+    }
+  ],
+  "wc_110": [
+    {
+      "player": "Galadriel Sandefur",
+      "school": "Urbana",
+      "rank": "1"
+    },
+    {
+      "player": "Christiana Smith",
+      "school": "Catoctin",
+      "rank": "2"
+    },
+    {
+      "player": "Leydy Perez",
+      "school": "Frederick",
+      "rank": "3"
+    }
+  ],
+  "wc_115": [
+    {
+      "player": "Katherine Virgilio",
+      "school": "Brunswick",
+      "rank": "1"
+    },
+    {
+      "player": "Madelyn Hartman",
+      "school": "Oakdale",
+      "rank": "2"
+    },
+    {
+      "player": "Ava Cruz",
+      "school": "Tuscarora",
+      "rank": "3"
+    }
+  ],
+  "wc_120": [
+    {
+      "player": "Annika Emshoff",
+      "school": "Frederick",
+      "rank": "1"
+    },
+    {
+      "player": "Kalea Summerville",
+      "school": "Tuscarora",
+      "rank": "2"
+    },
+    {
+      "player": "Daniella Petrolle",
+      "school": "Urbana",
+      "rank": "3"
+    }
+  ],
+  "wc_125": [
+    {
+      "player": "Gelin Cubias",
+      "school": "Thomas Johnson",
+      "rank": "1"
+    },
+    {
+      "player": "Candide Affo",
+      "school": "Frederick",
+      "rank": "2"
+    },
+    {
+      "player": "Allie Miranda",
+      "school": "Tuscarora",
+      "rank": "3"
+    }
+  ],
+  "wc_130": [
+    {
+      "player": "Savannah Elling",
+      "school": "Tuscarora",
+      "rank": "1"
+    },
+    {
+      "player": "Akasha Fernandez",
+      "school": "Linganore",
+      "rank": "2"
+    },
+    {
+      "player": "Jada Hall",
+      "school": "Frederick",
+      "rank": "3"
+    }
+  ],
+  "wc_135": [
+    {
+      "player": "Alexcia McCalla",
+      "school": "Tuscarora",
+      "rank": "1"
+    },
+    {
+      "player": "Chloe Whitehead",
+      "school": "Urbana",
+      "rank": "2"
+    },
+    {
+      "player": "Mia Duran",
+      "school": "Thomas Johnson",
+      "rank": "3"
+    }
+  ],
+  "wc_140": [
+    {
+      "player": "Lyla Ladd",
+      "school": "Oakdale",
+      "rank": "1"
+    },
+    {
+      "player": "Rebecca Ramirez",
+      "school": "Tuscarora",
+      "rank": "2"
+    },
+    {
+      "player": "Ibeth Izaguirre",
+      "school": "Thomas Johnson",
+      "rank": "3"
+    }
+  ],
+  "wc_145": [
+    {
+      "player": "Kristina Dorsey",
+      "school": "Tuscarora",
+      "rank": "1"
+    },
+    {
+      "player": "Cing Huai",
+      "school": "Thomas Johnson",
+      "rank": "2"
+    },
+    {
+      "player": "Brady Cox",
+      "school": "Oakdale",
+      "rank": "3"
+    }
+  ],
+  "wc_155": [
+    {
+      "player": "Yeslin Chavez-Martin",
+      "school": "Thomas Johnson",
+      "rank": "1"
+    },
+    {
+      "player": "Storm Teegarden",
+      "school": "Walkersville",
+      "rank": "2"
+    },
+    {
+      "player": "Grace Yago",
+      "school": "Urbana",
+      "rank": "3"
+    }
+  ],
+  "wc_170": [
+    {
+      "player": "Saleema Kang",
+      "school": "Walkersville",
+      "rank": "1"
+    },
+    {
+      "player": "Jennie Ann Smith",
+      "school": "Catoctin",
+      "rank": "2"
+    },
+    {
+      "player": "Savana Sexton",
+      "school": "Urbana",
+      "rank": "3"
+    }
+  ],
+  "wc_190": [
+    {
+      "player": "Jilnae Davis",
+      "school": "Tuscarora",
+      "rank": "1"
+    },
+    {
+      "player": "Savannah Cecil",
+      "school": "Frederick",
+      "rank": "2"
+    },
+    {
+      "player": "Cassandra Ruano",
+      "school": "Oakdale",
+      "rank": "3"
+    }
+  ],
+  "wc_235": [
+    {
+      "player": "Janelle Espinoza",
+      "school": "Tuscarora",
+      "rank": "1"
+    },
+    {
+      "player": "Nikki Arnold",
+      "school": "Oakdale",
+      "rank": "2"
+    },
+    {
+      "player": "Amayah Moore",
+      "school": "Frederick",
+      "rank": "3"
+    }
+  ]
+}
