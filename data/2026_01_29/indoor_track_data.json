@@ -1,0 +1,459 @@
+{
+  "boys_55_meter_dash": [
+    {
+      "player": "Jasiri Belote",
+      "school": "Tuscarora",
+      "result": "6.53"
+    },
+    {
+      "player": "Jayden Parsley",
+      "school": "Frederick",
+      "result": "6.58"
+    },
+    {
+      "player": "Elijah Alexander",
+      "school": "Thomas Johnson",
+      "result": "6.60"
+    }
+  ],
+  "boys_55_meter_hurdles": [
+    {
+      "player": "Carl Mbella",
+      "school": "Walkersville",
+      "result": "7.81"
+    },
+    {
+      "player": "Osahenrumwen Aigbogun",
+      "school": "Frederick",
+      "result": "7.96"
+    },
+    {
+      "player": "Gideon Mensah",
+      "school": "Governor Thomas",
+      "result": "8.03"
+    }
+  ],
+  "boys_300_meters": [
+    {
+      "player": "Jake Brown",
+      "school": "Linganore",
+      "result": "34.92"
+    },
+    {
+      "player": "Jasiri Belote",
+      "school": "Tuscarora",
+      "result": "35.65"
+    },
+    {
+      "player": "Finn Hines",
+      "school": "Urbana",
+      "result": "35.90"
+    }
+  ],
+  "boys_500_meters": [
+    {
+      "player": "Jake Brown",
+      "school": "Linganore",
+      "result": "1:05.86"
+    },
+    {
+      "player": "Korey Kauflin",
+      "school": "Urbana",
+      "result": "1:06.58"
+    },
+    {
+      "player": "Jacob Araujo",
+      "school": "Linganore",
+      "result": "1:08.26"
+    },
+    {
+      "player": "Kayden Harris",
+      "school": "",
+      "result": "1:08.26"
+    }
+  ],
+  "boys_800_meters": [
+    {
+      "player": "Korey Kauflin",
+      "school": "Urbana",
+      "result": "1:59.67"
+    },
+    {
+      "player": "Andrew Gregorio",
+      "school": "Oakdale",
+      "result": "2:03.45"
+    },
+    {
+      "player": "Garrett Howes",
+      "school": "Middletown",
+      "result": "2:03.61"
+    }
+  ],
+  "boys_1600_meters": [
+    {
+      "player": "Korey Kauflin",
+      "school": "Urbana",
+      "result": "4:27.33"
+    },
+    {
+      "player": "Garrett Howes",
+      "school": "Middletown",
+      "result": "4:32.20"
+    },
+    {
+      "player": "Jacob Araujo",
+      "school": "Linganore",
+      "result": "4:35.24"
+    }
+  ],
+  "boys_3200_meters": [
+    {
+      "player": "Miles Ghim",
+      "school": "Thomas Johnson",
+      "result": "9:47.23"
+    },
+    {
+      "player": "Simon Lipchock",
+      "school": "Urbana",
+      "result": "9:48.68"
+    },
+    {
+      "player": "Evan Madraymootoo",
+      "school": "Urbana",
+      "result": "9:52.68"
+    }
+  ],
+  "boys_4x200_relay": [
+    {
+      "player": "Jasiri Belote, Brayden Wilhelm, Dorian Lewis, Aidan Koffa",
+      "school": "Tuscarora",
+      "result": "1:30.74"
+    },
+    {
+      "player": "Quinton Dodds, Jake Brown, Ricky Johnson, Brandon Rosario",
+      "school": "Linganore",
+      "result": "1:32.35"
+    },
+    {
+      "player": "Prince Mvutu Mpunga, Eli Maiga, Elijah Alexander, Tristen Sepenoo",
+      "school": "Thomas Johnson",
+      "result": "1:35.48"
+    }
+  ],
+  "boys_4x400_relay": [
+    {
+      "player": "Jayden Parsley, Ronte Faunteroy, Phillip Bailey Jr., Nicholas Cherry",
+      "school": "Frederick",
+      "result": "3:32.74"
+    },
+    {
+      "player": "Eli Maiga, Prince Mvutu Mpunga, Gideon Mensah, Jubril Maigari",
+      "school": "Thomas Johnson",
+      "result": "3:36:11"
+    },
+    {
+      "player": "Finn Hines, Ishaan Curtis, Korey Kauflin, Eyal Russ",
+      "school": "Urbana",
+      "result": "3:36.71"
+    }
+  ],
+  "boys_4x800_relay": [
+    {
+      "player": "Brogan Thompson, Sai Vedas Boyapati, Merrick Collins, Andrew Gregorio",
+      "school": "Oakdale",
+      "result": "8:25.03"
+    },
+    {
+      "player": "Matthew Rodrigues, Luke Osher, Jason Behling, Korey Kauflin",
+      "school": "Urbana",
+      "result": "8:29.78"
+    },
+    {
+      "player": "Miles Ghim, Dominic Castillo, Scott Rudy, Dashiell Wexler",
+      "school": "Thomas Johnson",
+      "result": "8:30.23"
+    }
+  ],
+  "boys_shot_put": [
+    {
+      "player": "Kyler Valley",
+      "school": "Oakdale",
+      "result": "47-9"
+    },
+    {
+      "player": "Avery Clements",
+      "school": "Thomas Johnson",
+      "result": "45-0 1/4"
+    },
+    {
+      "player": "Isaiah Triesh",
+      "school": "Walkersville",
+      "result": "44-0"
+    }
+  ],
+  "boys_high_jump": [
+    {
+      "player": "Samuel Cooper",
+      "school": "Tuscarora",
+      "result": "6-8"
+    },
+    {
+      "player": "Austin Cheek",
+      "school": "Frederick",
+      "result": "6-4"
+    },
+    {
+      "player": "Masiah Martin",
+      "school": "Walkersville",
+      "result": "6-4"
+    }
+  ],
+  "boys_pole_vault": [
+    {
+      "player": "Jonas Sparks",
+      "school": "Oakdale",
+      "result": "14-3"
+    },
+    {
+      "player": "Osahenrumwen Aigbogun",
+      "school": "Frederick",
+      "result": "12-6"
+    },
+    {
+      "player": "Collin Aldridge",
+      "school": "Brunswick",
+      "result": "12-0"
+    },
+    {
+      "player": "Tyler Spencer",
+      "school": "Oakdale",
+      "result": "12-0"
+    },
+    {
+      "player": "Ryan Tang",
+      "school": "Urbana",
+      "result": "12-0"
+    }
+  ],
+  "girls_55_meter_dash": [
+    {
+      "player": "Sade Taiwo",
+      "school": "Urbana",
+      "result": "7.33"
+    },
+    {
+      "player": "Gabby Grant",
+      "school": "Urbana",
+      "result": "7.40"
+    },
+    {
+      "player": "Maddie Roque",
+      "school": "Urbana",
+      "result": "7.43"
+    }
+  ],
+  "girls_55_meter_hurdles": [
+    {
+      "player": "Gabby Umpierre",
+      "school": "Thomas Johnson",
+      "result": "8.86"
+    },
+    {
+      "player": "Miah Abernathy",
+      "school": "Frederick",
+      "result": "9.25"
+    },
+    {
+      "player": "Aliyah Williams",
+      "school": "Urbana",
+      "result": "9.30"
+    }
+  ],
+  "girls_300_meters": [
+    {
+      "player": "Sade Taiwo",
+      "school": "Urbana",
+      "result": "42.08"
+    },
+    {
+      "player": "Elianna Dougan",
+      "school": "Urbana",
+      "result": "42.53"
+    },
+    {
+      "player": "Maddie Roque",
+      "school": "Urbana",
+      "result": "42.9"
+    }
+  ],
+  "girls_500_meters": [
+    {
+      "player": "Kate Miner",
+      "school": "Urbana",
+      "result": "1:21.53"
+    },
+    {
+      "player": "Olivia Baker",
+      "school": "Catoctin",
+      "result": "1:22.36"
+    },
+    {
+      "player": "Maya Osher",
+      "school": "Urbana",
+      "result": "1:22.62"
+    }
+  ],
+  "girls_800_meters": [
+    {
+      "player": "Kate Miner",
+      "school": "Urbana",
+      "result": "2:22"
+    },
+    {
+      "player": "Maya Osher",
+      "school": "Urbana",
+      "result": "2:22.39"
+    },
+    {
+      "player": "Hailey Lane",
+      "school": "Tuscarora",
+      "result": "2:23"
+    }
+  ],
+  "girls_1600_meters": [
+    {
+      "player": "Kate Miner",
+      "school": "Urbana",
+      "result": "5:11.61"
+    },
+    {
+      "player": "Maya Osher",
+      "school": "Urbana",
+      "result": "5:15.48"
+    },
+    {
+      "player": "Hailey Lane",
+      "school": "Tuscarora",
+      "result": "5:20.86"
+    }
+  ],
+  "girls_3200_meters": [
+    {
+      "player": "Kate Miner",
+      "school": "Urbana",
+      "result": "11:31.56"
+    },
+    {
+      "player": "Madelene Kate Partlow",
+      "school": "Thomas Johnson",
+      "result": "11:45.24"
+    },
+    {
+      "player": "Siena Foster",
+      "school": "Tuscarora",
+      "result": "11:49.59"
+    }
+  ],
+  "girls_4x200_relay": [
+    {
+      "player": "Jaidah Ezcaman, Maddie Roque, Sade Taiwo, Gabby Grant",
+      "school": "Urbana",
+      "result": "1:44.61"
+    },
+    {
+      "player": "Angelyn Quansah, Heather Twum, Trinity McLaurin, Reese Rymon",
+      "school": "Oakdale",
+      "result": "1:51.27"
+    },
+    {
+      "player": "Anastasia Yaotse, Gabby Umpierre, Gabriyel Jones",
+      "school": "Addison Brockey-Rogers Thomas Johnson",
+      "result": "1:52.29"
+    }
+  ],
+  "girls_4x400_relay": [
+    {
+      "player": "Kate Miner, Brenna Davies, Briana Barberena, Maddie Roque",
+      "school": "Urbana",
+      "result": "4:16.74"
+    },
+    {
+      "player": "Naomi Layne, Lucinda Rodriguez, Sophia Tsapenko, Eila Stultz",
+      "school": "Middletown",
+      "result": "4:17.96"
+    },
+    {
+      "player": "Angelyn Quansah, Maya Di Monte, Sarah Chlebda, Lizzie Wells",
+      "school": "Oakdale",
+      "result": "4:23.61"
+    }
+  ],
+  "girls_4x800_relay": [
+    {
+      "player": "Kyleigh Kauflin, Maya Osher, Natalie Barber, Kate Miner",
+      "school": "Urbana",
+      "result": "10:04.07"
+    },
+    {
+      "player": "Olivia Gregory, Danica Arrington, Yasmeena Hassen Friess, Ysebelle Soto",
+      "school": "Frederick",
+      "result": "10:19.08"
+    },
+    {
+      "player": "Madelene Kate Partlow, Salma Mahfoud, Elizabeth Lombardo, Nina Kirkendall-Plaia",
+      "school": "Thomas Johnson",
+      "result": "10:22.42"
+    }
+  ],
+  "girls_shot_put": [
+    {
+      "player": "Julie Patchou",
+      "school": "Urbana",
+      "result": "35-1\u00bd"
+    },
+    {
+      "player": "Alexis Mangene",
+      "school": "Oakdale",
+      "result": "35-0 3/4"
+    },
+    {
+      "player": "Kaila Jones",
+      "school": "Catoctin",
+      "result": "34-10"
+    }
+  ],
+  "girls_high_jump": [
+    {
+      "player": "Ava Morales",
+      "school": "Frederick",
+      "result": "5-6"
+    },
+    {
+      "player": "Jaidah Ezcaman",
+      "school": "Urbana",
+      "result": "5-4"
+    },
+    {
+      "player": "Jordyn Summers",
+      "school": "Frederick",
+      "result": "5-2"
+    }
+  ],
+  "girls_pole_vault": [
+    {
+      "player": "Gabby Umpierre",
+      "school": "Thomas Johnson",
+      "result": "12-7"
+    },
+    {
+      "player": "Bailey Smith",
+      "school": "Urbana",
+      "result": "11-0"
+    },
+    {
+      "player": "Lennah Bailey",
+      "school": "Thomas Johnson",
+      "result": "10-6"
+    }
+  ]
+}

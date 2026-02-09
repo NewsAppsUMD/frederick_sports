@@ -1,0 +1,385 @@
+{
+  "boys_50_freestyle": [
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "22.33"
+    },
+    {
+      "player": "Elijah Price",
+      "school": "Brunswick",
+      "result": "23.53"
+    },
+    {
+      "player": "Juaquin Medina",
+      "school": "Linganore",
+      "result": "23.56"
+    }
+  ],
+  "boys_100_freestyle": [
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "49.17"
+    },
+    {
+      "player": "Juaquin Medina",
+      "school": "Linganore",
+      "result": "51.91"
+    },
+    {
+      "player": "Elijah Price",
+      "school": "Brunswick",
+      "result": "53:17"
+    }
+  ],
+  "boys_200_freestyle": [
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "1:47.70"
+    },
+    {
+      "player": "Josh Ademola",
+      "school": "Linganore",
+      "result": "1:58.47"
+    },
+    {
+      "player": "Dominick Harsanyi",
+      "school": "Linganore",
+      "result": "1:58.63"
+    }
+  ],
+  "boys_500_freestyle": [
+    {
+      "player": "Dominick Harsanyi",
+      "school": "Linganore",
+      "result": "5:14.03"
+    },
+    {
+      "player": "Josh Ademola",
+      "school": "Linganore",
+      "result": "5:16.88"
+    },
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "5:19.36"
+    }
+  ],
+  "boys_100_backstroke": [
+    {
+      "player": "John Gloss",
+      "school": "Walkersville",
+      "result": "59.50"
+    },
+    {
+      "player": "Juaquin Medina",
+      "school": "Linganore",
+      "result": "1:00.36"
+    },
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "1:01.57"
+    }
+  ],
+  "boys_100_breaststroke": [
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "1:00.77"
+    },
+    {
+      "player": "Wang-Lok Ng",
+      "school": "T. Johnson",
+      "result": "1:03.96"
+    },
+    {
+      "player": "Dominick Harsanyi",
+      "school": "Linganore",
+      "result": "1:06.34"
+    }
+  ],
+  "boys_100_butterfly": [
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "52.85"
+    },
+    {
+      "player": "Wang-Lok Ng",
+      "school": "T. Johnson",
+      "result": "57.91"
+    },
+    {
+      "player": "John Gloss",
+      "school": "Walkersville",
+      "result": "57.93"
+    }
+  ],
+  "boys_200_individual_medley": [
+    {
+      "player": "Andrew Davis",
+      "school": "Walkersville",
+      "result": "2:00.21"
+    },
+    {
+      "player": "Wang-Lok Ng",
+      "school": "T. Johnson",
+      "result": "2:10.06"
+    },
+    {
+      "player": "Juaquin Medina",
+      "school": "Linganore",
+      "result": "2:10.38"
+    }
+  ],
+  "boys_diving": [
+    {
+      "player": "Killian Tucker",
+      "school": "Walkersville",
+      "result": "148.95"
+    },
+    {
+      "player": "Luka Lyeonov",
+      "school": "T. Johnson",
+      "result": "142.45"
+    }
+  ],
+  "boys_200_medley_relay": [
+    {
+      "player": "Juaquin Medina, Dominick Harsanyi, Alijah Bustamante, Tyler Gibson",
+      "school": "Linganore",
+      "result": "1:49.43"
+    },
+    {
+      "player": "Elijah Price, A. Manfred Konter, Lucas Ku, Jason Kittredge",
+      "school": "Brunswick",
+      "result": "1:56.04"
+    }
+  ],
+  "boys_200_freestyle_relay": [
+    {
+      "player": "Dominick Harsanyi, Tyler Gibson, Josh Ademola, Juaquin Medina",
+      "school": "Linganore",
+      "result": "1:36.92"
+    },
+    {
+      "player": "A. Manfred Konter, Lucas Ku, Jason Kittredge, Elijah Price",
+      "school": "Brunswick",
+      "result": "1:49.02"
+    }
+  ],
+  "boys_400_freestyle_relay": [
+    {
+      "player": "Dominick Harsanyi, Tyler Gibson, Josh Ademola, Juaquin Medina",
+      "school": "Linganore",
+      "result": "3:42.53"
+    }
+  ],
+  "girls_50_freestyle": [
+    {
+      "player": "Claire Ingram",
+      "school": "Linganore",
+      "result": "25.99"
+    },
+    {
+      "player": "Charlotte Deigan",
+      "school": "Linganore",
+      "result": "26.43"
+    },
+    {
+      "player": "Carly Timme",
+      "school": "Middletown",
+      "result": "26.65"
+    }
+  ],
+  "girls_100_freestyle": [
+    {
+      "player": "Charlotte Deigan",
+      "school": "Linganore",
+      "result": "57.62"
+    },
+    {
+      "player": "Claire Ingram",
+      "school": "Linganore",
+      "result": "57.81"
+    },
+    {
+      "player": "Audrey Corrigan",
+      "school": "Walkersville",
+      "result": "1:00.01"
+    }
+  ],
+  "girls_200_freestyle": [
+    {
+      "player": "Carly Timme",
+      "school": "Middletown",
+      "result": "2:04.08"
+    },
+    {
+      "player": "Sydney Warren",
+      "school": "T. Johnson",
+      "result": "2:15.79"
+    },
+    {
+      "player": "Charlotte Deigan",
+      "school": "Linganore",
+      "result": "2:16.49"
+    }
+  ],
+  "girls_500_freestyle": [
+    {
+      "player": "Carly Timme",
+      "school": "Middletown",
+      "result": "5:30.98"
+    },
+    {
+      "player": "Sydney Warren",
+      "school": "T. Johnson",
+      "result": "5:57.40"
+    },
+    {
+      "player": "Charlotte Deigan",
+      "school": "Linganore",
+      "result": "5:57.69"
+    }
+  ],
+  "girls_100_backstroke": [
+    {
+      "player": "Maddy Harshman",
+      "school": "Middletown",
+      "result": "1:04.63"
+    },
+    {
+      "player": "Claire Ingram",
+      "school": "Linganore",
+      "result": "1:05.50"
+    },
+    {
+      "player": "Silva Carlson",
+      "school": "T. Johnson",
+      "result": "1:07.88"
+    }
+  ],
+  "girls_100_breaststroke": [
+    {
+      "player": "Claire Ingram",
+      "school": "Linganore",
+      "result": "1:10.97"
+    },
+    {
+      "player": "Kelsey Hanlon",
+      "school": "Linganore",
+      "result": "1:18.12"
+    },
+    {
+      "player": "Audrey Corrigan",
+      "school": "Walkersville",
+      "result": "1:19.70"
+    }
+  ],
+  "girls_100_butterfly": [
+    {
+      "player": "Claire Ingram",
+      "school": "Linganore",
+      "result": "1:02.27"
+    },
+    {
+      "player": "Charlotte Deigan",
+      "school": "Linganore",
+      "result": "1:04.58"
+    },
+    {
+      "player": "Carly Timme",
+      "school": "Middletown",
+      "result": "1:06.07"
+    }
+  ],
+  "girls_200_individual_medley": [
+    {
+      "player": "Claire Ingram",
+      "school": "Linganore",
+      "result": "2:24.90"
+    },
+    {
+      "player": "Audrey Corrigan",
+      "school": "Walkersville",
+      "result": "2:25.82"
+    },
+    {
+      "player": "Charlotte Deigan",
+      "school": "Linganore",
+      "result": "2:29.14"
+    }
+  ],
+  "girls_diving": [
+    {
+      "player": "Natalie Lertora",
+      "school": "Walkersville",
+      "result": "176.70"
+    },
+    {
+      "player": "Maddy Harshman",
+      "school": "Middletown",
+      "result": "165.65"
+    },
+    {
+      "player": "Lennah Bailey",
+      "school": "T. Johnson",
+      "result": "164.6"
+    }
+  ],
+  "girls_200_medley_relay": [
+    {
+      "player": "Charlotte Deigan, Kelsey Hanlon, Claire Ingram, Chloe Kim",
+      "school": "Linganore",
+      "result": "2:02.60"
+    },
+    {
+      "player": "Maddy Harshman, Ava Gordon, Susi Claney, Carly Timme",
+      "school": "Middletown",
+      "result": "2:03.48"
+    },
+    {
+      "player": "Madeline McGoldrick, Jossalyn Henry, Lila Broadrup, Eden Evans",
+      "school": "Brunswick",
+      "result": "2:30.81"
+    }
+  ],
+  "girls_200_freestyle_relay": [
+    {
+      "player": "Claire Ingram, Adison Norris, Chloe Kim, Charlotte Deigan",
+      "school": "Linganore",
+      "result": "1:50.98"
+    },
+    {
+      "player": "Susa Claney, Raegen Elder, Eleonora Trujillo, Ella Heritage",
+      "school": "Middletown",
+      "result": "1:57.29"
+    },
+    {
+      "player": "Vivian Alexander, Madison George, Emmaline Marra, Ava Bonanno",
+      "school": "Brunswick",
+      "result": "2:07.17"
+    }
+  ],
+  "girls_400_freestyle_relay": [
+    {
+      "player": "Charlotte Deigan, Kelsey Hanlon, Chloe Kim, Claire Ingram",
+      "school": "Linganore",
+      "result": "4:04.77"
+    },
+    {
+      "player": "Maddy Harshman, Ella Heritage, Phiona Snyder, Carly Timme",
+      "school": "Middletown",
+      "result": "4:17.88"
+    },
+    {
+      "player": "Ava Bonanno, Madison George, Vivian Alexander, Eden Evans",
+      "school": "Brunswick",
+      "result": "4:39.03"
+    }
+  ]
+}

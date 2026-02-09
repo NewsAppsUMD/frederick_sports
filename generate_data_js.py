@@ -17,6 +17,7 @@ OUTPUT_FILE = Path('docs/data.js')
 DATES = [
     {'value': '2025_10_23', 'label': 'Oct 23, 2025'},
     {'value': '2025_12_06', 'label': 'Dec 6, 2025'},
+    {'value': '2026_01_29', 'label': 'Jan 29, 2026'},
 ]
 
 # Sport configurations
@@ -248,6 +249,112 @@ SPORTS_CONFIG = {
                 ]
             }
         ]
+    },
+    'boys-basketball': {
+        'name': 'Boys Basketball',
+        'file': 'boys_basketball_data.json',
+        'standings_file': 'boys_basketball_standings.json',
+        'standings_type': 'cmc_basketball',
+        'leaders': [
+            {
+                'categoryName': 'Scoring',
+                'source': 'scoring',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'pts', 'label': 'Pts'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            },
+            {
+                'categoryName': 'Rebounds',
+                'source': 'rebounds',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'reb', 'label': 'Reb'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            },
+            {
+                'categoryName': 'Assists',
+                'source': 'assists',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'ast', 'label': 'Ast'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            }
+        ]
+    },
+    'girls-basketball': {
+        'name': 'Girls Basketball',
+        'file': 'girls_basketball_data.json',
+        'standings_file': 'girls_basketball_standings.json',
+        'standings_type': 'cmc_basketball',
+        'leaders': [
+            {
+                'categoryName': 'Scoring',
+                'source': 'scoring',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'pts', 'label': 'Pts'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            },
+            {
+                'categoryName': 'Rebounds',
+                'source': 'rebounds',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'reb', 'label': 'Reb'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            },
+            {
+                'categoryName': 'Assists',
+                'source': 'assists',
+                'headers': [
+                    {'key': 'gp', 'label': 'GP'},
+                    {'key': 'ast', 'label': 'Ast'},
+                    {'key': 'avg', 'label': 'Avg'}
+                ]
+            }
+        ]
+    },
+    'boys-wrestling': {
+        'name': 'Boys Wrestling',
+        'file': 'boys_wrestling_data.json',
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'rank', 'label': 'Rank'},
+        ],
+        'leaders': []
+    },
+    'girls-wrestling': {
+        'name': 'Girls Wrestling',
+        'file': 'girls_wrestling_data.json',
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'rank', 'label': 'Rank'},
+        ],
+        'leaders': []
+    },
+    'indoor-track': {
+        'name': 'Indoor Track & Field',
+        'file': 'indoor_track_data.json',
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'result', 'label': 'Result'},
+        ],
+        'leaders': []
+    },
+    'swimming': {
+        'name': 'Swimming & Diving',
+        'file': 'swimming_data.json',
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'result', 'label': 'Result'},
+        ],
+        'leaders': []
     }
 }
 
@@ -274,8 +381,36 @@ RANKINGS_BY_DATE = {
         {'sport': 'Boys Cross Country', 'items': [{'team': 'Urbana'}, {'team': 'Thomas Johnson'}, {'team': 'Brunswick'}, {'team': 'Oakdale'}]},
         {'sport': 'Girls Cross Country', 'items': [{'team': 'Urbana'}, {'team': 'Thomas Johnson'}, {'team': 'Frederick'}, {'team': 'Tuscarora'}]},
         {'sport': 'Golf', 'items': [{'team': 'Linganore'}, {'team': 'Middletown'}, {'team': 'Oakdale'}]},
+    ],
+    '2026_01_29': [
+        {'sport': 'Boys Basketball', 'items': [{'team': 'Middletown'}, {'team': 'Oakdale'}, {'team': 'Linganore'}, {'team': 'T. Johnson'}]},
+        {'sport': 'Girls Basketball', 'items': [{'team': 'Linganore'}, {'team': 'Urbana'}, {'team': 'Frederick'}, {'team': 'Oakdale'}]},
+        {'sport': 'Boys Wrestling', 'items': [{'team': 'Middletown'}, {'team': 'Brunswick'}, {'team': 'Oakdale'}]},
+        {'sport': 'Girls Wrestling', 'items': [{'team': 'Tuscarora'}, {'team': 'Urbana'}, {'team': 'Frederick'}]},
+        {'sport': 'Boys Indoor Track & Field', 'items': [{'team': 'Urbana'}, {'team': 'Oakdale'}, {'team': 'Linganore'}, {'team': 'Thomas Johnson'}]},
+        {'sport': 'Girls Indoor Track & Field', 'items': [{'team': 'Urbana'}, {'team': 'Thomas Johnson'}, {'team': 'Frederick'}, {'team': 'Oakdale'}]},
     ]
 }
+
+
+def format_key_as_category(key: str) -> str:
+    """Convert a JSON key like 'wc_106' or 'boys_55_meter_dash' to a display name."""
+    import re as _re
+    # Wrestling weight classes: wc_106 -> "106 lbs"
+    if key.startswith('wc_'):
+        return f"{key[3:]} lbs"
+    # Track/swim events: boys_55_meter_dash -> "Boys: 55-meter dash"
+    for prefix in ['boys_', 'girls_']:
+        if key.startswith(prefix):
+            gender = prefix.rstrip('_').capitalize()
+            event = key[len(prefix):].replace('_', ' ')
+            # Fix "55 meter dash" -> "55-meter dash", "55 meter hurdles" -> "55-meter hurdles"
+            event = _re.sub(r'(\d+) meter (dash|hurdles)', r'\1-meter \2', event)
+            # Fix "1600 meters" -> "1,600 meters", "3200 meters" -> "3,200 meters"
+            event = _re.sub(r'^(\d)(\d{3})\b', r'\1,\2', event)
+            event = event[0].upper() + event[1:] if event else event
+            return f"{gender}: {event}"
+    return key.replace('_', ' ').title()
 
 
 def load_json_data(date_str: str, filename: str) -> dict:
@@ -294,22 +429,33 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
         return None
 
     leaders = []
-    for leader_config in config['leaders']:
-        source_key = leader_config['source']
+    if config.get('leaders_from_keys'):
+        # Dynamic categories from JSON keys (wrestling weight classes, track/swim events)
+        leader_headers = config.get('leader_headers', [])
+        for key, players in data.items():
+            if players:
+                leaders.append({
+                    'categoryName': format_key_as_category(key),
+                    'headers': leader_headers,
+                    'players': players
+                })
+    else:
+        for leader_config in config['leaders']:
+            source_key = leader_config['source']
 
-        # Handle different data structures
-        if source_key == 'players':
-            # Golf has flat list
-            players = data if isinstance(data, list) else []
-        else:
-            players = data.get(source_key, [])
+            # Handle different data structures
+            if source_key == 'players':
+                # Golf has flat list
+                players = data if isinstance(data, list) else []
+            else:
+                players = data.get(source_key, [])
 
-        if players:
-            leaders.append({
-                'categoryName': leader_config['categoryName'],
-                'headers': leader_config['headers'],
-                'players': players  # Show all players
-            })
+            if players:
+                leaders.append({
+                    'categoryName': leader_config['categoryName'],
+                    'headers': leader_config['headers'],
+                    'players': players  # Show all players
+                })
 
     # Load standings if available
     standings = []
@@ -346,6 +492,20 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
                         ],
                         'teams': other_schools
                     })
+            elif standings_type == 'cmc_basketball':
+                # Basketball CMC format: {DIVISION: [{team, div_w, div_l, overall_w, overall_l}]}
+                for division, teams in standings_data.items():
+                    if teams:
+                        standings.append({
+                            'division': division,
+                            'headers': [
+                                {'key': 'div_w', 'label': 'Div W'},
+                                {'key': 'div_l', 'label': 'Div L'},
+                                {'key': 'overall_w', 'label': 'Ovr W'},
+                                {'key': 'overall_l', 'label': 'Ovr L'}
+                            ],
+                            'teams': teams
+                        })
             elif standings_type == 'cmc':
                 # Central Maryland Conference format: {DIVISION: [{team, div_wins, div_losses, div_ties, overall_wins, overall_losses, overall_ties}]}
                 for division, teams in standings_data.items():
