@@ -241,7 +241,7 @@ def parse_basketball_section(lines):
                     i += 1
                     continue
                 # Check if we've hit a new section
-                if tline in division_names or tline == 'Other Schools' or tline == 'Individual Leaders':
+                if tline in division_names or tline.startswith('Other Schools') or tline == 'Individual Leaders':
                     break
                 # Parse team: "School;W;L;;W;L" or "School;W;L;W;L"
                 parts = tline.split(';')
@@ -265,7 +265,7 @@ def parse_basketball_section(lines):
             continue
 
         # Check for Other Schools
-        if line == 'Other Schools':
+        if line.startswith('Other Schools'):
             in_other_schools = True
             result['standings']['Other Schools'] = []
             i += 1

@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-02-15 11:39:48
+// Generated on 2026-02-15 11:49:38
 
 export const availableDates = [
   {
@@ -13974,27 +13974,36 @@ export const sportsData = [
             "div_l": "5",
             "overall_w": "4",
             "overall_l": "13"
+          }
+        ]
+      },
+      {
+        "division": "Other Schools",
+        "headers": [
+          {
+            "key": "w",
+            "label": "W"
           },
           {
+            "key": "l",
+            "label": "L"
+          }
+        ],
+        "teams": [
+          {
             "team": "Frederick Warriors",
-            "div_w": "10",
-            "div_l": "8",
-            "overall_w": "",
-            "overall_l": ""
+            "w": "10",
+            "l": "8"
           },
           {
             "team": "Maryland School for the Deaf",
-            "div_w": "9",
-            "div_l": "13",
-            "overall_w": "",
-            "overall_l": ""
+            "w": "9",
+            "l": "13"
           },
           {
             "team": "St. John's Catholic Prep",
-            "div_w": "2",
-            "div_l": "10",
-            "overall_w": "",
-            "overall_l": ""
+            "w": "2",
+            "l": "10"
           }
         ]
       }
