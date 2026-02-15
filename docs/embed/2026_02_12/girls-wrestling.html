@@ -1,0 +1,242 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Girls Wrestling</h2>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>100 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Emma Cruz</div><div class="player-school">Tuscarora</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Aline Gonzalez</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Alexia Cornwell</div><div class="player-school">Brunswick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>105 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Catherine Orndorff</div><div class="player-school">Brunswick</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Dylan Bleignier</div><div class="player-school">Urbana</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Kiara Funes</div><div class="player-school">Tuscarora</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>110 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Galadriel Sandefur</div><div class="player-school">Urbana</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Christiana Smith</div><div class="player-school">Catoctin</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Leydy Perez</div><div class="player-school">Frederick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>115 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Katherine Virgilio</div><div class="player-school">Brunswick</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Madelyn Hartman</div><div class="player-school">Oakdale</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Ava Cruz</div><div class="player-school">Tuscarora</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>120 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Annika Emshoff</div><div class="player-school">Frederick</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Kalea Summerville</div><div class="player-school">Tuscarora</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Daniella Petrolle</div><div class="player-school">Urbana</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>125 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Gelin Cubias</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Candide Affo</div><div class="player-school">Frederick</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Allie Miranda</div><div class="player-school">Tuscarora</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>130 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Savannah Elling</div><div class="player-school">Tuscarora</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Akasha Fernandez</div><div class="player-school">Linganore</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Jada Hall</div><div class="player-school">Frederick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>135 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Alexcia McCalla</div><div class="player-school">Tuscarora</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Chloe Whitehead</div><div class="player-school">Urbana</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Mia Duran</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>140 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Lyla Ladd</div><div class="player-school">Oakdale</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Rebecca Ramirez</div><div class="player-school">Tuscarora</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Ibeth Izaguirre</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>145 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Kristina Dorsey</div><div class="player-school">Tuscarora</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Cing Huai</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Brady Cox</div><div class="player-school">Oakdale</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>155 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Yeslin Chavez-Martin</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Grace Yago</div><div class="player-school">Urbana</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Storm Teegarden</div><div class="player-school">Walkersville</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>170 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Saleema Kang</div><div class="player-school">Walkersville</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Jennie Ann Smith</div><div class="player-school">Catoctin</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Savana Sexton</div><div class="player-school">Urbana</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>190 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Jilnae Davis</div><div class="player-school">Tuscarora</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Savannah Cecil</div><div class="player-school">Frederick</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Cassandra Ruano</div><div class="player-school">Oakdale</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>235 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Janelle Espinoza</div><div class="player-school">Tuscarora</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Nikki Arnold</div><div class="player-school">Oakdale</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Amayah Moore</div><div class="player-school">Frederick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>

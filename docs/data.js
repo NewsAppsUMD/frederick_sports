@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-02-15 12:14:14
+// Generated on 2026-02-15 12:30:29
 
 export const availableDates = [
   {
@@ -9082,7 +9082,7 @@ export const sportsData = [
     "id": "boys-basketball",
     "name": "Boys Basketball",
     "date": "2026_01_29",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [
       {
         "division": "Spires Division",
@@ -9974,7 +9974,7 @@ export const sportsData = [
     "id": "girls-basketball",
     "name": "Girls Basketball",
     "date": "2026_01_29",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [
       {
         "division": "Spires Division",
@@ -10849,7 +10849,7 @@ export const sportsData = [
     "id": "boys-wrestling",
     "name": "Boys Wrestling",
     "date": "2026_01_29",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -11222,7 +11222,7 @@ export const sportsData = [
     "id": "girls-wrestling",
     "name": "Girls Wrestling",
     "date": "2026_01_29",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -11595,7 +11595,7 @@ export const sportsData = [
     "id": "indoor-track",
     "name": "Indoor Track & Field",
     "date": "2026_01_29",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -12295,7 +12295,7 @@ export const sportsData = [
     "id": "swimming",
     "name": "Swimming & Diving",
     "date": "2026_01_29",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -12903,7 +12903,7 @@ export const sportsData = [
     "id": "boys-basketball",
     "name": "Boys Basketball",
     "date": "2026_02_12",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [
       {
         "division": "Spires Division",
@@ -13795,7 +13795,7 @@ export const sportsData = [
     "id": "girls-basketball",
     "name": "Girls Basketball",
     "date": "2026_02_12",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [
       {
         "division": "Spires Division",
@@ -14649,7 +14649,7 @@ export const sportsData = [
     "id": "boys-wrestling",
     "name": "Boys Wrestling",
     "date": "2026_02_12",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -15022,7 +15022,7 @@ export const sportsData = [
     "id": "girls-wrestling",
     "name": "Girls Wrestling",
     "date": "2026_02_12",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -15395,7 +15395,7 @@ export const sportsData = [
     "id": "indoor-track",
     "name": "Indoor Track & Field",
     "date": "2026_02_12",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -16095,7 +16095,7 @@ export const sportsData = [
     "id": "swimming",
     "name": "Swimming & Diving",
     "date": "2026_02_12",
-    "hasEmbed": false,
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {

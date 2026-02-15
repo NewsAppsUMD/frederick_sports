@@ -1,0 +1,337 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Swimming & Diving</h2>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 50 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">22.33</td></tr>
+<tr><td><div class="player-name">Elijah Price, Brunswick</div><div class="player-school"></div></td><td class="numeric">23.53</td></tr>
+<tr><td><div class="player-name">Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">23.56</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">49.17</td></tr>
+<tr><td><div class="player-name">Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">51.91</td></tr>
+<tr><td><div class="player-name">Elijah Price, Brunswick</div><div class="player-school"></div></td><td class="numeric">53:17</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">1:47.70</td></tr>
+<tr><td><div class="player-name">Josh Ademola, Linganore</div><div class="player-school"></div></td><td class="numeric">1:58.47</td></tr>
+<tr><td><div class="player-name">Dominick Harsanyi, Linganore</div><div class="player-school"></div></td><td class="numeric">1:58.63</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 500 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Dominick Harsanyi, Linganore</div><div class="player-school"></div></td><td class="numeric">5:14.03</td></tr>
+<tr><td><div class="player-name">Josh Ademola, Linganore</div><div class="player-school"></div></td><td class="numeric">5:16.88</td></tr>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">5:19.36</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 backstroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">John Gloss, Walkersville</div><div class="player-school"></div></td><td class="numeric">59.50</td></tr>
+<tr><td><div class="player-name">Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">1:00.36</td></tr>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">1:01.57</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 breaststroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">1:00.77</td></tr>
+<tr><td><div class="player-name">Wang-Lok Ng, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">1:03.96</td></tr>
+<tr><td><div class="player-name">Dominick Harsanyi, Linganore</div><div class="player-school"></div></td><td class="numeric">1:06.34</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 butterfly</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">52.85</td></tr>
+<tr><td><div class="player-name">Wang-Lok Ng, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">57.91</td></tr>
+<tr><td><div class="player-name">John Gloss, Walkersville</div><div class="player-school"></div></td><td class="numeric">57.93</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 individual medley</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">2:00.21</td></tr>
+<tr><td><div class="player-name">Wang-Lok Ng, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">2:10.06</td></tr>
+<tr><td><div class="player-name">Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">2:10.38</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: Diving</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Killian Tucker, Walkersville</div><div class="player-school"></div></td><td class="numeric">148.95</td></tr>
+<tr><td><div class="player-name">Luka Lyeonov, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">142.45</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 medley relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Juaquin Medina, Dominick Harsanyi, Alijah Bustamante, Tyler Gibson, Linganore</div><div class="player-school"></div></td><td class="numeric">1:49.43</td></tr>
+<tr><td><div class="player-name">Elijah Price, A. Manfred Konter, Lucas Ku, Jason Kittredge, Brunswick</div><div class="player-school"></div></td><td class="numeric">1:56.04</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Dominick Harsanyi, Tyler Gibson, Josh Ademola, Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">1:36.92</td></tr>
+<tr><td><div class="player-name">A. Manfred Konter, Lucas Ku, Jason Kittredge, Elijah Price, Brunswick</div><div class="player-school"></div></td><td class="numeric">1:49.02</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 400 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Dominick Harsanyi, Tyler Gibson, Josh Ademola, Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">3:42.53</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 50 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">25.99</td></tr>
+<tr><td><div class="player-name">Charlotte Deigan, Linganore</div><div class="player-school"></div></td><td class="numeric">26.43</td></tr>
+<tr><td><div class="player-name">Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">26.65</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Charlotte Deigan, Linganore</div><div class="player-school"></div></td><td class="numeric">57.62</td></tr>
+<tr><td><div class="player-name">Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">57.81</td></tr>
+<tr><td><div class="player-name">Audrey Corrigan, Walkersville</div><div class="player-school"></div></td><td class="numeric">1:00.01</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">2:04.08</td></tr>
+<tr><td><div class="player-name">Sydney Warren, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">2:15.79</td></tr>
+<tr><td><div class="player-name">Charlotte Deigan, Linganore</div><div class="player-school"></div></td><td class="numeric">2:16.49</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 500 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">5:30.98</td></tr>
+<tr><td><div class="player-name">Sydney Warren, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">5:57.40</td></tr>
+<tr><td><div class="player-name">Charlotte Deigan, Linganore</div><div class="player-school"></div></td><td class="numeric">5:57.69</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 backstroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Maddy Harshman, Middletown</div><div class="player-school"></div></td><td class="numeric">1:04.63</td></tr>
+<tr><td><div class="player-name">Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">1:05.50</td></tr>
+<tr><td><div class="player-name">Silva Carlson, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">1:07.88</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 breaststroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">1:10.97</td></tr>
+<tr><td><div class="player-name">Kelsey Hanlon, Linganore</div><div class="player-school"></div></td><td class="numeric">1:18.12</td></tr>
+<tr><td><div class="player-name">Audrey Corrigan, Walkersville</div><div class="player-school"></div></td><td class="numeric">1:19.70</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 butterfly</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">1:02.27</td></tr>
+<tr><td><div class="player-name">Charlotte Deigan, Linganore</div><div class="player-school"></div></td><td class="numeric">1:04.58</td></tr>
+<tr><td><div class="player-name">Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">1:06.07</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 individual medley</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">2:24.90</td></tr>
+<tr><td><div class="player-name">Audrey Corrigan, Walkersville</div><div class="player-school"></div></td><td class="numeric">2:25.82</td></tr>
+<tr><td><div class="player-name">Charlotte Deigan, Linganore</div><div class="player-school"></div></td><td class="numeric">2:29.14</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: Diving</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Natalie Lertora, Walkersville</div><div class="player-school"></div></td><td class="numeric">176.70</td></tr>
+<tr><td><div class="player-name">Maddy Harshman, Middletown</div><div class="player-school"></div></td><td class="numeric">165.65</td></tr>
+<tr><td><div class="player-name">Lennah Bailey, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">164.6</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 medley relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Charlotte Deigan, Kelsey Hanlon, Claire Ingram, Chloe Kim, Linganore</div><div class="player-school"></div></td><td class="numeric">2:02.60</td></tr>
+<tr><td><div class="player-name">Maddy Harshman, Ava Gordon, Susi Claney, Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">2:03.48</td></tr>
+<tr><td><div class="player-name">Madeline McGoldrick, Jossalyn Henry, Lila Broadrup, Eden Evans, Brunswick</div><div class="player-school"></div></td><td class="numeric">2:30.81</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Claire Ingram, Adison Norris, Chloe Kim, Charlotte Deigan, Linganore</div><div class="player-school"></div></td><td class="numeric">1:50.98</td></tr>
+<tr><td><div class="player-name">Susa Claney, Raegen Elder, Eleonora Trujillo, Ella Heritage, Middletown</div><div class="player-school"></div></td><td class="numeric">1:57.29</td></tr>
+<tr><td><div class="player-name">Vivian Alexander, Madison George, Emmaline Marra, Ava Bonanno, Brunswick</div><div class="player-school"></div></td><td class="numeric">2:07.17</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 400 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Charlotte Deigan, Kelsey Hanlon, Chloe Kim, Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">4:04.77</td></tr>
+<tr><td><div class="player-name">Maddy Harshman, Ella Heritage, Phiona Snyder, Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">4:17.88</td></tr>
+<tr><td><div class="player-name">Ava Bonanno, Madison George, Vivian Alexander, Eden Evans, Brunswick</div><div class="player-school"></div></td><td class="numeric">4:39.03</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>

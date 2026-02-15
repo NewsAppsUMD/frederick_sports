@@ -188,6 +188,33 @@ def generate_standings_html(standings_data: dict, standings_type: str) -> str:
                 html += f'<td class="numeric">{team.get("overall_ties", "0")}</td></tr>\n'
             html += '</tbody></table>\n</div>\n'
 
+    elif standings_type == 'cmc_basketball':
+        # CMC basketball standings with divisions + Other Schools
+        for division, teams in standings_data.items():
+            if not teams:
+                continue
+            html += '<div>\n'
+            html += f'<h4>{division}</h4>\n'
+            html += '<table class="stats-table">\n'
+            if division == 'Other Schools':
+                html += '<thead><tr><th>Team</th><th class="numeric">W</th><th class="numeric">L</th></tr></thead>\n'
+                html += '<tbody>\n'
+                for team in teams:
+                    html += f'<tr><td>{team.get("team", "")}</td>'
+                    html += f'<td class="numeric">{team.get("w", "")}</td>'
+                    html += f'<td class="numeric">{team.get("l", "")}</td></tr>\n'
+            else:
+                html += '<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th>'
+                html += '<th class="numeric">Ovr W</th><th class="numeric">Ovr L</th></tr></thead>\n'
+                html += '<tbody>\n'
+                for team in teams:
+                    html += f'<tr><td>{team.get("team", "")}</td>'
+                    html += f'<td class="numeric">{team.get("div_w", "")}</td>'
+                    html += f'<td class="numeric">{team.get("div_l", "")}</td>'
+                    html += f'<td class="numeric">{team.get("overall_w", "")}</td>'
+                    html += f'<td class="numeric">{team.get("overall_l", "")}</td></tr>\n'
+            html += '</tbody></table>\n</div>\n'
+
     html += '</div>\n'
     return html
 
@@ -219,6 +246,64 @@ def generate_leaders_html(stats_data: dict, leader_configs: list) -> str:
             html += f'<td><div class="player-name">{player.get("player", "")}</div>'
             html += f'<div class="player-school">{player.get("school", "")}</div></td>'
             for header in config['headers']:
+                value = player.get(header['key'], '')
+                html += f'<td class="numeric">{value}</td>'
+            html += '</tr>\n'
+
+        html += '</tbody></table>\n</div>\n'
+
+    html += '</div>\n'
+    return html
+
+
+def format_key_as_category(key: str) -> str:
+    """Convert a JSON key like 'wc_106' or 'boys_55_meter_dash' to a display name."""
+    import re as _re
+    # Wrestling weight classes: wc_106 -> "106 lbs"
+    if key.startswith('wc_'):
+        return f"{key[3:]} lbs"
+    # Track/swim events: boys_55_meter_dash -> "Boys: 55-meter dash"
+    for prefix in ['boys_', 'girls_']:
+        if key.startswith(prefix):
+            gender = prefix.rstrip('_').capitalize()
+            event = key[len(prefix):].replace('_', ' ')
+            event = _re.sub(r'(\d+) meter (dash|hurdles)', r'\1-meter \2', event)
+            event = _re.sub(r'^(\d)(\d{3})\b', r'\1,\2', event)
+            event = event[0].upper() + event[1:] if event else event
+            return f"{gender}: {event}"
+    return key.replace('_', ' ').title()
+
+
+def generate_dynamic_leaders_html(stats_data: dict, leader_headers: list) -> str:
+    """Generate HTML for sports with dynamic categories (wrestling, track, swimming).
+
+    JSON keys become category names. Each key maps to a list of player entries.
+    """
+    if not stats_data:
+        return ""
+
+    html = '<div class="leaders-grid">\n'
+
+    for key, players in stats_data.items():
+        if not players:
+            continue
+
+        category_name = format_key_as_category(key)
+
+        html += '<div class="leader-card">\n'
+        html += f'<div class="leader-card-header"><h4>{category_name}</h4></div>\n'
+        html += '<table class="stats-table">\n'
+        html += '<thead><tr><th>Player</th>'
+        for header in leader_headers:
+            html += f'<th class="numeric">{header["label"]}</th>'
+        html += '</tr></thead>\n'
+        html += '<tbody>\n'
+
+        for player in players:
+            html += '<tr>'
+            html += f'<td><div class="player-name">{player.get("player", "")}</div>'
+            html += f'<div class="player-school">{player.get("school", "")}</div></td>'
+            for header in leader_headers:
                 value = player.get(header['key'], '')
                 html += f'<td class="numeric">{value}</td>'
             html += '</tr>\n'
@@ -363,6 +448,87 @@ SPORT_CONFIGS = {
                 {'key': 'average', 'label': 'Avg'}
             ]}
         ]
+    },
+    # Winter sports
+    'boys-basketball': {
+        'name': 'Boys Basketball',
+        'data_file': 'boys_basketball_data.json',
+        'standings_file': 'boys_basketball_standings.json',
+        'standings_type': 'cmc_basketball',
+        'leaders': [
+            {'categoryName': 'Scoring', 'source': 'scoring', 'headers': [
+                {'key': 'gp', 'label': 'GP'}, {'key': 'pts', 'label': 'Pts'},
+                {'key': 'avg', 'label': 'Avg'}
+            ]},
+            {'categoryName': 'Rebounds', 'source': 'rebounds', 'headers': [
+                {'key': 'gp', 'label': 'GP'}, {'key': 'reb', 'label': 'Reb'},
+                {'key': 'avg', 'label': 'Avg'}
+            ]},
+            {'categoryName': 'Assists', 'source': 'assists', 'headers': [
+                {'key': 'gp', 'label': 'GP'}, {'key': 'ast', 'label': 'Ast'},
+                {'key': 'avg', 'label': 'Avg'}
+            ]}
+        ]
+    },
+    'girls-basketball': {
+        'name': 'Girls Basketball',
+        'data_file': 'girls_basketball_data.json',
+        'standings_file': 'girls_basketball_standings.json',
+        'standings_type': 'cmc_basketball',
+        'leaders': [
+            {'categoryName': 'Scoring', 'source': 'scoring', 'headers': [
+                {'key': 'gp', 'label': 'GP'}, {'key': 'pts', 'label': 'Pts'},
+                {'key': 'avg', 'label': 'Avg'}
+            ]},
+            {'categoryName': 'Rebounds', 'source': 'rebounds', 'headers': [
+                {'key': 'gp', 'label': 'GP'}, {'key': 'reb', 'label': 'Reb'},
+                {'key': 'avg', 'label': 'Avg'}
+            ]},
+            {'categoryName': 'Assists', 'source': 'assists', 'headers': [
+                {'key': 'gp', 'label': 'GP'}, {'key': 'ast', 'label': 'Ast'},
+                {'key': 'avg', 'label': 'Avg'}
+            ]}
+        ]
+    },
+    'boys-wrestling': {
+        'name': 'Boys Wrestling',
+        'data_file': 'boys_wrestling_data.json',
+        'standings_file': None,
+        'standings_type': None,
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'rank', 'label': 'Rank'}
+        ]
+    },
+    'girls-wrestling': {
+        'name': 'Girls Wrestling',
+        'data_file': 'girls_wrestling_data.json',
+        'standings_file': None,
+        'standings_type': None,
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'rank', 'label': 'Rank'}
+        ]
+    },
+    'indoor-track': {
+        'name': 'Indoor Track & Field',
+        'data_file': 'indoor_track_data.json',
+        'standings_file': None,
+        'standings_type': None,
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'result', 'label': 'Result'}
+        ]
+    },
+    'swimming': {
+        'name': 'Swimming & Diving',
+        'data_file': 'swimming_data.json',
+        'standings_file': None,
+        'standings_type': None,
+        'leaders_from_keys': True,
+        'leader_headers': [
+            {'key': 'result', 'label': 'Result'}
+        ]
     }
 }
 
@@ -403,11 +569,15 @@ def generate_embed_for_sport(sport_id: str, config: dict, date_str: str) -> str:
     if stats_data:
         html += '<h3>Individual Leaders</h3>\n'
 
-        # Handle golf which has flat list
-        if sport_id == 'golf' and isinstance(stats_data, list):
-            stats_data = {'players': stats_data}
+        if config.get('leaders_from_keys'):
+            # Dynamic categories from JSON keys (wrestling, track, swimming)
+            html += generate_dynamic_leaders_html(stats_data, config['leader_headers'])
+        else:
+            # Handle golf which has flat list
+            if sport_id == 'golf' and isinstance(stats_data, list):
+                stats_data = {'players': stats_data}
 
-        html += generate_leaders_html(stats_data, config['leaders'])
+            html += generate_leaders_html(stats_data, config['leaders'])
 
     html += '</div>\n'
     return html

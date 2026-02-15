@@ -589,6 +589,11 @@ def generate_data_js():
         print("No data directories found!")
         return
 
+    # Generate embed HTML files first so hasEmbed checks can find them
+    print("Regenerating embed HTML files...")
+    generate_all_embeds()
+    print()
+
     all_sports_data = []
 
     # Build sports data for each date
@@ -627,10 +632,6 @@ export const sportsData = {json.dumps(all_sports_data, indent=2)};
     print(f"Generated {OUTPUT_FILE}")
     print(f"  - {len(dates)} dates")
     print(f"  - {len(all_sports_data)} sport entries")
-
-    # Also regenerate embed HTML files
-    print("\nRegenerating embed HTML files...")
-    generate_all_embeds()
 
 
 if __name__ == '__main__':

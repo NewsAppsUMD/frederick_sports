@@ -1,0 +1,265 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Boys Basketball</h2>
+<h3>Standings</h3>
+<div class="standings-grid">
+<div>
+<h4>Spires Division</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th></tr></thead>
+<tbody>
+<tr><td>Thomas Johnson</td><td class="numeric">5</td><td class="numeric">1</td><td class="numeric">12</td><td class="numeric">6</td></tr>
+<tr><td>Urbana</td><td class="numeric">3</td><td class="numeric">3</td><td class="numeric">8</td><td class="numeric">10</td></tr>
+<tr><td>Frederick</td><td class="numeric">3</td><td class="numeric">3</td><td class="numeric">6</td><td class="numeric">11</td></tr>
+<tr><td>South Hagerstown</td><td class="numeric">1</td><td class="numeric">5</td><td class="numeric">5</td><td class="numeric">12</td></tr>
+</tbody></table>
+</div>
+<div>
+<h4>Potomac Division</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th></tr></thead>
+<tbody>
+<tr><td>Oakdale</td><td class="numeric">4</td><td class="numeric">2</td><td class="numeric">14</td><td class="numeric">3</td></tr>
+<tr><td>Linganore</td><td class="numeric">3</td><td class="numeric">3</td><td class="numeric">11</td><td class="numeric">7</td></tr>
+<tr><td>North Hagerstown</td><td class="numeric">3</td><td class="numeric">3</td><td class="numeric">8</td><td class="numeric">7</td></tr>
+<tr><td>Tuscarora</td><td class="numeric">2</td><td class="numeric">4</td><td class="numeric">9</td><td class="numeric">9</td></tr>
+</tbody></table>
+</div>
+<div>
+<h4>Gambrill Division</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th></tr></thead>
+<tbody>
+<tr><td>Middletown</td><td class="numeric">4</td><td class="numeric">1</td><td class="numeric">14</td><td class="numeric">3</td></tr>
+<tr><td>Williamsport</td><td class="numeric">4</td><td class="numeric">2</td><td class="numeric">12</td><td class="numeric">4</td></tr>
+<tr><td>Brunswick</td><td class="numeric">2</td><td class="numeric">3</td><td class="numeric">12</td><td class="numeric">6</td></tr>
+<tr><td>Walkersville</td><td class="numeric">1</td><td class="numeric">5</td><td class="numeric">4</td><td class="numeric">13</td></tr>
+</tbody></table>
+</div>
+<div>
+<h4>Antietam Division</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">Div W</th><th class="numeric">Div L</th><th class="numeric">Ovr W</th><th class="numeric">Ovr L</th></tr></thead>
+<tbody>
+<tr><td>Smithsburg</td><td class="numeric">6</td><td class="numeric">0</td><td class="numeric">10</td><td class="numeric">8</td></tr>
+<tr><td>Boonsboro</td><td class="numeric">4</td><td class="numeric">2</td><td class="numeric">9</td><td class="numeric">8</td></tr>
+<tr><td>Clear Spring</td><td class="numeric">1</td><td class="numeric">5</td><td class="numeric">5</td><td class="numeric">13</td></tr>
+<tr><td>Catoctin</td><td class="numeric">1</td><td class="numeric">5</td><td class="numeric">2</td><td class="numeric">16</td></tr>
+</tbody></table>
+</div>
+<div>
+<h4>Other Schools</h4>
+<table class="stats-table">
+<thead><tr><th>Team</th><th class="numeric">W</th><th class="numeric">L</th></tr></thead>
+<tbody>
+<tr><td>Frederick Christian Academy</td><td class="numeric">18</td><td class="numeric">4</td></tr>
+<tr><td>Frederick Warriors</td><td class="numeric">15</td><td class="numeric">7</td></tr>
+<tr><td>New Life</td><td class="numeric">10</td><td class="numeric">5</td></tr>
+<tr><td>Maryland School for the Deaf</td><td class="numeric">11</td><td class="numeric">13</td></tr>
+<tr><td>St. John's Catholic Prep</td><td class="numeric">6</td><td class="numeric">13</td></tr>
+</tbody></table>
+</div>
+</div>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>Scoring</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">GP</th><th class="numeric">Pts</th><th class="numeric">Avg</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Cohen Wade</div><div class="player-school">Frederick Christian Academy</div></td><td class="numeric">20</td><td class="numeric">494</td><td class="numeric">24.7</td></tr>
+<tr><td><div class="player-name">Dyvae Ambush</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">369</td><td class="numeric">20.5</td></tr>
+<tr><td><div class="player-name">Chase Beard</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">301</td><td class="numeric">17.7</td></tr>
+<tr><td><div class="player-name">Keegan Marceron</div><div class="player-school">Oakdale</div></td><td class="numeric">17</td><td class="numeric">295</td><td class="numeric">17.4</td></tr>
+<tr><td><div class="player-name">Kyrin Ambush</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">288</td><td class="numeric">16.0</td></tr>
+<tr><td><div class="player-name">Alex Rodriguez</div><div class="player-school">Oakdale</div></td><td class="numeric">16</td><td class="numeric">254</td><td class="numeric">15.9</td></tr>
+<tr><td><div class="player-name">Samuel Chew</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">22</td><td class="numeric">343</td><td class="numeric">15.6</td></tr>
+<tr><td><div class="player-name">Mark Gwynn III</div><div class="player-school">Maryland School for the Deaf</div></td><td class="numeric">20</td><td class="numeric">310</td><td class="numeric">15.5</td></tr>
+<tr><td><div class="player-name">AJ Spencer</div><div class="player-school">Frederick</div></td><td class="numeric">10</td><td class="numeric">142</td><td class="numeric">14.2</td></tr>
+<tr><td><div class="player-name">Asher Brandenburg</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">22</td><td class="numeric">312</td><td class="numeric">14.2</td></tr>
+<tr><td><div class="player-name">Trevor Pfeil</div><div class="player-school">Walkersville</div></td><td class="numeric">16</td><td class="numeric">-</td><td class="numeric">14.0</td></tr>
+<tr><td><div class="player-name">Sam Cooper</div><div class="player-school">Tuscarora</div></td><td class="numeric">15</td><td class="numeric">204</td><td class="numeric">13.6</td></tr>
+<tr><td><div class="player-name">Osborne Ehana</div><div class="player-school">Frederick</div></td><td class="numeric">8</td><td class="numeric">109</td><td class="numeric">13.6</td></tr>
+<tr><td><div class="player-name">Jaivyn Moody</div><div class="player-school">Brunswick</div></td><td class="numeric">18</td><td class="numeric">243</td><td class="numeric">13.5</td></tr>
+<tr><td><div class="player-name">Matthan Brandenburg</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">22</td><td class="numeric">296</td><td class="numeric">13.5</td></tr>
+<tr><td><div class="player-name">Jude Annor</div><div class="player-school">Frederick Christian Academy</div></td><td class="numeric">20</td><td class="numeric">257</td><td class="numeric">12.9</td></tr>
+<tr><td><div class="player-name">Brydan Tema</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">230</td><td class="numeric">12.7</td></tr>
+<tr><td><div class="player-name">Ivan Ansong</div><div class="player-school">Walkersville</div></td><td class="numeric">17</td><td class="numeric">-</td><td class="numeric">12.4</td></tr>
+<tr><td><div class="player-name">Zack Byrd</div><div class="player-school">Tuscarora</div></td><td class="numeric">17</td><td class="numeric">209</td><td class="numeric">12.3</td></tr>
+<tr><td><div class="player-name">Mason Whipp</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">208</td><td class="numeric">12.2</td></tr>
+<tr><td><div class="player-name">Christian Rivera</div><div class="player-school">Oakdale</div></td><td class="numeric">17</td><td class="numeric">202</td><td class="numeric">11.9</td></tr>
+<tr><td><div class="player-name">Daveon Black</div><div class="player-school">Linganore</div></td><td class="numeric">17</td><td class="numeric">196</td><td class="numeric">11.5</td></tr>
+<tr><td><div class="player-name">Jaxson Howington</div><div class="player-school">Urbana</div></td><td class="numeric">14</td><td class="numeric">161</td><td class="numeric">11.5</td></tr>
+<tr><td><div class="player-name">Aaron Birney</div><div class="player-school">Brunswick</div></td><td class="numeric">16</td><td class="numeric">175</td><td class="numeric">10.9</td></tr>
+<tr><td><div class="player-name">Jimmy McGinley</div><div class="player-school">Urbana</div></td><td class="numeric">10</td><td class="numeric">108</td><td class="numeric">10.8</td></tr>
+<tr><td><div class="player-name">Nicholas Martinis</div><div class="player-school">Brunswick</div></td><td class="numeric">18</td><td class="numeric">193</td><td class="numeric">10.7</td></tr>
+<tr><td><div class="player-name">Mitchell Curtis</div><div class="player-school">Tuscarora</div></td><td class="numeric">17</td><td class="numeric">175</td><td class="numeric">10.3</td></tr>
+<tr><td><div class="player-name">Trevor Beard</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">175</td><td class="numeric">10.2</td></tr>
+<tr><td><div class="player-name">Mason Leonard</div><div class="player-school">Urbana</div></td><td class="numeric">16</td><td class="numeric">159</td><td class="numeric">9.9</td></tr>
+<tr><td><div class="player-name">Jaidon Maxwell</div><div class="player-school">Linganore</div></td><td class="numeric">18</td><td class="numeric">178</td><td class="numeric">9.9</td></tr>
+<tr><td><div class="player-name">Ryker Pedersen</div><div class="player-school">Maryland School for the Deaf</div></td><td class="numeric">20</td><td class="numeric">193</td><td class="numeric">9.7</td></tr>
+<tr><td><div class="player-name">Taylor Rosario</div><div class="player-school">Linganore</div></td><td class="numeric">18</td><td class="numeric">168</td><td class="numeric">9.3</td></tr>
+<tr><td><div class="player-name">Will Davis</div><div class="player-school">Linganore</div></td><td class="numeric">18</td><td class="numeric">164</td><td class="numeric">9.1</td></tr>
+<tr><td><div class="player-name">Mookie Taylor</div><div class="player-school">Frederick</div></td><td class="numeric">10</td><td class="numeric">88</td><td class="numeric">8.8</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Rebounds</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">GP</th><th class="numeric">Reb</th><th class="numeric">Avg</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Asher Brandenburg</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">22</td><td class="numeric">226</td><td class="numeric">10.3</td></tr>
+<tr><td><div class="player-name">Mason Whipp</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">168</td><td class="numeric">9.8</td></tr>
+<tr><td><div class="player-name">Brady Renn</div><div class="player-school">Brunswick</div></td><td class="numeric">18</td><td class="numeric">157</td><td class="numeric">8.7</td></tr>
+<tr><td><div class="player-name">Brydan Tema</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">158</td><td class="numeric">8.7</td></tr>
+<tr><td><div class="player-name">Jude Annor</div><div class="player-school">Frederick Christian Academy</div></td><td class="numeric">20</td><td class="numeric">161</td><td class="numeric">8.1</td></tr>
+<tr><td><div class="player-name">Mookie Taylor</div><div class="player-school">Frederick</div></td><td class="numeric">10</td><td class="numeric">79</td><td class="numeric">7.9</td></tr>
+<tr><td><div class="player-name">Ivan Ansong</div><div class="player-school">Walkersville</div></td><td class="numeric">17</td><td class="numeric">-</td><td class="numeric">7.6</td></tr>
+<tr><td><div class="player-name">Keegan Marceron</div><div class="player-school">Oakdale</div></td><td class="numeric">17</td><td class="numeric">125</td><td class="numeric">7.4</td></tr>
+<tr><td><div class="player-name">Cooper DeWaal</div><div class="player-school">Oakdale</div></td><td class="numeric">17</td><td class="numeric">126</td><td class="numeric">7.4</td></tr>
+<tr><td><div class="player-name">Mide Adeoye</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">131</td><td class="numeric">7.3</td></tr>
+<tr><td><div class="player-name">Ryland Connally</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">16</td><td class="numeric">116</td><td class="numeric">7.3</td></tr>
+<tr><td><div class="player-name">Sam Cooper</div><div class="player-school">Tuscarora</div></td><td class="numeric">15</td><td class="numeric">107</td><td class="numeric">7.1</td></tr>
+<tr><td><div class="player-name">Jeremiah Page</div><div class="player-school">Frederick Christian Academy</div></td><td class="numeric">18</td><td class="numeric">127</td><td class="numeric">7.1</td></tr>
+<tr><td><div class="player-name">Josh Foshee</div><div class="player-school">Frederick Christian Academy</div></td><td class="numeric">20</td><td class="numeric">134</td><td class="numeric">6.7</td></tr>
+<tr><td><div class="player-name">Donovan Chmaj</div><div class="player-school">Maryland School for the Deaf</div></td><td class="numeric">20</td><td class="numeric">132</td><td class="numeric">6.6</td></tr>
+<tr><td><div class="player-name">Alex Rodriguez</div><div class="player-school">Oakdale</div></td><td class="numeric">16</td><td class="numeric">104</td><td class="numeric">6.5</td></tr>
+<tr><td><div class="player-name">Philip Giuliani</div><div class="player-school">Urbana</div></td><td class="numeric">16</td><td class="numeric">103</td><td class="numeric">6.4</td></tr>
+<tr><td><div class="player-name">Jaxson Howington</div><div class="player-school">Urbana</div></td><td class="numeric">14</td><td class="numeric">85</td><td class="numeric">6.1</td></tr>
+<tr><td><div class="player-name">Daveon Black</div><div class="player-school">Linganore</div></td><td class="numeric">17</td><td class="numeric">101</td><td class="numeric">5.9</td></tr>
+<tr><td><div class="player-name">Brittin Poffenbarger</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">100</td><td class="numeric">5.8</td></tr>
+<tr><td><div class="player-name">Mark Yongbi</div><div class="player-school">Brunswick</div></td><td class="numeric">16</td><td class="numeric">89</td><td class="numeric">5.6</td></tr>
+<tr><td><div class="player-name">Corson Brunson</div><div class="player-school">Maryland School for the Deaf</div></td><td class="numeric">20</td><td class="numeric">107</td><td class="numeric">5.4</td></tr>
+<tr><td><div class="player-name">Chase Beard</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">91</td><td class="numeric">5.3</td></tr>
+<tr><td><div class="player-name">Adam Krystofiak</div><div class="player-school">Linganore</div></td><td class="numeric">18</td><td class="numeric">93</td><td class="numeric">5.2</td></tr>
+<tr><td><div class="player-name">Mason Leonard</div><div class="player-school">Urbana</div></td><td class="numeric">16</td><td class="numeric">83</td><td class="numeric">5.2</td></tr>
+<tr><td><div class="player-name">Matthan Brandenburg</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">22</td><td class="numeric">115</td><td class="numeric">5.2</td></tr>
+<tr><td><div class="player-name">Dyvae Ambush</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">90</td><td class="numeric">5.0</td></tr>
+<tr><td><div class="player-name">Samuel Chew</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">22</td><td class="numeric">111</td><td class="numeric">5.0</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Assists</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">GP</th><th class="numeric">Ast</th><th class="numeric">Avg</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Taylor Rosario</div><div class="player-school">Linganore</div></td><td class="numeric">18</td><td class="numeric">108</td><td class="numeric">6.0</td></tr>
+<tr><td><div class="player-name">Mitchell Curtis</div><div class="player-school">Tuscarora</div></td><td class="numeric">17</td><td class="numeric">96</td><td class="numeric">5.6</td></tr>
+<tr><td><div class="player-name">Dyvae Ambush</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">97</td><td class="numeric">5.4</td></tr>
+<tr><td><div class="player-name">Brady Renn</div><div class="player-school">Brunswick</div></td><td class="numeric">18</td><td class="numeric">77</td><td class="numeric">4.2</td></tr>
+<tr><td><div class="player-name">Jude Annor</div><div class="player-school">Frederick Christian Academy</div></td><td class="numeric">20</td><td class="numeric">82</td><td class="numeric">4.1</td></tr>
+<tr><td><div class="player-name">Moses Adoko</div><div class="player-school">Urbana</div></td><td class="numeric">13</td><td class="numeric">44</td><td class="numeric">3.4</td></tr>
+<tr><td><div class="player-name">Kyrin Ambush</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">58</td><td class="numeric">3.2</td></tr>
+<tr><td><div class="player-name">Nicholas Martinis</div><div class="player-school">Brunswick</div></td><td class="numeric">18</td><td class="numeric">56</td><td class="numeric">3.1</td></tr>
+<tr><td><div class="player-name">Neil Powell</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">20</td><td class="numeric">60</td><td class="numeric">3.0</td></tr>
+<tr><td><div class="player-name">Chase Beard</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">50</td><td class="numeric">2.9</td></tr>
+<tr><td><div class="player-name">Julio Cuadrado III</div><div class="player-school">Maryland School for the Deaf</div></td><td class="numeric">17</td><td class="numeric">50</td><td class="numeric">2.9</td></tr>
+<tr><td><div class="player-name">Josh Foshee</div><div class="player-school">Frederick Christian Academy</div></td><td class="numeric">20</td><td class="numeric">56</td><td class="numeric">2.8</td></tr>
+<tr><td><div class="player-name">Ben Almeida</div><div class="player-school">Urbana</div></td><td class="numeric">15</td><td class="numeric">41</td><td class="numeric">2.7</td></tr>
+<tr><td><div class="player-name">Samuel Chew</div><div class="player-school">Frederick Warriors</div></td><td class="numeric">22</td><td class="numeric">60</td><td class="numeric">2.7</td></tr>
+<tr><td><div class="player-name">Brittin Poffenbarger</div><div class="player-school">Middletown</div></td><td class="numeric">17</td><td class="numeric">44</td><td class="numeric">2.5</td></tr>
+<tr><td><div class="player-name">AJ Spencer</div><div class="player-school">Frederick</div></td><td class="numeric">10</td><td class="numeric">25</td><td class="numeric">2.5</td></tr>
+<tr><td><div class="player-name">Will Davis</div><div class="player-school">Linganore</div></td><td class="numeric">18</td><td class="numeric">43</td><td class="numeric">2.4</td></tr>
+<tr><td><div class="player-name">Alex Rodriguez</div><div class="player-school">Oakdale</div></td><td class="numeric">16</td><td class="numeric">38</td><td class="numeric">2.4</td></tr>
+<tr><td><div class="player-name">Mason Leonard</div><div class="player-school">Urbana</div></td><td class="numeric">16</td><td class="numeric">36</td><td class="numeric">2.3</td></tr>
+<tr><td><div class="player-name">Zack Byrd</div><div class="player-school">Tuscarora</div></td><td class="numeric">17</td><td class="numeric">38</td><td class="numeric">2.2</td></tr>
+<tr><td><div class="player-name">Sey Kondo</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">18</td><td class="numeric">39</td><td class="numeric">2.2</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>

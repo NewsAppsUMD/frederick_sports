@@ -1,0 +1,242 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Boys Wrestling</h2>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>106 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Paul Fitzpatrick</div><div class="player-school">Oakdale</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Nick Gordon</div><div class="player-school">Linganore</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Parker Brown</div><div class="player-school">Middletown</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>113 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Jayden Lassiter</div><div class="player-school">Linganore</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Eugene Amardi-Frimpong</div><div class="player-school">Tuscarora</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Amir Bakari</div><div class="player-school">Frederick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>120 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Gabe Helman</div><div class="player-school">Urbana</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Campbell Bowman</div><div class="player-school">Middletown</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Trey Covey</div><div class="player-school">Linganore</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>126 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Liam Soe</div><div class="player-school">Middletown</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Nick Putnam</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Jackson Stanley</div><div class="player-school">Linganore</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>132 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Calvin Smith</div><div class="player-school">Middletown</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Ryan Wheeler</div><div class="player-school">Tuscarora</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Reese Davis</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>138 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Brodie Burdette</div><div class="player-school">Middletown</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Austin Flook</div><div class="player-school">Tuscarora</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Cayden Boedecker</div><div class="player-school">Brunswick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>144 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Ashton Thompson</div><div class="player-school">Catoctin</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Rhys Ferguson</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Ryker Keeney</div><div class="player-school">Middletown</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>150 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Seth Crawford</div><div class="player-school">Brunswick</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Marty Sandy</div><div class="player-school">Oakdale</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Xavier Ford</div><div class="player-school">Middletown</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>157 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Victor Guerra</div><div class="player-school">Frederick</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Cash Wheat</div><div class="player-school">Linganore</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">CJ Watts</div><div class="player-school">Brunswick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>165 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Carter Canale</div><div class="player-school">Middletown</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Jacob Mostowski</div><div class="player-school">Oakdale</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Landon Russell</div><div class="player-school">Linganore</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>175 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Ian Tumi</div><div class="player-school">Frederick</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Zach Landis</div><div class="player-school">Middletown</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Noah Zohrabi</div><div class="player-school">Linganore</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>190 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Max Birth</div><div class="player-school">Walkersville</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Ben Guyton</div><div class="player-school">Brunswick</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Jeremy Lemus</div><div class="player-school">Thomas Johnson</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>215 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Sam Oji</div><div class="player-school">Tuscarora</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Alex Tortalani</div><div class="player-school">Linganore</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Doran Charles</div><div class="player-school">Brunswick</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>285 lbs</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Rank</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Lane Riggleman</div><div class="player-school">Brunswick</div></td><td class="numeric">1</td></tr>
+<tr><td><div class="player-name">Landon Hofgesang</div><div class="player-school">Middletown</div></td><td class="numeric">2</td></tr>
+<tr><td><div class="player-name">Mason Gladhill</div><div class="player-school">Oakdale</div></td><td class="numeric">3</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
