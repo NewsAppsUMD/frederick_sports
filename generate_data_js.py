@@ -7,6 +7,7 @@ Combines data from multiple dates into a single JavaScript module.
 import json
 from pathlib import Path
 from datetime import datetime
+import re
 from generate_embed_html import generate_all_embeds
 
 # Configuration
@@ -532,12 +533,50 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
     }
 
 
+def discover_dates() -> list:
+    """Auto-discover available dates from data/ directory.
+
+    Scans for directories matching YYYY_MM_DD pattern and returns
+    sorted list of {'value': 'YYYY_MM_DD', 'label': 'Mon DD, YYYY'}.
+    """
+    dates = []
+    if not DATA_DIR.exists():
+        return dates
+    for entry in DATA_DIR.iterdir():
+        if entry.is_dir() and re.match(r'^\d{4}_\d{2}_\d{2}$', entry.name):
+            date_str = entry.name
+            try:
+                dt = datetime.strptime(date_str, '%Y_%m_%d')
+                label = dt.strftime('%b %-d, %Y')
+            except ValueError:
+                continue
+            dates.append({'value': date_str, 'label': label})
+    dates.sort(key=lambda d: d['value'])
+    return dates
+
+
+def load_rankings(date_str: str) -> list:
+    """Load rankings from JSON file, falling back to hardcoded data."""
+    rankings_file = DATA_DIR / date_str / 'rankings.json'
+    if rankings_file.exists():
+        with open(rankings_file) as f:
+            return json.load(f)
+    # Fall back to hardcoded rankings for older dates
+    return RANKINGS_BY_DATE.get(date_str, [])
+
+
 def generate_data_js():
     """Generate the data.js file."""
+    # Auto-discover dates
+    dates = discover_dates()
+    if not dates:
+        print("No data directories found!")
+        return
+
     all_sports_data = []
 
     # Build sports data for each date
-    for date_config in DATES:
+    for date_config in dates:
         date_str = date_config['value']
         for sport_id, config in SPORTS_CONFIG.items():
             sport_data = build_sport_data(sport_id, config, date_str)
@@ -546,18 +585,18 @@ def generate_data_js():
 
     # Build rankings data
     rankings_data = []
-    for date_config in DATES:
+    for date_config in dates:
         date_str = date_config['value']
         rankings_data.append({
             'date': date_str,
-            'items': RANKINGS_BY_DATE.get(date_str, [])
+            'items': load_rankings(date_str)
         })
 
     # Generate JavaScript
     js_content = f"""// Auto-generated data file
 // Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
-export const availableDates = {json.dumps(DATES, indent=2)};
+export const availableDates = {json.dumps(dates, indent=2)};
 
 export const rankings = {json.dumps(rankings_data, indent=2)};
 
@@ -570,7 +609,7 @@ export const sportsData = {json.dumps(all_sports_data, indent=2)};
         f.write(js_content)
 
     print(f"Generated {OUTPUT_FILE}")
-    print(f"  - {len(DATES)} dates")
+    print(f"  - {len(dates)} dates")
     print(f"  - {len(all_sports_data)} sport entries")
 
     # Also regenerate embed HTML files

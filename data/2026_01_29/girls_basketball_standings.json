@@ -122,24 +122,18 @@
   "Other Schools": [
     {
       "team": "Frederick Warriors",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "9",
-      "overall_l": "10"
+      "w": "9",
+      "l": "10"
     },
     {
       "team": "MSD",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "7",
-      "overall_l": "12"
+      "w": "7",
+      "l": "12"
     },
     {
       "team": "SJCP",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "2",
-      "overall_l": "6"
+      "w": "2",
+      "l": "6"
     }
   ]
 }

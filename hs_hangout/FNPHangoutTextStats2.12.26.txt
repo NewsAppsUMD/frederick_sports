@@ -1,0 +1,1199 @@
+Boys Basketball
+
+Central Maryland Conference
+
+Spires Division
+
+;Division;;Overall
+
+School;W;L;;W;L
+
+Thomas Johnson;5;1;;12;6
+
+Urbana;3;3;;8;10
+
+Frederick;3;3;;6;11
+
+South Hagerstown;1;5;;5;12
+
+Potomac Division
+
+;Division;;Overall
+
+School;W;L;;W;L
+
+Oakdale;4;2;;14;3
+
+Linganore;3;3;;11;7
+
+North Hagerstown;3;3;;8;7
+
+Tuscarora;2;4;;9;9
+
+Gambrill Division
+
+;Division;;Overall
+
+School;W;L;;W;L
+
+Middletown;4;1;;14;3
+
+Williamsport;4;2;;12;4
+
+Brunswick;2;3;;12;6
+
+Walkersville;1;5;;4;13
+
+Antietam Division
+
+;Division;;Overall
+
+School;W;L;;W;L
+
+Smithsburg;6;0;;10;8
+
+Boonsboro;4;2;;9;8
+
+Clear Spring;1;5;;5;13
+
+Catoctin;1;5;;2;16
+
+Other Schools
+
+Team;W;L
+
+FCA;18;4
+
+Frederick Warriors;15;7
+
+New Life;10;5
+
+MSD;11;13
+
+SJCP;6;13
+
+Individual Leaders
+
+Scoring
+
+Player, School;GP;Pts.;Avg.
+
+Cohen Wade, FCA;20;494;24.7
+
+Dyvae Ambush, T. Johnson;18;369;20.5
+
+Chase Beard, Middletown;17;301;17.7
+
+Keegan Marceron, Oakdale;17;295;17.4
+
+Kyrin Ambush, T. Johnson;18;288;16.0
+
+Alex Rodriguez, Oakdale;16;254;15.9
+
+Samuel Chew, Warriors;22;343;15.6
+
+Mark Gwynn III, MSD;20;310;15.5
+
+AJ Spencer, Frederick;10;142;14.2
+
+Asher Brandenburg, Warriors;22;312;14.2
+
+Trevor Pfeil, Walkersville;16;-;14.0
+
+Sam Cooper, Tuscarora;15;204;13.6
+
+Osborne Ehana, Frederick;8;109;13.6
+
+Jaivyn Moody, Brunswick;18;243;13.5
+
+Matthan Brandenburg, Warriors;22;296;13.5
+
+Jude Annor, FCA;20;257;12.9
+
+Brydan Tema, T. Johnson;18;230;12.7
+
+Ivan Ansong, Walkersville;17;-;12.4
+
+Zack Byrd, Tuscarora;17;209;12.3
+
+Mason Whipp, Middletown;17;208;12.2
+
+Christian Rivera, Oakdale;17;202;11.9
+
+Daveon Black, Linganore;17;196;11.5
+
+Jaxson Howington, Urbana;14;161;11.5
+
+Aaron Birney, Brunswick;16;175;10.9
+
+Jimmy McGinley, Urbana;10;108;10.8
+
+Nicholas Martinis, Brunswick;18;193;10.7
+
+Mitchell Curtis, Tuscarora;17;175;10.3
+
+Trevor Beard, Middletown;17;175;10.2
+
+Mason Leonard, Urbana;16;159;9.9
+
+Jaidon Maxwell, Linganore;18;178;9.9
+
+Ryker Pedersen, MSD;20;193;9.7
+
+Taylor Rosario, Linganore;18;168;9.3
+
+Will Davis, Linganore;18;164;9.1
+
+Mookie Taylor, Frederick;10;88;8.8
+
+Rebounds
+
+Player, School;GP;Reb.;Avg.
+
+Asher Brandenburg, Warriors;22;226;10.3
+
+Mason Whipp, Middletown;17;168;9.8
+
+Brady Renn, Brunswick;18;157;8.7
+
+Brydan Tema, T. Johnson;18;158;8.7
+
+Jude Annor, FCA;20;161;8.1
+
+Mookie Taylor, Frederick;10;79;7.9
+
+Ivan Ansong, Walkersville;17;-;7.6
+
+Keegan Marceron, Oakdale;17;125;7.4
+
+Cooper DeWaal, Oakdale;17;126;7.4
+
+Mide Adeoye, T. Johnson;18;131;7.3
+
+Ryland Connally, Warriors;16;116;7.3
+
+Sam Cooper, Tuscarora;15;107;7.1
+
+Jeremiah Page, FCA;18;127;7.1
+
+Josh Foshee, FCA;20;134;6.7
+
+Donovan Chmaj, MSD;20;132;6.6
+
+Alex Rodriguez, Oakdale;16;104;6.5
+
+Philip Giuliani, Urbana;16;103;6.4
+
+Jaxson Howington, Urbana;14;85;6.1
+
+Daveon Black, Linganore;17;101;5.9
+
+Brittin Poffenbarger, Middletown;17;100;5.8
+
+Mark Yongbi, Brunswick;16;89;5.6
+
+Corson Brunson, MSD;20;107;5.4
+
+Chase Beard, Middletown;17;91;5.3
+
+Adam Krystofiak, Linganore;18;93;5.2
+
+Mason Leonard, Urbana;16;83;5.2
+
+Matthan Brandenburg, Warriors;22;115;5.2
+
+Dyvae Ambush, T. Johnson;18;90;5.0
+
+Samuel Chew, Warriors;22;111;5.0
+
+Assists
+
+Player, School;GP;Assists;Avg.
+
+Taylor Rosario, Linganore;18;108;6.0
+
+Mitchell Curtis, Tuscarora;17;96;5.6
+
+Dyvae Ambush, T. Johnson;18;97;5.4
+
+Brady Renn, Brunswick;18;77;4.2
+
+Jude Annor, FCA;20;82;4.1
+
+Moses Adoko, Urbana;13;44;3.4
+
+Kyrin Ambush, T. Johnson;18;58;3.2
+
+Nicholas Martinis, Brunswick;18;56;3.1
+
+Neil Powell, Warriors;20;60;3.0
+
+Chase Beard, Middletown;17;50;2.9
+
+Julio Cuadrado III, MSD;17;50;2.9
+
+Josh Foshee, FCA;20;56;2.8
+
+Ben Almeida, Urbana;15;41;2.7
+
+Samuel Chew, Warriors;22;60;2.7
+
+Brittin Poffenbarger, Middletown;17;44;2.5
+
+AJ Spencer, Frederick;10;25;2.5
+
+Will Davis, Linganore;18;43;2.4
+
+Alex Rodriguez, Oakdale;16;38;2.4
+
+Mason Leonard, Urbana;16;36;2.3
+
+Zack Byrd, Tuscarora;17;38;2.2
+
+Sey Kondo, T. Johnson;18;39;2.2
+
+Girls Basketball
+
+Central Maryland Conference
+
+Spires Division
+
+;;Division;;Overall
+
+School;W;L;;W;L
+
+Urbana;5;1;13;5
+
+Frederick;4;1;13;5
+
+Thomas Johnson;2;3;10;7
+
+South Hagerstown;0;6;1;16
+
+Potomac Division
+
+;;Division;;Overall
+
+School;W;L;;W;L
+
+Linganore;6;0;16;2
+
+Oakdale;3;2;15;5
+
+North Hagerstown;2;4;5;12
+
+Tuscarora;0;5;2;16
+
+Gambrill Division
+
+;;Division;;Overall
+
+School;W;L;;W;L
+
+Williamsport;6;0;14;3
+
+Middletown;3;3;9;8
+
+Brunswick;1;4;4;12
+
+Walkersville;1;5;3;13
+
+Antietam Division
+
+;;Division;;Overall
+
+School;W;L;;W;L
+
+Smithsburg;6;0;17;0
+
+Catoctin;4;2;15;3
+
+Boonsboro;1;5;4;11
+
+Clear Spring;1;5;4;13
+
+Other Schoolsl
+
+;;W;L
+
+Frederick Warriors;10;8
+
+MSD;9;13
+
+SJCP;2;10
+
+Individual Leaders
+
+Scoring
+
+Player, School;GP;Pts.;Avg.
+
+Liana Maxwell, Linganore;18;393;21.8
+
+Sophia Burgee, T. Johnson;17;289;17.0
+
+Kelsey Troxell, Catoctin;18;260;14.4
+
+Kelsey Ryan, Linganore;17;230;13.5
+
+Zizi Etolue, Urbana;14;184;13.1
+
+Kenzie Walker, Oakdale;20;257;12.9
+
+Alexis Parker, Middletown;15;189;12.6
+
+Cayenne Pigeon, Frederick;10;125;12.5
+
+Annabelle Horst, T. Johnson;17;204;12.0
+
+Jameirah Thompson, Frederick;11;130;11.8
+
+Ava Phimmakaysone, Warriors;18;193;10.7
+
+Leah Brown, T. Johnson;15;158;10.5
+
+Marlee Williams, Frederick;11;114;10.4
+
+Talia Jenkins, Middletown;17;176;10.4
+
+Chadaya Hairston, T. Johnson;16;167;10.4
+
+Shay Raiford, Oakdale;20;204;10.2
+
+Brooke Williams, Catoctin;18;183;10.2
+
+Maddie McGrew, Warriors;19;184;9.7
+
+Layla McFarland, Oakdale;18;168;9.3
+
+Bradyn MacKay, Linganore;18;166;9.2
+
+Emme Miller, Brunswick;17;151;8.9
+
+London Lee, T. Johnson;8;68;8.5
+
+Chandler Ways, Urbana;14;112;8.0
+
+Adriana Bonasera, Warriors;13;99;7.6
+
+Sedona Brown. Linganore;10;76;7.6
+
+Avery Larson, Middletown;17;122;7.2
+
+Laney Baer, T. Johnson;17;119;7.0
+
+Dyanara Valenzuela-Ruz, Urbana;13;91;7.0
+
+Shaylee McGlinchey, Oakdale;20;135;6.8
+
+Aneesa Ali-Goukoye, Walkersville;13;89;6.8
+
+Madelynn Myers, Catoctin;18;117;6.5
+
+Leah French, Catoctin;18;117;6.5
+
+Madison Greenwood, Brunswick;16;102;6.4
+
+Cyrah Crews, Frederick;11;69;6.3
+
+Mackenna Patterson, Urbana;13;80;6.2
+
+Rebounding
+
+Player, School;GP;Reb.;Avg.
+
+Rachael Hepner, Linganore;18;197;10.9
+
+Zizi Etolue, Urbana;14;145;10.3
+
+Laney Baer, T. Johnson;17;146;8.6
+
+Leah Brown, T. Johnson;15;127;8.5
+
+Maddie McGrew, Warriors;19;159;8.4
+
+Annabelle Horst, T. Johnson;17;143;8.4
+
+July Messinger, Warriors;16;126;7.9
+
+Kelsey Troxell, Catoctin;18;136;7.6
+
+Alexis Parker, Middletown;15;110;7.3
+
+Ella Crawmer, Urbana;14;97;6.9
+
+Olivia Hoyt, Catoctin;18;125;6.9
+
+Liana Maxwell, Linganore;18;117;6.5
+
+Sophia Burgee, T. Johnson;17;111;6.5
+
+Madison Greenwood, Brunswick;16;103;6.4
+
+Brooke Williams, Catoctin;16;101;6.3
+
+Kaitlyn Staiger, Oakdale;20;118;5.9
+
+Joedyn Njinyah, Brunswick;-;-;5.4
+
+Layla McFarland, Oakdale;18;94;5.2
+
+Alethea McGovern, Warriors;19;99;5.2
+
+Kenzie Walker, Oakdale;20;104;5.2
+
+Cahya Jefferson, Tuscarora;12;61;5.1
+
+Riley Kelly, Frederick;11;56;5.1
+
+Nyah Brooks, T. Johnson;17;80;4.7
+
+Shay Raiford, Oakdale;20;93;4.7
+
+Madelynn Myers, Catoctin;18;75;4.2
+
+Chadaya Hairston, T. Johnson;16;66;4.1
+
+Lillian Leon, Oakdale;20;80.4.0
+
+Assists
+
+London Lee, T. Johnson;8;41;5.1
+
+Liana Maxwell, Linganore;18;71;3.9
+
+Kenzie Walker, Oakdale;20;76;3.8
+
+Shaylee McGlinchey, Oakdale;20;75;3.8
+
+Emme Miller, Brunswick;-;-;3.4
+
+Olivia Hoyt, Catoctin;18;60;3.3
+
+Dyanara Valenzuela-Ruz, Urbana;13;44;3.3
+
+Brooke Williams, Catoctin;18;54;3.2
+
+Jameirah Thompson, Frederick;11;35;3.2
+
+Talia Jenkins, Middletown;17;53;3.1
+
+Marlee Williams, Frederick;11;32;2.9
+
+Sophia Burgee, T. Johnson;17;48;2.8
+
+Chadaya Hairston, T. Johnson;16;44;2.7
+
+Kelsey Ryan, Linganore;17;44;2.4
+
+Annabelle Horst, T. Johnson;17;39;2.3
+
+Melissa Yeboah, T. Johnson;17;40;2.3
+
+Maddie McGrew, Warriors;19;43;2.3
+
+Rachael Hepner, Linganore;18;36;2.0
+
+Boys Wrestling
+
+106
+
+1. Paul Fitzpatrick, Oakdale
+
+2. Nick Gordon, Linganore
+
+3. Parker Brown, Middletown
+
+113
+
+1. Jayden Lassiter, Linganore
+
+2. Eugene Amardi-Frimpong, Tuscarora
+
+3. Amir Bakari, Frederick
+
+120
+
+1. Gabe Helman, Urbana
+
+2. Campbell Bowman, Middletown
+
+3. Trey Covey, Linganore
+
+126
+
+1. Liam Soe, Middletown
+
+2. Nick Putnam, Thomas Johnson
+
+3. Jackson Stanley, Linganore
+
+132
+
+1. Calvin Smith, Middletown
+
+2. Ryan Wheeler, Tuscarora
+
+3. Reese Davis, Thomas Johnson
+
+138
+
+1. Brodie Burdette, Middletown
+
+2. Austin Flook, Tuscarora
+
+3. Cayden Boedecker, Brunswick
+
+144
+
+1. Ashton Thompson, Catoctin
+
+2. Rhys Ferguson, Thomas Johnson
+
+3. Ryker Keeney, Middletown
+
+150
+
+1. Seth Crawford, Brunswick
+
+2. Marty Sandy, Oakdale
+
+3. Xavier Ford, Middletown
+
+157
+
+1. Victor Guerra, Frederick
+
+2. Cash Wheat, Linganore
+
+3. CJ Watts, Brunswick
+
+165
+
+1. Carter Canale, Middletown
+
+2. Jacob Mostowski, Oakdale
+
+3. Landon Russell, Linganore
+
+175
+
+1. Ian Tumi, Frederick
+
+2. Zach Landis, Middletown
+
+3. Noah Zohrabi, Linganore
+
+190
+
+1. Max Birth, Walkersville
+
+2. Ben Guyton, Brunswick
+
+3. Jeremy Lemus, Thomas Johnson
+
+215
+
+1. Sam Oji, Tuscarora
+
+2. Alex Tortalani, Linganore
+
+3. Doran Charles, Brunswick
+
+285
+
+1. Lane Riggleman, Brunswick
+
+2. Landon Hofgesang, Middletown
+
+3. Mason Gladhill, Oakdale
+
+Girls Wrestling
+
+100
+
+1. Emma Cruz, Tuscarora
+
+2. Aline Gonzalez, Thomas Johnson
+
+3. Alexia Cornwell, Brunswick
+
+105
+
+1. Catherine Orndorff, Brunswick
+
+2. Dylan Bleignier, Urbana
+
+3. Kiara Funes, Tuscarora
+
+110
+
+1. Galadriel Sandefur, Urbana
+
+2. Christiana Smith, Catoctin
+
+3. Leydy Perez, Frederick
+
+115
+
+1. Katherine Virgilio, Brunswick
+
+2. Madelyn Hartman, Oakdale
+
+3. Ava Cruz, Tuscarora
+
+120
+
+1. Annika Emshoff, Frederick
+
+2. Kalea Summerville, Tuscarora
+
+3. Daniella Petrolle, Urbana
+
+125
+
+1. Gelin Cubias, Thomas Johnson
+
+2. Candide Affo, Frederick
+
+3. Allie Miranda, Tuscarora
+
+130
+
+1. Savannah Elling, Tuscarora
+
+2. Akasha Fernandez, Linganore
+
+3. Jada Hall, Frederick
+
+135
+
+1. Alexcia McCalla, Tuscarora
+
+2. Chloe Whitehead, Urbana
+
+3. Mia Duran, Thomas Johnson
+
+140
+
+1. Lyla Ladd, Oakdale
+
+2. Rebecca Ramirez, Tuscarora
+
+3. Ibeth Izaguirre, Thomas Johnson
+
+145
+
+1. Kristina Dorsey, Tuscarora
+
+2. Cing Huai, Thomas Johnson
+
+3. Brady Cox, Oakdale
+
+155
+
+1. Yeslin Chavez-Martin, Thomas Johnson
+
+2. Grace Yago, Urbana
+
+3. Storm Teegarden, Walkersville
+
+170
+
+1. Saleema Kang, Walkersville
+
+2. Jennie Ann Smith, Catoctin
+
+3. Savana Sexton, Urbana
+
+190
+
+1. Jilnae Davis, Tuscarora
+
+2. Savannah Cecil, Frederick
+
+3. Cassandra Ruano, Oakdale
+
+235
+
+1. Janelle Espinoza, Tuscarora
+
+2. Nikki Arnold, Oakdale
+
+3. Amayah Moore, Frederick
+
+Indoor Track and Field
+
+Boys
+
+55-meter dash
+
+Jasiri Belote, Tuscarora, 6.51
+
+Jayden Parsley, Frederick, 6.54
+
+Colton Lawson, Middletown, 6.58
+
+55-meter hurdles
+
+Carl Mbella, Walkersville, 7.79
+
+Gideon Mensah, Thomas Johnson, 7.93
+
+Osahenrumwen Aigbogun, Frederick, 7.96
+
+300 meters
+
+Jake Brown, Linganore, 34.92
+
+Jayden Parsley, Frederick, 35.29
+
+Jasiri Belote, Tuscarora, 35.65
+
+500 meters
+
+Jake Brown, Linganore, 1:05.86
+
+Korey Kauflin, Urbana, 1:06.58
+
+Jacob Araujo, Linganore, 1:08.26
+
+Kayden Harris, Linganore, 1:08.26
+
+800 meters
+
+Korey Kauflin, Urbana, 1:59.67
+
+Jacob Araujo, Linganore, 2:02.24
+
+Garrett Howes, Middletown, 2:02.32
+
+1,600 meters
+
+Korey Kauflin, Urbana, 4:27.07
+
+Garrett Howes, Middletown, 4:32.20
+
+Jacob Araujo, Linganore, 4:35.24
+
+3,200 meters
+
+Miles Ghim, Thomas Johnson, 9:47.23
+
+Simon Lipchock, Urbana, 9:48.68
+
+Evan Madraymootoo, Urbana, 9:52.68
+
+4x200 relay
+
+Jasiri Belote, Brayden Wilhelm, Dorian Lewis, Aidan Koffa, Tuscarora, 1:30.74
+
+Quinton Dodds, Jake Brown, Ricky Johnson, Brandon Rosario, Linganore, 1:32.35
+
+Prince Mvutu Mpunga, Eli Maiga, Elijah Alexander, Tristen Sepenoo, Thomas Johnson, 1:34.83
+
+4x400 relay
+
+Jacob Araujo, Kayden Harris, Luke Collins, Jake Brown, Linganore, 3:31.73
+
+Jayden Parsley, Ronte Faunteroy, Phillip Bailey Jr., Nicholas Cherry, Frederick, 3:32.74
+
+Elijah Alexander, Scott Rudy, Jubril Maigari, Prince Mvutu Mpunga, Thomas Johnson, 3:33.03
+
+4x800 relay
+
+Matthew Rodrigues, Luke Osher, Jason Behling, Korey Kauflin, Urbana, 8:22.55
+
+Brogan Thompson, Sai Vedas Boyapati, Merrick Collins, Andrew Gregorio, Oakdale, 8:25.03
+
+Miles Ghim, Dominic Castillo, Scott Rudy, Dashiell Wexler, Thomas Johnson, 8:30.23
+
+Shot put
+
+Kyler Valley, Oakdale, 47-9
+
+Avery Clements, Thomas Johnson, 46-5 1/4
+
+Isaiah Triesh, Walkersville, 44-0
+
+High jump
+
+Samuel Cooper, Tuscarora, 6-8
+
+Masiah Martin, Walkersville, 6-8
+
+Austin Cheek, Frederick, 6-4
+
+Ricky Johnson, Linganore, 6-4
+
+Pole vault
+
+Jonas Sparks, Oakdale, 14-4
+
+Osahenrumwen Aigbogun, Frederick, 12-6
+
+Vance Lalli, Linganore, 12-6
+
+Cameron McNiesh, Walkersville, 12-6
+
+Girls
+
+55-meter dash
+
+Gabby Grant, Urbana, 7.26
+
+Sade Taiwo, Urbana, 7.31
+
+Trinity McLaurin, Oakdale, 7.33
+
+55-meter hurdles
+
+Gabby Umpierre, Thomas Johnson, 8.66
+
+Elianna Dougan, Urbana, 8.77
+
+Aliyah Williams, Urbana, 8.94
+
+300 meters
+
+Sade Taiwo, Urbana, 41.43
+
+Elianna Dougan, Urbana, 41.85
+
+Maddie Roque, Urbana, 41.89
+
+500 meters
+
+Olivia Baker, Catoctin, 1:18.79
+
+Kate Miner, Urbana, 1:21.53
+
+Angelyn Quansah, Oakdale, 1:22.40
+
+800 meters
+
+Kate Miner, Urbana, 2:21.02
+
+Maya Osher, Urbana, 2:22.39
+
+Hailey Lane, Tuscarora, 2:22.90
+
+1,600 meters
+
+Kate Miner, Urbana, 5:11.61
+
+Maya Osher, Urbana, 5:15.48
+
+Hailey Lane, Tuscarora, 5:20.08
+
+3,200 meters
+
+Kate Miner, Urbana, 11:31.56
+
+Madelene Kate Partlow, Thomas Johnson, 11:45.24
+
+Siena Foster, Tuscarora, 11:49.59
+
+4x200 relay
+
+Jaidah Ezcaman, Maddie Roque, Sade Taiwo, Gabby Grant, Urbana, 1:43.66
+
+Angelyn Quansah, Heather Twum, Trinity McLaurin, Reese Rymon, Oakdale, 1:49.71
+
+Jenell Quansah, Kayla Headd, Brynn Groves, Gabrielle Joseph, Linganore, 1:52.16
+
+4x400 relay
+
+Naomi Layne, Lucinda Rodriguez, Sophia Tsapenko, Eila Stultz, Middletown, 4:13.88
+
+Gabby Grant, Briana Barberena, Elianna Dougan, Sade Taiwo, Urbana, 4:14.24
+
+Jordyn Summers, Ava Morales, Katherine Christian-Rawls, Olivia Gregory, Frederick, 4:18.05
+
+4x800 relay
+
+Kyleigh Kauflin, Maya Osher, Natalie Barber, Kate Miner, Urbana, 10:04.07
+
+Madelene Kate Partlow, Salma Mahfoud, Elizabeth Lombardo, Nina Kirkendall-Plaia, Thomas Johnson, 10:10.16
+
+Olivia Gregory, Danica Arrington, Yasmeena Hassen Friess, Ysebelle Soto, Frederick, 10:19.08
+
+Shot put
+
+Julie Patchou, Urbana, 35-8 1/2
+
+Kaila Jones, Catoctin, 35-3 1/4
+
+Alexis Mangene, Oakdale, 35-0 3/4
+
+High jump
+
+Ava Morales, Frederick, 5-6
+
+Jaidah Ezcaman, Urbana, 5-4
+
+Jordyn Summers, Frederick, 5-2
+
+Pole vault
+
+Gabby Umpierre, Thomas Johnson, 13-0
+
+Bailey Smith, Urbana, 11-0
+
+Lennah Bailey, Thomas Johnson, 10-6
+
+Swimming & Diving
+
+Boys
+
+50 freestyle
+
+Shane Courtois, Urbana, 21.87
+
+Nick Getz, Oakdale, 22.15
+
+Andrew Davis, Walkersville, 22.33
+
+100 freestyle
+
+Shane Courtois, Urbana, 48.77
+
+JR May, Oakdale, 49.14
+
+Andrew Davis, Walkersville, 49.17
+
+200 freestyle
+
+Andrew Davis, Walkersville, 1:44.86
+
+Nathan Weir, Urbana, 1:46.22
+
+Conner Stanley, Urbana, 1:53.08
+
+500 freestyle
+
+Jarret Zhou, Urana, 4:57.77
+
+Jackson Steele, Urbana, 5:07
+
+Jackson Devine, Oakdale, 5:10.79
+
+100 backstroke
+
+Russell Dlugosz, Urbana, 51.75
+
+Dalton Winters, Oakdale, 53.70
+
+Luke Jacobs, Oakdale, 55.84
+
+100 breaststroke
+
+JR May, Oakdale, 1:00.51
+
+Andrew Davis, Walkersville, 1:00.77
+
+WangLok Ng, T. Johnson, 1:00.90
+
+100 butterfly
+
+Andrew Davis, Walkersville, 52.26
+
+Nathan Weir, Urbana, 52.93
+
+Amir Hussein, Urbana, 53.08
+
+200 individual medley
+
+Amir Hussein, Urbana, 1:57.67
+
+Dalton Winters, Oakdale, 1:58.17
+
+Russell Dlugosz, Urbana, 2:00.99
+
+Diving
+
+Gabe Silver, Urbana, 264.65
+
+Jason Koster, Middletown, 219.30
+
+David Koster, Middletown, 168.80
+
+200 medley relay
+
+Dalton Winters, JR May, Nick Getz, Jackson Devine, Oakdale, 1:37.68
+
+Earl Belt, WangLok Ng, Daniel Marsh-Brandes, Emerson Harne, T. Johnson, 1:44.30
+
+Nikola Dragic, Adam Baird, Jason Koster, Nels Sunnarborg, Middletown, 1:44.45
+
+200 freestyle relay
+
+Amir Hussein, Nathan Weir, Raymond Zhou, Shane Courtois, Urbana, 1:29.58
+
+Dalton Winters, Jackson Devine, JR May, Nick Getz, Oakdale, 1:29.76
+
+Josh Ademola, Tyler Gibson, Dominick Harsanyi, Juaquin Medina, Linganore, 1:36.45
+
+400 freestyle relay
+
+Elliot Voas, Raymond Zhou, Nathan Weir, Russell Dlogosz, Urbana, 3:21.61
+
+Brogan Dorsey, Joshua Leonard, Luke Jacobs, Emmitt Winters, Oakdale, 3:34.29
+
+Dominick Harsanyi, Tyler Gibson, Josh Ademola, Juaquin Medina, Linganore, 3:42.53
+
+Girls
+
+50 freestyle
+
+Mikayla Green, Oakdale, 24.44
+
+Riley Breen, Tuscarora, 24.66
+
+Carly Timme, Middletown, 25.26
+
+100 freestyle
+
+Margo Full, Oakdale, 52.48
+
+Riley Reen, Tuscarora, 53.69
+
+Kate Miner, Urbana, 54.46
+
+200 freestyle
+
+Mikayla Green, Oakdale, 1:53.29
+
+Kate Miner, Urbana, 1:58.43
+
+Cora Beaver, Urbana, 2:01.07
+
+500 freestyle
+
+Margo Full, Oakdale, 5:03.38
+
+Carly Jacobs, Oakdale, 5:11.85
+
+Carly Timme, Middletown, 5:18.02
+
+100 backstroke
+
+Baylee Corden, Oakdale, 57.81
+
+Addie Hunter, Oakdale, 58.95
+
+Ellie Isleib, Urbana, 1:00.49
+
+100 breaststroke
+
+Cora Beaver, Urbana, 1:05.48
+
+Claire Ingram, Linganore, 1:07.91
+
+Molly McNeece, Oakdale, 1:09.11
+
+100 butterfly
+
+Addie Hunter, Oakdale, 57.05
+
+Sarah Thornett, Urbana, 58.49
+
+Molly McNeece, Oakdale, 59.04
+
+200 individual medley
+
+Baylee Corden, Oakdale, 2:08.30
+
+Carly Jacobs, Oakdale, 2:08.51
+
+Sarah Thornett, Urbana, 2:09.45
+
+Diving
+
+Natalie Lertora, Walkersville, 190.80
+
+Haryn Seol, Urbana, 184.80
+
+Tiffany Raines, Frederick, 183.25
+
+200 medley relay
+
+Ellie Isleib, Cora Beaver, Sarah Thornett, Kate Miner, Urbana, 1:47.58
+
+Baylee Corden, Molly McNeece, Addie Hunter, Mikayla Green, Oakdale, 1:47.91
+
+Madeline Harshman, Ava Gordon, Susannah Claney, Carly Timme, Middletown, 1:57.70
+
+200 freestyle relay
+
+Carly Jacobs, Addie Hunter, Ashlyn Lackemeyer, Margo Full, Oakdale, 1:39.98
+
+Kate Miner, Cora Beaver, Ellie Isleib, Sarah Thornett, Urbana, 1:40.13
+
+Emma Rosales, Brianna Wainberg, Bethany Ginalick, Riley Reen, Tuscarora, 1:46.90
+
+400 freestyle relay
+
+Mikayla Green, Baylee Corden, Carly Jacobs, Margo Full, Oakdale, 3:34.37
+
+Madeline Harshman, Ella Heritage, Susannah Claney, Carly Timme, Middletown, 4:00.08
+
+Elizabeth FitzGerald, Kayla Pao, Finley Beaver, Ellie Carmody, Urbana, 4:00.10
+
+Rankings
+
+Boys Basketball
+
+1. Middletown
+
+2. Oakdale
+
+3. Linganore
+
+4. T. Johnson
+
+Girls Basketball
+
+1. Linganore
+
+2. Frederick
+
+3. Urbana
+
+4. Oakdale
+
+Boys Wrestling
+
+1. Middletown
+
+2. Linganore
+
+3. Oakdale
+
+Girls Wrestling
+
+1. Tuscarora
+
+2. Urbana
+
+3. Frederick
+
+Boys Indoor Track & Field
+
+1. Urbana
+
+2. Oakdale
+
+3. Linganore
+
+4. T. Johnson
+
+Girls Indoor Track & Field
+
+1. Urbana
+
+2. T. Johnson
+
+3. Frederick
+
+4. Oakdale

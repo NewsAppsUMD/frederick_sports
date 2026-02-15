@@ -497,86 +497,97 @@ def esc(text):
     return html.escape(str(text))
 
 
-def generate_html(data):
+def generate_html(data, date_str=None):
     """Generate the full HTML page from parsed data."""
+
+    # Format date for display
+    if date_str:
+        from datetime import datetime
+        try:
+            dt = datetime.strptime(date_str, '%Y_%m_%d')
+            display_date = dt.strftime('%B %d, %Y').replace(' 0', ' ')
+        except ValueError:
+            display_date = date_str
+    else:
+        display_date = 'January 29, 2026'
 
     html_parts = []
 
     # HTML header with CSS (matching existing site style)
-    html_parts.append('''<!DOCTYPE html>
+    html_parts.append(f'''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winter Sports Stats - High School Hangout (Jan. 29, 2026)</title>
+    <title>Winter Sports Stats - High School Hangout ({display_date})</title>
     <style>
-        * {
+        * {{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }}
 
-        body {
+        body {{
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
             padding: 20px;
             line-height: 1.6;
-        }
+        }}
 
-        .container {
+        .container {{
             max-width: 1200px;
             margin: 0 auto;
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+        }}
 
-        header {
+        header {{
             text-align: center;
             margin-bottom: 40px;
             border-bottom: 3px solid #333;
             padding-bottom: 20px;
-        }
+        }}
 
-        h1 {
+        h1 {{
             color: #333;
             font-size: 32px;
             margin-bottom: 10px;
-        }
+        }}
 
-        .subtitle {
+        .subtitle {{
             color: #666;
             font-size: 16px;
             margin: 5px 0;
-        }
+        }}
 
         /* Table of contents / navigation */
-        .toc {
+        .toc {{
             background-color: #f8f9fa;
             border: 1px solid #dee2e6;
             border-radius: 8px;
             padding: 20px 30px;
             margin-bottom: 40px;
-        }
+        }}
 
-        .toc h3 {
+        .toc h3 {{
             font-size: 18px;
             color: #333;
             margin-bottom: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-        }
+        }}
 
-        .toc ul {
+        .toc ul {{
             list-style: none;
             padding: 0;
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-        }
+        }}
 
-        .toc a {
+        .toc a {{
             display: inline-block;
             padding: 6px 14px;
             background-color: #333;
@@ -585,56 +596,56 @@ def generate_html(data):
             border-radius: 4px;
             font-size: 14px;
             transition: background-color 0.2s ease;
-        }
+        }}
 
-        .toc a:hover {
+        .toc a:hover {{
             background-color: #555;
-        }
+        }}
 
-        .sport-header {
+        .sport-header {{
             font-size: 28px;
             color: #fff;
             background-color: #333;
             padding: 12px 20px;
             margin: 50px 0 20px 0;
             border-radius: 4px;
-        }
+        }}
 
-        .sport-section {
+        .sport-section {{
             margin: 30px 0;
-        }
+        }}
 
-        .section-title {
+        .section-title {{
             font-size: 22px;
             color: #333;
             margin-bottom: 15px;
             padding-bottom: 8px;
             border-bottom: 2px solid #666;
             text-transform: uppercase;
-        }
+        }}
 
-        .subsection-title {
+        .subsection-title {{
             font-size: 18px;
             color: #555;
             margin: 20px 0 10px 0;
             padding-bottom: 5px;
             border-bottom: 1px solid #ccc;
-        }
+        }}
 
-        .stats-table {
+        .stats-table {{
             width: 100%;
             border-collapse: collapse;
             margin: 15px 0 30px 0;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
+        }}
 
         .stats-table th,
-        .stats-table td {
+        .stats-table td {{
             padding: 10px 12px;
             border: 1px solid #ddd;
-        }
+        }}
 
-        .stats-table thead th {
+        .stats-table thead th {{
             background-color: #333;
             color: white;
             font-weight: bold;
@@ -642,43 +653,43 @@ def generate_html(data):
             text-transform: uppercase;
             font-size: 13px;
             letter-spacing: 0.5px;
-        }
+        }}
 
         .stats-table th:first-child,
-        .stats-table th:nth-child(2) {
+        .stats-table th:nth-child(2) {{
             text-align: left;
-        }
+        }}
 
-        .stats-table td {
+        .stats-table td {{
             text-align: center;
-        }
+        }}
 
         .stats-table td:first-child,
-        .stats-table td:nth-child(2) {
+        .stats-table td:nth-child(2) {{
             text-align: left;
-        }
+        }}
 
-        .stats-table td:first-child {
+        .stats-table td:first-child {{
             font-weight: 600;
             color: #333;
-        }
+        }}
 
-        .stats-table tbody tr:nth-child(even) {
+        .stats-table tbody tr:nth-child(even) {{
             background-color: #f9f9f9;
-        }
+        }}
 
-        .stats-table tbody tr:hover {
+        .stats-table tbody tr:hover {{
             background-color: #e8f4f8;
             transition: background-color 0.2s ease;
-        }
+        }}
 
-        .rank {
+        .rank {{
             color: #666;
             font-weight: bold;
             text-align: center !important;
-        }
+        }}
 
-        .weight-class {
+        .weight-class {{
             font-size: 16px;
             font-weight: bold;
             color: #333;
@@ -687,113 +698,113 @@ def generate_html(data):
             margin: 15px 0 5px 0;
             border-radius: 4px;
             display: inline-block;
-        }
+        }}
 
-        .rankings-grid {
+        .rankings-grid {{
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
             margin: 20px 0;
-        }
+        }}
 
-        .ranking-card {
+        .ranking-card {{
             background-color: #f8f9fa;
             border: 1px solid #dee2e6;
             border-radius: 8px;
             padding: 15px 20px;
-        }
+        }}
 
-        .ranking-card h4 {
+        .ranking-card h4 {{
             font-size: 16px;
             color: #333;
             margin-bottom: 10px;
             padding-bottom: 5px;
             border-bottom: 2px solid #333;
             text-transform: uppercase;
-        }
+        }}
 
-        .ranking-card ol {
+        .ranking-card ol {{
             padding-left: 25px;
             margin: 0;
-        }
+        }}
 
-        .ranking-card li {
+        .ranking-card li {{
             padding: 3px 0;
             font-size: 14px;
             color: #444;
-        }
+        }}
 
-        footer {
+        footer {{
             margin-top: 50px;
             padding-top: 20px;
             border-top: 2px solid #ddd;
             text-align: center;
             color: #666;
             font-size: 14px;
-        }
+        }}
 
-        footer p {
+        footer p {{
             margin: 5px 0;
-        }
+        }}
 
         /* Responsive design */
-        @media (max-width: 768px) {
-            body {
+        @media (max-width: 768px) {{
+            body {{
                 padding: 10px;
-            }
+            }}
 
-            .container {
+            .container {{
                 padding: 15px;
-            }
+            }}
 
-            h1 {
+            h1 {{
                 font-size: 24px;
-            }
+            }}
 
-            .sport-header {
+            .sport-header {{
                 font-size: 22px;
-            }
+            }}
 
-            .section-title {
+            .section-title {{
                 font-size: 18px;
-            }
+            }}
 
             .stats-table th,
-            .stats-table td {
+            .stats-table td {{
                 padding: 6px 8px;
                 font-size: 13px;
-            }
+            }}
 
-            .toc ul {
+            .toc ul {{
                 flex-direction: column;
-            }
+            }}
 
-            .rankings-grid {
+            .rankings-grid {{
                 grid-template-columns: 1fr;
-            }
-        }
+            }}
+        }}
 
-        @media print {
-            body {
+        @media print {{
+            body {{
                 background-color: white;
                 padding: 0;
-            }
+            }}
 
-            .container {
+            .container {{
                 box-shadow: none;
-            }
+            }}
 
-            .stats-table tbody tr:hover {
+            .stats-table tbody tr:hover {{
                 background-color: inherit;
-            }
-        }
+            }}
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Frederick County Winter Sports Stats</h1>
-            <p class="subtitle">Updated Through January 29, 2026</p>
+            <p class="subtitle">Updated Through {display_date}</p>
             <p class="subtitle">Source: The Frederick News-Post High School Hangout</p>
         </header>
 
@@ -1194,10 +1205,70 @@ def export_json_data(data, data_dir):
     print(f"Exported JSON data to {data_dir}")
 
 
+def export_rankings_json(rankings_data, data_dir):
+    """Export rankings data as JSON for generate_data_js.py to discover."""
+    os.makedirs(data_dir, exist_ok=True)
+    # Convert to the format expected by generate_data_js.py:
+    # [{"sport": "Boys Basketball", "items": [{"team": "Middletown"}, ...]}, ...]
+    rankings_list = []
+    for sport_name, teams in rankings_data.items():
+        rankings_list.append({
+            'sport': sport_name,
+            'items': [{'team': t['team']} for t in teams]
+        })
+    with open(os.path.join(data_dir, 'rankings.json'), 'w') as f:
+        json.dump(rankings_list, f, indent=2)
+    print(f"Exported rankings to {os.path.join(data_dir, 'rankings.json')}")
+
+
+def extract_date_from_filename(filename):
+    """Extract date from hangout filename and return YYYY_MM_DD format.
+
+    Handles patterns like:
+        FNPHangoutTextStats2.12.26.txt -> 2026_02_12
+        FNPHangoutTextState1.29.26.txt -> 2026_01_29
+    """
+    match = re.match(r'FNPHangoutText[A-Za-z]*(\d{1,2})\.(\d{1,2})\.(\d{2})\.txt', filename)
+    if match:
+        month = int(match.group(1))
+        day = int(match.group(2))
+        year = 2000 + int(match.group(3))
+        if not (1 <= month <= 12 and 1 <= day <= 31):
+            return None
+        return f"{year}_{month:02d}_{day:02d}"
+    return None
+
+
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description='Parse FNP High School Hangout text file')
+    parser.add_argument('--file', type=str, help='Path to the input text file')
+    parser.add_argument('--date', type=str, help='Date string in YYYY_MM_DD format (e.g., 2026_02_12)')
+    args = parser.parse_args()
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_file = os.path.join(script_dir, 'hs_hangout', 'FNPHangoutTextState1.29.26.txt')
-    output_file = os.path.join(script_dir, 'docs', 'winter_sports_2026_01_29.html')
+
+    if args.file and args.date:
+        input_file = args.file
+        date_str = args.date
+    else:
+        # Default: find the most recent .txt file in hs_hangout/
+        hangout_dir = os.path.join(script_dir, 'hs_hangout')
+        txt_files = sorted(
+            [f for f in os.listdir(hangout_dir) if f.startswith('FNPHangoutText') and f.endswith('.txt')],
+            key=lambda f: os.path.getmtime(os.path.join(hangout_dir, f)),
+            reverse=True
+        )
+        if not txt_files:
+            print("No hangout text files found in hs_hangout/")
+            return
+        input_file = os.path.join(hangout_dir, txt_files[0])
+        date_str = extract_date_from_filename(txt_files[0])
+        if not date_str:
+            print(f"Could not extract date from filename: {txt_files[0]}")
+            return
+
+    output_file = os.path.join(script_dir, 'docs', f'winter_sports_{date_str}.html')
 
     print(f"Reading: {input_file}")
     data = parse_hangout_text(input_file)
@@ -1213,7 +1284,7 @@ def main():
     print(f"Swimming: {len(data['swimming']['boys'])} boys events, {len(data['swimming']['girls'])} girls events")
     print(f"Rankings: {len(data['rankings'])} sports ranked")
 
-    html_content = generate_html(data)
+    html_content = generate_html(data, date_str)
 
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -1223,8 +1294,11 @@ def main():
     print(f"File size: {len(html_content):,} bytes")
 
     # Export JSON data for the dropdown integration
-    data_dir = os.path.join(script_dir, 'data', '2026_01_29')
+    data_dir = os.path.join(script_dir, 'data', date_str)
     export_json_data(data, data_dir)
+
+    # Export rankings JSON
+    export_rankings_json(data['rankings'], data_dir)
 
 
 if __name__ == '__main__':

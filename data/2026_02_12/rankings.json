@@ -1,0 +1,98 @@
+[
+  {
+    "sport": "Boys Basketball",
+    "items": [
+      {
+        "team": "Middletown"
+      },
+      {
+        "team": "Oakdale"
+      },
+      {
+        "team": "Linganore"
+      },
+      {
+        "team": "T. Johnson"
+      }
+    ]
+  },
+  {
+    "sport": "Girls Basketball",
+    "items": [
+      {
+        "team": "Linganore"
+      },
+      {
+        "team": "Frederick"
+      },
+      {
+        "team": "Urbana"
+      },
+      {
+        "team": "Oakdale"
+      }
+    ]
+  },
+  {
+    "sport": "Boys Wrestling",
+    "items": [
+      {
+        "team": "Middletown"
+      },
+      {
+        "team": "Linganore"
+      },
+      {
+        "team": "Oakdale"
+      }
+    ]
+  },
+  {
+    "sport": "Girls Wrestling",
+    "items": [
+      {
+        "team": "Tuscarora"
+      },
+      {
+        "team": "Urbana"
+      },
+      {
+        "team": "Frederick"
+      }
+    ]
+  },
+  {
+    "sport": "Boys Indoor Track & Field",
+    "items": [
+      {
+        "team": "Urbana"
+      },
+      {
+        "team": "Oakdale"
+      },
+      {
+        "team": "Linganore"
+      },
+      {
+        "team": "T. Johnson"
+      }
+    ]
+  },
+  {
+    "sport": "Girls Indoor Track & Field",
+    "items": [
+      {
+        "team": "Urbana"
+      },
+      {
+        "team": "T. Johnson"
+      },
+      {
+        "team": "Frederick"
+      },
+      {
+        "team": "Oakdale"
+      }
+    ]
+  }
+]

@@ -122,38 +122,28 @@
   "Other Schools": [
     {
       "team": "FCA",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "14",
-      "overall_l": "3"
+      "w": "14",
+      "l": "3"
     },
     {
       "team": "Frederick Warriors",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "14",
-      "overall_l": "6"
+      "w": "14",
+      "l": "6"
     },
     {
       "team": "New Life",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "7",
-      "overall_l": "3"
+      "w": "7",
+      "l": "3"
     },
     {
       "team": "MSD",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "9",
-      "overall_l": "11"
+      "w": "9",
+      "l": "11"
     },
     {
       "team": "SJCP",
-      "div_w": "",
-      "div_l": "",
-      "overall_w": "5",
-      "overall_l": "9"
+      "w": "5",
+      "l": "9"
     }
   ]
 }

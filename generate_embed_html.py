@@ -366,7 +366,18 @@ SPORT_CONFIGS = {
     }
 }
 
-AVAILABLE_DATES = ['2025_10_23', '2025_12_06']
+def discover_embed_dates() -> list:
+    """Auto-discover available dates from data/ directory."""
+    import re as _re
+    dates = []
+    data_dir = Path('data')
+    if not data_dir.exists():
+        return dates
+    for entry in data_dir.iterdir():
+        if entry.is_dir() and _re.match(r'^\d{4}_\d{2}_\d{2}$', entry.name):
+            dates.append(entry.name)
+    dates.sort()
+    return dates
 
 
 def generate_embed_for_sport(sport_id: str, config: dict, date_str: str) -> str:
@@ -415,7 +426,7 @@ def generate_all_embeds(dates=None, sports=None):
     embed_dir.mkdir(exist_ok=True)
 
     # Determine which dates and sports to process
-    dates = dates if dates else AVAILABLE_DATES
+    dates = dates if dates else discover_embed_dates()
     sports = sports if sports else list(SPORT_CONFIGS.keys())
 
     for date_str in dates:

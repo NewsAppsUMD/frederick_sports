@@ -1,0 +1,589 @@
+{
+  "scoring": [
+    {
+      "player": "Cohen Wade",
+      "school": "FCA",
+      "gp": "20",
+      "pts": "494",
+      "avg": "24.7"
+    },
+    {
+      "player": "Dyvae Ambush",
+      "school": "T. Johnson",
+      "gp": "18",
+      "pts": "369",
+      "avg": "20.5"
+    },
+    {
+      "player": "Chase Beard",
+      "school": "Middletown",
+      "gp": "17",
+      "pts": "301",
+      "avg": "17.7"
+    },
+    {
+      "player": "Keegan Marceron",
+      "school": "Oakdale",
+      "gp": "17",
+      "pts": "295",
+      "avg": "17.4"
+    },
+    {
+      "player": "Kyrin Ambush",
+      "school": "T. Johnson",
+      "gp": "18",
+      "pts": "288",
+      "avg": "16.0"
+    },
+    {
+      "player": "Alex Rodriguez",
+      "school": "Oakdale",
+      "gp": "16",
+      "pts": "254",
+      "avg": "15.9"
+    },
+    {
+      "player": "Samuel Chew",
+      "school": "Warriors",
+      "gp": "22",
+      "pts": "343",
+      "avg": "15.6"
+    },
+    {
+      "player": "Mark Gwynn III",
+      "school": "MSD",
+      "gp": "20",
+      "pts": "310",
+      "avg": "15.5"
+    },
+    {
+      "player": "AJ Spencer",
+      "school": "Frederick",
+      "gp": "10",
+      "pts": "142",
+      "avg": "14.2"
+    },
+    {
+      "player": "Asher Brandenburg",
+      "school": "Warriors",
+      "gp": "22",
+      "pts": "312",
+      "avg": "14.2"
+    },
+    {
+      "player": "Trevor Pfeil",
+      "school": "Walkersville",
+      "gp": "16",
+      "pts": "-",
+      "avg": "14.0"
+    },
+    {
+      "player": "Sam Cooper",
+      "school": "Tuscarora",
+      "gp": "15",
+      "pts": "204",
+      "avg": "13.6"
+    },
+    {
+      "player": "Osborne Ehana",
+      "school": "Frederick",
+      "gp": "8",
+      "pts": "109",
+      "avg": "13.6"
+    },
+    {
+      "player": "Jaivyn Moody",
+      "school": "Brunswick",
+      "gp": "18",
+      "pts": "243",
+      "avg": "13.5"
+    },
+    {
+      "player": "Matthan Brandenburg",
+      "school": "Warriors",
+      "gp": "22",
+      "pts": "296",
+      "avg": "13.5"
+    },
+    {
+      "player": "Jude Annor",
+      "school": "FCA",
+      "gp": "20",
+      "pts": "257",
+      "avg": "12.9"
+    },
+    {
+      "player": "Brydan Tema",
+      "school": "T. Johnson",
+      "gp": "18",
+      "pts": "230",
+      "avg": "12.7"
+    },
+    {
+      "player": "Ivan Ansong",
+      "school": "Walkersville",
+      "gp": "17",
+      "pts": "-",
+      "avg": "12.4"
+    },
+    {
+      "player": "Zack Byrd",
+      "school": "Tuscarora",
+      "gp": "17",
+      "pts": "209",
+      "avg": "12.3"
+    },
+    {
+      "player": "Mason Whipp",
+      "school": "Middletown",
+      "gp": "17",
+      "pts": "208",
+      "avg": "12.2"
+    },
+    {
+      "player": "Christian Rivera",
+      "school": "Oakdale",
+      "gp": "17",
+      "pts": "202",
+      "avg": "11.9"
+    },
+    {
+      "player": "Daveon Black",
+      "school": "Linganore",
+      "gp": "17",
+      "pts": "196",
+      "avg": "11.5"
+    },
+    {
+      "player": "Jaxson Howington",
+      "school": "Urbana",
+      "gp": "14",
+      "pts": "161",
+      "avg": "11.5"
+    },
+    {
+      "player": "Aaron Birney",
+      "school": "Brunswick",
+      "gp": "16",
+      "pts": "175",
+      "avg": "10.9"
+    },
+    {
+      "player": "Jimmy McGinley",
+      "school": "Urbana",
+      "gp": "10",
+      "pts": "108",
+      "avg": "10.8"
+    },
+    {
+      "player": "Nicholas Martinis",
+      "school": "Brunswick",
+      "gp": "18",
+      "pts": "193",
+      "avg": "10.7"
+    },
+    {
+      "player": "Mitchell Curtis",
+      "school": "Tuscarora",
+      "gp": "17",
+      "pts": "175",
+      "avg": "10.3"
+    },
+    {
+      "player": "Trevor Beard",
+      "school": "Middletown",
+      "gp": "17",
+      "pts": "175",
+      "avg": "10.2"
+    },
+    {
+      "player": "Mason Leonard",
+      "school": "Urbana",
+      "gp": "16",
+      "pts": "159",
+      "avg": "9.9"
+    },
+    {
+      "player": "Jaidon Maxwell",
+      "school": "Linganore",
+      "gp": "18",
+      "pts": "178",
+      "avg": "9.9"
+    },
+    {
+      "player": "Ryker Pedersen",
+      "school": "MSD",
+      "gp": "20",
+      "pts": "193",
+      "avg": "9.7"
+    },
+    {
+      "player": "Taylor Rosario",
+      "school": "Linganore",
+      "gp": "18",
+      "pts": "168",
+      "avg": "9.3"
+    },
+    {
+      "player": "Will Davis",
+      "school": "Linganore",
+      "gp": "18",
+      "pts": "164",
+      "avg": "9.1"
+    },
+    {
+      "player": "Mookie Taylor",
+      "school": "Frederick",
+      "gp": "10",
+      "pts": "88",
+      "avg": "8.8"
+    }
+  ],
+  "rebounds": [
+    {
+      "player": "Asher Brandenburg",
+      "school": "Warriors",
+      "gp": "22",
+      "reb": "226",
+      "avg": "10.3"
+    },
+    {
+      "player": "Mason Whipp",
+      "school": "Middletown",
+      "gp": "17",
+      "reb": "168",
+      "avg": "9.8"
+    },
+    {
+      "player": "Brady Renn",
+      "school": "Brunswick",
+      "gp": "18",
+      "reb": "157",
+      "avg": "8.7"
+    },
+    {
+      "player": "Brydan Tema",
+      "school": "T. Johnson",
+      "gp": "18",
+      "reb": "158",
+      "avg": "8.7"
+    },
+    {
+      "player": "Jude Annor",
+      "school": "FCA",
+      "gp": "20",
+      "reb": "161",
+      "avg": "8.1"
+    },
+    {
+      "player": "Mookie Taylor",
+      "school": "Frederick",
+      "gp": "10",
+      "reb": "79",
+      "avg": "7.9"
+    },
+    {
+      "player": "Ivan Ansong",
+      "school": "Walkersville",
+      "gp": "17",
+      "reb": "-",
+      "avg": "7.6"
+    },
+    {
+      "player": "Keegan Marceron",
+      "school": "Oakdale",
+      "gp": "17",
+      "reb": "125",
+      "avg": "7.4"
+    },
+    {
+      "player": "Cooper DeWaal",
+      "school": "Oakdale",
+      "gp": "17",
+      "reb": "126",
+      "avg": "7.4"
+    },
+    {
+      "player": "Mide Adeoye",
+      "school": "T. Johnson",
+      "gp": "18",
+      "reb": "131",
+      "avg": "7.3"
+    },
+    {
+      "player": "Ryland Connally",
+      "school": "Warriors",
+      "gp": "16",
+      "reb": "116",
+      "avg": "7.3"
+    },
+    {
+      "player": "Sam Cooper",
+      "school": "Tuscarora",
+      "gp": "15",
+      "reb": "107",
+      "avg": "7.1"
+    },
+    {
+      "player": "Jeremiah Page",
+      "school": "FCA",
+      "gp": "18",
+      "reb": "127",
+      "avg": "7.1"
+    },
+    {
+      "player": "Josh Foshee",
+      "school": "FCA",
+      "gp": "20",
+      "reb": "134",
+      "avg": "6.7"
+    },
+    {
+      "player": "Donovan Chmaj",
+      "school": "MSD",
+      "gp": "20",
+      "reb": "132",
+      "avg": "6.6"
+    },
+    {
+      "player": "Alex Rodriguez",
+      "school": "Oakdale",
+      "gp": "16",
+      "reb": "104",
+      "avg": "6.5"
+    },
+    {
+      "player": "Philip Giuliani",
+      "school": "Urbana",
+      "gp": "16",
+      "reb": "103",
+      "avg": "6.4"
+    },
+    {
+      "player": "Jaxson Howington",
+      "school": "Urbana",
+      "gp": "14",
+      "reb": "85",
+      "avg": "6.1"
+    },
+    {
+      "player": "Daveon Black",
+      "school": "Linganore",
+      "gp": "17",
+      "reb": "101",
+      "avg": "5.9"
+    },
+    {
+      "player": "Brittin Poffenbarger",
+      "school": "Middletown",
+      "gp": "17",
+      "reb": "100",
+      "avg": "5.8"
+    },
+    {
+      "player": "Mark Yongbi",
+      "school": "Brunswick",
+      "gp": "16",
+      "reb": "89",
+      "avg": "5.6"
+    },
+    {
+      "player": "Corson Brunson",
+      "school": "MSD",
+      "gp": "20",
+      "reb": "107",
+      "avg": "5.4"
+    },
+    {
+      "player": "Chase Beard",
+      "school": "Middletown",
+      "gp": "17",
+      "reb": "91",
+      "avg": "5.3"
+    },
+    {
+      "player": "Adam Krystofiak",
+      "school": "Linganore",
+      "gp": "18",
+      "reb": "93",
+      "avg": "5.2"
+    },
+    {
+      "player": "Mason Leonard",
+      "school": "Urbana",
+      "gp": "16",
+      "reb": "83",
+      "avg": "5.2"
+    },
+    {
+      "player": "Matthan Brandenburg",
+      "school": "Warriors",
+      "gp": "22",
+      "reb": "115",
+      "avg": "5.2"
+    },
+    {
+      "player": "Dyvae Ambush",
+      "school": "T. Johnson",
+      "gp": "18",
+      "reb": "90",
+      "avg": "5.0"
+    },
+    {
+      "player": "Samuel Chew",
+      "school": "Warriors",
+      "gp": "22",
+      "reb": "111",
+      "avg": "5.0"
+    }
+  ],
+  "assists": [
+    {
+      "player": "Taylor Rosario",
+      "school": "Linganore",
+      "gp": "18",
+      "ast": "108",
+      "avg": "6.0"
+    },
+    {
+      "player": "Mitchell Curtis",
+      "school": "Tuscarora",
+      "gp": "17",
+      "ast": "96",
+      "avg": "5.6"
+    },
+    {
+      "player": "Dyvae Ambush",
+      "school": "T. Johnson",
+      "gp": "18",
+      "ast": "97",
+      "avg": "5.4"
+    },
+    {
+      "player": "Brady Renn",
+      "school": "Brunswick",
+      "gp": "18",
+      "ast": "77",
+      "avg": "4.2"
+    },
+    {
+      "player": "Jude Annor",
+      "school": "FCA",
+      "gp": "20",
+      "ast": "82",
+      "avg": "4.1"
+    },
+    {
+      "player": "Moses Adoko",
+      "school": "Urbana",
+      "gp": "13",
+      "ast": "44",
+      "avg": "3.4"
+    },
+    {
+      "player": "Kyrin Ambush",
+      "school": "T. Johnson",
+      "gp": "18",
+      "ast": "58",
+      "avg": "3.2"
+    },
+    {
+      "player": "Nicholas Martinis",
+      "school": "Brunswick",
+      "gp": "18",
+      "ast": "56",
+      "avg": "3.1"
+    },
+    {
+      "player": "Neil Powell",
+      "school": "Warriors",
+      "gp": "20",
+      "ast": "60",
+      "avg": "3.0"
+    },
+    {
+      "player": "Chase Beard",
+      "school": "Middletown",
+      "gp": "17",
+      "ast": "50",
+      "avg": "2.9"
+    },
+    {
+      "player": "Julio Cuadrado III",
+      "school": "MSD",
+      "gp": "17",
+      "ast": "50",
+      "avg": "2.9"
+    },
+    {
+      "player": "Josh Foshee",
+      "school": "FCA",
+      "gp": "20",
+      "ast": "56",
+      "avg": "2.8"
+    },
+    {
+      "player": "Ben Almeida",
+      "school": "Urbana",
+      "gp": "15",
+      "ast": "41",
+      "avg": "2.7"
+    },
+    {
+      "player": "Samuel Chew",
+      "school": "Warriors",
+      "gp": "22",
+      "ast": "60",
+      "avg": "2.7"
+    },
+    {
+      "player": "Brittin Poffenbarger",
+      "school": "Middletown",
+      "gp": "17",
+      "ast": "44",
+      "avg": "2.5"
+    },
+    {
+      "player": "AJ Spencer",
+      "school": "Frederick",
+      "gp": "10",
+      "ast": "25",
+      "avg": "2.5"
+    },
+    {
+      "player": "Will Davis",
+      "school": "Linganore",
+      "gp": "18",
+      "ast": "43",
+      "avg": "2.4"
+    },
+    {
+      "player": "Alex Rodriguez",
+      "school": "Oakdale",
+      "gp": "16",
+      "ast": "38",
+      "avg": "2.4"
+    },
+    {
+      "player": "Mason Leonard",
+      "school": "Urbana",
+      "gp": "16",
+      "ast": "36",
+      "avg": "2.3"
+    },
+    {
+      "player": "Zack Byrd",
+      "school": "Tuscarora",
+      "gp": "17",
+      "ast": "38",
+      "avg": "2.2"
+    },
+    {
+      "player": "Sey Kondo",
+      "school": "T. Johnson",
+      "gp": "18",
+      "ast": "39",
+      "avg": "2.2"
+    }
+  ]
+}

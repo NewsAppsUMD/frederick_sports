@@ -1,0 +1,410 @@
+{
+  "boys_50_freestyle": [
+    {
+      "player": "Shane Courtois, Urbana",
+      "school": "",
+      "result": "21.87"
+    },
+    {
+      "player": "Nick Getz, Oakdale",
+      "school": "",
+      "result": "22.15"
+    },
+    {
+      "player": "Andrew Davis, Walkersville",
+      "school": "",
+      "result": "22.33"
+    }
+  ],
+  "boys_100_freestyle": [
+    {
+      "player": "Shane Courtois, Urbana",
+      "school": "",
+      "result": "48.77"
+    },
+    {
+      "player": "JR May, Oakdale",
+      "school": "",
+      "result": "49.14"
+    },
+    {
+      "player": "Andrew Davis, Walkersville",
+      "school": "",
+      "result": "49.17"
+    }
+  ],
+  "boys_200_freestyle": [
+    {
+      "player": "Andrew Davis, Walkersville",
+      "school": "",
+      "result": "1:44.86"
+    },
+    {
+      "player": "Nathan Weir, Urbana",
+      "school": "",
+      "result": "1:46.22"
+    },
+    {
+      "player": "Conner Stanley, Urbana",
+      "school": "",
+      "result": "1:53.08"
+    }
+  ],
+  "boys_500_freestyle": [
+    {
+      "player": "Jarret Zhou, Urana",
+      "school": "",
+      "result": "4:57.77"
+    },
+    {
+      "player": "Jackson Steele, Urbana",
+      "school": "",
+      "result": "5:07"
+    },
+    {
+      "player": "Jackson Devine, Oakdale",
+      "school": "",
+      "result": "5:10.79"
+    }
+  ],
+  "boys_100_backstroke": [
+    {
+      "player": "Russell Dlugosz, Urbana",
+      "school": "",
+      "result": "51.75"
+    },
+    {
+      "player": "Dalton Winters, Oakdale",
+      "school": "",
+      "result": "53.70"
+    },
+    {
+      "player": "Luke Jacobs, Oakdale",
+      "school": "",
+      "result": "55.84"
+    }
+  ],
+  "boys_100_breaststroke": [
+    {
+      "player": "JR May, Oakdale",
+      "school": "",
+      "result": "1:00.51"
+    },
+    {
+      "player": "Andrew Davis, Walkersville",
+      "school": "",
+      "result": "1:00.77"
+    },
+    {
+      "player": "WangLok Ng, T. Johnson",
+      "school": "",
+      "result": "1:00.90"
+    }
+  ],
+  "boys_100_butterfly": [
+    {
+      "player": "Andrew Davis, Walkersville",
+      "school": "",
+      "result": "52.26"
+    },
+    {
+      "player": "Nathan Weir, Urbana",
+      "school": "",
+      "result": "52.93"
+    },
+    {
+      "player": "Amir Hussein, Urbana",
+      "school": "",
+      "result": "53.08"
+    }
+  ],
+  "boys_200_individual_medley": [
+    {
+      "player": "Amir Hussein, Urbana",
+      "school": "",
+      "result": "1:57.67"
+    },
+    {
+      "player": "Dalton Winters, Oakdale",
+      "school": "",
+      "result": "1:58.17"
+    },
+    {
+      "player": "Russell Dlugosz, Urbana",
+      "school": "",
+      "result": "2:00.99"
+    }
+  ],
+  "boys_diving": [
+    {
+      "player": "Gabe Silver, Urbana",
+      "school": "",
+      "result": "264.65"
+    },
+    {
+      "player": "Jason Koster, Middletown",
+      "school": "",
+      "result": "219.30"
+    },
+    {
+      "player": "David Koster, Middletown",
+      "school": "",
+      "result": "168.80"
+    }
+  ],
+  "boys_200_medley_relay": [
+    {
+      "player": "Dalton Winters, JR May, Nick Getz, Jackson Devine, Oakdale",
+      "school": "",
+      "result": "1:37.68"
+    },
+    {
+      "player": "Earl Belt, WangLok Ng, Daniel Marsh-Brandes, Emerson Harne, T. Johnson",
+      "school": "",
+      "result": "1:44.30"
+    },
+    {
+      "player": "Nikola Dragic, Adam Baird, Jason Koster, Nels Sunnarborg, Middletown",
+      "school": "",
+      "result": "1:44.45"
+    }
+  ],
+  "boys_200_freestyle_relay": [
+    {
+      "player": "Amir Hussein, Nathan Weir, Raymond Zhou, Shane Courtois, Urbana",
+      "school": "",
+      "result": "1:29.58"
+    },
+    {
+      "player": "Dalton Winters, Jackson Devine, JR May, Nick Getz, Oakdale",
+      "school": "",
+      "result": "1:29.76"
+    },
+    {
+      "player": "Josh Ademola, Tyler Gibson, Dominick Harsanyi, Juaquin Medina, Linganore",
+      "school": "",
+      "result": "1:36.45"
+    }
+  ],
+  "boys_400_freestyle_relay": [
+    {
+      "player": "Elliot Voas, Raymond Zhou, Nathan Weir, Russell Dlogosz, Urbana",
+      "school": "",
+      "result": "3:21.61"
+    },
+    {
+      "player": "Brogan Dorsey, Joshua Leonard, Luke Jacobs, Emmitt Winters, Oakdale",
+      "school": "",
+      "result": "3:34.29"
+    },
+    {
+      "player": "Dominick Harsanyi, Tyler Gibson, Josh Ademola, Juaquin Medina, Linganore",
+      "school": "",
+      "result": "3:42.53"
+    }
+  ],
+  "girls_50_freestyle": [
+    {
+      "player": "Mikayla Green, Oakdale",
+      "school": "",
+      "result": "24.44"
+    },
+    {
+      "player": "Riley Breen, Tuscarora",
+      "school": "",
+      "result": "24.66"
+    },
+    {
+      "player": "Carly Timme, Middletown",
+      "school": "",
+      "result": "25.26"
+    }
+  ],
+  "girls_100_freestyle": [
+    {
+      "player": "Margo Full, Oakdale",
+      "school": "",
+      "result": "52.48"
+    },
+    {
+      "player": "Riley Reen, Tuscarora",
+      "school": "",
+      "result": "53.69"
+    },
+    {
+      "player": "Kate Miner, Urbana",
+      "school": "",
+      "result": "54.46"
+    }
+  ],
+  "girls_200_freestyle": [
+    {
+      "player": "Mikayla Green, Oakdale",
+      "school": "",
+      "result": "1:53.29"
+    },
+    {
+      "player": "Kate Miner, Urbana",
+      "school": "",
+      "result": "1:58.43"
+    },
+    {
+      "player": "Cora Beaver, Urbana",
+      "school": "",
+      "result": "2:01.07"
+    }
+  ],
+  "girls_500_freestyle": [
+    {
+      "player": "Margo Full, Oakdale",
+      "school": "",
+      "result": "5:03.38"
+    },
+    {
+      "player": "Carly Jacobs, Oakdale",
+      "school": "",
+      "result": "5:11.85"
+    },
+    {
+      "player": "Carly Timme, Middletown",
+      "school": "",
+      "result": "5:18.02"
+    }
+  ],
+  "girls_100_backstroke": [
+    {
+      "player": "Baylee Corden, Oakdale",
+      "school": "",
+      "result": "57.81"
+    },
+    {
+      "player": "Addie Hunter, Oakdale",
+      "school": "",
+      "result": "58.95"
+    },
+    {
+      "player": "Ellie Isleib, Urbana",
+      "school": "",
+      "result": "1:00.49"
+    }
+  ],
+  "girls_100_breaststroke": [
+    {
+      "player": "Cora Beaver, Urbana",
+      "school": "",
+      "result": "1:05.48"
+    },
+    {
+      "player": "Claire Ingram, Linganore",
+      "school": "",
+      "result": "1:07.91"
+    },
+    {
+      "player": "Molly McNeece, Oakdale",
+      "school": "",
+      "result": "1:09.11"
+    }
+  ],
+  "girls_100_butterfly": [
+    {
+      "player": "Addie Hunter, Oakdale",
+      "school": "",
+      "result": "57.05"
+    },
+    {
+      "player": "Sarah Thornett, Urbana",
+      "school": "",
+      "result": "58.49"
+    },
+    {
+      "player": "Molly McNeece, Oakdale",
+      "school": "",
+      "result": "59.04"
+    }
+  ],
+  "girls_200_individual_medley": [
+    {
+      "player": "Baylee Corden, Oakdale",
+      "school": "",
+      "result": "2:08.30"
+    },
+    {
+      "player": "Carly Jacobs, Oakdale",
+      "school": "",
+      "result": "2:08.51"
+    },
+    {
+      "player": "Sarah Thornett, Urbana",
+      "school": "",
+      "result": "2:09.45"
+    }
+  ],
+  "girls_diving": [
+    {
+      "player": "Natalie Lertora, Walkersville",
+      "school": "",
+      "result": "190.80"
+    },
+    {
+      "player": "Haryn Seol, Urbana",
+      "school": "",
+      "result": "184.80"
+    },
+    {
+      "player": "Tiffany Raines, Frederick",
+      "school": "",
+      "result": "183.25"
+    }
+  ],
+  "girls_200_medley_relay": [
+    {
+      "player": "Ellie Isleib, Cora Beaver, Sarah Thornett, Kate Miner, Urbana",
+      "school": "",
+      "result": "1:47.58"
+    },
+    {
+      "player": "Baylee Corden, Molly McNeece, Addie Hunter, Mikayla Green, Oakdale",
+      "school": "",
+      "result": "1:47.91"
+    },
+    {
+      "player": "Madeline Harshman, Ava Gordon, Susannah Claney, Carly Timme, Middletown",
+      "school": "",
+      "result": "1:57.70"
+    }
+  ],
+  "girls_200_freestyle_relay": [
+    {
+      "player": "Carly Jacobs, Addie Hunter, Ashlyn Lackemeyer, Margo Full, Oakdale",
+      "school": "",
+      "result": "1:39.98"
+    },
+    {
+      "player": "Kate Miner, Cora Beaver, Ellie Isleib, Sarah Thornett, Urbana",
+      "school": "",
+      "result": "1:40.13"
+    },
+    {
+      "player": "Emma Rosales, Brianna Wainberg, Bethany Ginalick, Riley Reen, Tuscarora",
+      "school": "",
+      "result": "1:46.90"
+    }
+  ],
+  "girls_400_freestyle_relay": [
+    {
+      "player": "Mikayla Green, Baylee Corden, Carly Jacobs, Margo Full, Oakdale",
+      "school": "",
+      "result": "3:34.37"
+    },
+    {
+      "player": "Madeline Harshman, Ella Heritage, Susannah Claney, Carly Timme, Middletown",
+      "school": "",
+      "result": "4:00.08"
+    },
+    {
+      "player": "Elizabeth FitzGerald, Kayla Pao, Finley Beaver, Ellie Carmody, Urbana",
+      "school": "",
+      "result": "4:00.10"
+    }
+  ]
+}
