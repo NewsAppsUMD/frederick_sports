@@ -9,7 +9,7 @@
     },
     {
       "player": "Sophia Burgee",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "pts": "208",
       "avg": "16.0"
@@ -58,7 +58,7 @@
     },
     {
       "player": "Annabelle Horst",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "pts": "159",
       "avg": "12.3"
@@ -72,7 +72,7 @@
     },
     {
       "player": "Ava Phimmakaysone",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "14",
       "pts": "160",
       "avg": "11.4"
@@ -114,21 +114,21 @@
     },
     {
       "player": "Maddie McGrew",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "15",
       "pts": "147",
       "avg": "9.8"
     },
     {
       "player": "Leah Brown",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "11",
       "pts": "106",
       "avg": "9.6"
     },
     {
       "player": "Chadaya Hairston",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "12",
       "pts": "116",
       "avg": "9.6"
@@ -149,14 +149,14 @@
     },
     {
       "player": "London Lee",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "8",
       "pts": "68",
       "avg": "8.5"
     },
     {
       "player": "Adriana Bonasera",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "10",
       "pts": "82",
       "avg": "8.2"
@@ -212,7 +212,7 @@
     },
     {
       "player": "Laney Baer",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "pts": "88",
       "avg": "6.7"
@@ -256,35 +256,35 @@
     },
     {
       "player": "Laney Baer",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "reb": "118",
       "avg": "9.1"
     },
     {
       "player": "Leah Brown",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "11",
       "reb": "97",
       "avg": "8.8"
     },
     {
       "player": "Maddie McGrew",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "15",
       "reb": "127",
       "avg": "8.5"
     },
     {
       "player": "Annabelle Horst",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "reb": "109",
       "avg": "8.4"
     },
     {
       "player": "July Messinger",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "12",
       "reb": "96",
       "avg": "8.0"
@@ -347,14 +347,14 @@
     },
     {
       "player": "Sophia Burgee",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "reb": "77",
       "avg": "5.9"
     },
     {
       "player": "Alethea McGovern",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "15",
       "reb": "82",
       "avg": "5.5"
@@ -396,7 +396,7 @@
     },
     {
       "player": "Nyah Brooks",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "reb": "66",
       "avg": "5.1"
@@ -410,7 +410,7 @@
     },
     {
       "player": "Chadaya Hairston",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "12",
       "reb": "55",
       "avg": "4.5"
@@ -447,7 +447,7 @@
   "assists": [
     {
       "player": "London Lee",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "8",
       "ast": "41",
       "avg": "5.1"
@@ -524,28 +524,28 @@
     },
     {
       "player": "Chadaya Hairston",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "12",
       "ast": "32",
       "avg": "2.7"
     },
     {
       "player": "Sophia Burgee",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "ast": "35",
       "avg": "2.7"
     },
     {
       "player": "Annabelle Horst",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "ast": "34",
       "avg": "2.6"
     },
     {
       "player": "Maddie McGrew",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "15",
       "ast": "38",
       "avg": "2.5"
@@ -559,21 +559,21 @@
     },
     {
       "player": "Julie Messinger",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "12",
       "ast": "25",
       "avg": "2.1"
     },
     {
       "player": "McKenna Long",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "ast": "27",
       "avg": "2.1"
     },
     {
       "player": "Melissa Yeboah",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "13",
       "ast": "26",
       "avg": "2.0"

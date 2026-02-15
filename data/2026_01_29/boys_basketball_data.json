@@ -2,14 +2,14 @@
   "scoring": [
     {
       "player": "Cohen Wade",
-      "school": "FCA",
+      "school": "Frederick Christian Academy",
       "gp": "13",
       "pts": "332",
       "avg": "25.5"
     },
     {
       "player": "Dyvae Ambush",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "14",
       "pts": "277",
       "avg": "19.8"
@@ -30,21 +30,21 @@
     },
     {
       "player": "Samuel Chew",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "18",
       "pts": "292",
       "avg": "16.2"
     },
     {
       "player": "Kyrin Ambush",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "14",
       "pts": "223",
       "avg": "15.9"
     },
     {
       "player": "Mark Gwynn III",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "gp": "14",
       "pts": "218",
       "avg": "15.6"
@@ -65,7 +65,7 @@
     },
     {
       "player": "Asher Brandenburg",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "18",
       "pts": "260",
       "avg": "14.4"
@@ -79,7 +79,7 @@
     },
     {
       "player": "Matthan Brandenburg",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "18",
       "pts": "250",
       "avg": "13.9"
@@ -100,7 +100,7 @@
     },
     {
       "player": "Jude Annor",
-      "school": "FCA",
+      "school": "Frederick Christian Academy",
       "gp": "13",
       "pts": "176",
       "avg": "13.5"
@@ -142,7 +142,7 @@
     },
     {
       "player": "Brydan Tema",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "14",
       "pts": "164",
       "avg": "11.7"
@@ -191,7 +191,7 @@
     },
     {
       "player": "Ryker Pedersen",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "gp": "14",
       "pts": "140",
       "avg": "10.0"
@@ -235,7 +235,7 @@
   "rebounds": [
     {
       "player": "Asher Brandenburg",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "18",
       "reb": "195",
       "avg": "10.8"
@@ -256,7 +256,7 @@
     },
     {
       "player": "Jude Annor",
-      "school": "FCA",
+      "school": "Frederick Christian Academy",
       "gp": "13",
       "reb": "104",
       "avg": "8.0"
@@ -270,7 +270,7 @@
     },
     {
       "player": "Brydan Tema",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "14",
       "reb": "111",
       "avg": "7.9"
@@ -284,7 +284,7 @@
     },
     {
       "player": "Josh Foshee",
-      "school": "FCA",
+      "school": "Frederick Christian Academy",
       "gp": "13",
       "reb": "94",
       "avg": "7.2"
@@ -319,7 +319,7 @@
     },
     {
       "player": "Donovan Chmaj",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "gp": "14",
       "reb": "95",
       "avg": "6.8"
@@ -333,7 +333,7 @@
     },
     {
       "player": "Mide Adeoye",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "14",
       "reb": "92",
       "avg": "6.6"
@@ -347,7 +347,7 @@
     },
     {
       "player": "Ryland Connally",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "12",
       "reb": "76",
       "avg": "6.3"
@@ -361,7 +361,7 @@
     },
     {
       "player": "Jeremiah Page",
-      "school": "FCA",
+      "school": "Frederick Christian Academy",
       "gp": "11",
       "reb": "65",
       "avg": "5.9"
@@ -389,7 +389,7 @@
     },
     {
       "player": "Corson Brunson",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "gp": "14",
       "reb": "77",
       "avg": "5.5"
@@ -424,7 +424,7 @@
     },
     {
       "player": "Samuel Chew",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "18",
       "reb": "92",
       "avg": "5.1"
@@ -438,7 +438,7 @@
     },
     {
       "player": "Matthan Brandenburg",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "18",
       "reb": "90",
       "avg": "5.0"
@@ -461,7 +461,7 @@
     },
     {
       "player": "Dyvae Ambush",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "14",
       "ast": "80",
       "avg": "5.7"
@@ -475,7 +475,7 @@
     },
     {
       "player": "Jude Annor",
-      "school": "FCA",
+      "school": "Frederick Christian Academy",
       "gp": "13",
       "ast": "48",
       "avg": "3.7"
@@ -496,7 +496,7 @@
     },
     {
       "player": "Neil Powell",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "16",
       "ast": "49",
       "avg": "3.1"
@@ -510,7 +510,7 @@
     },
     {
       "player": "Samuel Chew",
-      "school": "Warriors",
+      "school": "Frederick Warriors",
       "gp": "18",
       "ast": "53",
       "avg": "2.9"
@@ -524,14 +524,14 @@
     },
     {
       "player": "Julio Cuadrado III",
-      "school": "MSD",
+      "school": "Maryland School for the Deaf",
       "gp": "13",
       "ast": "36",
       "avg": "2.8"
     },
     {
       "player": "Josh Foshee",
-      "school": "FCA",
+      "school": "Frederick Christian Academy",
       "gp": "13",
       "ast": "36",
       "avg": "2.8"
@@ -545,7 +545,7 @@
     },
     {
       "player": "Kyrin Ambush",
-      "school": "T. Johnson",
+      "school": "Thomas Johnson",
       "gp": "14",
       "ast": "36",
       "avg": "2.6"

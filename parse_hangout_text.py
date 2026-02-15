@@ -13,6 +13,48 @@ import os
 import re
 
 
+# Team abbreviation lookup table
+TEAM_ABBREVIATIONS = {
+    'Brun.': 'Brunswick',
+    'Fred.': 'Frederick',
+    'Ling.': 'Linganore',
+    'Mid.': 'Middletown',
+    'MSD': 'Maryland School for the Deaf',
+    'Oak.': 'Oakdale',
+    'SJCP': "St. John's Catholic Prep",
+    'TJ': 'Thomas Johnson',
+    'T. Johnson': 'Thomas Johnson',
+    'Tus.': 'Tuscarora',
+    'Walk.': 'Walkersville',
+    'FCA': 'Frederick Christian Academy',
+    'Warriors': 'Frederick Warriors',
+    'N. Hagerstown': 'North Hagerstown',
+    'S. Hagerstown': 'South Hagerstown',
+}
+
+
+def expand_team_name(name: str) -> str:
+    """Expand team abbreviation to full name."""
+    return TEAM_ABBREVIATIONS.get(name.strip(), name.strip())
+
+
+def expand_entry_school(entry: str) -> str:
+    """Expand school abbreviation in an entry like 'Name, School' or 'Name1, Name2, School'.
+
+    Splits on the last comma, checks if the last part is a known abbreviation,
+    and expands it if so.
+    """
+    comma_idx = entry.rfind(',')
+    if comma_idx == -1:
+        return entry
+    prefix = entry[:comma_idx]
+    school = entry[comma_idx + 1:].strip()
+    expanded = expand_team_name(school)
+    if expanded != school:
+        return f"{prefix}, {expanded}"
+    return entry
+
+
 def read_file(filepath):
     """Read the text file and return non-empty lines."""
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -160,7 +202,7 @@ def parse_basketball_section(lines):
                         # Split on last comma to get player and school
                         comma_idx = player_school.rfind(',')
                         player = player_school[:comma_idx].strip()
-                        school = player_school[comma_idx+1:].strip()
+                        school = expand_team_name(player_school[comma_idx+1:].strip())
                         entry = {
                             'player': player,
                             'school': school,
@@ -203,7 +245,7 @@ def parse_basketball_section(lines):
                     break
                 # Parse team: "School;W;L;;W;L" or "School;W;L;W;L"
                 parts = tline.split(';')
-                team_name = parts[0].strip()
+                team_name = expand_team_name(parts[0].strip())
                 if team_name and not team_name.startswith(';'):
                     # Filter out empty parts and get numbers
                     nums = [p.strip() for p in parts[1:] if p.strip() != '']
@@ -243,7 +285,7 @@ def parse_basketball_section(lines):
                 if tline == 'Individual Leaders':
                     break
                 parts = tline.split(';')
-                team_name = parts[0].strip()
+                team_name = expand_team_name(parts[0].strip())
                 if team_name:
                     nums = [p.strip() for p in parts[1:] if p.strip() != '']
                     if len(nums) >= 2:
@@ -299,7 +341,7 @@ def parse_wrestling_section(lines):
         if match and current_weight:
             rank = match.group(1)
             name = match.group(2).strip()
-            school = match.group(3).strip()
+            school = expand_team_name(match.group(3).strip())
             result['weight_classes'][-1]['wrestlers'].append({
                 'rank': rank,
                 'name': name,
@@ -376,6 +418,8 @@ def parse_track_section(lines):
             if len(parts) == 2:
                 names_school = parts[0].strip()
                 time_result = parts[1].strip()
+                # Expand school abbreviation in the entry
+                names_school = expand_entry_school(names_school)
                 result[current_gender][current_event].append({
                     'entry': names_school,
                     'result': time_result
@@ -445,6 +489,8 @@ def parse_swimming_section(lines):
             if len(parts) == 2:
                 names_school = parts[0].strip()
                 time_result = parts[1].strip()
+                # Expand school abbreviation in the entry
+                names_school = expand_entry_school(names_school)
                 result[current_gender][current_event].append({
                     'entry': names_school,
                     'result': time_result
@@ -484,7 +530,7 @@ def parse_rankings_section(lines):
         if match and current_sport:
             result[current_sport].append({
                 'rank': match.group(1),
-                'team': match.group(2).strip()
+                'team': expand_team_name(match.group(2).strip())
             })
 
         i += 1

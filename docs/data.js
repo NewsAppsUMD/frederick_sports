@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-02-15 16:17:27
+// Generated on 2026-02-15 11:36:08
 
 export const availableDates = [
   {
@@ -347,7 +347,7 @@ export const rankings = [
             "team": "Linganore"
           },
           {
-            "team": "T. Johnson"
+            "team": "Thomas Johnson"
           }
         ]
       },
@@ -448,7 +448,7 @@ export const rankings = [
             "team": "Linganore"
           },
           {
-            "team": "T. Johnson"
+            "team": "Thomas Johnson"
           }
         ]
       },
@@ -510,7 +510,7 @@ export const rankings = [
             "team": "Linganore"
           },
           {
-            "team": "T. Johnson"
+            "team": "Thomas Johnson"
           }
         ]
       },
@@ -521,7 +521,7 @@ export const rankings = [
             "team": "Urbana"
           },
           {
-            "team": "T. Johnson"
+            "team": "Thomas Johnson"
           },
           {
             "team": "Frederick"
@@ -9293,7 +9293,7 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "FCA",
+            "team": "Frederick Christian Academy",
             "w": "14",
             "l": "3"
           },
@@ -9308,12 +9308,12 @@ export const sportsData = [
             "l": "3"
           },
           {
-            "team": "MSD",
+            "team": "Maryland School for the Deaf",
             "w": "9",
             "l": "11"
           },
           {
-            "team": "SJCP",
+            "team": "St. John's Catholic Prep",
             "w": "5",
             "l": "9"
           }
@@ -9340,14 +9340,14 @@ export const sportsData = [
         "players": [
           {
             "player": "Cohen Wade",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "13",
             "pts": "332",
             "avg": "25.5"
           },
           {
             "player": "Dyvae Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "14",
             "pts": "277",
             "avg": "19.8"
@@ -9368,21 +9368,21 @@ export const sportsData = [
           },
           {
             "player": "Samuel Chew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "pts": "292",
             "avg": "16.2"
           },
           {
             "player": "Kyrin Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "14",
             "pts": "223",
             "avg": "15.9"
           },
           {
             "player": "Mark Gwynn III",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "14",
             "pts": "218",
             "avg": "15.6"
@@ -9403,7 +9403,7 @@ export const sportsData = [
           },
           {
             "player": "Asher Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "pts": "260",
             "avg": "14.4"
@@ -9417,7 +9417,7 @@ export const sportsData = [
           },
           {
             "player": "Matthan Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "pts": "250",
             "avg": "13.9"
@@ -9438,7 +9438,7 @@ export const sportsData = [
           },
           {
             "player": "Jude Annor",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "13",
             "pts": "176",
             "avg": "13.5"
@@ -9480,7 +9480,7 @@ export const sportsData = [
           },
           {
             "player": "Brydan Tema",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "14",
             "pts": "164",
             "avg": "11.7"
@@ -9529,7 +9529,7 @@ export const sportsData = [
           },
           {
             "player": "Ryker Pedersen",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "14",
             "pts": "140",
             "avg": "10.0"
@@ -9590,7 +9590,7 @@ export const sportsData = [
         "players": [
           {
             "player": "Asher Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "reb": "195",
             "avg": "10.8"
@@ -9611,7 +9611,7 @@ export const sportsData = [
           },
           {
             "player": "Jude Annor",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "13",
             "reb": "104",
             "avg": "8.0"
@@ -9625,7 +9625,7 @@ export const sportsData = [
           },
           {
             "player": "Brydan Tema",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "14",
             "reb": "111",
             "avg": "7.9"
@@ -9639,7 +9639,7 @@ export const sportsData = [
           },
           {
             "player": "Josh Foshee",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "13",
             "reb": "94",
             "avg": "7.2"
@@ -9674,7 +9674,7 @@ export const sportsData = [
           },
           {
             "player": "Donovan Chmaj",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "14",
             "reb": "95",
             "avg": "6.8"
@@ -9688,7 +9688,7 @@ export const sportsData = [
           },
           {
             "player": "Mide Adeoye",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "14",
             "reb": "92",
             "avg": "6.6"
@@ -9702,7 +9702,7 @@ export const sportsData = [
           },
           {
             "player": "Ryland Connally",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "12",
             "reb": "76",
             "avg": "6.3"
@@ -9716,7 +9716,7 @@ export const sportsData = [
           },
           {
             "player": "Jeremiah Page",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "11",
             "reb": "65",
             "avg": "5.9"
@@ -9744,7 +9744,7 @@ export const sportsData = [
           },
           {
             "player": "Corson Brunson",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "14",
             "reb": "77",
             "avg": "5.5"
@@ -9779,7 +9779,7 @@ export const sportsData = [
           },
           {
             "player": "Samuel Chew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "reb": "92",
             "avg": "5.1"
@@ -9793,7 +9793,7 @@ export const sportsData = [
           },
           {
             "player": "Matthan Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "reb": "90",
             "avg": "5.0"
@@ -9833,7 +9833,7 @@ export const sportsData = [
           },
           {
             "player": "Dyvae Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "14",
             "ast": "80",
             "avg": "5.7"
@@ -9847,7 +9847,7 @@ export const sportsData = [
           },
           {
             "player": "Jude Annor",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "13",
             "ast": "48",
             "avg": "3.7"
@@ -9868,7 +9868,7 @@ export const sportsData = [
           },
           {
             "player": "Neil Powell",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "16",
             "ast": "49",
             "avg": "3.1"
@@ -9882,7 +9882,7 @@ export const sportsData = [
           },
           {
             "player": "Samuel Chew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "ast": "53",
             "avg": "2.9"
@@ -9896,14 +9896,14 @@ export const sportsData = [
           },
           {
             "player": "Julio Cuadrado III",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "13",
             "ast": "36",
             "avg": "2.8"
           },
           {
             "player": "Josh Foshee",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "13",
             "ast": "36",
             "avg": "2.8"
@@ -9917,7 +9917,7 @@ export const sportsData = [
           },
           {
             "player": "Kyrin Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "14",
             "ast": "36",
             "avg": "2.6"
@@ -10197,12 +10197,12 @@ export const sportsData = [
             "l": "10"
           },
           {
-            "team": "MSD",
+            "team": "Maryland School for the Deaf",
             "w": "7",
             "l": "12"
           },
           {
-            "team": "SJCP",
+            "team": "St. John's Catholic Prep",
             "w": "2",
             "l": "6"
           }
@@ -10236,7 +10236,7 @@ export const sportsData = [
           },
           {
             "player": "Sophia Burgee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "pts": "208",
             "avg": "16.0"
@@ -10285,7 +10285,7 @@ export const sportsData = [
           },
           {
             "player": "Annabelle Horst",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "pts": "159",
             "avg": "12.3"
@@ -10299,7 +10299,7 @@ export const sportsData = [
           },
           {
             "player": "Ava Phimmakaysone",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "14",
             "pts": "160",
             "avg": "11.4"
@@ -10341,21 +10341,21 @@ export const sportsData = [
           },
           {
             "player": "Maddie McGrew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "15",
             "pts": "147",
             "avg": "9.8"
           },
           {
             "player": "Leah Brown",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "11",
             "pts": "106",
             "avg": "9.6"
           },
           {
             "player": "Chadaya Hairston",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "12",
             "pts": "116",
             "avg": "9.6"
@@ -10376,14 +10376,14 @@ export const sportsData = [
           },
           {
             "player": "London Lee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "8",
             "pts": "68",
             "avg": "8.5"
           },
           {
             "player": "Adriana Bonasera",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "10",
             "pts": "82",
             "avg": "8.2"
@@ -10439,7 +10439,7 @@ export const sportsData = [
           },
           {
             "player": "Laney Baer",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "pts": "88",
             "avg": "6.7"
@@ -10500,35 +10500,35 @@ export const sportsData = [
           },
           {
             "player": "Laney Baer",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "reb": "118",
             "avg": "9.1"
           },
           {
             "player": "Leah Brown",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "11",
             "reb": "97",
             "avg": "8.8"
           },
           {
             "player": "Maddie McGrew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "15",
             "reb": "127",
             "avg": "8.5"
           },
           {
             "player": "Annabelle Horst",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "reb": "109",
             "avg": "8.4"
           },
           {
             "player": "July Messinger",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "12",
             "reb": "96",
             "avg": "8.0"
@@ -10591,14 +10591,14 @@ export const sportsData = [
           },
           {
             "player": "Sophia Burgee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "reb": "77",
             "avg": "5.9"
           },
           {
             "player": "Alethea McGovern",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "15",
             "reb": "82",
             "avg": "5.5"
@@ -10640,7 +10640,7 @@ export const sportsData = [
           },
           {
             "player": "Nyah Brooks",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "reb": "66",
             "avg": "5.1"
@@ -10654,7 +10654,7 @@ export const sportsData = [
           },
           {
             "player": "Chadaya Hairston",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "12",
             "reb": "55",
             "avg": "4.5"
@@ -10708,7 +10708,7 @@ export const sportsData = [
         "players": [
           {
             "player": "London Lee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "8",
             "ast": "41",
             "avg": "5.1"
@@ -10785,28 +10785,28 @@ export const sportsData = [
           },
           {
             "player": "Chadaya Hairston",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "12",
             "ast": "32",
             "avg": "2.7"
           },
           {
             "player": "Sophia Burgee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "ast": "35",
             "avg": "2.7"
           },
           {
             "player": "Annabelle Horst",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "ast": "34",
             "avg": "2.6"
           },
           {
             "player": "Maddie McGrew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "15",
             "ast": "38",
             "avg": "2.5"
@@ -10820,21 +10820,21 @@ export const sportsData = [
           },
           {
             "player": "Julie Messinger",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "12",
             "ast": "25",
             "avg": "2.1"
           },
           {
             "player": "McKenna Long",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "ast": "27",
             "avg": "2.1"
           },
           {
             "player": "Melissa Yeboah",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "13",
             "ast": "26",
             "avg": "2.0"
@@ -12437,7 +12437,7 @@ export const sportsData = [
             "result": "1:00.77"
           },
           {
-            "player": "Wang-Lok Ng, T. Johnson",
+            "player": "Wang-Lok Ng, Thomas Johnson",
             "school": "",
             "result": "1:03.96"
           },
@@ -12463,7 +12463,7 @@ export const sportsData = [
             "result": "52.85"
           },
           {
-            "player": "Wang-Lok Ng, T. Johnson",
+            "player": "Wang-Lok Ng, Thomas Johnson",
             "school": "",
             "result": "57.91"
           },
@@ -12489,7 +12489,7 @@ export const sportsData = [
             "result": "2:00.21"
           },
           {
-            "player": "Wang-Lok Ng, T. Johnson",
+            "player": "Wang-Lok Ng, Thomas Johnson",
             "school": "",
             "result": "2:10.06"
           },
@@ -12515,7 +12515,7 @@ export const sportsData = [
             "result": "148.95"
           },
           {
-            "player": "Luka Lyeonov, T. Johnson",
+            "player": "Luka Lyeonov, Thomas Johnson",
             "school": "",
             "result": "142.45"
           }
@@ -12646,7 +12646,7 @@ export const sportsData = [
             "result": "2:04.08"
           },
           {
-            "player": "Sydney Warren, T. Johnson",
+            "player": "Sydney Warren, Thomas Johnson",
             "school": "",
             "result": "2:15.79"
           },
@@ -12672,7 +12672,7 @@ export const sportsData = [
             "result": "5:30.98"
           },
           {
-            "player": "Sydney Warren, T. Johnson",
+            "player": "Sydney Warren, Thomas Johnson",
             "school": "",
             "result": "5:57.40"
           },
@@ -12703,7 +12703,7 @@ export const sportsData = [
             "result": "1:05.50"
           },
           {
-            "player": "Silva Carlson, T. Johnson",
+            "player": "Silva Carlson, Thomas Johnson",
             "school": "",
             "result": "1:07.88"
           }
@@ -12807,7 +12807,7 @@ export const sportsData = [
             "result": "165.65"
           },
           {
-            "player": "Lennah Bailey, T. Johnson",
+            "player": "Lennah Bailey, Thomas Johnson",
             "school": "",
             "result": "164.6"
           }
@@ -13124,7 +13124,7 @@ export const sportsData = [
         ],
         "teams": [
           {
-            "team": "FCA",
+            "team": "Frederick Christian Academy",
             "w": "18",
             "l": "4"
           },
@@ -13139,12 +13139,12 @@ export const sportsData = [
             "l": "5"
           },
           {
-            "team": "MSD",
+            "team": "Maryland School for the Deaf",
             "w": "11",
             "l": "13"
           },
           {
-            "team": "SJCP",
+            "team": "St. John's Catholic Prep",
             "w": "6",
             "l": "13"
           }
@@ -13171,14 +13171,14 @@ export const sportsData = [
         "players": [
           {
             "player": "Cohen Wade",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "20",
             "pts": "494",
             "avg": "24.7"
           },
           {
             "player": "Dyvae Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "pts": "369",
             "avg": "20.5"
@@ -13199,7 +13199,7 @@ export const sportsData = [
           },
           {
             "player": "Kyrin Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "pts": "288",
             "avg": "16.0"
@@ -13213,14 +13213,14 @@ export const sportsData = [
           },
           {
             "player": "Samuel Chew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "22",
             "pts": "343",
             "avg": "15.6"
           },
           {
             "player": "Mark Gwynn III",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "20",
             "pts": "310",
             "avg": "15.5"
@@ -13234,7 +13234,7 @@ export const sportsData = [
           },
           {
             "player": "Asher Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "22",
             "pts": "312",
             "avg": "14.2"
@@ -13269,21 +13269,21 @@ export const sportsData = [
           },
           {
             "player": "Matthan Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "22",
             "pts": "296",
             "avg": "13.5"
           },
           {
             "player": "Jude Annor",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "20",
             "pts": "257",
             "avg": "12.9"
           },
           {
             "player": "Brydan Tema",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "pts": "230",
             "avg": "12.7"
@@ -13381,7 +13381,7 @@ export const sportsData = [
           },
           {
             "player": "Ryker Pedersen",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "20",
             "pts": "193",
             "avg": "9.7"
@@ -13428,7 +13428,7 @@ export const sportsData = [
         "players": [
           {
             "player": "Asher Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "22",
             "reb": "226",
             "avg": "10.3"
@@ -13449,14 +13449,14 @@ export const sportsData = [
           },
           {
             "player": "Brydan Tema",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "reb": "158",
             "avg": "8.7"
           },
           {
             "player": "Jude Annor",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "20",
             "reb": "161",
             "avg": "8.1"
@@ -13491,14 +13491,14 @@ export const sportsData = [
           },
           {
             "player": "Mide Adeoye",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "reb": "131",
             "avg": "7.3"
           },
           {
             "player": "Ryland Connally",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "16",
             "reb": "116",
             "avg": "7.3"
@@ -13512,21 +13512,21 @@ export const sportsData = [
           },
           {
             "player": "Jeremiah Page",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "18",
             "reb": "127",
             "avg": "7.1"
           },
           {
             "player": "Josh Foshee",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "20",
             "reb": "134",
             "avg": "6.7"
           },
           {
             "player": "Donovan Chmaj",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "20",
             "reb": "132",
             "avg": "6.6"
@@ -13575,7 +13575,7 @@ export const sportsData = [
           },
           {
             "player": "Corson Brunson",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "20",
             "reb": "107",
             "avg": "5.4"
@@ -13603,21 +13603,21 @@ export const sportsData = [
           },
           {
             "player": "Matthan Brandenburg",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "22",
             "reb": "115",
             "avg": "5.2"
           },
           {
             "player": "Dyvae Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "reb": "90",
             "avg": "5.0"
           },
           {
             "player": "Samuel Chew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "22",
             "reb": "111",
             "avg": "5.0"
@@ -13657,7 +13657,7 @@ export const sportsData = [
           },
           {
             "player": "Dyvae Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "ast": "97",
             "avg": "5.4"
@@ -13671,7 +13671,7 @@ export const sportsData = [
           },
           {
             "player": "Jude Annor",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "20",
             "ast": "82",
             "avg": "4.1"
@@ -13685,7 +13685,7 @@ export const sportsData = [
           },
           {
             "player": "Kyrin Ambush",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "ast": "58",
             "avg": "3.2"
@@ -13699,7 +13699,7 @@ export const sportsData = [
           },
           {
             "player": "Neil Powell",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "20",
             "ast": "60",
             "avg": "3.0"
@@ -13713,14 +13713,14 @@ export const sportsData = [
           },
           {
             "player": "Julio Cuadrado III",
-            "school": "MSD",
+            "school": "Maryland School for the Deaf",
             "gp": "17",
             "ast": "50",
             "avg": "2.9"
           },
           {
             "player": "Josh Foshee",
-            "school": "FCA",
+            "school": "Frederick Christian Academy",
             "gp": "20",
             "ast": "56",
             "avg": "2.8"
@@ -13734,7 +13734,7 @@ export const sportsData = [
           },
           {
             "player": "Samuel Chew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "22",
             "ast": "60",
             "avg": "2.7"
@@ -13783,7 +13783,7 @@ export const sportsData = [
           },
           {
             "player": "Sey Kondo",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "18",
             "ast": "39",
             "avg": "2.2"
@@ -14007,14 +14007,14 @@ export const sportsData = [
             "overall_l": ""
           },
           {
-            "team": "MSD",
+            "team": "Maryland School for the Deaf",
             "div_w": "9",
             "div_l": "13",
             "overall_w": "",
             "overall_l": ""
           },
           {
-            "team": "SJCP",
+            "team": "St. John's Catholic Prep",
             "div_w": "2",
             "div_l": "10",
             "overall_w": "",
@@ -14050,7 +14050,7 @@ export const sportsData = [
           },
           {
             "player": "Sophia Burgee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "pts": "289",
             "avg": "17.0"
@@ -14099,7 +14099,7 @@ export const sportsData = [
           },
           {
             "player": "Annabelle Horst",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "pts": "204",
             "avg": "12.0"
@@ -14113,14 +14113,14 @@ export const sportsData = [
           },
           {
             "player": "Ava Phimmakaysone",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "18",
             "pts": "193",
             "avg": "10.7"
           },
           {
             "player": "Leah Brown",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "15",
             "pts": "158",
             "avg": "10.5"
@@ -14141,7 +14141,7 @@ export const sportsData = [
           },
           {
             "player": "Chadaya Hairston",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "16",
             "pts": "167",
             "avg": "10.4"
@@ -14162,7 +14162,7 @@ export const sportsData = [
           },
           {
             "player": "Maddie McGrew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "19",
             "pts": "184",
             "avg": "9.7"
@@ -14190,7 +14190,7 @@ export const sportsData = [
           },
           {
             "player": "London Lee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "8",
             "pts": "68",
             "avg": "8.5"
@@ -14204,7 +14204,7 @@ export const sportsData = [
           },
           {
             "player": "Adriana Bonasera",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "13",
             "pts": "99",
             "avg": "7.6"
@@ -14218,7 +14218,7 @@ export const sportsData = [
           },
           {
             "player": "Laney Baer",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "pts": "119",
             "avg": "7.0"
@@ -14314,35 +14314,35 @@ export const sportsData = [
           },
           {
             "player": "Laney Baer",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "reb": "146",
             "avg": "8.6"
           },
           {
             "player": "Leah Brown",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "15",
             "reb": "127",
             "avg": "8.5"
           },
           {
             "player": "Maddie McGrew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "19",
             "reb": "159",
             "avg": "8.4"
           },
           {
             "player": "Annabelle Horst",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "reb": "143",
             "avg": "8.4"
           },
           {
             "player": "July Messinger",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "16",
             "reb": "126",
             "avg": "7.9"
@@ -14384,7 +14384,7 @@ export const sportsData = [
           },
           {
             "player": "Sophia Burgee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "reb": "111",
             "avg": "6.5"
@@ -14426,7 +14426,7 @@ export const sportsData = [
           },
           {
             "player": "Alethea McGovern",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "19",
             "reb": "99",
             "avg": "5.2"
@@ -14454,7 +14454,7 @@ export const sportsData = [
           },
           {
             "player": "Nyah Brooks",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "reb": "80",
             "avg": "4.7"
@@ -14475,7 +14475,7 @@ export const sportsData = [
           },
           {
             "player": "Chadaya Hairston",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "16",
             "reb": "66",
             "avg": "4.1"
@@ -14508,7 +14508,7 @@ export const sportsData = [
         "players": [
           {
             "player": "London Lee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "8",
             "ast": "41",
             "avg": "5.1"
@@ -14585,14 +14585,14 @@ export const sportsData = [
           },
           {
             "player": "Sophia Burgee",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "ast": "48",
             "avg": "2.8"
           },
           {
             "player": "Chadaya Hairston",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "16",
             "ast": "44",
             "avg": "2.7"
@@ -14606,21 +14606,21 @@ export const sportsData = [
           },
           {
             "player": "Annabelle Horst",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "ast": "39",
             "avg": "2.3"
           },
           {
             "player": "Melissa Yeboah",
-            "school": "T. Johnson",
+            "school": "Thomas Johnson",
             "gp": "17",
             "ast": "40",
             "avg": "2.3"
           },
           {
             "player": "Maddie McGrew",
-            "school": "Warriors",
+            "school": "Frederick Warriors",
             "gp": "19",
             "ast": "43",
             "avg": "2.3"
@@ -16235,7 +16235,7 @@ export const sportsData = [
             "result": "1:00.77"
           },
           {
-            "player": "WangLok Ng, T. Johnson",
+            "player": "WangLok Ng, Thomas Johnson",
             "school": "",
             "result": "1:00.90"
           }
@@ -16334,7 +16334,7 @@ export const sportsData = [
             "result": "1:37.68"
           },
           {
-            "player": "Earl Belt, WangLok Ng, Daniel Marsh-Brandes, Emerson Harne, T. Johnson",
+            "player": "Earl Belt, WangLok Ng, Daniel Marsh-Brandes, Emerson Harne, Thomas Johnson",
             "school": "",
             "result": "1:44.30"
           },
