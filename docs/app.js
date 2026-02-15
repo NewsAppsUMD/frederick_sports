@@ -218,7 +218,7 @@ function renderSport(id) {
         <h2 class="text-2xl font-bold text-blue-900">
           ${data.name}
         </h2>
-        <button
+        ${data.hasEmbed ? `<button
           id="copy-embed-btn"
           onclick="copyEmbedHtml('${id}', '${selectedDate}')"
           class="px-3 py-1.5 text-xs font-medium rounded border border-gray-300 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors flex items-center gap-1.5"
@@ -229,7 +229,7 @@ function renderSport(id) {
             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
           </svg>
           Copy Embed
-        </button>
+        </button>` : ''}
       </div>
       ${standingsHtml}
       ${leadersHtml}

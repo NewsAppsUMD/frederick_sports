@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-02-15 11:49:38
+// Generated on 2026-02-15 12:14:14
 
 export const availableDates = [
   {
@@ -540,6 +540,7 @@ export const sportsData = [
     "id": "football",
     "name": "Football",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "FCPS",
@@ -1088,6 +1089,7 @@ export const sportsData = [
     "id": "girls-flag-football",
     "name": "Girls Flag Football",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "FCPS",
@@ -1557,6 +1559,7 @@ export const sportsData = [
     "id": "boys-soccer",
     "name": "Boys Soccer",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "SPIRES DIVISION",
@@ -2245,6 +2248,7 @@ export const sportsData = [
     "id": "girls-soccer",
     "name": "Girls Soccer",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "SPIRES DIVISION",
@@ -2937,6 +2941,7 @@ export const sportsData = [
     "id": "field-hockey",
     "name": "Field Hockey",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "LARGE SCHOOL",
@@ -3524,6 +3529,7 @@ export const sportsData = [
     "id": "volleyball",
     "name": "Volleyball",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "SPIRES DIVISION",
@@ -4277,6 +4283,7 @@ export const sportsData = [
     "id": "cross-country",
     "name": "Cross Country",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -4557,6 +4564,7 @@ export const sportsData = [
     "id": "golf",
     "name": "Golf",
     "date": "2025_10_23",
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -4751,6 +4759,7 @@ export const sportsData = [
     "id": "football",
     "name": "Football",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "FCPS",
@@ -5347,6 +5356,7 @@ export const sportsData = [
     "id": "girls-flag-football",
     "name": "Girls Flag Football",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "FCPS",
@@ -5859,6 +5869,7 @@ export const sportsData = [
     "id": "boys-soccer",
     "name": "Boys Soccer",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "SPIRES DIVISION",
@@ -6579,6 +6590,7 @@ export const sportsData = [
     "id": "girls-soccer",
     "name": "Girls Soccer",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "SPIRES DIVISION",
@@ -7266,6 +7278,7 @@ export const sportsData = [
     "id": "field-hockey",
     "name": "Field Hockey",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "LARGE SCHOOL",
@@ -7843,6 +7856,7 @@ export const sportsData = [
     "id": "volleyball",
     "name": "Volleyball",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [
       {
         "division": "SPIRES DIVISION",
@@ -8642,6 +8656,7 @@ export const sportsData = [
     "id": "cross-country",
     "name": "Cross Country",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -8922,6 +8937,7 @@ export const sportsData = [
     "id": "golf",
     "name": "Golf",
     "date": "2025_12_06",
+    "hasEmbed": true,
     "standings": [],
     "leaders": [
       {
@@ -9066,6 +9082,7 @@ export const sportsData = [
     "id": "boys-basketball",
     "name": "Boys Basketball",
     "date": "2026_01_29",
+    "hasEmbed": false,
     "standings": [
       {
         "division": "Spires Division",
@@ -9957,6 +9974,7 @@ export const sportsData = [
     "id": "girls-basketball",
     "name": "Girls Basketball",
     "date": "2026_01_29",
+    "hasEmbed": false,
     "standings": [
       {
         "division": "Spires Division",
@@ -10831,6 +10849,7 @@ export const sportsData = [
     "id": "boys-wrestling",
     "name": "Boys Wrestling",
     "date": "2026_01_29",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {
@@ -11203,6 +11222,7 @@ export const sportsData = [
     "id": "girls-wrestling",
     "name": "Girls Wrestling",
     "date": "2026_01_29",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {
@@ -11575,6 +11595,7 @@ export const sportsData = [
     "id": "indoor-track",
     "name": "Indoor Track & Field",
     "date": "2026_01_29",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {
@@ -12274,6 +12295,7 @@ export const sportsData = [
     "id": "swimming",
     "name": "Swimming & Diving",
     "date": "2026_01_29",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {
@@ -12881,6 +12903,7 @@ export const sportsData = [
     "id": "boys-basketball",
     "name": "Boys Basketball",
     "date": "2026_02_12",
+    "hasEmbed": false,
     "standings": [
       {
         "division": "Spires Division",
@@ -13772,6 +13795,7 @@ export const sportsData = [
     "id": "girls-basketball",
     "name": "Girls Basketball",
     "date": "2026_02_12",
+    "hasEmbed": false,
     "standings": [
       {
         "division": "Spires Division",
@@ -14625,6 +14649,7 @@ export const sportsData = [
     "id": "boys-wrestling",
     "name": "Boys Wrestling",
     "date": "2026_02_12",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {
@@ -14997,6 +15022,7 @@ export const sportsData = [
     "id": "girls-wrestling",
     "name": "Girls Wrestling",
     "date": "2026_02_12",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {
@@ -15369,6 +15395,7 @@ export const sportsData = [
     "id": "indoor-track",
     "name": "Indoor Track & Field",
     "date": "2026_02_12",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {
@@ -16068,6 +16095,7 @@ export const sportsData = [
     "id": "swimming",
     "name": "Swimming & Diving",
     "date": "2026_02_12",
+    "hasEmbed": false,
     "standings": [],
     "leaders": [
       {

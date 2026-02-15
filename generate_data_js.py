@@ -535,10 +535,15 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
                             'teams': teams
                         })
 
+    # Check if embed file exists for this sport/date
+    embed_file = Path(f'docs/embed/{date_str}/{sport_id}.html')
+    has_embed = embed_file.exists()
+
     return {
         'id': sport_id,
         'name': config['name'],
         'date': date_str,
+        'hasEmbed': has_embed,
         'standings': standings,
         'leaders': leaders
     }
