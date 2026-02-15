@@ -495,18 +495,29 @@ def build_sport_data(sport_id: str, config: dict, date_str: str) -> dict:
                     })
             elif standings_type == 'cmc_basketball':
                 # Basketball CMC format: {DIVISION: [{team, div_w, div_l, overall_w, overall_l}]}
+                # Other Schools uses simple {team, w, l} format
                 for division, teams in standings_data.items():
                     if teams:
-                        standings.append({
-                            'division': division,
-                            'headers': [
-                                {'key': 'div_w', 'label': 'Div W'},
-                                {'key': 'div_l', 'label': 'Div L'},
-                                {'key': 'overall_w', 'label': 'Ovr W'},
-                                {'key': 'overall_l', 'label': 'Ovr L'}
-                            ],
-                            'teams': teams
-                        })
+                        if division == 'Other Schools':
+                            standings.append({
+                                'division': division,
+                                'headers': [
+                                    {'key': 'w', 'label': 'W'},
+                                    {'key': 'l', 'label': 'L'}
+                                ],
+                                'teams': teams
+                            })
+                        else:
+                            standings.append({
+                                'division': division,
+                                'headers': [
+                                    {'key': 'div_w', 'label': 'Div W'},
+                                    {'key': 'div_l', 'label': 'Div L'},
+                                    {'key': 'overall_w', 'label': 'Ovr W'},
+                                    {'key': 'overall_l', 'label': 'Ovr L'}
+                                ],
+                                'teams': teams
+                            })
             elif standings_type == 'cmc':
                 # Central Maryland Conference format: {DIVISION: [{team, div_wins, div_losses, div_ties, overall_wins, overall_losses, overall_ties}]}
                 for division, teams in standings_data.items():

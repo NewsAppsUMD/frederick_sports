@@ -1,5 +1,5 @@
 // Auto-generated data file
-// Generated on 2026-02-15 11:36:08
+// Generated on 2026-02-15 11:39:48
 
 export const availableDates = [
   {
@@ -9275,20 +9275,12 @@ export const sportsData = [
         "division": "Other Schools",
         "headers": [
           {
-            "key": "div_w",
-            "label": "Div W"
+            "key": "w",
+            "label": "W"
           },
           {
-            "key": "div_l",
-            "label": "Div L"
-          },
-          {
-            "key": "overall_w",
-            "label": "Ovr W"
-          },
-          {
-            "key": "overall_l",
-            "label": "Ovr L"
+            "key": "l",
+            "label": "L"
           }
         ],
         "teams": [
@@ -10174,20 +10166,12 @@ export const sportsData = [
         "division": "Other Schools",
         "headers": [
           {
-            "key": "div_w",
-            "label": "Div W"
+            "key": "w",
+            "label": "W"
           },
           {
-            "key": "div_l",
-            "label": "Div L"
-          },
-          {
-            "key": "overall_w",
-            "label": "Ovr W"
-          },
-          {
-            "key": "overall_l",
-            "label": "Ovr L"
+            "key": "l",
+            "label": "L"
           }
         ],
         "teams": [
@@ -13106,20 +13090,12 @@ export const sportsData = [
         "division": "Other Schools",
         "headers": [
           {
-            "key": "div_w",
-            "label": "Div W"
+            "key": "w",
+            "label": "W"
           },
           {
-            "key": "div_l",
-            "label": "Div L"
-          },
-          {
-            "key": "overall_w",
-            "label": "Ovr W"
-          },
-          {
-            "key": "overall_l",
-            "label": "Ovr L"
+            "key": "l",
+            "label": "L"
           }
         ],
         "teams": [
