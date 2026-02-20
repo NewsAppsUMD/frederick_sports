@@ -1,0 +1,568 @@
+{
+  "scoring": [
+    {
+      "player": "Liana Maxwell",
+      "school": "Linganore",
+      "gp": "20",
+      "pts": "441",
+      "avg": "22.1"
+    },
+    {
+      "player": "Sophia Burgee",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "pts": "345",
+      "avg": "17.3"
+    },
+    {
+      "player": "Kelsey Troxell",
+      "school": "Catoctin",
+      "gp": "21",
+      "pts": "296",
+      "avg": "14.1"
+    },
+    {
+      "player": "Kelsey Ryan",
+      "school": "Linganore",
+      "gp": "19",
+      "pts": "249",
+      "avg": "13.1"
+    },
+    {
+      "player": "Zizi Etolue",
+      "school": "Urbana",
+      "gp": "20",
+      "pts": "258",
+      "avg": "12.9"
+    },
+    {
+      "player": "Kenzie Walker",
+      "school": "Oakdale",
+      "gp": "21",
+      "pts": "263",
+      "avg": "12.5"
+    },
+    {
+      "player": "Cayenne Pigeon",
+      "school": "Frederick",
+      "gp": "10",
+      "pts": "125",
+      "avg": "12.5"
+    },
+    {
+      "player": "Alexis Parker",
+      "school": "Middletown",
+      "gp": "18",
+      "pts": "222",
+      "avg": "12.3"
+    },
+    {
+      "player": "Annabelle Horst",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "pts": "223",
+      "avg": "11.2"
+    },
+    {
+      "player": "Jameirah Thompson",
+      "school": "Frederick",
+      "gp": "11",
+      "pts": "130",
+      "avg": "11.8"
+    },
+    {
+      "player": "Ava Phimmakaysone",
+      "school": "Frederick Warriors",
+      "gp": "19",
+      "pts": "202",
+      "avg": "10.6"
+    },
+    {
+      "player": "Shay Raiford",
+      "school": "Oakdale",
+      "gp": "21",
+      "pts": "223",
+      "avg": "10.6"
+    },
+    {
+      "player": "Maddie McGrew",
+      "school": "Frederick Warriors",
+      "gp": "20",
+      "pts": "209",
+      "avg": "10.5"
+    },
+    {
+      "player": "Leah Brown",
+      "school": "Thomas Johnson",
+      "gp": "18",
+      "pts": "187",
+      "avg": "10.4"
+    },
+    {
+      "player": "Marlee Williams",
+      "school": "Frederick",
+      "gp": "11",
+      "pts": "114",
+      "avg": "10.4"
+    },
+    {
+      "player": "Brooke Williams",
+      "school": "Catoctin",
+      "gp": "21",
+      "pts": "211",
+      "avg": "10.1"
+    },
+    {
+      "player": "Emme Miller",
+      "school": "Brunswick",
+      "gp": "20",
+      "pts": "198",
+      "avg": "9.9"
+    },
+    {
+      "player": "Tobi Adebambo",
+      "school": "Urbana",
+      "gp": "8",
+      "pts": "75",
+      "avg": "9.4"
+    },
+    {
+      "player": "Talia Jenkins",
+      "school": "Middletown",
+      "gp": "20",
+      "pts": "186",
+      "avg": "9.3"
+    },
+    {
+      "player": "Chadaya Hairston",
+      "school": "Thomas Johnson",
+      "gp": "19",
+      "pts": "177",
+      "avg": "9.3"
+    },
+    {
+      "player": "Layla McFarland",
+      "school": "Oakdale",
+      "gp": "18",
+      "pts": "168",
+      "avg": "9.3"
+    },
+    {
+      "player": "Bradyn MacKay",
+      "school": "Linganore",
+      "gp": "20",
+      "pts": "178",
+      "avg": "8.9"
+    },
+    {
+      "player": "London Lee",
+      "school": "Thomas Johnson",
+      "gp": "8",
+      "pts": "68",
+      "avg": "8.5"
+    },
+    {
+      "player": "Adriana Bonasera",
+      "school": "Frederick Warriors",
+      "gp": "14",
+      "pts": "100",
+      "avg": "7.1"
+    },
+    {
+      "player": "Laney Baer",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "pts": "140",
+      "avg": "7.0"
+    },
+    {
+      "player": "Madison Greenwood",
+      "school": "Brunswick",
+      "gp": "19",
+      "pts": "131",
+      "avg": "6.9"
+    },
+    {
+      "player": "Avery Larson",
+      "school": "Middletown",
+      "gp": "20",
+      "pts": "136",
+      "avg": "6.8"
+    },
+    {
+      "player": "Aneesa Ali-Goukoye",
+      "school": "Walkersville",
+      "gp": "13",
+      "pts": "89",
+      "avg": "6.8"
+    },
+    {
+      "player": "Madelynn Myers",
+      "school": "Catoctin",
+      "gp": "21",
+      "pts": "143",
+      "avg": "6.8"
+    },
+    {
+      "player": "Leah French",
+      "school": "Catoctin",
+      "gp": "21",
+      "pts": "140",
+      "avg": "6.7"
+    },
+    {
+      "player": "Shaylee McGlinchey",
+      "school": "Oakdale",
+      "gp": "21",
+      "pts": "139",
+      "avg": "6.6"
+    },
+    {
+      "player": "Chandler Ways",
+      "school": "Urbana",
+      "gp": "20",
+      "pts": "126",
+      "avg": "6.3"
+    },
+    {
+      "player": "Cyrah Crews",
+      "school": "Frederick",
+      "gp": "11",
+      "pts": "69",
+      "avg": "6.3"
+    },
+    {
+      "player": "Ava Brown",
+      "school": "Urbana",
+      "gp": "19",
+      "pts": "120",
+      "avg": ".6.3"
+    }
+  ],
+  "rebounds": [
+    {
+      "player": "Zizi Etolue",
+      "school": "Urbana",
+      "gp": "20",
+      "reb": "226",
+      "avg": "11.1"
+    },
+    {
+      "player": "Rachael Hepner",
+      "school": "Linganore",
+      "gp": "20",
+      "reb": "215",
+      "avg": "10.8"
+    },
+    {
+      "player": "Tobi Adebambo",
+      "school": "Urbana",
+      "gp": "8",
+      "reb": "70",
+      "avg": "8.9"
+    },
+    {
+      "player": "Laney Baer",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "reb": "172",
+      "avg": "8.6"
+    },
+    {
+      "player": "Annabelle Horst",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "reb": "170",
+      "avg": "8.5"
+    },
+    {
+      "player": "Maddie McGrew",
+      "school": "Frederick Warriors",
+      "gp": "20",
+      "reb": "166",
+      "avg": "8.3"
+    },
+    {
+      "player": "Leah Brown",
+      "school": "Thomas Johnson",
+      "gp": "18",
+      "reb": "146",
+      "avg": "8.1"
+    },
+    {
+      "player": "July Messinger",
+      "school": "Frederick Warriors",
+      "gp": "17",
+      "reb": "132",
+      "avg": "7.8"
+    },
+    {
+      "player": "Kelsey Troxell",
+      "school": "Catoctin",
+      "gp": "21",
+      "reb": "153",
+      "avg": "7.3"
+    },
+    {
+      "player": "Ella Crawmer",
+      "school": "Urbana",
+      "gp": "20",
+      "reb": "141",
+      "avg": "7.1"
+    },
+    {
+      "player": "Olivia Hoyt",
+      "school": "Catoctin",
+      "gp": "21",
+      "reb": "140",
+      "avg": "7.1"
+    },
+    {
+      "player": "Liana Maxwell",
+      "school": "Linganore",
+      "gp": "20",
+      "reb": "134",
+      "avg": "6.7"
+    },
+    {
+      "player": "Sophia Burgee",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "reb": "138",
+      "avg": "6.9"
+    },
+    {
+      "player": "Madison Greenwood",
+      "school": "Brunswick",
+      "gp": "19",
+      "reb": "125",
+      "avg": "6.6"
+    },
+    {
+      "player": "Alexis Parker",
+      "school": "Middletown",
+      "gp": "18",
+      "reb": "111",
+      "avg": "6.5"
+    },
+    {
+      "player": "Kaitlyn Staiger",
+      "school": "Oakdale",
+      "gp": "21",
+      "reb": "128",
+      "avg": "6.1"
+    },
+    {
+      "player": "Brooke Williams",
+      "school": "Catoctin",
+      "gp": "21",
+      "reb": "121",
+      "avg": "5.8"
+    },
+    {
+      "player": "Joedyn Njinyah",
+      "school": "Brunswick",
+      "gp": "10",
+      "reb": "57",
+      "avg": "5.7"
+    },
+    {
+      "player": "Layla McFarland",
+      "school": "Oakdale",
+      "gp": "18",
+      "reb": "94",
+      "avg": "5.2"
+    },
+    {
+      "player": "Alethea McGovern",
+      "school": "Frederick Warriors",
+      "gp": "20",
+      "reb": "102",
+      "avg": "5.1"
+    },
+    {
+      "player": "Kenzie Walker",
+      "school": "Oakdale",
+      "gp": "21",
+      "reb": "107",
+      "avg": "5.1"
+    },
+    {
+      "player": "Cahya Jefferson",
+      "school": "Tuscarora",
+      "gp": "12",
+      "reb": "61",
+      "avg": "5.1"
+    },
+    {
+      "player": "Riley Kelly",
+      "school": "Frederick",
+      "gp": "11",
+      "reb": "56",
+      "avg": "5.1"
+    },
+    {
+      "player": "Nyah Brooks",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "reb": "97",
+      "avg": "4.9"
+    },
+    {
+      "player": "Lillian Leon",
+      "school": "Oakdale",
+      "gp": "21",
+      "reb": "87.4.7",
+      "avg": ""
+    },
+    {
+      "player": "Shay Raiford",
+      "school": "Oakdale",
+      "gp": "21",
+      "reb": "98",
+      "avg": "4.7"
+    },
+    {
+      "player": "Chadaya Hairston",
+      "school": "Thomas Johnson",
+      "gp": "19",
+      "reb": "80",
+      "avg": "4.2"
+    },
+    {
+      "player": "Madelynn Myers",
+      "school": "Catoctin",
+      "gp": "21",
+      "reb": "83",
+      "avg": "4.0"
+    }
+  ],
+  "assists": [
+    {
+      "player": "London Lee",
+      "school": "Thomas Johnson",
+      "gp": "8",
+      "ast": "41",
+      "avg": "5.1"
+    },
+    {
+      "player": "Dyanara Valenzuela-Ruz",
+      "school": "Urbana",
+      "gp": "19",
+      "ast": "78",
+      "avg": "4.1"
+    },
+    {
+      "player": "Liana Maxwell",
+      "school": "Linganore",
+      "gp": "20",
+      "ast": "75",
+      "avg": "3.8"
+    },
+    {
+      "player": "Shaylee McGlinchey",
+      "school": "Oakdale",
+      "gp": "21",
+      "ast": "81",
+      "avg": "3.8"
+    },
+    {
+      "player": "Kenzie Walker",
+      "school": "Oakdale",
+      "gp": "21",
+      "ast": "78",
+      "avg": "3.7"
+    },
+    {
+      "player": "Emme Miller",
+      "school": "Brunswick",
+      "gp": "-",
+      "ast": "-",
+      "avg": "3.4"
+    },
+    {
+      "player": "Olivia Hoyt",
+      "school": "Catoctin",
+      "gp": "21",
+      "ast": "68",
+      "avg": "3.2"
+    },
+    {
+      "player": "Jameirah Thompson",
+      "school": "Frederick",
+      "gp": "11",
+      "ast": "35",
+      "avg": "3.2"
+    },
+    {
+      "player": "Talia Jenkins",
+      "school": "Middletown",
+      "gp": "17",
+      "ast": "53",
+      "avg": "3.1"
+    },
+    {
+      "player": "Brooke Williams",
+      "school": "Catoctin",
+      "gp": "21",
+      "ast": "62",
+      "avg": "3.0"
+    },
+    {
+      "player": "Marlee Williams",
+      "school": "Frederick",
+      "gp": "11",
+      "ast": "32",
+      "avg": "2.9"
+    },
+    {
+      "player": "Chadaya Hairston",
+      "school": "Thomas Johnson",
+      "gp": "19",
+      "ast": "56",
+      "avg": "2.9"
+    },
+    {
+      "player": "Sophia Burgee",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "ast": "54",
+      "avg": "2.7"
+    },
+    {
+      "player": "Annabelle Horst",
+      "school": "Thomas Johnson",
+      "gp": "20",
+      "ast": "51",
+      "avg": "2.5"
+    },
+    {
+      "player": "Melissa Yeboah",
+      "school": "Thomas Johnson",
+      "gp": "19",
+      "ast": "48",
+      "avg": "2.5"
+    },
+    {
+      "player": "Kelsey Ryan",
+      "school": "Linganore",
+      "gp": "19",
+      "ast": "46",
+      "avg": "2.4"
+    },
+    {
+      "player": "Maddie McGrew",
+      "school": "Frederick Warriors",
+      "gp": "20",
+      "ast": "44",
+      "avg": "2.2"
+    },
+    {
+      "player": "Rachael Hepner",
+      "school": "Linganore",
+      "gp": "20",
+      "ast": "40",
+      "avg": "2.0"
+    }
+  ]
+}

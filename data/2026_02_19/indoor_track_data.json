@@ -1,0 +1,459 @@
+{
+  "boys_55_meter_dash": [
+    {
+      "player": "Jasiri Belote, Tuscarora",
+      "school": "",
+      "result": "6.51"
+    },
+    {
+      "player": "Jayden Parsley, Frederick",
+      "school": "",
+      "result": "6.54"
+    },
+    {
+      "player": "Colton Lawson, Middletown",
+      "school": "",
+      "result": "6.58"
+    }
+  ],
+  "boys_55_meter_hurdles": [
+    {
+      "player": "Carl Mbella, Walkersville",
+      "school": "",
+      "result": "7.79"
+    },
+    {
+      "player": "Gideon Mensah, Thomas Johnson",
+      "school": "",
+      "result": "7.93"
+    },
+    {
+      "player": "Osahenrumwen Aigbogun, Frederick",
+      "school": "",
+      "result": "7.96"
+    }
+  ],
+  "boys_300_meters": [
+    {
+      "player": "Jake Brown, Linganore",
+      "school": "",
+      "result": "34.92"
+    },
+    {
+      "player": "Jayden Parsley, Frederick",
+      "school": "",
+      "result": "35.29"
+    },
+    {
+      "player": "Jasiri Belote, Tuscarora",
+      "school": "",
+      "result": "35.65"
+    }
+  ],
+  "boys_500_meters": [
+    {
+      "player": "Jake Brown, Linganore",
+      "school": "",
+      "result": "1:05.86"
+    },
+    {
+      "player": "Korey Kauflin, Urbana",
+      "school": "",
+      "result": "1:06.58"
+    },
+    {
+      "player": "Jacob Araujo, Linganore",
+      "school": "",
+      "result": "1:08.26"
+    },
+    {
+      "player": "Kayden Harris, Linganore",
+      "school": "",
+      "result": "1:08.26"
+    }
+  ],
+  "boys_800_meters": [
+    {
+      "player": "Korey Kauflin, Urbana",
+      "school": "",
+      "result": "1:59.67"
+    },
+    {
+      "player": "Jacob Araujo, Linganore",
+      "school": "",
+      "result": "2:02.24"
+    },
+    {
+      "player": "Garrett Howes, Middletown",
+      "school": "",
+      "result": "2:02.32"
+    }
+  ],
+  "boys_1600_meters": [
+    {
+      "player": "Korey Kauflin, Urbana",
+      "school": "",
+      "result": "4:27.07"
+    },
+    {
+      "player": "Garrett Howes, Middletown",
+      "school": "",
+      "result": "4:32.20"
+    },
+    {
+      "player": "Jacob Araujo, Linganore",
+      "school": "",
+      "result": "4:35.24"
+    }
+  ],
+  "boys_3200_meters": [
+    {
+      "player": "Miles Ghim, Thomas Johnson",
+      "school": "",
+      "result": "9:47.23"
+    },
+    {
+      "player": "Simon Lipchock, Urbana",
+      "school": "",
+      "result": "9:48.68"
+    },
+    {
+      "player": "Evan Madraymootoo, Urbana",
+      "school": "",
+      "result": "9:52.68"
+    }
+  ],
+  "boys_4x200_relay": [
+    {
+      "player": "Jasiri Belote, Brayden Wilhelm, Dorian Lewis, Aidan Koffa, Tuscarora",
+      "school": "",
+      "result": "1:30.74"
+    },
+    {
+      "player": "Quinton Dodds, Jake Brown, Ricky Johnson, Brandon Rosario, Linganore",
+      "school": "",
+      "result": "1:32.35"
+    },
+    {
+      "player": "Prince Mvutu Mpunga, Eli Maiga, Elijah Alexander, Tristen Sepenoo, Thomas Johnson",
+      "school": "",
+      "result": "1:34.83"
+    }
+  ],
+  "boys_4x400_relay": [
+    {
+      "player": "Jacob Araujo, Kayden Harris, Luke Collins, Jake Brown, Linganore",
+      "school": "",
+      "result": "3:31.73"
+    },
+    {
+      "player": "Jayden Parsley, Ronte Faunteroy, Phillip Bailey Jr., Nicholas Cherry, Frederick",
+      "school": "",
+      "result": "3:32.74"
+    },
+    {
+      "player": "Elijah Alexander, Scott Rudy, Jubril Maigari, Prince Mvutu Mpunga, Thomas Johnson",
+      "school": "",
+      "result": "3:33.03"
+    }
+  ],
+  "boys_4x800_relay": [
+    {
+      "player": "Matthew Rodrigues, Luke Osher, Jason Behling, Korey Kauflin, Urbana",
+      "school": "",
+      "result": "8:22.55"
+    },
+    {
+      "player": "Brogan Thompson, Sai Vedas Boyapati, Merrick Collins, Andrew Gregorio, Oakdale",
+      "school": "",
+      "result": "8:25.03"
+    },
+    {
+      "player": "Miles Ghim, Dominic Castillo, Scott Rudy, Dashiell Wexler, Thomas Johnson",
+      "school": "",
+      "result": "8:30.23"
+    }
+  ],
+  "boys_shot_put": [
+    {
+      "player": "Kyler Valley, Oakdale",
+      "school": "",
+      "result": "47-9"
+    },
+    {
+      "player": "Avery Clements, Thomas Johnson",
+      "school": "",
+      "result": "46-5 1/4"
+    },
+    {
+      "player": "Isaiah Triesh, Walkersville",
+      "school": "",
+      "result": "44-0"
+    }
+  ],
+  "boys_high_jump": [
+    {
+      "player": "Samuel Cooper, Tuscarora",
+      "school": "",
+      "result": "6-8"
+    },
+    {
+      "player": "Masiah Martin, Walkersville",
+      "school": "",
+      "result": "6-8"
+    },
+    {
+      "player": "Austin Cheek, Frederick",
+      "school": "",
+      "result": "6-4"
+    },
+    {
+      "player": "Ricky Johnson, Linganore",
+      "school": "",
+      "result": "6-4"
+    }
+  ],
+  "boys_pole_vault": [
+    {
+      "player": "Jonas Sparks, Oakdale",
+      "school": "",
+      "result": "14-4"
+    },
+    {
+      "player": "Osahenrumwen Aigbogun, Frederick",
+      "school": "",
+      "result": "12-6"
+    },
+    {
+      "player": "Vance Lalli, Linganore",
+      "school": "",
+      "result": "12-6"
+    },
+    {
+      "player": "Cameron McNiesh, Walkersville",
+      "school": "",
+      "result": "12-6"
+    }
+  ],
+  "girls_55_meter_dash": [
+    {
+      "player": "Gabby Grant, Urbana",
+      "school": "",
+      "result": "7.26"
+    },
+    {
+      "player": "Sade Taiwo, Urbana",
+      "school": "",
+      "result": "7.31"
+    },
+    {
+      "player": "Trinity McLaurin, Oakdale",
+      "school": "",
+      "result": "7.33"
+    }
+  ],
+  "girls_55_meter_hurdles": [
+    {
+      "player": "Gabby Umpierre, Thomas Johnson",
+      "school": "",
+      "result": "8.66"
+    },
+    {
+      "player": "Elianna Dougan, Urbana",
+      "school": "",
+      "result": "8.77"
+    },
+    {
+      "player": "Aliyah Williams, Urbana",
+      "school": "",
+      "result": "8.94"
+    }
+  ],
+  "girls_300_meters": [
+    {
+      "player": "Sade Taiwo, Urbana",
+      "school": "",
+      "result": "41.43"
+    },
+    {
+      "player": "Elianna Dougan, Urbana",
+      "school": "",
+      "result": "41.85"
+    },
+    {
+      "player": "Maddie Roque, Urbana",
+      "school": "",
+      "result": "41.89"
+    }
+  ],
+  "girls_500_meters": [
+    {
+      "player": "Olivia Baker, Catoctin",
+      "school": "",
+      "result": "1:18.79"
+    },
+    {
+      "player": "Kate Miner, Urbana",
+      "school": "",
+      "result": "1:21.53"
+    },
+    {
+      "player": "Angelyn Quansah, Oakdale",
+      "school": "",
+      "result": "1:22.40"
+    }
+  ],
+  "girls_800_meters": [
+    {
+      "player": "Kate Miner, Urbana",
+      "school": "",
+      "result": "2:21.02"
+    },
+    {
+      "player": "Maya Osher, Urbana",
+      "school": "",
+      "result": "2:22.39"
+    },
+    {
+      "player": "Hailey Lane, Tuscarora",
+      "school": "",
+      "result": "2:22.90"
+    }
+  ],
+  "girls_1600_meters": [
+    {
+      "player": "Kate Miner, Urbana",
+      "school": "",
+      "result": "5:11.61"
+    },
+    {
+      "player": "Maya Osher, Urbana",
+      "school": "",
+      "result": "5:15.48"
+    },
+    {
+      "player": "Hailey Lane, Tuscarora",
+      "school": "",
+      "result": "5:20.08"
+    }
+  ],
+  "girls_3200_meters": [
+    {
+      "player": "Kate Miner, Urbana",
+      "school": "",
+      "result": "11:31.56"
+    },
+    {
+      "player": "Madelene Kate Partlow, Thomas Johnson",
+      "school": "",
+      "result": "11:45.24"
+    },
+    {
+      "player": "Siena Foster, Tuscarora",
+      "school": "",
+      "result": "11:49.59"
+    }
+  ],
+  "girls_4x200_relay": [
+    {
+      "player": "Jaidah Ezcaman, Maddie Roque, Sade Taiwo, Gabby Grant, Urbana",
+      "school": "",
+      "result": "1:43.66"
+    },
+    {
+      "player": "Angelyn Quansah, Heather Twum, Trinity McLaurin, Reese Rymon, Oakdale",
+      "school": "",
+      "result": "1:49.71"
+    },
+    {
+      "player": "Jenell Quansah, Kayla Headd, Brynn Groves, Gabrielle Joseph, Linganore",
+      "school": "",
+      "result": "1:52.16"
+    }
+  ],
+  "girls_4x400_relay": [
+    {
+      "player": "Naomi Layne, Lucinda Rodriguez, Sophia Tsapenko, Eila Stultz, Middletown",
+      "school": "",
+      "result": "4:13.88"
+    },
+    {
+      "player": "Gabby Grant, Briana Barberena, Elianna Dougan, Sade Taiwo, Urbana",
+      "school": "",
+      "result": "4:14.24"
+    },
+    {
+      "player": "Jordyn Summers, Ava Morales, Katherine Christian-Rawls, Olivia Gregory, Frederick",
+      "school": "",
+      "result": "4:18.05"
+    }
+  ],
+  "girls_4x800_relay": [
+    {
+      "player": "Kyleigh Kauflin, Maya Osher, Natalie Barber, Kate Miner, Urbana",
+      "school": "",
+      "result": "10:04.07"
+    },
+    {
+      "player": "Madelene Kate Partlow, Salma Mahfoud, Elizabeth Lombardo, Nina Kirkendall-Plaia, Thomas Johnson",
+      "school": "",
+      "result": "10:10.16"
+    },
+    {
+      "player": "Olivia Gregory, Danica Arrington, Yasmeena Hassen Friess, Ysebelle Soto, Frederick",
+      "school": "",
+      "result": "10:19.08"
+    }
+  ],
+  "girls_shot_put": [
+    {
+      "player": "Julie Patchou, Urbana",
+      "school": "",
+      "result": "35-8 1/2"
+    },
+    {
+      "player": "Kaila Jones, Catoctin",
+      "school": "",
+      "result": "35-3 1/4"
+    },
+    {
+      "player": "Alexis Mangene, Oakdale",
+      "school": "",
+      "result": "35-0 3/4"
+    }
+  ],
+  "girls_high_jump": [
+    {
+      "player": "Ava Morales, Frederick",
+      "school": "",
+      "result": "5-6"
+    },
+    {
+      "player": "Jaidah Ezcaman, Urbana",
+      "school": "",
+      "result": "5-4"
+    },
+    {
+      "player": "Jordyn Summers, Frederick",
+      "school": "",
+      "result": "5-2"
+    }
+  ],
+  "girls_pole_vault": [
+    {
+      "player": "Gabby Umpierre, Thomas Johnson",
+      "school": "",
+      "result": "13-0"
+    },
+    {
+      "player": "Bailey Smith, Urbana",
+      "school": "",
+      "result": "11-0"
+    },
+    {
+      "player": "Lennah Bailey, Thomas Johnson",
+      "school": "",
+      "result": "10-6"
+    }
+  ]
+}

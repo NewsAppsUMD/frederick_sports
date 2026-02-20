@@ -1,0 +1,342 @@
+
+<style>
+.hs-hangout-embed {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.hs-hangout-embed h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.hs-hangout-embed h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+.hs-hangout-embed h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+}
+.hs-hangout-embed .standings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hs-hangout-embed .leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+.hs-hangout-embed .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .stats-table th {
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+.hs-hangout-embed .stats-table th.numeric {
+    text-align: center;
+}
+.hs-hangout-embed .stats-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.hs-hangout-embed .stats-table td.numeric {
+    text-align: center;
+    font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+.hs-hangout-embed .stats-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.hs-hangout-embed .stats-table tr:hover {
+    background-color: #f0f7ff;
+}
+.hs-hangout-embed .player-name {
+    font-weight: 500;
+}
+.hs-hangout-embed .player-school {
+    font-size: 0.75rem;
+    color: #666;
+}
+.hs-hangout-embed .leader-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hs-hangout-embed .leader-card-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hs-hangout-embed .leader-card-header h4 {
+    margin: 0;
+}
+</style>
+<div class="hs-hangout-embed">
+<h2>Swimming & Diving</h2>
+<h3>Individual Leaders</h3>
+<div class="leaders-grid">
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 50 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Shane Courtois, Urbana</div><div class="player-school"></div></td><td class="numeric">21.87</td></tr>
+<tr><td><div class="player-name">Nick Getz, Oakdale</div><div class="player-school"></div></td><td class="numeric">22.15</td></tr>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">22.33</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Shane Courtois, Urbana</div><div class="player-school"></div></td><td class="numeric">48.77</td></tr>
+<tr><td><div class="player-name">JR May, Oakdale</div><div class="player-school"></div></td><td class="numeric">49.14</td></tr>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">49.17</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">1:44.86</td></tr>
+<tr><td><div class="player-name">Nathan Weir, Urbana</div><div class="player-school"></div></td><td class="numeric">1:46.22</td></tr>
+<tr><td><div class="player-name">Conner Stanley, Urbana</div><div class="player-school"></div></td><td class="numeric">1:53.08</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 500 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Jarret Zhou, Urana</div><div class="player-school"></div></td><td class="numeric">4:57.77</td></tr>
+<tr><td><div class="player-name">Jackson Steele, Urbana</div><div class="player-school"></div></td><td class="numeric">5:07</td></tr>
+<tr><td><div class="player-name">Jackson Devine, Oakdale</div><div class="player-school"></div></td><td class="numeric">5:10.79</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 backstroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Russell Dlugosz, Urbana</div><div class="player-school"></div></td><td class="numeric">51.75</td></tr>
+<tr><td><div class="player-name">Dalton Winters, Oakdale</div><div class="player-school"></div></td><td class="numeric">53.70</td></tr>
+<tr><td><div class="player-name">Luke Jacobs, Oakdale</div><div class="player-school"></div></td><td class="numeric">55.84</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 breaststroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">JR May, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:00.51</td></tr>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">1:00.77</td></tr>
+<tr><td><div class="player-name">WangLok Ng, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">1:00.90</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 100 butterfly</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Andrew Davis, Walkersville</div><div class="player-school"></div></td><td class="numeric">52.26</td></tr>
+<tr><td><div class="player-name">Nathan Weir, Urbana</div><div class="player-school"></div></td><td class="numeric">52.93</td></tr>
+<tr><td><div class="player-name">Amir Hussein, Urbana</div><div class="player-school"></div></td><td class="numeric">53.08</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 individual medley</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Amir Hussein, Urbana</div><div class="player-school"></div></td><td class="numeric">1:57.67</td></tr>
+<tr><td><div class="player-name">Dalton Winters, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:58.17</td></tr>
+<tr><td><div class="player-name">Russell Dlugosz, Urbana</div><div class="player-school"></div></td><td class="numeric">2:00.99</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: Diving</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Gabe Silver, Urbana</div><div class="player-school"></div></td><td class="numeric">264.65</td></tr>
+<tr><td><div class="player-name">Jason Koster, Middletown</div><div class="player-school"></div></td><td class="numeric">219.30</td></tr>
+<tr><td><div class="player-name">David Koster, Middletown</div><div class="player-school"></div></td><td class="numeric">168.80</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 medley relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Dalton Winters, JR May, Nick Getz, Jackson Devine, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:37.68</td></tr>
+<tr><td><div class="player-name">Earl Belt, WangLok Ng, Daniel Marsh-Brandes, Emerson Harne, Thomas Johnson</div><div class="player-school"></div></td><td class="numeric">1:44.30</td></tr>
+<tr><td><div class="player-name">Nikola Dragic, Adam Baird, Jason Koster, Nels Sunnarborg, Middletown</div><div class="player-school"></div></td><td class="numeric">1:44.45</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 200 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Amir Hussein, Nathan Weir, Raymond Zhou, Shane Courtois, Urbana</div><div class="player-school"></div></td><td class="numeric">1:29.58</td></tr>
+<tr><td><div class="player-name">Dalton Winters, Jackson Devine, JR May, Nick Getz, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:29.76</td></tr>
+<tr><td><div class="player-name">Josh Ademola, Tyler Gibson, Dominick Harsanyi, Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">1:36.45</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Boys: 400 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Elliot Voas, Raymond Zhou, Nathan Weir, Russell Dlogosz, Urbana</div><div class="player-school"></div></td><td class="numeric">3:21.61</td></tr>
+<tr><td><div class="player-name">Brogan Dorsey, Joshua Leonard, Luke Jacobs, Emmitt Winters, Oakdale</div><div class="player-school"></div></td><td class="numeric">3:34.29</td></tr>
+<tr><td><div class="player-name">Dominick Harsanyi, Tyler Gibson, Josh Ademola, Juaquin Medina, Linganore</div><div class="player-school"></div></td><td class="numeric">3:42.53</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 50 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Mikayla Green, Oakdale</div><div class="player-school"></div></td><td class="numeric">24.44</td></tr>
+<tr><td><div class="player-name">Riley Breen, Tuscarora</div><div class="player-school"></div></td><td class="numeric">24.66</td></tr>
+<tr><td><div class="player-name">Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">25.26</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Margo Full, Oakdale</div><div class="player-school"></div></td><td class="numeric">52.48</td></tr>
+<tr><td><div class="player-name">Riley Reen, Tuscarora</div><div class="player-school"></div></td><td class="numeric">53.69</td></tr>
+<tr><td><div class="player-name">Kate Miner, Urbana</div><div class="player-school"></div></td><td class="numeric">54.46</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Mikayla Green, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:53.29</td></tr>
+<tr><td><div class="player-name">Kate Miner, Urbana</div><div class="player-school"></div></td><td class="numeric">1:58.43</td></tr>
+<tr><td><div class="player-name">Cora Beaver, Urbana</div><div class="player-school"></div></td><td class="numeric">2:01.07</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 500 freestyle</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Margo Full, Oakdale</div><div class="player-school"></div></td><td class="numeric">5:03.38</td></tr>
+<tr><td><div class="player-name">Carly Jacobs, Oakdale</div><div class="player-school"></div></td><td class="numeric">5:11.85</td></tr>
+<tr><td><div class="player-name">Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">5:18.02</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 backstroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Baylee Corden, Oakdale</div><div class="player-school"></div></td><td class="numeric">57.81</td></tr>
+<tr><td><div class="player-name">Addie Hunter, Oakdale</div><div class="player-school"></div></td><td class="numeric">58.95</td></tr>
+<tr><td><div class="player-name">Ellie Isleib, Urbana</div><div class="player-school"></div></td><td class="numeric">1:00.49</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 breaststroke</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Cora Beaver, Urbana</div><div class="player-school"></div></td><td class="numeric">1:05.48</td></tr>
+<tr><td><div class="player-name">Claire Ingram, Linganore</div><div class="player-school"></div></td><td class="numeric">1:07.91</td></tr>
+<tr><td><div class="player-name">Molly McNeece, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:09.11</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 100 butterfly</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Addie Hunter, Oakdale</div><div class="player-school"></div></td><td class="numeric">57.05</td></tr>
+<tr><td><div class="player-name">Sarah Thornett, Urbana</div><div class="player-school"></div></td><td class="numeric">58.49</td></tr>
+<tr><td><div class="player-name">Molly McNeece, Oakdale</div><div class="player-school"></div></td><td class="numeric">59.04</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 individual medley</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Baylee Corden, Oakdale</div><div class="player-school"></div></td><td class="numeric">2:08.30</td></tr>
+<tr><td><div class="player-name">Carly Jacobs, Oakdale</div><div class="player-school"></div></td><td class="numeric">2:08.51</td></tr>
+<tr><td><div class="player-name">Sarah Thornett, Urbana</div><div class="player-school"></div></td><td class="numeric">2:09.45</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: Diving</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Natalie Lertora, Walkersville</div><div class="player-school"></div></td><td class="numeric">190.80</td></tr>
+<tr><td><div class="player-name">Haryn Seol, Urbana</div><div class="player-school"></div></td><td class="numeric">184.80</td></tr>
+<tr><td><div class="player-name">Tiffany Raines, Frederick</div><div class="player-school"></div></td><td class="numeric">183.25</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 medley relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Ellie Isleib, Cora Beaver, Sarah Thornett, Kate Miner, Urbana</div><div class="player-school"></div></td><td class="numeric">1:47.58</td></tr>
+<tr><td><div class="player-name">Baylee Corden, Molly McNeece, Addie Hunter, Mikayla Green, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:47.91</td></tr>
+<tr><td><div class="player-name">Madeline Harshman, Ava Gordon, Susannah Claney, Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">1:57.70</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 200 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Carly Jacobs, Addie Hunter, Ashlyn Lackemeyer, Margo Full, Oakdale</div><div class="player-school"></div></td><td class="numeric">1:39.98</td></tr>
+<tr><td><div class="player-name">Kate Miner, Cora Beaver, Ellie Isleib, Sarah Thornett, Urbana</div><div class="player-school"></div></td><td class="numeric">1:40.13</td></tr>
+<tr><td><div class="player-name">Emma Rosales, Brianna Wainberg, Bethany Ginalick, Riley Reen, Tuscarora</div><div class="player-school"></div></td><td class="numeric">1:46.90</td></tr>
+</tbody></table>
+</div>
+<div class="leader-card">
+<div class="leader-card-header"><h4>Girls: 400 freestyle relay</h4></div>
+<table class="stats-table">
+<thead><tr><th>Player</th><th class="numeric">Result</th></tr></thead>
+<tbody>
+<tr><td><div class="player-name">Mikayla Green, Baylee Corden, Carly Jacobs, Margo Full, Oakdale</div><div class="player-school"></div></td><td class="numeric">3:34.37</td></tr>
+<tr><td><div class="player-name">Madeline Harshman, Ella Heritage, Susannah Claney, Carly Timme, Middletown</div><div class="player-school"></div></td><td class="numeric">4:00.08</td></tr>
+<tr><td><div class="player-name">Elizabeth FitzGerald, Kayla Pao, Finley Beaver, Ellie Carmody, Urbana</div><div class="player-school"></div></td><td class="numeric">4:00.10</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>

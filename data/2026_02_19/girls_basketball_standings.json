@@ -1,0 +1,139 @@
+{
+  "Spires Division": [
+    {
+      "team": "Frederick",
+      "div_w": "5",
+      "div_l": "1",
+      "overall_w": "15",
+      "overall_l": "5"
+    },
+    {
+      "team": "Urbana",
+      "div_w": "5",
+      "div_l": "1",
+      "overall_w": "15",
+      "overall_l": "5"
+    },
+    {
+      "team": "Thomas Johnson",
+      "div_w": "2",
+      "div_l": "4",
+      "overall_w": "11",
+      "overall_l": "9"
+    },
+    {
+      "team": "South Hagerstown",
+      "div_w": "0",
+      "div_l": "6",
+      "overall_w": "1",
+      "overall_l": "19"
+    }
+  ],
+  "Potomac Division": [
+    {
+      "team": "Linganore",
+      "div_w": "6",
+      "div_l": "0",
+      "overall_w": "18",
+      "overall_l": "2"
+    },
+    {
+      "team": "Oakdale",
+      "div_w": "4",
+      "div_l": "2",
+      "overall_w": "16",
+      "overall_l": "5"
+    },
+    {
+      "team": "North Hagerstown",
+      "div_w": "2",
+      "div_l": "4",
+      "overall_w": "7",
+      "overall_l": "12"
+    },
+    {
+      "team": "Tuscarora",
+      "div_w": "0",
+      "div_l": "6",
+      "overall_w": "4",
+      "overall_l": "16"
+    }
+  ],
+  "Gambrill Division": [
+    {
+      "team": "Williamsport",
+      "div_w": "6",
+      "div_l": "0",
+      "overall_w": "17",
+      "overall_l": "3"
+    },
+    {
+      "team": "Middletown",
+      "div_w": "4",
+      "div_l": "2",
+      "overall_w": "10",
+      "overall_l": "10"
+    },
+    {
+      "team": "Brunswick",
+      "div_w": "1",
+      "div_l": "5",
+      "overall_w": "5",
+      "overall_l": "15"
+    },
+    {
+      "team": "Walkersville",
+      "div_w": "1",
+      "div_l": "5",
+      "overall_w": "3",
+      "overall_l": "16"
+    }
+  ],
+  "Antietam Division": [
+    {
+      "team": "Smithsburg",
+      "div_w": "6",
+      "div_l": "0",
+      "overall_w": "19",
+      "overall_l": "0"
+    },
+    {
+      "team": "Catoctin",
+      "div_w": "4",
+      "div_l": "2",
+      "overall_w": "17",
+      "overall_l": "4"
+    },
+    {
+      "team": "Boonsboro",
+      "div_w": "1",
+      "div_l": "5",
+      "overall_w": "5",
+      "overall_l": "13"
+    },
+    {
+      "team": "Clear Spring",
+      "div_w": "1",
+      "div_l": "5",
+      "overall_w": "4",
+      "overall_l": "15"
+    }
+  ],
+  "Other Schools": [
+    {
+      "team": "Frederick Warriors",
+      "w": "12",
+      "l": "8"
+    },
+    {
+      "team": "Maryland School for the Deaf",
+      "w": "12",
+      "l": "13"
+    },
+    {
+      "team": "St. John's Catholic Prep",
+      "w": "2",
+      "l": "10"
+    }
+  ]
+}
